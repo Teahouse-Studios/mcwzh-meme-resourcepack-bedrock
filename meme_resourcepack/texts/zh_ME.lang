@@ -1,8 +1,8 @@
 ﻿## Comments can be added anywhere on a valid line by starting with '##'
 ## Note, trailing spaces will NOT be trimmed. If you want room between the end of the string and the start of a
 ## comment on the same line, use TABs.
-accessibility.disableTTS=文本转语音已禁用	#
-accessibility.enableTTS=文本转语音已启用	#
+accessibility.disableTTS=复读机已禁用	#
+accessibility.enableTTS=复读机已启用	#
 
 ## Translator note:
 ## This section of phrases will be given audibly to the user using text to speech
