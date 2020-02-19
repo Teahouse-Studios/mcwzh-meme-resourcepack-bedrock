@@ -1,0 +1,46 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "No longer need to bear terrible translations.",
+        "name": "Minecraft Wiki Meme Resource Pack",
+        "uuid": "69236b67-0176-4afe-8f68-28fc433d2f77",
+        "version": [
+            1,
+            14,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            14,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "description": "No longer need to bear terrible translations.",
+            "type": "resources",
+            "uuid": "e6681328-db8c-41ce-943c-2b08f86fcbf1",
+            "version": [
+                1,
+                14,
+                0
+            ]
+        }
+    ],
+    "metadata": [
+        {
+            "authors": [
+                "SkyEye_FAST",
+                "Lakejason0",
+                "Hldoramon",
+                "Lxazl5770",
+                "Dianliang233",
+                "Huerdada",
+                "Icyphantom",
+                "Lightyzhh"
+            ],
+            "license": "CC-BY-SA-4.0",
+            "url": "https://github.com/skyeye-fast/mcwzh-meme-resourcepack-bedrock"
+        }
+    ]
+}
