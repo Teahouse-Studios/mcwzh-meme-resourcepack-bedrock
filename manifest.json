@@ -1,8 +1,8 @@
 {
     "format_version": 2,
     "header": {
-        "description": "No longer need to bear terrible translations.",
-        "name": "Minecraft Wiki Meme Resource Pack",
+        "description": "§e梗体中文亮瞎眼包！！！",
+        "name": "§e梗体中文§r",
         "uuid": "69236b67-0176-4afe-8f68-28fc433d2f77",
         "version": [
             1,
@@ -17,7 +17,7 @@
     },
     "modules": [
         {
-            "description": "No longer need to bear terrible translations.",
+            "description": "§e梗体中文亮瞎眼包！！！",
             "type": "resources",
             "uuid": "e6681328-db8c-41ce-943c-2b08f86fcbf1",
             "version": [
@@ -39,6 +39,6 @@
             "Lightyzhh"
         ],
         "license": "CC-BY-SA-4.0",
-        "url": "https://github.com/skyeye-fast/mcwzh-meme-resourcepack-bedrock"
+        "url": "https://github.com/SkyEye-FAST/mcwzh-meme-resourcepack-bedrock"
     }
 }
