@@ -27,20 +27,18 @@
             ]
         }
     ],
-    "metadata": [
-        {
-            "authors": [
-                "SkyEye_FAST",
-                "Lakejason0",
-                "Hldoramon",
-                "Lxazl5770",
-                "Dianliang233",
-                "Huerdada",
-                "Icyphantom",
-                "Lightyzhh"
-            ],
-            "license": "CC-BY-SA-4.0",
-            "url": "https://github.com/skyeye-fast/mcwzh-meme-resourcepack-bedrock"
-        }
-    ]
+    "metadata": {
+        "authors": [
+            "SkyEye_FAST",
+            "Lakejason0",
+            "Hldoramon",
+            "Lxazl5770",
+            "Dianliang233",
+            "Huerdada",
+            "Icyphantom",
+            "Lightyzhh"
+        ],
+        "license": "CC-BY-SA-4.0",
+        "url": "https://github.com/skyeye-fast/mcwzh-meme-resourcepack-bedrock"
+    }
 }
