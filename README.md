@@ -11,11 +11,14 @@
 - 以下若无特殊说明，“Minecraft”皆指Minecraft基岩版。
 ## 用法
 - 在[Releases](https://github.com/SkyEye-FAST/mcwzh-meme-resourcepack-bedrock/releases)中下载此资源包。
-- 将下载得到的文件中的“meme_resourcepack”文件夹移至Minecraft的resource_pack文件夹中。
+  - 唱片的移植由于版权等问题，请至[此处](https://files.lakejason0.ml/images/9/9f/Meme_resourcepack_records.zip)下载。
+- 解压下载得到的压缩文件。解压后得到的除了“meme_resourcepack”和“meme_resourcepack_records”文件夹以外的文件，在导入附加包时请忽略不计。
+  - 并不是说这些文件不重要，只是和游戏运行没有关系。
+- 将解压后得到的文件中的“meme_resourcepack”和“meme_resourcepack_records”文件夹移至Minecraft的resource_pack文件夹中。
   - Windows 10及Windows 10 Mobile路径：%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\resource_pack
   - Android及Fire OS路径：sdcard/games/com.mojang/resource_pack
   - iOS路径：Apps/com.mojang.minecraftpe/Documents/games/com.mojang/resource_pack
-- 启动Minecraft，打开设置-全局资源，启用该资源包并置顶。
+- 打开Minecraft，打开设置-全局资源，启用该资源包并置顶。
 - 转到设置-语言，选择“梗体中文”。
 - 开始游戏。
 ## 声明
