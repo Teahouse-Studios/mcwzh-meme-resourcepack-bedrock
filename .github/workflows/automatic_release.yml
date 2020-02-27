@@ -1,0 +1,32 @@
+name: "GitHub build & release"
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  tagged-release:
+    name: "Tagged Release"
+    runs-on: "ubuntu-latest"
+
+    steps:
+      - uses: actions/setup-python@v1
+        with:
+          python-version: '3.x'
+          architecture: 'x64'
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: "Build"
+        run: |
+          python build.py all
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          prerelease: true
+          draft: false
+          files: |
+            mcwzh-meme.zip
+            mcwzh-meme_compatible.zip
+            mcwzh-meme_nofigure.zip
+            mcwzh-meme_compatible_nofigure.zip
