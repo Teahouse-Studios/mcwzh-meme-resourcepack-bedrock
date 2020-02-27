@@ -28,7 +28,6 @@ def build(args):
     # all builds have these files
     pack = zipfile.ZipFile(pack_name, 'w', compression=zipfile.ZIP_DEFLATED)
     pack.write("LICENSE")
-    pack.write("manifest.json")
     pack.write("meme_resourcepack/pack_icon.png")
     pack.write("meme_resourcepack/manifest.json")
     pack.write("meme_resourcepack/texts/zh_ME.lang")
