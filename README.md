@@ -2,7 +2,7 @@
 
 [![Tencent QQ](https://img.shields.io/static/v1?label=QQ&message=657876815&color=eb1923&style=flat-square&logo=tencent%20qq)](https://jq.qq.com/?_wv=1027&k=5tqdTeR)    [![GitHub issues](https://img.shields.io/github/issues/SkyEye-FAST/mcwzh-meme-resourcepack-bedrock?logo=github&style=flat-square)](https://github.com/SkyEye-FAST/mcwzh-meme-resourcepack-bedrock/issues)    [![GitHub pull requests](https://img.shields.io/github/issues-pr/SkyEye-FAST/mcwzh-meme-resourcepack-bedrock?logo=github&style=flat-square)](https://github.com/SkyEye-FAST/mcwzh-meme-resourcepack-bedrock/pulls)    [![License](https://img.shields.io/static/v1?label=License&message=CC%20BY-NC-SA%204.0&color=db2331&style=flat-square&logo=creative%20commons)](https://creativecommons.org/licenses/by-nc-sa/4.0/)    [![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/SkyEye-FAST/mcwzh-meme-resourcepack-bedrock?label=latest%20version&style=flat-square)](https://github.com/SkyEye-FAST/mcwzh-meme-resourcepack-bedrock/releases)    [![Minecraft ver](https://img.shields.io/static/v1?label=Minecraft%20version&message=1.13.0及以上&color=db2331&style=flat-square&logo=)](https://minecraft.net)
 
-注：此资源包适用于基岩版。有关Java版的原版，参见[Lakejason0的Java版原版Repository](https://github.com/lakejason0/mcwzh-meme-resourcepack)。
+注：此资源包适用于基岩版。有关Java版的原版，参见[LakeJason0的Java版原版Repository](https://github.com/lakejason0/mcwzh-meme-resourcepack)。
 
 ## 作用
 - 该资源包将一部分译名或其他游戏内字符串替换成了一些知名/不知名的梗或笑话，或将其用诙谐的语言重写了一遍。
@@ -11,13 +11,20 @@
 - 以下若无特殊说明，“Minecraft”皆指Minecraft基岩版。
 ## 用法
 - 在[Releases](https://github.com/SkyEye-FAST/mcwzh-meme-resourcepack-bedrock/releases)中下载此资源包。
-  - 唱片的移植由于版权等问题，请至[此处](https://files.lakejason0.ml/images/9/9f/Meme_resourcepack_records.zip)下载。
-- 解压下载得到的压缩文件。解压后得到的除了“meme_resourcepack”和“meme_resourcepack_records”文件夹以外的文件，在导入附加包时请忽略不计。
+  - 唱片的移植包由于版权等问题，请至[此处](https://files.lakejason0.ml/images/9/9f/Meme_resourcepack_records.zip)下载zip文件，mcpack文件暂缺。
+### 自动导入
+- 下载“meme_resourcepack.mcpack”，使用Minecraft打开即可。
+- 唱片包的导入方法同理，可以将zip文件后缀改为“.mcpack”。
+### 手动导入
+- 下载“meme_resourcepack.zip”并解压。
+- 解压后得到的除了“meme_resourcepack”文件夹以外的文件，在导入附加包时请忽略不计。
   - 并不是说这些文件不重要，只是和游戏运行没有关系。
-- 将解压后得到的文件中的“meme_resourcepack”和“meme_resourcepack_records”文件夹移至Minecraft的resource_pack文件夹中。
+- 将解压后得到的文件中的“meme_resourcepack”文件夹移至Minecraft的resource_pack文件夹中。
   - Windows 10及Windows 10 Mobile路径：%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\resource_pack
   - Android及Fire OS路径：sdcard/games/com.mojang/resource_pack
   - iOS路径：Apps/com.mojang.minecraftpe/Documents/games/com.mojang/resource_pack
+- 唱片包的导入方法同理。
+### 使用
 - 打开Minecraft，打开设置-全局资源，启用该资源包并置顶。
 - 转到设置-语言，选择“梗体中文”。
 - 开始游戏。
