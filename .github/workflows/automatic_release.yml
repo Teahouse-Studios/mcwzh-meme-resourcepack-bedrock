@@ -26,7 +26,5 @@ jobs:
           prerelease: true
           draft: false
           files: |
-            mcwzh-meme.zip
-            mcwzh-meme_compatible.zip
-            mcwzh-meme_nofigure.zip
-            mcwzh-meme_compatible_nofigure.zip
+            meme_resourcepack.zip
+            meme_resourcepack.mcpack
