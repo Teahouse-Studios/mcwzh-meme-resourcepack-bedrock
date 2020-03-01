@@ -25,6 +25,40 @@
 - 打开Minecraft，打开设置-全局资源，启用该资源包并置顶。
 - 转到设置-语言，选择“梗体中文”。
 - 开始游戏。
+## 鹦鹉通道
+### 体验最新内容
+想要**抢先体验**最前沿~~整活~~版本，请按以下方法操作：
+#### 先决条件
+请确保已经安装了Python 3.x和Git。如果没有，请到[Python官网](https://www.python.org)和[Git官网](https://www.git-scm.com)下载。
+#### 步骤
+1. 下载源码：
+``` bash
+git clone https://github.com/SkyEye-FAST/mcwzh-meme-resourcepack-bedrock.git
+```
+2. 进入文件夹：
+``` bash
+cd mcwzh-meme-resourcepack-bedrock
+```
+3. 运行Python命令：
+``` bash
+python build.py all
+```
+在文件夹中会出现`meme_resourcepack.zip`、`meme_resourcepack_notexture.zip``meme_resourcepack.mcpack`和`meme_resourcepack_notexture.mcpack`四个资源包，名称和作用如上所述。
+
+如果只需要zip格式的资源包，运行：
+``` bash
+python build.py zip
+```
+如果只需要mcpack格式的资源包，运行：
+``` bash
+python build.py mcpack
+```
+如果不需要自定义材质，添加`-n`选项。
+
+更详细的用法请运行以下命令来获取：
+``` bash
+python build.py -h
+```
 ## 声明
 - 本资源包**仅供娱乐**，请勿将其可能存在的误导性内容当真。
 - 本资源包基于Ff98sha的[基岩版译名修正项目](https://github.com/ff98sha/mclangcn)和其[Java版的版本](https://github.com/lakejason0/mcwzh-meme-resourcepack)。
