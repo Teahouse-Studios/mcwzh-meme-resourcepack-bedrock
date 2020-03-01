@@ -27,4 +27,6 @@ jobs:
           draft: false
           files: |
             meme_resourcepack.zip
+            meme_resourcepack_notexture.zip
             meme_resourcepack.mcpack
+            meme_resourcepack_notexture.mcpack
