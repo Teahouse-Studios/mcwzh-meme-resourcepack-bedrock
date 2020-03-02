@@ -3,6 +3,7 @@ import json
 import argparse
 import os
 
+# Thanks to MysticNebula70
 
 def main():
     parser = argparse.ArgumentParser(
@@ -53,7 +54,6 @@ def get_packname(args):
             return base_name + ".zip"
         elif not args['without_texture']:
             return base_name + ".zip"
-
     elif args['type'] == 'mcpack':
         if args['without_texture']:
             base_name = base_name + "_notexture"
