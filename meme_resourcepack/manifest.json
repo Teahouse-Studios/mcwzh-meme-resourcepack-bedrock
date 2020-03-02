@@ -1,13 +1,13 @@
 {
     "format_version": 2,
     "header": {
-        "description": "§e梗体中文\nA pacc that inccludd meme transllashhon in Chiniise.§r",
-        "name": "§e梗体中文资源附加包-基岩版 §kmcw§r",
+        "description": "§b§l梗体中文资源附加包\n§r§bA pacc that inccludd meme transllashhon in Chiniise.",
+        "name": "§e梗体中文-§l基岩版",
         "uuid": "69236b67-0176-4afe-8f68-28fc433d2f77",
         "version": [
             0,
             3,
-            0
+            1
         ],
         "min_engine_version": [
             1,
@@ -17,13 +17,13 @@
     },
     "modules": [
         {
-            "description": "§e梗体中文\nA pacc that inccludd meme transllashhon in Chiniise.§r",
+            "description": "§b梗体中文\n§r§bA pacc that inccludd meme transllashhon in Chiniise.",
             "type": "resources",
             "uuid": "e6681328-db8c-41ce-943c-2b08f86fcbf1",
             "version": [
                 0,
                 3,
-                0
+                1
             ]
         }
     ],
@@ -36,7 +36,8 @@
             "Dianliang233",
             "Huerdada",
             "Icyphantom",
-            "Lightyzhh"
+            "Lightyzhh",
+            "Other Minecraft Wiki(ZH) editors"
         ],
         "license": "CC-BY-NC-SA-4.0",
         "url": "https://github.com/SkyEye-FAST/mcwzh-meme-resourcepack-bedrock"

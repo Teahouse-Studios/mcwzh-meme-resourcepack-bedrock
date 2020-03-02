@@ -32,6 +32,8 @@ def build(args):
     if not args['without_texture']:
         for file in os.listdir("meme_resourcepack/textures/environment"):
             pack.write("meme_resourcepack/textures/environment/" + file)
+        for file in os.listdir("meme_resourcepack/textures/ui"):
+            pack.write("meme_resourcepack/textures/ui/" + file)
         pack.write("meme_resourcepack/textures/painting/kz.png")
     pack.close()
 
