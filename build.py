@@ -35,7 +35,7 @@ def build(args):
             pack.write("meme_resourcepack/textures/ui/" + file)
         for file in os.listdir("meme_resourcepack/textures/entity"):
             pack.write("meme_resourcepack/textures/entity" + file)
-        for file in os.listdir("meme_resorcepack/textures/items"):
+        for file in os.listdir("meme_resourcepack/textures/items"):
             pack.write("meme_resourcepack/textures/items" + file)
         pack.write("meme_resourcepack/models/mobs.json")
         pack.write("meme_resourcepack/textures/map/map_background.png")
