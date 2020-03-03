@@ -40,6 +40,9 @@
             "Other Minecraft Wiki(ZH) editors"
         ],
         "license": "CC-BY-NC-SA-4.0",
-        "url": "https://github.com/SkyEye-FAST/mcwzh-meme-resourcepack-bedrock"
+        "url": "https://github.com/SkyEye-FAST/mcwzh-meme-resourcepack-bedrock",
+        "credits":[
+            "AddonsCommandResource"
+        ]
     }
 }
