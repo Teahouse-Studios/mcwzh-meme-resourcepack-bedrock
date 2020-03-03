@@ -36,6 +36,7 @@ def build(args):
         for file in os.listdir("meme_resourcepack/textures/ui"):
             pack.write("meme_resourcepack/textures/ui/" + file)
         pack.write("meme_resourcepack/textures/painting/kz.png")
+        pack.write("meme_resourcepack/textures/map/map_background.png")
     pack.close()
 
 
