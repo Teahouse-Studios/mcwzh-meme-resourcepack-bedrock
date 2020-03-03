@@ -9,12 +9,12 @@
 			"bones": [
 				{
 					"name": "group",
-					"pivot": [0, 9, 0]
+					"pivot": [0, 24, 0]
 				},
 				{
 					"name": "smooth_stone",
 					"parent": "group",
-					"pivot": [0, 9, 0],
+					"pivot": [0, 24, 0],
 					"cubes": [
 						{
 							"origin": [-8, 0, -8],
