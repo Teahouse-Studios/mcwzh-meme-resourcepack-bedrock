@@ -13,7 +13,7 @@
 			"bones": [
 				{
 					"name": "pole",
-					"pivot": [0, 8, 0],
+					"pivot": [0, 24, 0],
 					"cubes": [
 						{
 							"origin": [-6.4, 0.8, -6.4],
