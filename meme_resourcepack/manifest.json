@@ -1,8 +1,8 @@
 {
     "format_version": 2,
     "header": {
-        "description": "§b§l梗体中文资源附加包\n§r§bA pacc that inccludd meme transllashhon in Chiniise.",
-        "name": "§e梗体中文-§l基岩版",
+        "description": "§bA pacc that inccludd meme transllashhon in Chiniise.\n需要基岩版1.13.0+",
+        "name": "§e梗体中文附加包-§l基岩版",
         "uuid": "69236b67-0176-4afe-8f68-28fc433d2f77",
         "version": [
             0,
@@ -17,7 +17,7 @@
     },
     "modules": [
         {
-            "description": "§b梗体中文\n§r§bA pacc that inccludd meme transllashhon in Chiniise.",
+            "description": "A pacc that inccludd meme transllashhon in Chiniise.",
             "type": "resources",
             "uuid": "e6681328-db8c-41ce-943c-2b08f86fcbf1",
             "version": [
