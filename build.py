@@ -5,6 +5,7 @@ import os
 
 # Thanks to MysticNebula70
 
+
 def main():
     parser = argparse.ArgumentParser(
         description="Automatically build bedrock add-ons")
@@ -28,13 +29,15 @@ def build(args):
     pack.write("meme_resourcepack/pack_icon.png")
     pack.write("meme_resourcepack/manifest.json")
     for file in os.listdir("meme_resourcepack/texts"):
-            pack.write("meme_resourcepack/texts/" + file)
+        pack.write("meme_resourcepack/texts/" + file)
     # build with textures
     if not args['without_texture']:
         for file in os.listdir("meme_resourcepack/textures/ui"):
             pack.write("meme_resourcepack/textures/ui/" + file)
         for file in os.listdir("meme_resourcepack/textures/entity"):
             pack.write("meme_resourcepack/textures/entity/" + file)
+        for file in os.listdir("meme_resourcepack/textures/blocks"):
+            pack.write("meme_resourcepack/textures/blocks/" + file)
         for file in os.listdir("meme_resourcepack/textures/items"):
             pack.write("meme_resourcepack/textures/items/" + file)
         for file in os.listdir("meme_resourcepack/models/entity"):
