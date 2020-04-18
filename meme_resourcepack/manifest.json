@@ -6,12 +6,7 @@
         "uuid": "69236b67-0176-4afe-8f68-28fc433d2f77",
         "version": [
             0,
-            3,
-            5
-        ],
-        "min_engine_version": [
-            1,
-            13,
+            4,
             0
         ]
     },
@@ -22,8 +17,8 @@
             "uuid": "e6681328-db8c-41ce-943c-2b08f86fcbf1",
             "version": [
                 0,
-                3,
-                5
+                4,
+                0
             ]
         }
     ],
@@ -38,11 +33,13 @@
             "Icyphantom",
             "Lightyzhh",
             "Kakagou12341",
+            "Gu_ZT",
+            "ZCYF",
             "Other Minecraft Wiki(ZH) editors"
         ],
         "license": "CC-BY-NC-SA-4.0",
         "url": "https://github.com/SkyEye-FAST/mcwzh-meme-resourcepack-bedrock",
-        "credits":[
+        "credits": [
             "AddonsCommandResource"
         ]
     }
