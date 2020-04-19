@@ -1,5 +1,5 @@
 ## Comments can be added anywhere on a valid line by starting with '##'
-## Minecraft译名修正  
+## Minecraft译名修正，来自ff98sha/mclangcn
 ## Note, trailing spaces will NOT be trimmed. If you want room between the end of the string and the start of a
 ## comment on the same line, use TABs.
 accessibility.disableTTS=文本转语音已禁用	#
