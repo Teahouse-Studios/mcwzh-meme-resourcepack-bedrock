@@ -1,0 +1,10 @@
+{
+	"texture_data": {
+		"observer_north": {
+			"textures": [
+				"textures/blocks/observer_front",
+				"textures/blocks/observer_front_lit"
+			]
+		}
+	}
+}
