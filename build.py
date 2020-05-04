@@ -43,6 +43,7 @@ def build(args):
         for file in os.listdir("meme_resourcepack/models/entity"):
             pack.write("meme_resourcepack/models/entity/" + file)
         pack.write("meme_resourcepack/textures/map/map_background.png")
+        pack.write("meme_resourcepack/textures/terrain_texture.json")
     pack.close()
 
 
