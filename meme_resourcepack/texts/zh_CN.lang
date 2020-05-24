@@ -935,7 +935,7 @@ commands.reload.description=从所有行为包中重新加载所有函数文件�
 commands.reload.success=现有函数文件已重新加载。重启Minecraft以加载新函数。	#
 commands.replaceitem.description=替换物品栏中的物品。	#
 commands.replaceitem.failed=无法将%s号物品栏的物品 %d 替换成 %d * %s	#
-commands.replaceitem.keepFailed=There is already an item occupying %s slot %d.
+commands.replaceitem.keepFailed=已有物品占用了%s槽位%d。	#
 commands.replaceitem.noContainer=位于%s的方块不是容器	#
 commands.replaceitem.badSlotNumber=无法替换槽位%d，必须是 %d 和 %d 之间的值。	#
 commands.replaceitem.success=将%s号物品栏的物品 %d 替换为了 %d * %s	#
@@ -1826,6 +1826,9 @@ networkWorld.join=加入	#
 networkWorld.joinByCode=加入Realm	#
 networkWorld.realmsHashPlaceholder=邀请码…	#
 networkWold.joinByCodeHelpText=如果你已收到Realm邀请链接，输入代码即可加入。	#
+networkWorld.highPingWarning.title=加入服务器？
+networkWorld.highPingWarning.line1=当前你与所选服务器连接不稳定。你的体验可能会受到影响。
+networkWorld.highPingWarning.line2=是否仍要加入该服务器？
 
 ## The following text is placed on in-game signs, which have a 4-line, 15-character-per-line limit.
 ## The intent of the message is to convey to the reader that the sign author's chat permissions are
