@@ -27,7 +27,14 @@ def main():
 
 
 def build(args):
-    pack_name = get_packname(args)
+    pack_name = "builds/" + get_packname(args)
+    # check build path
+    if os.path.exists("builds"):
+        if not os.path.isdir("builds"):
+            os.remove("builds")
+            os.mkdir("builds")
+    else:
+        os.mkdir("builds")
     # all builds have these files
     pack = zipfile.ZipFile(pack_name, 'w', compression=zipfile.ZIP_DEFLATED)
     pack.write("LICENSE")
