@@ -3,22 +3,27 @@ import json
 import argparse
 import os
 
-# Thanks to MysticNebula70
+# GPL 3.0
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Automatically build bedrock add-ons")
+        description="Automatically build add-ons")
     parser.add_argument('type', default='zip',
-                        help="Build type. Should be 'all', 'zip' or 'mcpack'.")
+                        help="Build type. Should be 'all', 'zip', 'mcpack' or 'clean'.")
     parser.add_argument('-n', '--without-texture', action='store_true',
                         help="Do not add textures when building resource packs. If build type is 'all', this argument will be ignored.")
     args = vars(parser.parse_args())
-    if args['type'] == 'all':
-        build_all()
+    if args['type'] == 'clean':
+        for i in os.listdir('builds/'):
+            os.remove('builds/' + i)
+        print("Deleted all packs built.")
     else:
-        build(args)
-    print("Build succeeded!")
+        if args['type'] == 'all':
+            build_all()
+        else:
+            build(args)
+        print("Build succeeded!")
 
 
 def build(args):
