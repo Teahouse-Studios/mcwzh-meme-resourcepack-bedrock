@@ -13,7 +13,7 @@
 - 该资源包将一部分译名或其他游戏内字符串替换成了一些知名/不知名的梗或笑话，或将其用诙谐的语言重写了一遍。
 ## 用法
 - 在[Releases](https://github.com/SkyEye-FAST/mcwzh-meme-resourcepack-bedrock/releases)中下载此资源包。
-  - 唱片的移植包由于版权等问题，请至[此处](https://files.lakejason0.ml/images/9/9f/Meme_resourcepack_records.zip)下载zip文件，至[此处](https://files.lakejason0.ml/images/0/02/Meme_resourcepack_records.mcpack)或[此处](https://dianliang-oss-1301161188.cos.ap-shanghai.myqcloud.com/zh-meme-respack/Meme_resourcepack_records.mcpack)下载mcpack文件。
+  - 唱片的移植包由于版权等问题，请至至[此处](https://files.lakejason0.ml/images/0/02/Meme_resourcepack_records.mcpack)或[此处](https://dianliang-oss-1301161188.cos.ap-shanghai.myqcloud.com/zh-meme-respack/Meme_resourcepack_records.mcpack)下载mcpack文件。
 ### 自动导入
 - 下载`meme_resourcepack.mcpack`，使用Minecraft打开即可。
 - 唱片包的导入方法同理。
