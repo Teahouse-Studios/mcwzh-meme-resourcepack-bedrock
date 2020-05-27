@@ -31,7 +31,8 @@ def build(args):
     else:
         os.mkdir("builds")
     # all builds have these files
-    pack = zipfile.ZipFile(pack_name, 'w', compression=zipfile.ZIP_DEFLATED)
+    pack = zipfile.ZipFile(
+        pack_name, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=5)
     pack.write("LICENSE")
     pack.write("meme_resourcepack/pack_icon.png")
     pack.write("meme_resourcepack/manifest.json")
@@ -57,14 +58,14 @@ def build(args):
 
 
 def build_all():
-    build({'type': 'zip', 'without_texture': False})
-    build({'type': 'zip', 'without_blueui': False})
-    build({'type': 'zip', 'without_texture': True})
-    build({'type': 'zip', 'without_blueui': True})
-    build({'type': 'mcpack', 'without_texture': False})
-    build({'type': 'mcpack', 'without_blueui': False})
-    build({'type': 'mcpack', 'without_texture': True})
-    build({'type': 'mcpack', 'without_blueui': True})
+    build({'type': 'zip', 'without_texture': False, 'without_blueui': False})
+    build({'type': 'zip', 'without_texture': True, 'without_blueui': False})
+    build({'type': 'zip', 'without_texture': False, 'without_blueui': True})
+    build({'type': 'zip', 'without_texture': True, 'without_blueui': True})
+    build({'type': 'mcpack', 'without_texture': False, 'without_blueui': False})
+    build({'type': 'mcpack', 'without_texture': True, 'without_blueui': False})
+    build({'type': 'mcpack', 'without_texture': False, 'without_blueui': True})
+    build({'type': 'mcpack', 'without_texture': True, 'without_blueui': True})
 
 
 def get_packname(args):
