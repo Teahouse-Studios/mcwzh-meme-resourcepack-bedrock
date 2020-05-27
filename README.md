@@ -46,7 +46,7 @@ cd mcwzh-meme-resourcepack-bedrock
 ``` bash
 python build.py all
 ```
-在文件夹中会出现`meme_resourcepack.zip`、`meme_resourcepack_notexture.zip``meme_resourcepack.mcpack`和`meme_resourcepack_notexture.mcpack`四个资源包，名称和作用如上所述。
+在文件夹中会出现`meme_resourcepack.zip`、`meme_resourcepack_notexture.zip``meme_resourcepack.mcpack`和`meme_resourcepack_notexture.mcpack`等资源包，名称和作用如上所述。
 
 如果只需要zip格式的资源包，运行：
 ``` bash
@@ -73,5 +73,6 @@ python build.py -h
 - 本资源包以 ***CC BY-NC-SA 4.0*** 协议授权。
   - 这意味着，你可在署名的情况下自由修改本资源包，但是你再创作的作品必须以本协议发布。
   - 这不是法律建议。
+- 本项目的自动构建脚本以 ***GPL 3.0*** 协议发布。
 
 ![GitHub forks](https://img.shields.io/github/forks/SkyEye-FAST/mcwzh-meme-resourcepack-bedrock?style=social)    ![GitHub stars](https://img.shields.io/github/stars/SkyEye-FAST/mcwzh-meme-resourcepack-bedrock?style=social)    ![GitHub watchers](https://img.shields.io/github/watchers/SkyEye-FAST/mcwzh-meme-resourcepack-bedrock?style=social)
