@@ -7,12 +7,7 @@ import os
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="Automatically build add-ons")
-    parser.add_argument('type', default='zip',
-                        help="Build type. Should be 'all', 'zip', 'mcpack' or 'clean'.")
-    parser.add_argument('-n', '--without-texture', action='store_true',
-                        help="Do not add textures when building resource packs. If build type is 'all', this argument will be ignored.")
+    parser = generate_parser()
     args = vars(parser.parse_args())
     if args['type'] == 'clean':
         for i in os.listdir('builds/'):
@@ -42,10 +37,12 @@ def build(args):
     pack.write("meme_resourcepack/manifest.json")
     for file in os.listdir("meme_resourcepack/texts"):
         pack.write("meme_resourcepack/texts/" + file)
-    # build with textures
-    if not args['without_texture']:
+    # build with blue ui textures
+    if not args['without_blueui']:
         for file in os.listdir("meme_resourcepack/textures/ui"):
             pack.write("meme_resourcepack/textures/ui/" + file)
+    # build with textures
+    if not args['without_texture']:
         for file in os.listdir("meme_resourcepack/textures/entity"):
             pack.write("meme_resourcepack/textures/entity/" + file)
         for file in os.listdir("meme_resourcepack/textures/blocks"):
@@ -61,25 +58,38 @@ def build(args):
 
 def build_all():
     build({'type': 'zip', 'without_texture': False})
+    build({'type': 'zip', 'without_blueui': False})
     build({'type': 'zip', 'without_texture': True})
+    build({'type': 'zip', 'without_blueui': True})
     build({'type': 'mcpack', 'without_texture': False})
+    build({'type': 'mcpack', 'without_blueui': False})
     build({'type': 'mcpack', 'without_texture': True})
+    build({'type': 'mcpack', 'without_blueui': True})
 
 
 def get_packname(args):
     base_name = "meme_resourcepack"
+    if args['without_texture']:
+        base_name += "_notexture"
+    if args['without_blueui']:
+        base_name += "_noblueui"
     if args['type'] == 'zip':
-        if args['without_texture']:
-            base_name = base_name + "_notexture"
-            return base_name + ".zip"
-        elif not args['without_texture']:
-            return base_name + ".zip"
+        return base_name + ".zip"
     elif args['type'] == 'mcpack':
-        if args['without_texture']:
-            base_name = base_name + "_notexture"
-            return base_name + ".mcpack"
-        elif not args['without_texture']:
-            return base_name + ".mcpack"
+        return base_name + ".mcpack"
+
+
+def generate_parser():
+    parser = argparse.ArgumentParser(
+        description="Automatically build add-ons")
+    parser.add_argument('type', default='zip',
+                        help="Build type. Should be 'all', 'zip', 'mcpack' or 'clean'. If it's 'clean', all packs in 'builds/' directory will be deleted.",
+                        choices=['all', 'zip', 'mcpack', 'clean'])
+    parser.add_argument('-t', '--without-texture', action='store_true',
+                        help="Do not add textures when building resource packs. If build type is 'all', this argument will be ignored.")
+    parser.add_argument('-u', '--without-blueui', action='store_true',
+                        help="Do not add the blue ui textures when building resource packs. If build type is 'all', this argument will be ignored.")
+    return parser
 
 
 if __name__ == '__main__':
