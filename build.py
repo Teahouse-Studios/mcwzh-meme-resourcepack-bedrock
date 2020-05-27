@@ -38,6 +38,7 @@ def build(args):
     pack.write("meme_resourcepack/manifest.json")
     for file in os.listdir("meme_resourcepack/texts"):
         pack.write("meme_resourcepack/texts/" + file)
+    pack.write("meme_resourcepack/textures/map/map_background.png")
     # build with blue ui textures
     if not args['without_blueui']:
         for file in os.listdir("meme_resourcepack/textures/ui"):
@@ -52,7 +53,6 @@ def build(args):
             pack.write("meme_resourcepack/textures/items/" + file)
         for file in os.listdir("meme_resourcepack/models/entity"):
             pack.write("meme_resourcepack/models/entity/" + file)
-        pack.write("meme_resourcepack/textures/map/map_background.png")
         pack.write("meme_resourcepack/textures/terrain_texture.json")
     pack.close()
 
