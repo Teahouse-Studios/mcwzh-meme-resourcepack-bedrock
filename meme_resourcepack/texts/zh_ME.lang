@@ -5444,8 +5444,8 @@ options.enableOpenChatMessage=启用开放聊天消息	#
 options.entityShadows=生物投影	#
 options.editSettings=编辑设置	#
 options.fancyskies=绚丽的天空	#
-options.farWarning1=推荐安装64位的jvav以调整能见度	#
-options.farWarning2=选项“高”（你目前使用的是32位的jvav）	#
+options.farWarning1=推荐安装64位的java以调整能见度	#
+options.farWarning2=选项“高”（你目前使用的是32位的java）	#
 options.fboEnable=启用FBO	#
 options.forceUnicodeFont=我爱Unicode字体	#
 options.fov=角视场	#
@@ -7075,7 +7075,7 @@ stream.unavailable.failed_auth.okay=重新绑定账户	#
 stream.unavailable.failed_auth_error=无法连接到Twitch验证。请稍后再试。	#
 stream.unavailable.initialization_failure=无法初始化Twitch SDK。	#
 stream.unavailable.initialization_failure.extra=（原因：%s）	#
-stream.unavailable.library_arch_mismatch=你用于启动Minecraft的自定义jvav版本与运行启动器的jvav版本结构不同。请确保两者相同，即都是32位或都是64位。	#
+stream.unavailable.library_arch_mismatch=你用于启动Minecraft的自定义java版本与运行启动器的java版本结构不同。请确保两者相同，即都是32位或都是64位。	#
 stream.unavailable.library_failure=无法载入集成的Twitch直播服务的库文件。	#
 stream.unavailable.no_fbo=你的显卡至少需要支持OpenGL 3.0或通过扩展支持帧缓冲对象才能使用集成的Twitch直播功能。	#
 stream.unavailable.no_fbo.arb=通过 ARB 支持的帧缓冲器对象为：%s	#
@@ -9047,4 +9047,4 @@ tile.underwater_torch.name=水下火把	#
 
 ## Custom
 tips.game.62=梗体中文-基岩版发布于https://www.mcbbs.net/thread-1005191-1-1.html！	#
-tips.game.63=jvav版梗体中文发布于https://www.mcbbs.net/thread-1004643-1-1.html！	#
+tips.game.63=java版梗体中文发布于https://www.mcbbs.net/thread-1004643-1-1.html！	#
