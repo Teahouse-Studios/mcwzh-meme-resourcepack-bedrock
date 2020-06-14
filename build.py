@@ -3,7 +3,7 @@ import json
 import argparse
 import os
 
-# GPL 3.0
+# Apache 2.0
 
 
 def main():
