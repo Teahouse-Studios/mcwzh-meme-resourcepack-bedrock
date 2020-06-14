@@ -2,8 +2,8 @@
 ## 梗体中文-基岩版，原内容来自ff98sha/mclangcn（应实时保持同步）。成就等与JE不同的内容暂时请勿改动，其应为独有特性（保持不动或者内容与JE不同，请在其后加上ve）
 ## Note, trailing spaces will NOT be trimmed. If you want room between the end of the string and the start of a
 ## comment on the same line, use TABs.
-accessibility.disableTTS=复读机已禁用           ###ve
-accessibility.enableTTS=复读机已启用	        ###ve
+accessibility.disableTTS=文本转语音已禁用	#
+accessibility.enableTTS=文本转语音已启用	#
 
 ## Translator note:
 ## This section of phrases will be given audibly to the user using text to speech
@@ -192,13 +192,13 @@ accounts.switch=切换账户	#
 achievement.alternativeFuel=替代性燃料	#
 achievement.alternativeFuel.desc=使用一个干海带块给熔炉供能	#
 achievement.acquireIron=来硬的	#
-achievement.acquireIron.desc=冶炼出一块肥皂	#
+achievement.acquireIron.desc=冶炼出一块铁锭	#
 achievement.bakeCake=蛋糕是个谎言	#
 achievement.bakeCake.desc=小麦、糖、牛奶和鸡蛋！	#
 achievement.blaze_rod=与火共舞	#
-achievement.blaze_rod.desc=夺取烈焰人的镀金法国面包	#
+achievement.blaze_rod.desc=夺取烈焰人的烈焰棒	#
 achievement.bookcase=图书管理员	#
-achievement.bookcase.desc=建造一些书架来强化你的附膜台	#
+achievement.bookcase.desc=建造一些书架来强化你的附魔台	#
 achievement.breedCow=种群恢复	#
 achievement.breedCow.desc=喂小麦来繁殖出2头牛	#
 achievement.buildBetterPickaxe=获得升级	#
@@ -281,7 +281,7 @@ action.hint.exit.horse=点击“潜行”以下马	#
 action.hint.exit.strider=点击“潜行”以下炽足兽	#
 action.hint.exit.donkey=点击“潜行”以下驴	#
 action.hint.exit.mule=点击“潜行”以下骡	#
-action.hint.exit.llama=点击“潜行”以下草泥马	#
+action.hint.exit.llama=点击“潜行”以下羊驼	#
 action.hint.exit.skeleton_horse=点击“潜行”以下骷髅马	#
 action.interact.creeper=引爆	#
 action.interact.edit=编辑	#
@@ -312,8 +312,8 @@ action.interact.write=书写	#
 action.interact.leash=拴住	#
 action.interact.unleash=解开	#
 action.interact.name=命名	#
-action.interact.attachchest=连接胸部	#
-action.interact.trade=P♂Y♂蕉♂易	#
+action.interact.attachchest=连接箱子	#
+action.interact.trade=交易	#
 action.interact.armorstand.pose=摆姿势	#
 action.interact.armorstand.equip=装备	#
 action.interact.read=阅读	#
@@ -322,8 +322,8 @@ action.interact.barter=以物易物	#
 
 advMode.allEntities=用“@e”来表示全部实体	#
 advMode.allPlayers=用“@a”来表示全部玩家	#
-advMode.command=控制台滥权命令	#
-advMode.nearestPlayer=用“@p”来表示距离最近的玩家	#
+advMode.command=控制台命令	#
+advMode.nearestPlayer=用“@p”来表示最近的玩家	#
 advMode.notAllowed=必须是处于创造模式的管理员	#
 advMode.notEnabled=命令模块在此服务器上未启用	#
 advMode.previousOutput=上一个输出	#
