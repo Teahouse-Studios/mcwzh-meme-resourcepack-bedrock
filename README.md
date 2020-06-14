@@ -2,6 +2,8 @@
 
 [![Tencent QQ](https://img.shields.io/static/v1?label=QQ&message=657876815&color=eb1923&style=flat-square&logo=tencent%20qq)](https://jq.qq.com/?_wv=1027&k=5tqdTeR)    [![GitHub issues](https://img.shields.io/github/issues/SkyEye-FAST/mcwzh-meme-resourcepack-bedrock?logo=github&style=flat-square)](https://github.com/SkyEye-FAST/mcwzh-meme-resourcepack-bedrock/issues)    [![GitHub pull requests](https://img.shields.io/github/issues-pr/SkyEye-FAST/mcwzh-meme-resourcepack-bedrock?logo=github&style=flat-square)](https://github.com/SkyEye-FAST/mcwzh-meme-resourcepack-bedrock/pulls)    [![License](https://img.shields.io/static/v1?label=License&message=CC%20BY-NC-SA%204.0&color=db2331&style=flat-square&logo=creative%20commons)](https://creativecommons.org/licenses/by-nc-sa/4.0/)    [![License](https://img.shields.io/static/v1?label=License+for+script&message=GPL+v3.0&color=db2331&style=flat-square&logo=gpl)](https://www.gnu.org/licenses/)    [![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/SkyEye-FAST/mcwzh-meme-resourcepack-bedrock?label=latest%20version&style=flat-square)](https://github.com/SkyEye-FAST/mcwzh-meme-resourcepack-bedrock/releases)    [![Minecraft ver](https://img.shields.io/static/v1?label=Minecraft%20version&message=1.13.0及以上&color=db2331&style=flat-square&logo=)](https://minecraft.net)
 
+[![Banner](https://s1.ax1x.com/2020/05/29/tnn9qs.png)](https://www.mcbbs.net/thread-1005191-1-1.html)
+
 注：此资源包仅适用于基岩版。有关其Java版的原版，参见[LakeJason0的Java版原版Repository](https://github.com/lakejason0/mcwzh-meme-resourcepack)。
 
 **注：若发现自身可能存在该资源包上头的情况，请立刻~~食用~~阅读[译名标准化](https://minecraft-zh.gamepedia.com/Minecraft_Wiki:译名标准化)。**
