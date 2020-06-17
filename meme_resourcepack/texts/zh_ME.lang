@@ -8454,13 +8454,6 @@ tips.game.60=在下界中重生需要一个充能的重生锚	#
 tips.game.61=你可以用荧石给重生锚充能	#
 tips.game.62=你可以用绯红菌繁殖疣猪兽，但这很危险！	#
 
-## Custom
-tips.game.57=该附加包基于由Ff98sha制作的基岩版译名修正附加包！	#
-tips.game.58=基岩版译名修正包发布于http://www.mcbbs.net/thread-682370-1-1.html!	#
-tips.game.59=在Github搜索mclangcn可查看译名修正附加包项目。	#
-tips.game.60=关注微博@Minecraft中文Wiki，获取译名信息。	#
-tips.game.61=中文Minecraft Wiki提醒您：译名千万条，准确第一条。翻译不规范，玩家两行泪。	#
-
 splitscreen.joinPrompt=以玩家%s的身份加入	#
 splitscreen.unavailable.toastHeader=分屏不可用	#
 splitscreen.unavailable.toastMessage=第二位玩家当前无法加入。	#
