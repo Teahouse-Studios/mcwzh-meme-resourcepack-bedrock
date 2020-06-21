@@ -23,9 +23,6 @@
 		},
 		"sugar": {
 			"textures": "textures/bagify/sugar"
-		},
-		"trident": {
-			"textures": "textures/trident_model/item"
-		  }
+		}
 	}
 }
