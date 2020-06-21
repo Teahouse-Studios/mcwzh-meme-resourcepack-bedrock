@@ -51,8 +51,9 @@ def build(args):
             pack.write("meme_resourcepack/textures/observer_think/" + file)
         for file in os.listdir("meme_resourcepack/textures/ore_highlight"):
             pack.write("meme_resourcepack/textures/ore_highlight/" + file)
-        for file in os.listdir("meme_resourcepack/models/trident_model"):
-            pack.write("meme_resourcepack/models/trident_model/" + file)
+        for file in os.listdir("meme_resourcepack/textures/trident_model"):
+            pack.write("meme_resourcepack/textures/trident_model/" + file)
+        pack.write("meme_resourcepack/entity/thrown_trident.entity.json")
         pack.write("meme_resourcepack/textures/terrain_texture.json")
         pack.write("meme_resourcepack/textures/item_texture.json")
     pack.close()
