@@ -95,5 +95,15 @@ def generate_parser():
     return parser
 
 
+def merge_json(base_file, merge_file):
+    with open(base_file, 'r', encoding='utf8') as b:
+        base_data = json.load(b)
+    with open(merge_file, 'r', encoding='utf8') as m:
+        merge_data = json.load(m)
+    base_data.update(merge_data)
+    with open(base_file, 'w', encoding='utf8') as f:
+        json.dump(base_data, f, ensure_ascii=False, indent=4)
+
+
 if __name__ == '__main__':
     main()
