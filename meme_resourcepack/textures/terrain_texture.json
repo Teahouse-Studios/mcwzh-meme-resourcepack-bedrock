@@ -2,9 +2,42 @@
 	"texture_data": {
 		"observer_north": {
 			"textures": [
-				"textures/blocks/observer_front",
-				"textures/blocks/observer_front_lit"
+				"textures/observer_think/observer_front",
+				"textures/observer_think/observer_front_lit"
 			]
+		},
+		"gold_ore": {
+			"textures": "textures/ore_highlight/gold_ore"
+		},
+		"iron_ore": {
+			"textures": "textures/ore_highlight/iron_ore"
+		},
+		"coal_ore": {
+			"textures": "textures/ore_highlight/coal_ore"
+		},
+		"lapis_ore": {
+			"textures": "textures/ore_highlight/lapis_ore"
+		},
+		"diamond_ore": {
+			"textures": "textures/ore_highlight/diamond_ore"
+		},
+		"redstone_ore": {
+			"textures": "textures/ore_highlight/redstone_ore"
+		},
+		"emerald_ore": {
+			"textures": "textures/ore_highlight/emerald_ore"
+		},
+		"quartz_ore": {
+			"textures": "textures/ore_highlight/quartz_ore"
+		},
+		"nether_gold_ore": {
+			"textures": "textures/ore_highlight/nether_gold_ore"
+		},
+		"ancient_debris_top": {
+			"textures": "textures/ore_highlight/ancient_debris_top"
+		},
+		"ancient_debris_side": {
+			"textures": "textures/ore_highlight/ancient_debris_side"
 		}
 	}
 }

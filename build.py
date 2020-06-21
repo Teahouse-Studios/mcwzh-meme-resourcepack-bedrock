@@ -45,15 +45,16 @@ def build(args):
             pack.write("meme_resourcepack/textures/ui/" + file)
     # build with textures
     if not args['without_texture']:
-        for file in os.listdir("meme_resourcepack/textures/entity"):
-            pack.write("meme_resourcepack/textures/entity/" + file)
-        for file in os.listdir("meme_resourcepack/textures/blocks"):
-            pack.write("meme_resourcepack/textures/blocks/" + file)
-        for file in os.listdir("meme_resourcepack/textures/items"):
-            pack.write("meme_resourcepack/textures/items/" + file)
-        for file in os.listdir("meme_resourcepack/models/entity"):
-            pack.write("meme_resourcepack/models/entity/" + file)
+        for file in os.listdir("meme_resourcepack/textures/bagify"):
+            pack.write("meme_resourcepack/textures/bagify/" + file)
+        for file in os.listdir("meme_resourcepack/textures/observer_think"):
+            pack.write("meme_resourcepack/textures/observer_think/" + file)
+        for file in os.listdir("meme_resourcepack/textures/ore_highlight"):
+            pack.write("meme_resourcepack/textures/ore_highlight/" + file)
+        for file in os.listdir("meme_resourcepack/models/trident_model"):
+            pack.write("meme_resourcepack/models/trident_model/" + file)
         pack.write("meme_resourcepack/textures/terrain_texture.json")
+        pack.write("meme_resourcepack/textures/item_texture.json")
     pack.close()
 
 
