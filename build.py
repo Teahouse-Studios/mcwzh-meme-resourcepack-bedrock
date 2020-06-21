@@ -61,12 +61,12 @@ def build_all():
     build({'type': 'zip', 'include': ['none']})
     build({'type': 'zip', 'include': ['blue_ui']})
     build({'type': 'zip', 'include': [
-          'bagify', 'observer_think', 'ore_hightlight', 'trident_model']})
+          'bagify', 'observer_think', 'ore_highlight', 'trident_model']})
     build({'type': 'mcpack', 'include': ['all']})
     build({'type': 'mcpack', 'include': ['none']})
     build({'type': 'mcpack', 'include': ['blue_ui']})
     build({'type': 'mcpack', 'include': [
-          'bagify', 'observer_think', 'ore_hightlight', 'trident_model']})
+          'bagify', 'observer_think', 'ore_highlight', 'trident_model']})
 
 
 def get_packname(args: dict) -> str:
