@@ -60,21 +60,23 @@ def build(args):
 
 
 def build_all():
-    build({'type': 'zip', 'without_texture': False, 'without_blueui': False})
-    build({'type': 'zip', 'without_texture': True, 'without_blueui': False})
-    build({'type': 'zip', 'without_texture': False, 'without_blueui': True})
-    build({'type': 'zip', 'without_texture': True, 'without_blueui': True})
-    build({'type': 'mcpack', 'without_texture': False, 'without_blueui': False})
-    build({'type': 'mcpack', 'without_texture': True, 'without_blueui': False})
-    build({'type': 'mcpack', 'without_texture': False, 'without_blueui': True})
-    build({'type': 'mcpack', 'without_texture': True, 'without_blueui': True})
+    build({'type': 'zip', 'include': ['all']})
+    build({'type': 'zip', 'include': ['none']})
+    build({'type': 'zip', 'include': ['blue_ui']})
+    build({'type': 'zip', 'include': [
+          'bagify', 'observer_think', 'ore_hightlight', 'trident_model']})
+    build({'type': 'mcpack', 'include': ['all']})
+    build({'type': 'mcpack', 'include': ['none']})
+    build({'type': 'mcpack', 'include': ['blue_ui']})
+    build({'type': 'mcpack', 'include': [
+          'bagify', 'observer_think', 'ore_hightlight', 'trident_model']})
 
 
 def get_packname(args):
     base_name = "meme_resourcepack"
-    if args['without_texture']:
+    if 'none' in args['include']:
         base_name += "_notexture"
-    if args['without_blueui']:
+    if not 'blue_ui' in args['include']:
         base_name += "_noblueui"
     if args['type'] == 'zip':
         return base_name + ".zip"
@@ -88,11 +90,24 @@ def generate_parser():
     parser.add_argument('type', default='zip',
                         help="Build type. Should be 'all', 'zip', 'mcpack' or 'clean'. If it's 'clean', all packs in 'builds/' directory will be deleted.",
                         choices=['all', 'zip', 'mcpack', 'clean'])
-    parser.add_argument('-t', '--without-texture', action='store_true',
-                        help="Do not add textures when building resource packs. If build type is 'all', this argument will be ignored.")
-    parser.add_argument('-u', '--without-blueui', action='store_true',
-                        help="Do not add the blue ui textures when building resource packs. If build type is 'all', this argument will be ignored.")
+    parser.add_argument('-i', '--include', nargs='*', default='all',
+                        help="(Experimental) Include modification strings or folders. Should be path(s) to a file, folder, 'all' or 'none'. Defaults to 'all'.")
     return parser
+
+def get_texture_list(texture_list):
+    textures = set()
+    if 'none' in texture_list:
+        pass
+    elif 'all' in texture_list:
+        textures.update("optional/" + file for file in os.listdir('optional'))
+    else:
+        for path in texture_list:
+            if os.path.exists(path):
+                if os.path.isfile(path):
+                    textures.add(path)
+                elif os.path.isdir(path):
+                    textures.add()
+
 
 
 def merge_json(base_file, merge_file):
