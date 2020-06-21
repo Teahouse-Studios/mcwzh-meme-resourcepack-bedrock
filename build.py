@@ -53,25 +53,6 @@ def build(args: dict) -> None:
     if terrain_texture:
         pack.writestr("meme_resourcepack/textures/terrain_texture.json",
                       json.dumps(terrain_texture, indent=4))
-    '''
-    # build with blue ui textures
-    if not args['without_blueui']:
-        for file in os.listdir("meme_resourcepack/textures/ui"):
-            pack.write("meme_resourcepack/textures/ui/" + file)
-    # build with textures
-    if not args['without_texture']:
-        for file in os.listdir("meme_resourcepack/textures/bagify"):
-            pack.write("meme_resourcepack/textures/bagify/" + file)
-        for file in os.listdir("meme_resourcepack/textures/observer_think"):
-            pack.write("meme_resourcepack/textures/observer_think/" + file)
-        for file in os.listdir("meme_resourcepack/textures/ore_highlight"):
-            pack.write("meme_resourcepack/textures/ore_highlight/" + file)
-        for file in os.listdir("meme_resourcepack/textures/trident_model"):
-            pack.write("meme_resourcepack/textures/trident_model/" + file)
-        pack.write("meme_resourcepack/entity/thrown_trident.entity.json")
-        pack.write("meme_resourcepack/textures/terrain_texture.json")
-        pack.write("meme_resourcepack/textures/item_texture.json")
-        '''
     pack.close()
 
 
