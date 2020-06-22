@@ -115,7 +115,6 @@ def process_list(texture_list: set) -> (set, dict, dict):
     terrains = []
     file_list = set()
     for item in texture_list:
-        base = item[item.rfind(os.sep)+1:]
         for root, dirs, files in os.walk(item):
             for file in files:
                 if file == 'item_texture.json':
