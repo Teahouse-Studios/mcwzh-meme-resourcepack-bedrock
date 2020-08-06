@@ -1,8 +1,10 @@
-import zipfile
-import json
 import argparse
+import hashlib
+import json
 import os
 import sys
+import zipfile
+
 
 # Apache 2.0
 
@@ -91,12 +93,16 @@ class builder(object):
             # all builds have these files
             pack = zipfile.ZipFile(
                 pack_name, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=5)
-            pack.write("LICENSE")
-            pack.write("meme_resourcepack/pack_icon.png")
-            pack.write("meme_resourcepack/manifest.json")
-            for file in os.listdir("meme_resourcepack/texts"):
-                pack.write("meme_resourcepack/texts/" + file)
-            pack.write("meme_resourcepack/textures/map/map_background.png")
+            pack.write(os.path.join(os.path.dirname(__file__), "LICENSE"), arcname="LICENSE")
+            pack.write(os.path.join(os.path.dirname(__file__), "meme_resourcepack/pack_icon.png"),
+                       arcname="meme_resourcepack/pack_icon.png")
+            pack.write(os.path.join(os.path.dirname(__file__), "meme_resourcepack/manifest.json"),
+                       arcname="meme_resourcepack/manifest.json")
+            for file in os.listdir(os.path.join(os.path.dirname(__file__),"meme_resourcepack/texts")):
+                pack.write(os.path.join(os.path.dirname(__file__), "meme_resourcepack/texts/" + file),
+                           arcname="meme_resourcepack/texts/" + file)
+            pack.write(os.path.join(os.path.dirname(__file__), "meme_resourcepack/textures/map/map_background.png"),
+                       arcname="meme_resourcepack/textures/map/map_background.png")
             # dump resources
             item_texture, terrain_texture = self.__dump_resources(
                 pack, res_supp)
@@ -135,7 +141,7 @@ class builder(object):
             return include_list
 
     def __convert_path_to_module(self, path: str) -> str:
-        with open(os.path.join(path, "module_manifest.json"), 'r', encoding='utf8') as f:
+        with open(os.path.join(os.path.dirname(__file__), path, "module_manifest.json"), 'r', encoding='utf8') as f:
             manifest = json.load(f)
         name = manifest['name']
         return name
@@ -160,7 +166,8 @@ class builder(object):
         item_texture = []
         terrain_texture = []
         for item in modules:
-            base_folder = os.path.join("modules", item)
+            base_folder = os.path.join(os.path.dirname(
+                __file__), "modules", item)
             for root, dirs, files in os.walk(base_folder):
                 for file in files:
                     if file != "module_manifest.json":
