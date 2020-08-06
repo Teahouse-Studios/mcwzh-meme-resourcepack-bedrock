@@ -25,17 +25,17 @@
 ## 用法
 
 * 在[Releases](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock/releases)中下载此资源包。
-  * 唱片替换的移植资源包由于版权等问题，请至至[此处](https://files.lakejason0.ml/images/0/02/Meme_resourcepack_records.mcpack)或[此处](https://dianliang-oss-1301161188.cos.ap-shanghai.myqcloud.com/zh-meme-respack/Meme_resourcepack_records.mcpack)下载。
+  * 唱片替换的移植资源包由于版权等问题，请至至[此处](https://files.lakejason0.ml/images/0/02/meme_resourcepack_records.mcpack)或[此处](https://dianliang-oss-1301161188.cos.ap-shanghai.myqcloud.com/zh-meme-respack/meme-resourcepack_records.mcpack)下载。
 
 ### 自动导入
 
-* 下载 `meme_resourcepack.mcpack` ，使用Minecraft打开即可。
+* 下载 `meme-resourcepack.mcpack` ，使用Minecraft打开即可。
 * 唱片替换资源包的导入方法同理。
 
 ### 手动导入
 
-* 下载 `meme_resourcepack.zip` 并解压。
-* 将解压后得到的文件中的 `meme_resourcepack` 文件夹移至Minecraft的 `resource_pack` 文件夹中，路径见下：
+* 下载 `meme-resourcepack.zip` 并解压。
+* 将解压后得到的文件中的 `meme-resourcepack` 文件夹移至Minecraft的 `resource_pack` 文件夹中，路径见下：
   * Windows 10及Windows 10 Mobile： `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\resource_pack`
   * Android及Fire OS： `sdcard/games/com.mojang/resource_pack`
   * iOS： `Apps/com.mojang.minecraftpe/Documents/games/com.mojang/resource_pack`
@@ -77,7 +77,7 @@ cd mcwzh-meme-resourcepack-bedrock
 python preset_build.py
 ```
 
-在文件夹中会出现 `meme_resourcepack.zip` 、 `meme_resourcepack_notexture.zip` 、 `meme_resourcepack.mcpack` 和 `meme_resourcepack_notexture.mcpack` 等资源包，名称和作用如上所述。
+在文件夹中会出现 `meme-resourcepack.zip` 、 `meme-resourcepack_noresource.zip` 、 `meme-resourcepack.mcpack` 和 `meme-resourcepack_noresource.mcpack` 等资源包，名称和作用如上所述。
 
 如果只需要zip格式的资源包，运行：
 

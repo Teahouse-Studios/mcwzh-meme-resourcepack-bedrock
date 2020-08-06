@@ -12,7 +12,7 @@ def main():
     args = vars(parser.parse_args())
     if args['type'] == 'clean':
         for i in os.listdir('builds/'):
-            os.remove('builds/' + i)
+            os.remove(os.path.join('builds', i))
         print("Deleted all packs built.")
     else:
         pack_builder = builder()
