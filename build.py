@@ -20,6 +20,16 @@ def main():
             build(args)
         print("Build succeeded!")
 
+class builder(object):
+    def __init__(self):
+        self.__args = {}
+        self.__warning = 0
+        self.__error = 0
+        self.__logs = ""
+        self.__filename = ""
+
+    def build(self, parameter_list):
+        pass
 
 def build(args: dict) -> None:
     pack_name = "builds/" + get_packname(args)
