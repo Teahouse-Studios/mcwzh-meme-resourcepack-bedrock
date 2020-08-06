@@ -19,18 +19,18 @@ jobs:
         uses: actions/checkout@v2
       - name: "Build"
         run: |
-          python build.py all
+          python preset_build.py
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: true
           draft: false
           files: |
-            builds/meme_resourcepack.zip
-            builds/meme_resourcepack_notexture.zip
-            builds/meme_resourcepack_noblueui.zip
-            builds/meme_resourcepack_notexture_noblueui.zip
-            builds/meme_resourcepack.mcpack
-            builds/meme_resourcepack_notexture.mcpack
-            builds/meme_resourcepack_noblueui.mcpack
-            builds/meme_resourcepack_notexture_noblueui.mcpack
+            builds/meme-resourcepack.zip
+            builds/meme-resourcepack_noresource.zip
+            builds/meme-resourcepack_noblueui.zip
+            builds/meme-resourcepack_noresource_noblueui.zip
+            builds/meme-resourcepack.mcpack
+            builds/meme-resourcepack_noresource.mcpack
+            builds/meme-resourcepack_noblueui.mcpack
+            builds/meme-resourcepack_noresource_noblueui.mcpack

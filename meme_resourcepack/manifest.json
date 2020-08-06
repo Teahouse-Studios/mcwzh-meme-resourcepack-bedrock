@@ -6,8 +6,8 @@
         "uuid": "69236b67-0176-4afe-8f68-28fc433d2f77",
         "version": [
             0,
-            4,
-            1
+            6,
+            0
         ],
         "min_engine_version": [
             1,
@@ -31,6 +31,7 @@
         "authors": [
             "SkyEye_FAST",
             "Lakejason0",
+            "MysticNebula70",
             "Hldoramon",
             "Lxazl5770",
             "Dianliang233",
@@ -45,7 +46,7 @@
             "WishingQi",
             "Other Minecraft Wiki(ZH) editors"
         ],
-        "license": "CC-BY-NC-SA-4.0",
-        "url": "https://github.com/SkyEye-FAST/mcwzh-meme-resourcepack-bedrock"
+        "license": "CC-BY-NC-SA 4.0",
+        "url": "https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock"
     }
 }

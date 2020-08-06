@@ -74,7 +74,7 @@ cd mcwzh-meme-resourcepack-bedrock
 3. 运行Python命令：
 
 ``` bash
-python build.py all
+python preset_build.py
 ```
 
 在文件夹中会出现 `meme_resourcepack.zip` 、 `meme_resourcepack_notexture.zip` 、 `meme_resourcepack.mcpack` 和 `meme_resourcepack_notexture.mcpack` 等资源包，名称和作用如上所述。
@@ -91,7 +91,7 @@ python build.py zip
 python build.py mcpack
 ```
 
-如果不需要自定义材质，添加 `-n` 选项。
+如果不需要自定义材质，添加 `-r none` 选项。
 
 更详细的用法请运行以下命令来获取：
 
