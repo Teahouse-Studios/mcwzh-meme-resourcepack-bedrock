@@ -99,6 +99,10 @@ python build.py mcpack
 python build.py -h
 ```
 
+## 贡献
+
+我们欢迎你为这个资源包贡献自己的想法。请参阅 [`CONTRIBUTING.md`](/CONTRIBUTING.md) 以获取一些建议。
+
 ## 声明
 
 * 本资源包**仅供娱乐**，请勿将其可能存在的误导性内容当真。

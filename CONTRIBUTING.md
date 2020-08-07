@@ -2,7 +2,7 @@
 
 ## 与原项目保持同步
 
-原项目包括 `lakejason0/mcwzh-meme-resourcepack` （[Java版项目](https://github.com/lakejason0/mcwzh-meme-resourcepack)）和 `ff98sha/mclangcn` （[基岩版译名修正](https://github.com/ff98sha/mclangcn)）。
+原项目包括 `Teahouse-Studios/mcwzh-meme-resourcepack` （[Java版项目](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack)）和 `ff98sha/mclangcn` （[基岩版译名修正](https://github.com/ff98sha/mclangcn)）。
 
 ### 与Java版项目保持同步
 
@@ -27,12 +27,10 @@
 
 如果你发现了一个漏洞，或者只是想提个建议，那么可以新开一个Issue。这么做之前请先搜索一下有没有人已经提出了相同或相似的建议，这样你就可以直接去那里留言，而不是新开一个重复的Issue。Issue分为两种：**漏洞报告**和**想法提议**。**在创建新的issue前一定要看清楚类型！** 然后只需要按照上面的提示填写清楚就可以了。提交Issue后，可能不会立即有人来回应，所以还请耐心等待。
 
+请注意，你提出的issue可能会因为<*吃掉了*>的原因而被标记为“等待回复”。如果你在一定期限（通常是两到三周）内没有回复，那么这个issue就会被关闭。所以为了能让我们更准确地了解到你的想法，务必经常来看看你的issue进度如何了。
+
 如果你觉得提issue不够酷，你可以试试下面的方法：直接发Pull Request。
 
 #### Pull Request（PR）
 
 这种方法适用于比较熟悉Git开发流程的人。如果你发现了想要修改的地方，从本仓库Fork一份到你自己的账号里，然后你就可以尽情修改了。当你觉得万事大吉后，你就可以向这里提出Pull Request了。当然，你提出的更改并不一定会被全部认同，可能只是因为它们不够出名或者不那么令人生草。
-
-## 交流
-
-想直接和编辑者交流？请加入QQ群：657876815。
