@@ -8,13 +8,13 @@ def main():
         {'type': 'zip', 'resource': ['blue_ui'],
             'hash': False, 'output': None},
         {'type': 'zip', 'resource': [
-            'bagify', 'observer_think','trident_model'], 'hash': False, 'output': None},
+            'a_letter', 'bagify', 'observer_think','trident_model'], 'hash': False, 'output': None},
         {'type': 'mcpack', 'resource': ['none'],
             'hash': False, 'output': None},
         {'type': 'mcpack', 'resource': ['blue_ui'],
             'hash': False, 'output': None},
         {'type': 'mcpack', 'resource': [
-            'bagify', 'observer_think', 'trident_model'], 'hash': False, 'output': None},
+            'a_letter', 'bagify', 'observer_think', 'trident_model'], 'hash': False, 'output': None},
         {'type': 'zip', 'resource': ['all'], 'hash': False, 'output': None},
         {'type': 'mcpack', 'resource': ['all'], 'hash': False, 'output': None}
     ]
