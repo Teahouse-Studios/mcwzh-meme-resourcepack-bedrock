@@ -7,7 +7,7 @@
         "version": [
             0,
             6,
-            0
+            1
         ],
         "min_engine_version": [
             1,
@@ -22,7 +22,7 @@
             "uuid": "e6681328-db8c-41ce-943c-2b08f86fcbf1",
             "version": [
                 0,
-                4,
+                6,
                 1
             ]
         }
@@ -36,7 +36,7 @@
             "Lxazl5770",
             "Dianliang233",
             "Huerdada",
-            "Icyphantom",
+            "IcyPhantom",
             "Lightyzhh",
             "Kakagou12341",
             "AddonsCommandResource",
