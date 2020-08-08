@@ -93,19 +93,20 @@ class builder(object):
             # all builds have these files
             pack = zipfile.ZipFile(
                 pack_name, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=5)
-            pack.write(os.path.join(os.path.dirname(__file__), "LICENSE"), arcname="LICENSE")
+            pack.write(os.path.join(os.path.dirname(
+                __file__), "LICENSE"), arcname="LICENSE")
             pack.write(os.path.join(os.path.dirname(__file__), "meme_resourcepack/pack_icon.png"),
                        arcname="meme_resourcepack/pack_icon.png")
             pack.write(os.path.join(os.path.dirname(__file__), "meme_resourcepack/manifest.json"),
                        arcname="meme_resourcepack/manifest.json")
-            for file in os.listdir(os.path.join(os.path.dirname(__file__),"meme_resourcepack/texts")):
+            for file in os.listdir(os.path.join(os.path.dirname(__file__), "meme_resourcepack/texts")):
                 pack.write(os.path.join(os.path.dirname(__file__), "meme_resourcepack/texts/" + file),
                            arcname="meme_resourcepack/texts/" + file)
             pack.write(os.path.join(os.path.dirname(__file__), "meme_resourcepack/textures/map/map_background.png"),
                        arcname="meme_resourcepack/textures/map/map_background.png")
             # dump resources
             item_texture, terrain_texture = self.__dump_resources(
-                pack, res_supp)
+                res_supp, pack)
             if item_texture:
                 item_texture_content = self.__merge_json(item_texture, "item")
                 pack.writestr("meme_resourcepack/textures/item_texture.json",
@@ -162,7 +163,7 @@ class builder(object):
             result['texture_data'].update(content['texture_data'])
         return result
 
-    def __dump_resources(self, pack: zipfile.ZipFile, modules: list) -> (list, list):
+    def __dump_resources(self, modules: list, pack: zipfile.ZipFile) -> (list, list):
         item_texture = []
         terrain_texture = []
         for item in modules:
@@ -196,6 +197,7 @@ class builder(object):
 class module_checker(object):
     def __init__(self):
         self.__status = True
+        self.__checked = False
         self.__res_list = []
         self.__manifests = {}
         self.__info = ''
@@ -203,7 +205,15 @@ class module_checker(object):
     def get_info(self):
         return self.__info
 
+    def clean_status(self):
+        self.__status = True
+        self.__checked = False
+        self.__res_list = []
+        self.__manifests = {}
+        self.__info = ''
+
     def check_module(self):
+        self.clean_status()
         base_folder = os.path.join(os.path.dirname(__file__), "modules")
         res_list = []
         for module in os.listdir(base_folder):
@@ -214,6 +224,7 @@ class module_checker(object):
                     data = json.load(f)
                 name = data['name']
                 if name in res_list:
+                    self.__checked = True
                     self.__status = False
                     self.__info = f'Conflict name {name}.'
                     return False
@@ -221,22 +232,26 @@ class module_checker(object):
                     self.__manifests[name] = data['description']
                     res_list.append(name)
             else:
+                self.__checked = True
                 self.__status = False
                 self.__info = f"Bad module '{module}', no manifest file."
                 return False
+        self.__checked = True
         self.__status = True
         self.__res_list = res_list
         return True
 
     def get_module_list(self):
-        self.check_module()
+        if not self.__checked:
+            self.check_module()
         if not self.__status:
             return []
         else:
             return self.__res_list
 
     def get_manifests(self):
-        self.check_module()
+        if not self.__checked:
+            self.check_module()
         if not self.__status:
             return {}
         else:
