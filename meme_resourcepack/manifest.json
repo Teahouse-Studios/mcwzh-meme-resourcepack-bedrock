@@ -28,9 +28,7 @@
         }
     ],
     "capabilities": [
-        {
-            "chemistry": true
-        }
+        "chemistry"
     ],
     "metadata": {
         "authors": [
