@@ -27,6 +27,9 @@
             ]
         }
     ],
+    "capabilities": {
+        "chemistry": true
+    },
     "metadata": {
         "authors": [
             "SkyEye_FAST",
@@ -44,6 +47,15 @@
             "ZCYF",
             "XxLittleCxX",
             "WishingQi",
+            "Determancer",
+            "Minecreeper86",
+            "theflysong",
+            "Zh9c418",
+            "45gfg9",
+            "Drlee_lihr",
+            "WTP016-CN",
+            "Light Beacon",
+            "CR-019",
             "Other Minecraft Wiki(ZH) editors"
         ],
         "license": "CC BY-NC-SA 4.0",
