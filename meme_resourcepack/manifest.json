@@ -27,9 +27,11 @@
             ]
         }
     ],
-    "capabilities": {
-        "chemistry": true
-    },
+    "capabilities": [
+        {
+            "chemistry": true
+        }
+    ],
     "metadata": {
         "authors": [
             "SkyEye_FAST",
