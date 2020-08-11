@@ -30,22 +30,31 @@ class builder(object):
         self.__logs = ""
         self.__filename = ""
 
-    def set_args(self, new_args: dict):
-        self.__args = new_args
+    @property
+    def args(self):
+        return self.__args
 
-    def get_warning_count(self):
+    @args.setter
+    def args(self, value: dict):
+        self.__args = value
+
+    @property
+    def warning_count(self):
         return self.__warning
 
-    def get_error_count(self):
+    @property
+    def error_count(self):
         return self.__error
 
-    def get_filename(self):
+    @property
+    def filename(self):
         if self.__filename == "":
             return "Did not build any pack."
         else:
             return self.__filename
 
-    def get_logs(self):
+    @property
+    def logs(self):
         if self.__logs == "":
             return "Did not build any pack."
         else:
@@ -59,13 +68,13 @@ class builder(object):
 
     def build(self):
         self.clean_status()
-        args = self.__args
+        args = self.args
         # check module name first
         checker = module_checker()
         if checker.check_module():
             # process args
             res_supp = self.__parse_includes(
-                args['resource'], checker.get_module_list())
+                args['resource'], checker.module_list)
             # process pack name
             file_ext = args['type']
             if args['hash']:
@@ -119,7 +128,7 @@ class builder(object):
             pack.close()
             print("Build successful.")
         else:
-            error = 'Error: ' + checker.get_info()
+            error = 'Error: ' + checker.info
             print(f"\033[1;31m{error}\033[0m", file=sys.stderr)
             self.__logs += f"{error}\n"
             self.__error += 1
@@ -202,8 +211,27 @@ class module_checker(object):
         self.__manifests = {}
         self.__info = ''
 
-    def get_info(self):
+    @property
+    def info(self):
         return self.__info
+
+    @property
+    def module_list(self):
+        if not self.__checked:
+            self.check_module()
+        if not self.__status:
+            return []
+        else:
+            return self.__res_list
+
+    @property
+    def manifests(self):
+        if not self.__checked:
+            self.check_module()
+        if not self.__status:
+            return {}
+        else:
+            return self.__manifests
 
     def clean_status(self):
         self.__status = True
@@ -240,22 +268,6 @@ class module_checker(object):
         self.__status = True
         self.__res_list = res_list
         return True
-
-    def get_module_list(self):
-        if not self.__checked:
-            self.check_module()
-        if not self.__status:
-            return []
-        else:
-            return self.__res_list
-
-    def get_manifests(self):
-        if not self.__checked:
-            self.check_module()
-        if not self.__status:
-            return {}
-        else:
-            return self.__manifests
 
 
 def generate_parser() -> argparse.ArgumentParser:

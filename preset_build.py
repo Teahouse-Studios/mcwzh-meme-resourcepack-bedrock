@@ -39,15 +39,15 @@ def main():
     for file in os.listdir(base_folder):
         os.remove(os.path.join(base_folder, file))
     for item, name in zip(preset_args, preset_name):
-        pack_builder.set_args(item)
+        pack_builder.args = item
         pack_builder.build()
-        if pack_builder.get_error_count() == 0:
+        if pack_builder.error_count == 0:
             pack_counter += 1
-            if pack_builder.get_warning_count() == 0:
+            if pack_builder.warning_count == 0:
                 perfect_pack_counter += 1
             if name != "meme-resourcepack.zip" and name != "meme-resourcepack.mcpack":
                 original_name = os.path.join(
-                    base_folder, pack_builder.get_filename())
+                    base_folder, pack_builder.filename)
                 os.rename(original_name,
                           os.path.join(base_folder, name))
             print(f"Renamed pack to {name}.")
