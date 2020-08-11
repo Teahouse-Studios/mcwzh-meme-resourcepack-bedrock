@@ -18,7 +18,7 @@ def main():
         print("Deleted all packs built.")
     else:
         pack_builder = builder()
-        pack_builder.set_args(args)
+        pack_builder.args = args
         pack_builder.build()
 
 
