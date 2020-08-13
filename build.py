@@ -10,8 +10,7 @@ import zipfile
 
 
 def main():
-    parser = generate_parser()
-    args = vars(parser.parse_args())
+    args = vars(generate_parser().parse_args())
     if args['type'] == 'clean':
         for i in os.listdir('builds/'):
             os.remove(os.path.join('builds', i))
@@ -48,17 +47,11 @@ class builder(object):
 
     @property
     def filename(self):
-        if self.__filename == "":
-            return "Did not build any pack."
-        else:
-            return self.__filename
+        return self.__filename != "" and self.__filename or "Did not build any pack."
 
     @property
     def logs(self):
-        if self.__logs == "":
-            return "Did not build any pack."
-        else:
-            return self.__logs
+        return self.__logs != "" and self.__logs or "Did not build any pack."
 
     def clean_status(self):
         self.__warning = 0
@@ -76,23 +69,15 @@ class builder(object):
             res_supp = self.__parse_includes(
                 args['resource'], checker.module_list)
             # process pack name
-            file_ext = args['type']
-            if args['hash']:
-                sha256 = hashlib.sha256(json.dumps(
-                    args).encode('utf8')).hexdigest()
-                pack_name = f"meme-resourcepack.{sha256[:7]}.{file_ext}"
-            else:
-                pack_name = f"meme-resourcepack.{file_ext}"
+            digest = hashlib.sha256(json.dumps(args).encode('utf8')).hexdigest()
+            pack_name = args['hash'] and f"meme-resourcepack.{digest[:7]}.{args['type']}" or f"meme-resourcepack.{args['type']}"
             self.__filename = pack_name
             # create pack
             info = f"Building pack {pack_name}"
             print(info)
             self.__logs += f"{info}\n"
             # set output dir
-            if 'output' in args and args['output']:
-                output_dir = args['output']
-            else:
-                output_dir = "builds"
+            output_dir = 'output' in args and args['output'] or 'builds'
             pack_name = os.path.join(output_dir, pack_name)
             # mkdir
             if os.path.exists(output_dir) and not os.path.isdir(output_dir):
@@ -151,10 +136,7 @@ class builder(object):
             return include_list
 
     def __convert_path_to_module(self, path: str) -> str:
-        with open(os.path.join(os.path.dirname(__file__), path, "module_manifest.json"), 'r', encoding='utf8') as f:
-            manifest = json.load(f)
-        name = manifest['name']
-        return name
+        return json.load(open(os.path.join(os.path.dirname(__file__), path, "module_manifest.json"), 'r', encoding='utf8'))['name']
 
     def __merge_json(self, modules: list, type: str) -> dict:
         if type == "item":
@@ -219,19 +201,13 @@ class module_checker(object):
     def module_list(self):
         if not self.__checked:
             self.check_module()
-        if not self.__status:
-            return []
-        else:
-            return self.__res_list
+        return self.__status and self.__res_list or []
 
     @property
     def manifests(self):
         if not self.__checked:
             self.check_module()
-        if not self.__status:
-            return {}
-        else:
-            return self.__manifests
+        return self.__status and self.__manifests or {}
 
     def clean_status(self):
         self.__status = True
