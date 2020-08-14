@@ -101,7 +101,7 @@ python build.py -h
 
 ## 贡献
 
-我们欢迎你为这个资源包贡献自己的想法。请参阅 [`CONTRIBUTING.md`](/CONTRIBUTING.md) 以获取一些建议。
+我们欢迎你为这个资源包贡献自己的想法。请参阅[`CONTRIBUTING.md`](/CONTRIBUTING.md)以获取一些建议。
 
 ## 声明
 
