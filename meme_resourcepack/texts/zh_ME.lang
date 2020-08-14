@@ -1,5 +1,5 @@
 ## Comments can be added anywhere on a valid line by starting with '##'
-## 梗体中文-基岩版，原内容来自ff98sha/mclangcn（应实时保持同步）。成就等与JE不同的内容暂时请勿改动，其应为独有特性（保持不动或者内容与JE不同，请在其后加上ve）
+## 梗体中文-基岩版，Teahouse-Studios/mcwzh-meme-resourcepack-bedrock
 ## Note, trailing spaces will NOT be trimmed. If you want room between the end of the string and the start of a
 ## comment on the same line, use TABs.
 accessibility.disableTTS=文本转语音已禁用	#
