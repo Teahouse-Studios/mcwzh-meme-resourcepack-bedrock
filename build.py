@@ -69,7 +69,8 @@ class builder(object):
             res_supp = self.__parse_includes(
                 args['resource'], checker.module_list)
             # process pack name
-            digest = hashlib.sha256(json.dumps(args).encode('utf8')).hexdigest()
+            digest = hashlib.sha256(json.dumps(
+                args).encode('utf8')).hexdigest()
             pack_name = args['hash'] and f"meme-resourcepack.{digest[:7]}.{args['type']}" or f"meme-resourcepack.{args['type']}"
             self.__filename = pack_name
             # create pack
@@ -139,18 +140,12 @@ class builder(object):
         return json.load(open(os.path.join(os.path.dirname(__file__), path, "module_manifest.json"), 'r', encoding='utf8'))['name']
 
     def __merge_json(self, modules: list, type: str) -> dict:
-        if type == "item":
-            name = "item_texture.json"
-        elif type == "terrain":
-            name = "terrain_texture.json"
-        else:
-            name = ""
+        name = type == "item" and "item_texture.json" or "terrain_texture.json"
         result = {'texture_data': {}}
         for item in modules:
             texture_file = os.path.join(os.path.dirname(
                 __file__), "modules", item, "textures", name)
-            with open(texture_file, 'r', encoding='utf8') as f:
-                content = json.load(f)
+            content = json.load(open(texture_file, 'r', encoding='utf8'))
             result['texture_data'].update(content['texture_data'])
         return result
 
@@ -224,8 +219,7 @@ class module_checker(object):
             manifest = os.path.join(
                 base_folder, module, "module_manifest.json")
             if os.path.exists(manifest) and os.path.isfile(manifest):
-                with open(manifest, 'r', encoding='utf8') as f:
-                    data = json.load(f)
+                data = json.load(open(manifest, 'r', encoding='utf8'))
                 name = data['name']
                 if name in res_list:
                     self.__checked = True
