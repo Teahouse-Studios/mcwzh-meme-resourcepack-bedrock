@@ -26,7 +26,7 @@ class builder(object):
         self.__args = {}
         self.__warning = 0
         self.__error = 0
-        self.__logs = ""
+        self.__log_list = []
         self.__filename = ""
 
     @property
@@ -51,12 +51,12 @@ class builder(object):
 
     @property
     def logs(self):
-        return self.__logs != "" and self.__logs or "Did not build any pack."
+        return self.__log_list and ''.join(self.__log_list) or "Did not build any pack."
 
     def clean_status(self):
         self.__warning = 0
         self.__error = 0
-        self.__logs = ""
+        self.__log_list = []
         self.__filename = ""
 
     def build(self):
@@ -76,7 +76,7 @@ class builder(object):
             # create pack
             info = f"Building pack {pack_name}"
             print(info)
-            self.__logs += f"{info}\n"
+            self.__log_list.append(f"{info}\n")
             # set output dir
             output_dir = 'output' in args and args['output'] or 'builds'
             pack_name = os.path.join(output_dir, pack_name)
@@ -95,8 +95,8 @@ class builder(object):
             pack.write(os.path.join(os.path.dirname(__file__), "meme_resourcepack/manifest.json"),
                        arcname="meme_resourcepack/manifest.json")
             for file in os.listdir(os.path.join(os.path.dirname(__file__), "meme_resourcepack/texts")):
-                pack.write(os.path.join(os.path.dirname(__file__), "meme_resourcepack/texts/" + file),
-                           arcname="meme_resourcepack/texts/" + file)
+                pack.write(os.path.join(os.path.dirname(__file__), f"meme_resourcepack/texts/{file}"),
+                           arcname=f"meme_resourcepack/texts/{file}")
             pack.write(os.path.join(os.path.dirname(__file__), "meme_resourcepack/textures/map/map_background.png"),
                        arcname="meme_resourcepack/textures/map/map_background.png")
             # dump resources
@@ -114,9 +114,9 @@ class builder(object):
             pack.close()
             print("Build successful.")
         else:
-            error = 'Error: ' + checker.info
+            error = f'Error: {checker.info}'
             print(f"\033[1;31m{error}\033[0m", file=sys.stderr)
-            self.__logs += f"{error}\n"
+            self.__log_list.append(f"{error}\n")
             self.__error += 1
             print(
                 "\033[1;31mTerminate building because an error occurred.\033[0m")
@@ -175,7 +175,7 @@ class builder(object):
                                 warning = f"Warning: Duplicated '{testpath}', skipping."
                                 print(
                                     f"\033[33m{warning}\033[0m", file=sys.stderr)
-                                self.__logs += f"{warning}\n"
+                                self.__log_list.append(f"{warning}\n")
                                 self.__warning += 1
         return item_texture, terrain_texture
 
