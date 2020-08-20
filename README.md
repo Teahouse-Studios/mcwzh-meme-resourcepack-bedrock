@@ -4,11 +4,13 @@
 
 [![Banner](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack/blob/master/materials/zh_meme_banner.png?raw=true)](https://www.mcbbs.net/thread-1005191-1-1.html)
 
-此资源包仅适用于**Minecraft 基岩版**。
+此资源包仅适用于**Minecraft基岩版**。
 
 * 关于适用于Minecraft Java版的资源包，参见[Java版梗体中文](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack)。
-
-* 关于Minecraft 基岩版的译名修正，参见Ff98sha的[基岩版译名修正](https://github.com/ff98sha/mclangcn)。
+* 关于Minecraft基岩版的翻译问题，详见[译名标准化/基岩版](https://minecraft-zh.gamepedia.com/MCW:译名标准化/基岩版)。
+  * 关于Minecraft基岩版的简体中文修正，参见中文Minecraft Wiki行政员Ff98sha制作的[基岩版译名修正](https://github.com/ff98sha/mclangcn)。
+  * 关于Minecraft基岩版的繁体中文修正，参见小俊AUA制作的[此资源附加包](https://forum.gamer.com.tw/C.php?bsn=18673&snA=183269)。
+  * 关于Minecraft基岩版的全语言修正，参见俄语Crowdin校对员fromgate制作的[Translations for Minecraft (Bedrock)](https://www.curseforge.com/minecraft/mc-addons/translations-for-minecraft)。
 
 **若发现自身可能存在该资源包上头的情况，请立刻~~食用~~阅读[译名标准化](https://minecraft-zh.gamepedia.com/MCW:译名标准化)。**
 
@@ -20,7 +22,8 @@
 ## 作用
 
 * 将一部分译名或其他游戏内字符串替换成了一些知名/不知名的梗或笑话，或将其用诙谐的语言重写了一遍。
-* 同时使用了Ff98sha的[译名修正](https://github.com/ff98sha/mclangcn)，以保证未被替换的字符串的翻译正确。
+* 同时使用了Ff98sha制作的[基岩版译名修正](https://github.com/ff98sha/mclangcn)中的内容，以保证未被替换的字符串的翻译正确。
+  * 也使用此资源包的内容修正了简体中文的翻译。
 
 ## 用法
 
