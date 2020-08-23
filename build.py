@@ -1,24 +1,12 @@
-import argparse
-import hashlib
-import json
 import os
-import sys
-import zipfile
+from argparse import ArgumentParser
+from hashlib import sha256
+from json import load, dump, dumps
+from sys import stderr
+from zipfile import ZipFile, ZIP_DEFLATED
 
 
 # License: Apache-2.0
-
-
-def main():
-    args = vars(generate_parser().parse_args())
-    if args['type'] == 'clean':
-        for i in os.listdir('builds/'):
-            os.remove(os.path.join('builds', i))
-        print("Deleted all packs built.")
-    else:
-        pack_builder = builder()
-        pack_builder.args = args
-        pack_builder.build()
 
 
 class builder(object):
@@ -69,8 +57,7 @@ class builder(object):
             res_supp = self.__parse_includes(
                 args['resource'], checker.module_list)
             # process pack name
-            digest = hashlib.sha256(json.dumps(
-                args).encode('utf8')).hexdigest()
+            digest = sha256(dumps(args).encode('utf8')).hexdigest()
             pack_name = args['hash'] and f"meme-resourcepack.{digest[:7]}.{args['type']}" or f"meme-resourcepack.{args['type']}"
             self.__filename = pack_name
             # create pack
@@ -86,8 +73,8 @@ class builder(object):
             if not os.path.exists(output_dir):
                 os.mkdir(output_dir)
             # all builds have these files
-            pack = zipfile.ZipFile(
-                pack_name, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=5)
+            pack = ZipFile(
+                pack_name, 'w', compression=ZIP_DEFLATED, compresslevel=5)
             pack.write(os.path.join(os.path.dirname(
                 __file__), "LICENSE"), arcname="LICENSE")
             pack.write(os.path.join(os.path.dirname(__file__), "meme_resourcepack/pack_icon.png"),
@@ -105,21 +92,28 @@ class builder(object):
             if item_texture:
                 item_texture_content = self.__merge_json(item_texture, "item")
                 pack.writestr("meme_resourcepack/textures/item_texture.json",
-                              json.dumps(item_texture_content, indent=4))
+                              dumps(item_texture_content, indent=4))
             if terrain_texture:
                 terrain_texture_content = self.__merge_json(
                     terrain_texture, "terrain")
                 pack.writestr("meme_resourcepack/textures/terrain_texture.json",
-                              json.dumps(terrain_texture_content, indent=4))
+                              dumps(terrain_texture_content, indent=4))
             pack.close()
             print("Build successful.")
         else:
-            error = f'Error: {checker.info}'
-            print(f"\033[1;31m{error}\033[0m", file=sys.stderr)
-            self.__log_list.append(f"{error}\n")
-            self.__error += 1
-            print(
-                "\033[1;31mTerminate building because an error occurred.\033[0m")
+            self.__raise_error(checker.info)
+
+    def __raise_warning(self, warning: str):
+        print(f'\033[33mWarning: {warning}\033[0m', file=stderr)
+        self.__log_list.append(f'Warning: {warning}')
+        self.__warning += 1
+
+    def __raise_error(self, error: str):
+        print(f'\033[1;31mError: {error}\033[0m', file=stderr)
+        print("\033[1;31mTerminate building because an error occurred.\033[0m")
+        self.__log_list.append(f'Error: {error}')
+        self.__log_list.append("Terminate building because an error occurred.")
+        self.__error += 1
 
     def __parse_includes(self, includes: list, fulllist: list) -> list:
         if 'none' in includes:
@@ -137,7 +131,7 @@ class builder(object):
             return include_list
 
     def __convert_path_to_module(self, path: str) -> str:
-        return json.load(open(os.path.join(os.path.dirname(__file__), path, "module_manifest.json"), 'r', encoding='utf8'))['name']
+        return load(open(os.path.join(os.path.dirname(__file__), path, "module_manifest.json"), 'r', encoding='utf8'))['name']
 
     def __merge_json(self, modules: list, type: str) -> dict:
         name = type == "item" and "item_texture.json" or "terrain_texture.json"
@@ -145,7 +139,7 @@ class builder(object):
         for item in modules:
             texture_file = os.path.join(os.path.dirname(
                 __file__), "modules", item, "textures", name)
-            content = json.load(open(texture_file, 'r', encoding='utf8'))
+            content = load(open(texture_file, 'r', encoding='utf8'))
             result['texture_data'].update(content['texture_data'])
         return result
 
@@ -172,11 +166,8 @@ class builder(object):
                                 pack.write(os.path.join(
                                     root, file), arcname=arcpath)
                             else:
-                                warning = f"Warning: Duplicated '{testpath}', skipping."
-                                print(
-                                    f"\033[33m{warning}\033[0m", file=sys.stderr)
-                                self.__log_list.append(f"{warning}\n")
-                                self.__warning += 1
+                                self.__raise_warning(
+                                    f"Duplicated '{testpath}', skipping.")
         return item_texture, terrain_texture
 
 
@@ -219,7 +210,7 @@ class module_checker(object):
             manifest = os.path.join(
                 base_folder, module, "module_manifest.json")
             if os.path.exists(manifest) and os.path.isfile(manifest):
-                data = json.load(open(manifest, 'r', encoding='utf8'))
+                data = load(open(manifest, 'r', encoding='utf8'))
                 name = data['name']
                 if name in res_list:
                     self.__checked = True
@@ -240,8 +231,8 @@ class module_checker(object):
         return True
 
 
-def generate_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(
+def generate_parser() -> ArgumentParser:
+    parser = ArgumentParser(
         description="Automatically build add-ons")
     parser.add_argument('type', default='zip',
                         help="Build type. Should be 'zip', 'mcpack' or 'clean'. If it's 'clean', all packs in 'builds/' directory will be deleted.",
@@ -256,4 +247,12 @@ def generate_parser() -> argparse.ArgumentParser:
 
 
 if __name__ == '__main__':
-    main()
+    args = vars(generate_parser().parse_args())
+    if args['type'] == 'clean':
+        for i in os.listdir('builds/'):
+            os.remove(os.path.join('builds', i))
+        print("Deleted all packs built.")
+    else:
+        pack_builder = builder()
+        pack_builder.args = args
+        pack_builder.build()
