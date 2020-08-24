@@ -2,13 +2,13 @@ import build
 import os
 
 
-def main():
+if __name__ == '__main__':
     preset_args = [
         {'type': 'zip', 'resource': ['none'], 'hash': False, 'output': None},
         {'type': 'zip', 'resource': ['blue_ui'],
             'hash': False, 'output': None},
         {'type': 'zip', 'resource': [
-            'a_letter', 'bagify', 'observer_think','trident_model'], 'hash': False, 'output': None},
+            'a_letter', 'bagify', 'observer_think', 'trident_model'], 'hash': False, 'output': None},
         {'type': 'mcpack', 'resource': ['none'],
             'hash': False, 'output': None},
         {'type': 'mcpack', 'resource': ['blue_ui'],
@@ -55,7 +55,3 @@ def main():
             print(f"Failed to build pack {name}.")
     print(
         f"\nBuilt {pack_counter} packs with {perfect_pack_counter} pack(s) no warning.")
-
-
-if __name__ == '__main__':
-    main()

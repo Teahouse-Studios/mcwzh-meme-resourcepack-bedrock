@@ -149,7 +149,7 @@ class builder(object):
         for item in modules:
             base_folder = os.path.join(os.path.dirname(
                 __file__), "modules", item)
-            for root, dirs, files in os.walk(base_folder):
+            for root, _, files in os.walk(base_folder):
                 for file in files:
                     if file != "module_manifest.json":
                         if file == "item_texture.json":
