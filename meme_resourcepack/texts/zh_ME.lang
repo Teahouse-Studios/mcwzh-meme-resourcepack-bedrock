@@ -23,9 +23,9 @@ accessibility.downloading.canceled=下了个寂寞	#
 accessibility.downloading.complete=下载完成	#
 accessibility.importing.start=已开始导入	#
 accessibility.importing.Progress=已导入百分之%s	#
-accessibility.importing.canceled=已取消导入	#
+accessibility.importing.canceled=导入了个寂寞	#
 accessibility.importing.complete=导入完成	#
-accessibility.signin.xbl=正在登录至Xbox Live	#
+accessibility.signin.xbl=正在登录至凶盒	#
 accessibility.chat.howtoopen=按%s打开聊天	#
 accessibility.key.mouseButton=鼠标按钮%s	#
 accessibility.key.gamepad=手柄%s	#
@@ -74,7 +74,7 @@ accessibility.play.tabLeft=按%s向左切换选项卡	#
 accessibility.play.tabRight=按%s向右切换选项卡	#
 accessibility.play.legacyWorldsDelete=删除旧的世界	#
 
-accessibility.pause.permissions=权限	#
+accessibility.pause.permissions=滥权等级	#
 
 accessibility.screenName.achievements=成就界面	#
 accessibility.screenName.chat=聊天界面	#
@@ -83,7 +83,7 @@ accessibility.screenName.createWorld=创建世界设置界面	#
 accessibility.screenName.editWorldSettings=编辑世界设置界面	#
 accessibility.screenName.error=错误界面	#
 accessibility.screenName.howToPlay=游戏指南界面	#
-accessibility.screenName.modalDialog=弹窗	#
+accessibility.screenName.modalDialog=吐司界面	#
 accessibility.screenName.patchNotes=补丁说明界面	#
 accessibility.screenName.pauase=暂停界面	#
 accessibility.screenName.play=游戏界面	#
@@ -93,10 +93,10 @@ accessibility.screenName.skinPicker=选择皮肤界面	#
 accessibility.screenName.start=主菜单	#
 accessibility.screenName.vrAlignment=VR校准界面 	#
 
-accessibility.settings.reset=重置	#
+accessibility.settings.reset=再来一遍	#
 accessibility.settings.chooseSeed=选择种子	#
 
-accessibility.start.feedback=提交反馈	#
+accessibility.start.feedback=提交特性	#
 accessibility.start.new=新	#
 accessibility.start.profile=选择个人资料	#
 accessibility.start.skinPicker=选择皮肤	#
@@ -145,17 +145,17 @@ accessibility.text.unsupported=未识别字符	#
 
 accessibility.toast=通知		### This is the name of the popup that appears when a player gets a notification for a game invite or achievement unlocked
 
-accessibility.worldTemplates.help=帮助	#
+accessibility.worldTemplates.help=救命	#
 
-accessibility.popup.title=关闭屏幕阅读器？	#
+accessibility.popup.title=关掉屏幕阅读器？	#
 accessibility.popup.message.line1=欢迎来到Minecraft！	#
-accessibility.popup.message.default=你的设备上默认启用了屏幕阅读器支持。	#
-accessibility.popup.message.platform=我们发现你的系统启用了一个屏幕阅读器，于是自动启用了Minecraft的屏幕阅读器。	#
-accessibility.popup.message.touch=触摸和拖动来在屏幕上找到控件，双击控件以进行选择。若要在屏幕上滚动，上下滑动时双击并按住即可。	#
-accessibility.popup.message.xbl=我们发现你的账户已经启用了“让游戏读给我听”，于是自动启用了Minecraft的屏幕阅读器。	#
-accessibility.popup.message.line3=你想关闭它吗？	#
+accessibility.popup.message.default=你的设备上居然默认启用了屏幕阅读器支持。	#
+accessibility.popup.message.platform=我们居然发现你的系统启用了一个屏幕阅读器，于是自动启用了Minecraft的屏幕阅读器。	#
+accessibility.popup.message.touch=触摸和拖动来在屏幕上找到控件，双击控件以进行选择。若要在屏幕上滚动，上下滑动时双击并按住就好啦！	#
+accessibility.popup.message.xbl=我们居然发现你的账户已经启用了“让游戏读给我听”，于是自动启用了Minecraft的屏幕阅读器。	#
+accessibility.popup.message.line3=你想关掉它吗？	#
 accessibility.popup.left_button_text=关闭	#
-accessibility.popup.right_button_text=保持开启	#
+accessibility.popup.right_button_text=不要停下来啊啊啊	#
 
 accessibility.controllerLayoutScreen.buttonRemapped=%s已被绑定至%s	#
 accessibility.controllerLayoutScreen.buttonBoundTo=%s按钮：%s	#
