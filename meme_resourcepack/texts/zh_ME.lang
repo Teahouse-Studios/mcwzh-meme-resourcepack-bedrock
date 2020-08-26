@@ -6845,7 +6845,7 @@ store.createdBy=作者：%s	#
 store.seeMoreBy=查看由%s提供的更多内容	#
 store.seeMoreBy.multiCreatorBundle=按捆绑包作者查看更多	#
 store.fetchingItem=正在连接到商城…	#
- 
+
 store.timer.daysAbbreviated=%s天		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
 store.timer.hoursAbbreviated=%s小时		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
 store.timer.minutesAbbreviated=%s分		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters

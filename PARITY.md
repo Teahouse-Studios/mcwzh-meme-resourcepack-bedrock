@@ -3,7 +3,6 @@
 基岩版梗体中文源项目包括：
 
 1. [`Teahouse-Studios/mcwzh-meme-resourcepack` （Java版梗体中文）](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack)
-
 2. [`ff98sha/mclangcn` （基岩版译名修正）](https://github.com/ff98sha/mclangcn)。
 
 ## 与Java版梗体中文保持同步
@@ -54,6 +53,4 @@
 
 请记住第二行不要删去：
 
-``` 
-## Minecraft译名修正，来自ff98sha/mclangcn
-```
+    ## Minecraft译名修正，来自ff98sha/mclangcn
