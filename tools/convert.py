@@ -34,3 +34,5 @@ if __name__ == '__main__':
         json_to_lang(args.input, f)
     elif args.type == 'json':
         lang_to_json(args.input, f)
+    if f != stdout:
+        f.close()
