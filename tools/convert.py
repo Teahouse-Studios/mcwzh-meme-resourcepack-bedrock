@@ -23,7 +23,7 @@ def json_to_lang(source: str, dest: TextIOWrapper):
 def lang_to_json(source: str, dest: TextIOWrapper):
     with open(source, 'r', encoding='utf8') as f:
         content = dict(line[:line.find('#') - 1].strip().split("=", 1)
-                       for line in f if line.strip != '' and not line.startswith('#'))
+                       for line in f if line.strip() != '' and not line.startswith('#'))
     dump(content, dest, ensure_ascii=False, indent=4)
 
 
