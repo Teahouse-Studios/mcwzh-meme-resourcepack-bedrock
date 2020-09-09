@@ -1,4 +1,4 @@
-from argparse import ArgumentParser
+from argparse import ArgumentParser, FileType
 from io import TextIOWrapper
 from json import load, dump
 from sys import stdout
@@ -9,30 +9,27 @@ def generate_parser():
         description='A tool for converting .lang from/to .json.')
     parser.add_argument(
         "type", help="Specify conversion destination file type. Must be 'lang' or 'json'.", choices=['lang', 'json'])
-    parser.add_argument("input", help="Path to source file.")
-    parser.add_argument(
-        "-o", "--output", help="Path to destination file. If omitted, will write to stdout.")
+    parser.add_argument("input", type=FileType(
+        mode='r', encoding='utf8'), help="Path to source file.")
+    parser.add_argument("-o", "--output", nargs='?', default=stdout,
+                        type=FileType(mode='w', encoding='utf8'), help="Path to destination file. If omitted, will write to stdout.")
     return parser
 
 
-def json_to_lang(source: str, dest: TextIOWrapper):
-    content = load(open(source, 'r', encoding='utf8'))
+def json_to_lang(source, dest):
+    content = load(source)
     dest.writelines(f'{k}={v}\n' for k, v in content.items())
 
 
-def lang_to_json(source: str, dest: TextIOWrapper):
-    with open(source, 'r', encoding='utf8') as f:
-        content = dict(line[:line.find('#') - 1].strip().split("=", 1)
-                       for line in f if line.strip() != '' and not line.startswith('#'))
+def lang_to_json(source, dest):
+    content = dict(line[:line.find('#') - 1].strip().split("=", 1)
+                   for line in source if line.strip() != '' and not line.startswith('#'))
     dump(content, dest, ensure_ascii=False, indent=4)
 
 
 if __name__ == '__main__':
     args = generate_parser().parse_args()
-    f = args.output and open(args.output, 'w', encoding='utf8') or stdout
     if args.type == 'lang':
-        json_to_lang(args.input, f)
+        json_to_lang(args.input, args.output)
     elif args.type == 'json':
-        lang_to_json(args.input, f)
-    if f != stdout:
-        f.close()
+        lang_to_json(args.input, args.output)
