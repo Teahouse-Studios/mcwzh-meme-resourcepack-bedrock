@@ -1,5 +1,4 @@
 from argparse import ArgumentParser, FileType
-from io import TextIOWrapper
 from json import load, dump
 from sys import stdout
 
