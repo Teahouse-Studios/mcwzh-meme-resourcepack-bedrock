@@ -75,8 +75,7 @@ class builder(object):
             # all builds have these files
             pack = ZipFile(
                 pack_name, 'w', compression=ZIP_DEFLATED, compresslevel=5)
-            pack.write(os.path.join(os.path.dirname(
-                __file__), "LICENSE"), arcname="LICENSE")
+            pack.writestr("LICENSE", self.__handle_license())
             pack.write(os.path.join(os.path.dirname(__file__), "meme_resourcepack/pack_icon.png"),
                        arcname="meme_resourcepack/pack_icon.png")
             pack.write(os.path.join(os.path.dirname(__file__), "meme_resourcepack/manifest.json"),
@@ -143,7 +142,7 @@ class builder(object):
             result['texture_data'].update(content['texture_data'])
         return result
 
-    def __dump_resources(self, modules: list, pack: zipfile.ZipFile) -> (list, list):
+    def __dump_resources(self, modules: list, pack: ZipFile) -> (list, list):
         item_texture = []
         terrain_texture = []
         for item in modules:
@@ -169,6 +168,11 @@ class builder(object):
                                 self.__raise_warning(
                                     f"Duplicated '{testpath}', skipping.")
         return item_texture, terrain_texture
+
+    def __handle_license(self):
+        return ''.join(
+            item[1] for item in enumerate(
+                open(os.path.join(os.path.dirname(__file__), "LICENSE"), 'r', encoding='utf8')) if 9 < item[0] < 391)
 
 
 class module_checker(object):
