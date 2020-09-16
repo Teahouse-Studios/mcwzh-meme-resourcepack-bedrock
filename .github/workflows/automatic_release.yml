@@ -11,26 +11,18 @@ jobs:
     runs-on: "ubuntu-latest"
 
     steps:
-      - uses: actions/setup-python@v1
+      - name: Setup python
+        uses: actions/setup-python@v2
         with:
           python-version: '3.x'
           architecture: 'x64'
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: "Build"
+      - name: Build
         run: |
           python preset_build.py
-      - uses: "marvinpinto/action-automatic-releases@latest"
-        with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          prerelease: true
-          draft: false
-          files: |
-            builds/meme-resourcepack.zip
-            builds/meme-resourcepack_noresource.zip
-            builds/meme-resourcepack_noblueui.zip
-            builds/meme-resourcepack_noresource_noblueui.zip
-            builds/meme-resourcepack.mcpack
-            builds/meme-resourcepack_noresource.mcpack
-            builds/meme-resourcepack_noblueui.mcpack
-            builds/meme-resourcepack_noresource_noblueui.mcpack
+      - name: Upload release assets
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          hub release create $(find ./builds -type f -name "*.zip" -or -name "*.mcpack" -printf "-a %p ") -m "${GITHUB_REF##*/}" "${GITHUB_REF##*/}"
