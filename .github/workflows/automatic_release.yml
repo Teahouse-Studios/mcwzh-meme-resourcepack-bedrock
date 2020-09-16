@@ -25,4 +25,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          hub release create $(find ./builds -type f -name "*.zip" -or -name "*.mcpack" -printf "-a %p ") -m "${GITHUB_REF##*/}" "${GITHUB_REF##*/}"
+          hub release create $(find ./builds -type f -printf "-a %p ") -m "${GITHUB_REF##*/}" "${GITHUB_REF##*/}"
