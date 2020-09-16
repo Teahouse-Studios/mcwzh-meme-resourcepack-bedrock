@@ -4,19 +4,19 @@ import os
 
 if __name__ == '__main__':
     preset_args = [
-        {'type': 'zip', 'resource': ['none'], 'hash': False, 'output': None},
+        {'type': 'zip', 'resource': ['none'], 'hash': False, 'output': 'builds'},
         {'type': 'zip', 'resource': ['blue_ui'],
-            'hash': False, 'output': None},
+            'hash': False, 'output': 'builds'},
         {'type': 'zip', 'resource': [
-            'a_letter', 'bagify', 'observer_think', 'trident_model'], 'hash': False, 'output': None},
+            'a_letter', 'bagify', 'observer_think', 'trident_model'], 'hash': False, 'output': 'builds'},
         {'type': 'mcpack', 'resource': ['none'],
-            'hash': False, 'output': None},
+            'hash': False, 'output': 'builds'},
         {'type': 'mcpack', 'resource': ['blue_ui'],
-            'hash': False, 'output': None},
+            'hash': False, 'output': 'builds'},
         {'type': 'mcpack', 'resource': [
-            'a_letter', 'bagify', 'observer_think', 'trident_model'], 'hash': False, 'output': None},
-        {'type': 'zip', 'resource': ['all'], 'hash': False, 'output': None},
-        {'type': 'mcpack', 'resource': ['all'], 'hash': False, 'output': None}
+            'a_letter', 'bagify', 'observer_think', 'trident_model'], 'hash': False, 'output': 'builds'},
+        {'type': 'zip', 'resource': ['all'], 'hash': False, 'output': 'builds'},
+        {'type': 'mcpack', 'resource': ['all'], 'hash': False, 'output': 'builds'}
     ]
     preset_name = [
         "meme-resourcepack_noresource_noblueui.zip",

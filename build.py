@@ -65,13 +65,12 @@ class builder(object):
             print(info)
             self.__log_list.append(f"{info}\n")
             # set output dir
-            output_dir = 'output' in args and args['output'] or 'builds'
-            pack_name = os.path.join(output_dir, pack_name)
+            pack_name = os.path.join(args['output'], pack_name)
             # mkdir
-            if os.path.exists(output_dir) and not os.path.isdir(output_dir):
-                os.remove(output_dir)
-            if not os.path.exists(output_dir):
-                os.mkdir(output_dir)
+            if os.path.exists(args['output']) and not os.path.isdir(args['output']):
+                os.remove(args['output'])
+            if not os.path.exists(args['output']):
+                os.mkdir(args['output'])
             # all builds have these files
             pack = ZipFile(
                 pack_name, 'w', compression=ZIP_DEFLATED, compresslevel=5)
@@ -243,8 +242,8 @@ def generate_parser() -> ArgumentParser:
                         choices=['zip', 'mcpack', 'clean'])
     parser.add_argument('-r', '--resource', nargs='*', default='all',
                         help="(Experimental) Include resource modules. Should be module names, 'all' or 'none'. Defaults to 'all'. Pseudoly accepts a path, but only module paths in 'modules' work.")
-    parser.add_argument(
-        '-o', '--output', help="Specify the location to output packs. Default location is 'builds/' folder.")
+    parser.add_argument('-o', '--output', nargs='?', default='builds',
+                        help="Specify the location to output packs. Default location is 'builds/' folder.")
     parser.add_argument('--hash', action='store_true',
                         help="Add a hash into file name.")
     return parser
