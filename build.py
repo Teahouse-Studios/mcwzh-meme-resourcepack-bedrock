@@ -50,9 +50,10 @@ class builder(object):
     def build(self):
         self.clean_status()
         args = self.args
+        status, info = self.__check_args()
         # check module name first
         checker = module_checker()
-        if checker.check_module():
+        if status and checker.check_module():
             # process args
             res_supp = self.__parse_includes(
                 args['resource'], checker.module_list)
@@ -99,7 +100,10 @@ class builder(object):
             pack.close()
             print("Build successful.")
         else:
-            self.__raise_error(checker.info)
+            if not status:
+                self.__raise_error(info)
+            else:
+                self.__raise_error(checker.info)
 
     def __raise_warning(self, warning: str):
         print(f'\033[33mWarning: {warning}\033[0m', file=stderr)
@@ -112,6 +116,12 @@ class builder(object):
         self.__log_list.append(f'Error: {error}')
         self.__log_list.append("Terminate building because an error occurred.")
         self.__error += 1
+
+    def __check_args(self):
+        for item in ('type', 'resource', 'output', 'hash'):
+            if item not in self.args:
+                return False, f'Missing argument "{item}"'
+        return True, None
 
     def __parse_includes(self, includes: list, fulllist: list) -> list:
         if 'none' in includes:
@@ -141,7 +151,7 @@ class builder(object):
             result['texture_data'].update(content['texture_data'])
         return result
 
-    def __dump_resources(self, modules: list, pack: ZipFile) -> (list, list):
+    def __dump_resources(self, modules: list, pack: ZipFile):
         item_texture = []
         terrain_texture = []
         for item in modules:
