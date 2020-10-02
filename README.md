@@ -27,7 +27,7 @@
 
 ## 用法
 
-* 在[Releases](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock/releases)中下载此资源包。
+* 在[Releases](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock/releases)中下载此资源包，或在[网页构建](https://dl.meme.teahou.se/)中选择自定义选项下载。
   * 唱片替换的移植资源包由于版权等问题，请至[此处](https://files.lakejason0.ml/images/0/02/Meme_resourcepack_records.mcpack)或[此处](https://dianliang-oss-1301161188.cos.ap-shanghai.myqcloud.com/zh-meme-respack/Meme_resourcepack_records.mcpack)下载。
 
 ### 自动导入
@@ -54,7 +54,7 @@
 
 ### 体验最新内容
 
-想要**抢先体验**最前沿~~整活~~版本，请按以下方法操作：
+想要**抢先体验**最前沿~~整活~~版本，请按以下方法操作，或者不会命令行可以前往[网页打包](https://dl.meme.teahou.se/)：：
 
 #### 先决条件
 
