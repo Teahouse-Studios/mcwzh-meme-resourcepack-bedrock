@@ -80,9 +80,7 @@ class builder(object):
                        arcname="meme_resourcepack/pack_icon.png")
             pack.write(os.path.join(os.path.dirname(__file__), "meme_resourcepack/manifest.json"),
                        arcname="meme_resourcepack/manifest.json")
-            for file in os.listdir(os.path.join(os.path.dirname(__file__), "meme_resourcepack/texts")):
-                pack.write(os.path.join(os.path.dirname(__file__), f"meme_resourcepack/texts/{file}"),
-                           arcname=f"meme_resourcepack/texts/{file}")
+            self.__dump_language_file(pack)
             pack.write(os.path.join(os.path.dirname(__file__), "meme_resourcepack/textures/map/map_background.png"),
                        arcname="meme_resourcepack/textures/map/map_background.png")
             # dump resources
@@ -118,7 +116,7 @@ class builder(object):
         self.__error += 1
 
     def __check_args(self):
-        for item in ('type', 'resource', 'output', 'hash'):
+        for item in ('type', 'compatible', 'resource', 'output', 'hash'):
             if item not in self.args:
                 return False, f'Missing argument "{item}"'
         return True, None
@@ -177,6 +175,15 @@ class builder(object):
                                 self.__raise_warning(
                                     f"Duplicated '{testpath}', skipping.")
         return item_texture, terrain_texture
+
+    def __dump_language_file(self, pack: ZipFile):
+        if 'compatible' in self.args and self.args['compatible']:
+            pack.write(os.path.join(os.path.dirname(
+                __file__), "meme_resourcepack/texts/zh_ME.lang"), arcname="meme_resourcepack/texts/zh_CN.lang")
+        else:
+            for file in os.listdir(os.path.join(os.path.dirname(__file__), "meme_resourcepack/texts")):
+                pack.write(os.path.join(os.path.dirname(__file__), f"meme_resourcepack/texts/{file}"),
+                           arcname=f"meme_resourcepack/texts/{file}")
 
     def __handle_license(self):
         return ''.join(
@@ -250,6 +257,8 @@ def generate_parser() -> ArgumentParser:
     parser.add_argument('type', default='zip',
                         help="Build type. Should be 'zip', 'mcpack' or 'clean'. If it's 'clean', all packs in 'builds/' directory will be deleted.",
                         choices=['zip', 'mcpack', 'clean'])
+    parser.add_argument('-c', '--compatible', action='store_true',
+                        help="Make the pack compatible to other addons. This will generate only one language file 'zh_CN.lang'.")
     parser.add_argument('-r', '--resource', nargs='*', default='all',
                         help="(Experimental) Include resource modules. Should be module names, 'all' or 'none'. Defaults to 'all'. Pseudoly accepts a path, but only module paths in 'modules' work.")
     parser.add_argument('-o', '--output', nargs='?', default='builds',

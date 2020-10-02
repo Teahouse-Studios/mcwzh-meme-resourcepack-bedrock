@@ -4,19 +4,26 @@ import os
 
 if __name__ == '__main__':
     preset_args = [
-        {'type': 'zip', 'resource': ['none'], 'hash': False, 'output': 'builds'},
-        {'type': 'zip', 'resource': ['blue_ui'],
-            'hash': False, 'output': 'builds'},
-        {'type': 'zip', 'resource': [
+        {'type': 'zip', 'compatible': False, 'resource': [
+            'none'], 'hash': False, 'output': 'builds'},
+        {'type': 'zip', 'compatible': False, 'resource': [
+            'blue_ui'], 'hash': False, 'output': 'builds'},
+        {'type': 'zip', 'compatible': False, 'resource': [
             'a_letter', 'bagify', 'observer_think', 'trident_model'], 'hash': False, 'output': 'builds'},
-        {'type': 'mcpack', 'resource': ['none'],
-            'hash': False, 'output': 'builds'},
-        {'type': 'mcpack', 'resource': ['blue_ui'],
-            'hash': False, 'output': 'builds'},
-        {'type': 'mcpack', 'resource': [
+        {'type': 'mcpack', 'compatible': False, 'resource': [
+            'none'], 'hash': False, 'output': 'builds'},
+        {'type': 'mcpack', 'compatible': False, 'resource': [
+            'blue_ui'], 'hash': False, 'output': 'builds'},
+        {'type': 'mcpack', 'compatible': False, 'resource': [
             'a_letter', 'bagify', 'observer_think', 'trident_model'], 'hash': False, 'output': 'builds'},
-        {'type': 'zip', 'resource': ['all'], 'hash': False, 'output': 'builds'},
-        {'type': 'mcpack', 'resource': ['all'], 'hash': False, 'output': 'builds'}
+        {'type': 'mcpack', 'compatible': True, 'resource': [
+            'none'], 'hash':False, 'output':'builds'},
+        {'type': 'zip', 'compatible': True, 'resource': [
+            'none'], 'hash':False, 'output':'builds'},
+        {'type': 'zip', 'compatible': False, 'resource': [
+            'all'], 'hash': False, 'output': 'builds'},
+        {'type': 'mcpack', 'compatible': False, 'resource': [
+            'all'], 'hash': False, 'output': 'builds'}
     ]
     preset_name = [
         "meme-resourcepack_noresource_noblueui.zip",
@@ -25,6 +32,8 @@ if __name__ == '__main__':
         "meme-resourcepack_noresource_noblueui.mcpack",
         "meme-resourcepack_noresource.mcpack",
         "meme-resourcepack_noblueui.mcpack",
+        "meme-resourcepack_noresource_noblueui_compat.mcpack",
+        "meme-resourcepack_noresource_noblueui_compat.zip",
         "meme-resourcepack.zip",
         "meme-resourcepack.mcpack"
     ]
