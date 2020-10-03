@@ -37,7 +37,6 @@ if __name__ == '__main__':
         "meme-resourcepack.zip",
         "meme-resourcepack.mcpack"
     ]
-    pack_builder = build.builder()
     pack_counter = 0
     perfect_pack_counter = 0
     base_folder = "builds"
@@ -47,19 +46,18 @@ if __name__ == '__main__':
         os.mkdir(base_folder)
     for file in os.listdir(base_folder):
         os.remove(os.path.join(base_folder, file))
-    for item, name in zip(preset_args, preset_name):
-        pack_builder.args = item
-        pack_builder.build()
-        if pack_builder.error_count == 0:
+    for args, name in zip(preset_args, preset_name):
+        info, warning_count, error_count, packname = build.build(args)
+        if error_count == 0:
             pack_counter += 1
-            if pack_builder.warning_count == 0:
+            if warning_count == 0:
                 perfect_pack_counter += 1
             if name != "meme-resourcepack.zip" and name != "meme-resourcepack.mcpack":
                 original_name = os.path.join(
-                    base_folder, pack_builder.filename)
+                    base_folder, packname)
                 os.rename(original_name,
                           os.path.join(base_folder, name))
-            print(f"Renamed pack to {name}.")
+                print(f"Renamed pack to {name}.")
         else:
             print(f"Failed to build pack {name}.")
     print(
