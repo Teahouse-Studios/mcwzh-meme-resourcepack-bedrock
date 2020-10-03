@@ -27,15 +27,26 @@
 
 ## 用法
 
-* 在[Releases](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock/releases)中下载此资源包，或在[网页构建](https://dl.meme.teahou.se/)中选择自定义选项下载。
-  * 唱片替换的移植资源包由于版权等问题，请至[此处](https://files.lakejason0.ml/images/0/02/Meme_resourcepack_records.mcpack)或[此处](https://dianliang-oss-1301161188.cos.ap-shanghai.myqcloud.com/zh-meme-respack/Meme_resourcepack_records.mcpack)下载。
+### 常规
 
-### 自动导入
+在[Releases](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock/releases)中下载此资源包，或在[网页构建](https://dl.meme.teahou.se/)中选择自定义选项下载。
+
+### 加载附加包时
+
+当加载了其他新增了内容（如新的方块、物品等）的附加包时，普通版本的资源包**无法**覆盖附加包新增的字符串，会导致附加包新增的内容**全部变为本地化键名**（对，比Java版还惨）。为此，请下载`compatible`版本以保证体验。安装流程几乎相同，但选择的语言应该是普通的**简体中文（中国）**。
+
+### 唱片替换
+
+该资源包将唱片信息修改成了非Minecraft歌曲。由于版权原因，这里有一份不受支持的预制版唱片替换包（不允许二次分发），可在[此处](https://files.lakejason0.ml/images/0/02/Meme_resourcepack_records.mcpack)或[此处](https://dianliang-oss-1301161188.cos.ap-shanghai.myqcloud.com/zh-meme-respack/Meme_resourcepack_records.mcpack)获取。
+
+### 导入
+
+#### 自动导入
 
 * 下载 `meme-resourcepack.mcpack` ，使用Minecraft打开即可。
 * 唱片替换资源包的导入方法同理。
 
-### 手动导入
+#### 手动导入
 
 * 下载 `meme-resourcepack.zip` 并解压。
 * 将解压后得到的文件中的 `meme-resourcepack` 文件夹移至Minecraft的 `resource_pack` 文件夹中，路径见下：
