@@ -3,7 +3,6 @@ from hashlib import sha256
 from json import load, dumps
 from sys import stderr
 from zipfile import ZipFile, ZIP_DEFLATED
-from packaging.module_checker import module_checker
 
 
 class pack_builder(object):
