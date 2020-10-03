@@ -1,6 +1,7 @@
 import os
 from json import load
 
+
 class module_checker(object):
     def __init__(self):
         self.__status = True
@@ -29,7 +30,7 @@ class module_checker(object):
     @property
     def module_path(self):
         return self.__module_path
-    
+
     @module_path.setter
     def module_path(self, value: str):
         self.__module_path = value
