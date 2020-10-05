@@ -65,7 +65,7 @@ class pack_builder(object):
         status, info = self.__check_args()
         if status:
             # get resource modules
-            res_supp = self.__parse_includes(args['resource'])
+            res_supp = self.__parse_includes('resource')
             # process pack name
             digest = sha256(dumps(args).encode('utf8')).hexdigest()
             pack_name = args['hash'] and f"meme-resourcepack.{digest[:7]}.{args['type']}" or f"meme-resourcepack.{args['type']}"
@@ -122,12 +122,13 @@ class pack_builder(object):
         self.__error += 1
 
     def __check_args(self):
-        for item in ('type', 'compatible', 'resource', 'output', 'hash'):
+        for item in ('type', 'compatible', 'modules', 'output', 'hash'):
             if item not in self.args:
                 return False, f'Missing argument "{item}"'
         return True, None
 
-    def __parse_includes(self, includes: list) -> list:
+    def __parse_includes(self, type: str) -> list:
+        includes = self.args['modules'][type]
         full_list = list(
             map(lambda item: item['name'], self.module_list['resource']))
         if 'none' in includes:

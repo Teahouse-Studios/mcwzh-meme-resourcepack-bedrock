@@ -4,26 +4,26 @@ import os
 
 if __name__ == '__main__':
     preset_args = [
-        {'type': 'zip', 'compatible': False, 'resource': [
-            'none'], 'hash': False, 'output': 'builds'},
-        {'type': 'zip', 'compatible': False, 'resource': [
-            'blue_ui'], 'hash': False, 'output': 'builds'},
-        {'type': 'zip', 'compatible': False, 'resource': [
-            'a_letter', 'bagify', 'observer_think', 'trident_model'], 'hash': False, 'output': 'builds'},
-        {'type': 'mcpack', 'compatible': False, 'resource': [
-            'none'], 'hash': False, 'output': 'builds'},
-        {'type': 'mcpack', 'compatible': False, 'resource': [
-            'blue_ui'], 'hash': False, 'output': 'builds'},
-        {'type': 'mcpack', 'compatible': False, 'resource': [
-            'a_letter', 'bagify', 'observer_think', 'trident_model'], 'hash': False, 'output': 'builds'},
-        {'type': 'mcpack', 'compatible': True, 'resource': [
-            'none'], 'hash':False, 'output':'builds'},
-        {'type': 'zip', 'compatible': True, 'resource': [
-            'none'], 'hash':False, 'output':'builds'},
-        {'type': 'zip', 'compatible': False, 'resource': [
-            'all'], 'hash': False, 'output': 'builds'},
-        {'type': 'mcpack', 'compatible': False, 'resource': [
-            'all'], 'hash': False, 'output': 'builds'}
+        {'type': 'zip', 'compatible': False, 'modules': {
+            'resource': []}, 'hash': False, 'output': 'builds'},
+        {'type': 'zip', 'compatible': False, 'modules': {
+            'resource': ['blue_ui']}, 'hash': False, 'output': 'builds'},
+        {'type': 'zip', 'compatible': False, 'modules': {'resource': [
+            'a_letter', 'bagify', 'observer_think', 'trident_model']}, 'hash': False, 'output': 'builds'},
+        {'type': 'mcpack', 'compatible': False, 'modules': {
+            'resource': []}, 'hash': False, 'output': 'builds'},
+        {'type': 'mcpack', 'compatible': False, 'modules': {
+            'resource': ['blue_ui']}, 'hash': False, 'output': 'builds'},
+        {'type': 'mcpack', 'compatible': False, 'modules': {'resource': [
+            'a_letter', 'bagify', 'observer_think', 'trident_model']}, 'hash': False, 'output': 'builds'},
+        {'type': 'mcpack', 'compatible': True, 'modules': {
+            'resource': []}, 'hash': False, 'output': 'builds'},
+        {'type': 'zip', 'compatible': True, 'modules': {
+            'resource': []}, 'hash': False, 'output': 'builds'},
+        {'type': 'zip', 'compatible': False, 'modules': {
+            'resource': ['all']}, 'hash': False, 'output': 'builds'},
+        {'type': 'mcpack', 'compatible': False, 'modules': {
+            'resource': ['all']}, 'hash': False, 'output': 'builds'}
     ]
     preset_name = [
         "meme-resourcepack_noresource_noblueui.zip",

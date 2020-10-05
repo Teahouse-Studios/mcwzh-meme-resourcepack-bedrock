@@ -40,7 +40,13 @@ if __name__ == '__main__':
         parser.add_argument('--hash', action='store_true',
                             help="Add a hash into file name.")
         return parser
-    args = vars(generate_parser().parse_args())
+
+    def handle_args(args: dict):
+        module_types = ('resource', )
+        args['modules'] = {key: args.pop(key) for key in module_types}
+        return args
+
+    args = handle_args(vars(generate_parser().parse_args()))
     if args['type'] == 'clean':
         for i in os.listdir('builds/'):
             os.remove(join('builds', i))
