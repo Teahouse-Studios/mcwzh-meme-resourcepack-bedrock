@@ -1,6 +1,6 @@
 import os
 from argparse import ArgumentParser
-from sys import stderr
+from os.path import join
 from packaging.pack_builder import pack_builder
 from packaging.module_checker import module_checker
 
@@ -9,30 +9,19 @@ from packaging.module_checker import module_checker
 
 def build(args: dict):
     build_info = []
-    warning_count = 0
-    error_count = 0
-    pack_name = ''
     current_path = os.getcwd()
-
-    def raise_error(err: str):
-        build_info.append(f'Error: {err}')
-        print(f'\033[1;31mError: {err}\033[0m', file=stderr)
     # init module_checker
     checker = module_checker()
-    checker.module_path = os.path.join(current_path, "modules")
+    checker.module_path = join(current_path, "modules")
     # checking module integrity
-    if not checker.check_module():
-        raise_error(checker.info)
-    else:
-        builder = pack_builder(current_path, os.path.join(
-            current_path, "modules"), checker.module_list)
-        builder.args = args
-        builder.build()
-        build_info.append(builder.logs)
-        warning_count = builder.warning_count
-        error_count = builder.error_count
-        pack_name = builder.filename
-    return build_info, warning_count, error_count, pack_name
+    checker.check_module()
+    build_info.extend(checker.info_list)
+    builder = pack_builder(current_path, join(
+        current_path, "modules"), checker.module_list)
+    builder.args = args
+    builder.build()
+    build_info.append(builder.log_list)
+    return build_info, builder.warning_count, builder.error_count, builder.filename
 
 
 if __name__ == '__main__':
@@ -54,7 +43,7 @@ if __name__ == '__main__':
     args = vars(generate_parser().parse_args())
     if args['type'] == 'clean':
         for i in os.listdir('builds/'):
-            os.remove(os.path.join('builds', i))
+            os.remove(join('builds', i))
         print("Deleted all packs built.")
     else:
         build(args)

@@ -34,11 +34,11 @@ class pack_builder(object):
 
     @property
     def filename(self):
-        return self.__filename != "" and self.__filename or "Did not build any pack."
+        return self.__filename
 
     @property
-    def logs(self):
-        return self.__log_list and ''.join(self.__log_list) or "Did not build any pack."
+    def log_list(self):
+        return self.__log_list
 
     @property
     def main_resource_path(self):
@@ -64,9 +64,8 @@ class pack_builder(object):
         # args validation
         status, info = self.__check_args()
         if status:
-            # process args
-            res_supp = self.__parse_includes(
-                args['resource'], self.module_list)
+            # get resource modules
+            res_supp = self.__parse_includes(args['resource'])
             # process pack name
             digest = sha256(dumps(args).encode('utf8')).hexdigest()
             pack_name = args['hash'] and f"meme-resourcepack.{digest[:7]}.{args['type']}" or f"meme-resourcepack.{args['type']}"
@@ -74,7 +73,7 @@ class pack_builder(object):
             # create pack
             info = f"Building pack {pack_name}"
             print(info)
-            self.__log_list.append(f"{info}\n")
+            self.__log_list.append(info)
             # set output dir
             pack_name = os.path.join(args['output'], pack_name)
             # mkdir
@@ -128,23 +127,22 @@ class pack_builder(object):
                 return False, f'Missing argument "{item}"'
         return True, None
 
-    def __parse_includes(self, includes: list, fulllist: list) -> list:
+    def __parse_includes(self, includes: list) -> list:
+        full_list = list(
+            map(lambda item: item['name'], self.module_list['resource']))
         if 'none' in includes:
             return []
         elif 'all' in includes:
-            return fulllist
+            return full_list
         else:
             include_list = []
             for item in includes:
-                if item in fulllist:
+                if item in full_list:
                     include_list.append(item)
-                elif self.__convert_path_to_module(os.path.normpath(item)) in fulllist:
-                    include_list.append(
-                        self.__convert_path_to_module(os.path.normpath(item)))
+                else:
+                    self.__raise_warning(
+                        f'Module "{item}" does not exist, skipping')
             return include_list
-
-    def __convert_path_to_module(self, path: str) -> str:
-        return load(open(os.path.join(path, "module_manifest.json"), 'r', encoding='utf8'))['name']
 
     def __merge_json(self, modules: list, type: str) -> dict:
         name = type == "item" and "item_texture.json" or "terrain_texture.json"
