@@ -1,23 +1,23 @@
-import os
 from argparse import ArgumentParser
-from os.path import join
-from packaging.pack_builder import pack_builder
-from packaging.module_checker import module_checker
+from os import remove, listdir, curdir
+from os.path import join, dirname, exists, isdir
+from .packaging.pack_builder import pack_builder
+from .packaging.module_checker import module_checker
 
 # License: Apache-2.0
 
 
 def build(args: dict):
     build_info = []
-    current_path = os.getcwd()
+    current_dir = dirname(__file__)
     # init module_checker
     checker = module_checker()
-    checker.module_path = join(current_path, "modules")
+    checker.module_path = join(current_dir, "modules")
     # checking module integrity
     checker.check_module()
     build_info.extend(checker.info_list)
-    builder = pack_builder(current_path, join(
-        current_path, "modules"), checker.module_list)
+    builder = pack_builder(current_dir, join(
+        current_dir, "modules"), checker.module_list)
     builder.args = args
     builder.build()
     build_info.append(builder.log_list)
@@ -48,8 +48,12 @@ if __name__ == '__main__':
 
     args = handle_args(vars(generate_parser().parse_args()))
     if args['type'] == 'clean':
-        for i in os.listdir('builds/'):
-            os.remove(join('builds', i))
-        print("Deleted all packs built.")
+        target = join(curdir, args['output'])
+        if exists(target) and isdir(target):
+            for i in listdir(target):
+                remove(join(target, i))
+            print(f'Cleaned up "{target}".')
+        else:
+            print(f'\033[1;31mError: "{target}" is not valid.\033[0m')
     else:
         build(args)
