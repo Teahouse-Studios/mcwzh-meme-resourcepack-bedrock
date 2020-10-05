@@ -105,7 +105,9 @@ class pack_builder(object):
                 pack.writestr("meme_resourcepack/textures/terrain_texture.json",
                               dumps(terrain_texture_content, indent=4))
             pack.close()
-            print("Build successful.")
+            print(f'Successfully built {pack_name}.')
+            self.__log_list.append(f'Successfully built {pack_name}.')
+
         else:
             self.__raise_error(info)
 
