@@ -1,8 +1,13 @@
 from argparse import ArgumentParser
 from os import remove, listdir, curdir
 from os.path import join, dirname, exists, isdir
-from .packaging.pack_builder import pack_builder
-from .packaging.module_checker import module_checker
+
+if __name__ == 'mcwzh-meme-resourcepack-bedrock.build':
+    from .packaging.pack_builder import pack_builder
+    from .packaging.module_checker import module_checker
+else:
+    from packaging.pack_builder import pack_builder
+    from packaging.module_checker import module_checker
 
 # License: Apache-2.0
 
@@ -20,8 +25,8 @@ def build(args: dict):
         current_dir, "modules"), checker.module_list)
     builder.args = args
     builder.build()
-    build_info.append(builder.log_list)
-    return build_info, builder.warning_count, builder.error_count, builder.filename
+    build_info.extend(builder.log_list)
+    return builder.filename, builder.warning_count, builder.error, build_info
 
 
 if __name__ == '__main__':

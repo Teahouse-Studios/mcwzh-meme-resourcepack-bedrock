@@ -6,10 +6,10 @@ from zipfile import ZipFile, ZIP_DEFLATED
 
 
 class pack_builder(object):
-    def __init__(self, main_res_path: str, module_path: str, module_list: list):
+    def __init__(self, main_res_path: str, module_path: str, module_list: dict):
         self.__args = {}
         self.__warning = 0
-        self.__error = 0
+        self.__error = False
         self.__log_list = []
         self.__filename = ""
         self.__main_res_path = main_res_path
@@ -29,7 +29,7 @@ class pack_builder(object):
         return self.__warning
 
     @property
-    def error_count(self):
+    def error(self):
         return self.__error
 
     @property
@@ -54,7 +54,7 @@ class pack_builder(object):
 
     def clean_status(self):
         self.__warning = 0
-        self.__error = 0
+        self.__error = False
         self.__log_list = []
         self.__filename = ""
 
@@ -121,7 +121,7 @@ class pack_builder(object):
         print("\033[1;31mTerminate building because an error occurred.\033[0m")
         self.__log_list.append(f'Error: {error}')
         self.__log_list.append("Terminate building because an error occurred.")
-        self.__error += 1
+        self.__error = True
 
     def __check_args(self):
         for item in ('type', 'compatible', 'modules', 'output', 'hash'):
@@ -132,7 +132,7 @@ class pack_builder(object):
     def __parse_includes(self, type: str) -> list:
         includes = self.args['modules'][type]
         full_list = list(
-            map(lambda item: item['name'], self.module_list['resource']))
+            map(lambda item: item['name'], self.module_list[type]))
         if 'none' in includes:
             return []
         elif 'all' in includes:
@@ -184,7 +184,7 @@ class pack_builder(object):
         return item_texture, terrain_texture
 
     def __dump_language_file(self, pack: ZipFile):
-        if 'compatible' in self.args and self.args['compatible']:
+        if self.args['compatible']:
             pack.write(os.path.join(self.main_resource_path, "meme_resourcepack/texts/zh_ME.lang"),
                        arcname="meme_resourcepack/texts/zh_CN.lang")
         else:
