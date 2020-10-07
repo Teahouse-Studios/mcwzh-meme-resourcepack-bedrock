@@ -2,14 +2,14 @@
 	"texture_data": {
 		"tallgrass": {
 			"textures": [
-				"textures/grass_enchanted/tallgrass",
-				"textures/grass_enchanted/tallgrass"
+				"textures/grass_enchanted/grass_enchanted",
+				"textures/grass_enchanted/grass_enchanted"
 			]
 		},
 		"tallgrass_carried": {
 			"textures": [
-				"textures/grass_enchanted/tallgrass_carried",
-				"textures/grass_enchanted/tallgrass_carried"
+				"textures/grass_enchanted/grass_enchanted",
+				"textures/grass_enchanted/grass_enchanted"
 			]
 		}
 	}
