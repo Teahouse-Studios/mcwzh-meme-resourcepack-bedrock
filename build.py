@@ -21,8 +21,7 @@ def build(args: dict):
     # checking module integrity
     checker.check_module()
     build_info.extend(checker.info_list)
-    builder = pack_builder(current_dir, join(
-        current_dir, "modules"), checker.module_list)
+    builder = pack_builder(current_dir, checker.module_info)
     builder.args = args
     builder.build()
     build_info.extend(builder.log_list)
@@ -33,7 +32,7 @@ if __name__ == '__main__':
     def generate_parser() -> ArgumentParser:
         parser = ArgumentParser(
             description="Automatically build add-ons")
-        parser.add_argument('type', default='zip',
+        parser.add_argument('type', default='mcpack',
                             help="Build type. Should be 'zip', 'mcpack' or 'clean'. If it's 'clean', all packs in 'builds/' directory will be deleted.",
                             choices=['zip', 'mcpack', 'clean'])
         parser.add_argument('-c', '--compatible', action='store_true',

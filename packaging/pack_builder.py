@@ -1,20 +1,20 @@
 import os
 from hashlib import sha256
 from json import load, dumps
+from os.path import join
 from sys import stderr
 from zipfile import ZipFile, ZIP_DEFLATED
 
 
 class pack_builder(object):
-    def __init__(self, main_res_path: str, module_path: str, module_list: dict):
+    def __init__(self, main_res_path: str, module_info: dict):
         self.__args = {}
         self.__warning = 0
         self.__error = False
         self.__log_list = []
         self.__filename = ""
         self.__main_res_path = main_res_path
-        self.__module_path = module_path
-        self.__module_list = module_list
+        self.__module_info = module_info
 
     @property
     def args(self):
@@ -45,12 +45,8 @@ class pack_builder(object):
         return self.__main_res_path
 
     @property
-    def module_path(self):
-        return self.__module_path
-
-    @property
-    def module_list(self):
-        return self.__module_list
+    def module_info(self):
+        return self.__module_info
 
     def clean_status(self):
         self.__warning = 0
@@ -75,7 +71,7 @@ class pack_builder(object):
             print(info)
             self.__log_list.append(info)
             # set output dir
-            pack_name = os.path.join(args['output'], pack_name)
+            pack_name = join(args['output'], pack_name)
             # mkdir
             if os.path.exists(args['output']) and not os.path.isdir(args['output']):
                 os.remove(args['output'])
@@ -85,12 +81,12 @@ class pack_builder(object):
             pack = ZipFile(
                 pack_name, 'w', compression=ZIP_DEFLATED, compresslevel=5)
             pack.writestr("LICENSE", self.__handle_license())
-            pack.write(os.path.join(self.main_resource_path, "meme_resourcepack/pack_icon.png"),
+            pack.write(join(self.main_resource_path, "meme_resourcepack/pack_icon.png"),
                        arcname="meme_resourcepack/pack_icon.png")
-            pack.write(os.path.join(self.main_resource_path, "meme_resourcepack/manifest.json"),
+            pack.write(join(self.main_resource_path, "meme_resourcepack/manifest.json"),
                        arcname="meme_resourcepack/manifest.json")
             self.__dump_language_file(pack)
-            pack.write(os.path.join(self.main_resource_path, "meme_resourcepack/textures/map/map_background.png"),
+            pack.write(join(self.main_resource_path, "meme_resourcepack/textures/map/map_background.png"),
                        arcname="meme_resourcepack/textures/map/map_background.png")
             # dump resources
             item_texture, terrain_texture = self.__dump_resources(
@@ -132,7 +128,7 @@ class pack_builder(object):
     def __parse_includes(self, type: str) -> list:
         includes = self.args['modules'][type]
         full_list = list(
-            map(lambda item: item['name'], self.module_list[type]))
+            map(lambda item: item['name'], self.module_info['modules'][type]))
         if 'none' in includes:
             return []
         elif 'all' in includes:
@@ -151,17 +147,17 @@ class pack_builder(object):
         name = type == "item" and "item_texture.json" or "terrain_texture.json"
         result = {'texture_data': {}}
         for item in modules:
-            texture_file = os.path.join(
-                self.module_path, item, "textures", name)
+            texture_file = join(
+                self.module_info['path'], item, "textures", name)
             content = load(open(texture_file, 'r', encoding='utf8'))
-            result['texture_data'].update(content['texture_data'])
+            result['texture_data'] |= content['texture_data']
         return result
 
     def __dump_resources(self, modules: list, pack: ZipFile):
         item_texture = []
         terrain_texture = []
         for item in modules:
-            base_folder = os.path.join(self.module_path, item)
+            base_folder = join(self.module_info['path'], item)
             for root, _, files in os.walk(base_folder):
                 for file in files:
                     if file != "module_manifest.json":
@@ -170,13 +166,13 @@ class pack_builder(object):
                         elif file == "terrain_texture.json":
                             terrain_texture.append(item)
                         else:
-                            path = os.path.join(root, file)
-                            arcpath = os.path.join("meme_resourcepack", path[path.find(
+                            path = join(root, file)
+                            arcpath = join("meme_resourcepack", path[path.find(
                                 base_folder) + len(base_folder) + 1:])
                             testpath = arcpath.replace(os.sep, "/")
                             # prevent duplicates
                             if testpath not in pack.namelist():
-                                pack.write(os.path.join(
+                                pack.write(join(
                                     root, file), arcname=arcpath)
                             else:
                                 self.__raise_warning(
@@ -185,14 +181,14 @@ class pack_builder(object):
 
     def __dump_language_file(self, pack: ZipFile):
         if self.args['compatible']:
-            pack.write(os.path.join(self.main_resource_path, "meme_resourcepack/texts/zh_ME.lang"),
+            pack.write(join(self.main_resource_path, "meme_resourcepack/texts/zh_ME.lang"),
                        arcname="meme_resourcepack/texts/zh_CN.lang")
         else:
-            for file in os.listdir(os.path.join(self.main_resource_path, "meme_resourcepack/texts")):
-                pack.write(os.path.join(self.main_resource_path, f"meme_resourcepack/texts/{file}"),
+            for file in os.listdir(join(self.main_resource_path, "meme_resourcepack/texts")):
+                pack.write(join(self.main_resource_path, f"meme_resourcepack/texts/{file}"),
                            arcname=f"meme_resourcepack/texts/{file}")
 
     def __handle_license(self):
         return ''.join(
             item[1] for item in enumerate(
-                open(os.path.join(self.main_resource_path, "LICENSE"), 'r', encoding='utf8')) if 9 < item[0] < 391)
+                open(join(self.main_resource_path, "LICENSE"), 'r', encoding='utf8')) if 9 < item[0] < 391)
