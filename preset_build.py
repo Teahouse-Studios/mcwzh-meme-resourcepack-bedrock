@@ -1,8 +1,8 @@
-import build
-import os
-
-
 if __name__ == '__main__':
+    import build
+    from os import listdir, mkdir, remove, rename
+    from os.path import exists, isdir, join
+
     preset_args = [
         {'type': 'zip', 'compatible': False, 'modules': {
             'resource': []}, 'hash': False, 'output': 'builds'},
@@ -40,12 +40,12 @@ if __name__ == '__main__':
     pack_counter = 0
     perfect_pack_counter = 0
     base_folder = "builds"
-    if os.path.exists(base_folder) and not os.path.isdir(base_folder):
-        os.remove(base_folder)
-    if not os.path.exists(base_folder):
-        os.mkdir(base_folder)
-    for file in os.listdir(base_folder):
-        os.remove(os.path.join(base_folder, file))
+    if exists(base_folder) and not isdir(base_folder):
+        remove(base_folder)
+    if not exists(base_folder):
+        mkdir(base_folder)
+    for file in listdir(base_folder):
+        remove(join(base_folder, file))
     for args, name in zip(preset_args, preset_name):
         pack_name, warning_count, error, _ = build.build(args)
         if not error:
@@ -53,8 +53,8 @@ if __name__ == '__main__':
             if warning_count == 0:
                 perfect_pack_counter += 1
             if name != "meme-resourcepack.zip" and name != "meme-resourcepack.mcpack":
-                os.rename(os.path.join(base_folder, pack_name),
-                          os.path.join(base_folder, name))
+                rename(join(base_folder, pack_name),
+                       join(base_folder, name))
                 print(f"Renamed pack to {name}.")
         else:
             print(f"Failed to build pack {name}.")

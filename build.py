@@ -1,6 +1,4 @@
-from argparse import ArgumentParser
-from os import remove, listdir, curdir
-from os.path import join, dirname, exists, isdir
+from os.path import join, dirname
 
 if __name__ == 'mcwzh-meme-resourcepack-bedrock.build':
     from .packaging.pack_builder import pack_builder
@@ -29,6 +27,10 @@ def build(args: dict):
 
 
 if __name__ == '__main__':
+    from argparse import ArgumentParser
+    from os import remove, listdir, curdir
+    from os.path import exists, isdir
+
     def generate_parser() -> ArgumentParser:
         parser = ArgumentParser(
             description="Automatically build add-ons")
