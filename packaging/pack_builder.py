@@ -189,6 +189,5 @@ class pack_builder(object):
                            arcname=f"meme_resourcepack/texts/{file}")
 
     def __handle_license(self):
-        return ''.join(
-            item[1] for item in enumerate(
-                open(join(self.main_resource_path, "LICENSE"), 'r', encoding='utf8')) if 9 < item[0] < 391)
+        return ''.join(item[1] for item in enumerate(
+            open(join(self.main_resource_path, "LICENSE"), 'r', encoding='utf8')) if 12 < item[0] < 394)
