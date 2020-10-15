@@ -14,12 +14,11 @@ def build(args: dict):
     build_info = []
     current_dir = dirname(__file__)
     # init module_checker
-    checker = module_checker()
-    checker.module_path = join(current_dir, "modules")
+    checker = module_checker(join(current_dir, "modules"))
     # checking module integrity
     checker.check_module()
     build_info.extend(checker.info_list)
-    builder = pack_builder(current_dir, checker.module_info)
+    builder = pack_builder(join(current_dir, "meme_resourcepack"), checker.module_info)
     builder.args = args
     builder.build()
     build_info.extend(builder.log_list)

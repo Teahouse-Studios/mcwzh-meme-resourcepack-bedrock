@@ -80,25 +80,26 @@ class pack_builder(object):
             # all builds have these files
             pack = ZipFile(
                 pack_name, 'w', compression=ZIP_DEFLATED, compresslevel=5)
-            pack.writestr("LICENSE", self.__handle_license())
-            pack.write(join(self.main_resource_path, "meme_resourcepack/pack_icon.png"),
-                       arcname="meme_resourcepack/pack_icon.png")
-            pack.write(join(self.main_resource_path, "meme_resourcepack/manifest.json"),
-                       arcname="meme_resourcepack/manifest.json")
+            pack.write(join(self.main_resource_path,
+                            "LICENSE"), arcname="LICENSE")
+            pack.write(join(self.main_resource_path, "pack_icon.png"),
+                       arcname="pack_icon.png")
+            pack.write(join(self.main_resource_path, "manifest.json"),
+                       arcname="manifest.json")
             self.__dump_language_file(pack)
-            pack.write(join(self.main_resource_path, "meme_resourcepack/textures/map/map_background.png"),
-                       arcname="meme_resourcepack/textures/map/map_background.png")
+            pack.write(join(self.main_resource_path, "textures/map/map_background.png"),
+                       arcname="textures/map/map_background.png")
             # dump resources
             item_texture, terrain_texture = self.__dump_resources(
                 res_supp, pack)
             if item_texture:
                 item_texture_content = self.__merge_json(item_texture, "item")
-                pack.writestr("meme_resourcepack/textures/item_texture.json",
+                pack.writestr("textures/item_texture.json",
                               dumps(item_texture_content, indent=4))
             if terrain_texture:
                 terrain_texture_content = self.__merge_json(
                     terrain_texture, "terrain")
-                pack.writestr("meme_resourcepack/textures/terrain_texture.json",
+                pack.writestr("textures/terrain_texture.json",
                               dumps(terrain_texture_content, indent=4))
             pack.close()
             print(f'Successfully built {pack_name}.')
@@ -167,13 +168,12 @@ class pack_builder(object):
                             terrain_texture.append(item)
                         else:
                             path = join(root, file)
-                            arcpath = join("meme_resourcepack", path[path.find(
-                                base_folder) + len(base_folder) + 1:])
+                            arcpath = path[path.find(
+                                base_folder) + len(base_folder) + 1:]
                             testpath = arcpath.replace(os.sep, "/")
                             # prevent duplicates
                             if testpath not in pack.namelist():
-                                pack.write(join(
-                                    root, file), arcname=arcpath)
+                                pack.write(join(root, file), arcname=arcpath)
                             else:
                                 self.__raise_warning(
                                     f"Duplicated '{testpath}', skipping.")
@@ -181,13 +181,9 @@ class pack_builder(object):
 
     def __dump_language_file(self, pack: ZipFile):
         if self.args['compatible']:
-            pack.write(join(self.main_resource_path, "meme_resourcepack/texts/zh_ME.lang"),
-                       arcname="meme_resourcepack/texts/zh_CN.lang")
+            pack.write(join(self.main_resource_path, "texts/zh_ME.lang"),
+                       arcname="texts/zh_CN.lang")
         else:
-            for file in os.listdir(join(self.main_resource_path, "meme_resourcepack/texts")):
-                pack.write(join(self.main_resource_path, f"meme_resourcepack/texts/{file}"),
-                           arcname=f"meme_resourcepack/texts/{file}")
-
-    def __handle_license(self):
-        return ''.join(item[1] for item in enumerate(
-            open(join(self.main_resource_path, "LICENSE"), 'r', encoding='utf8')) if 12 < item[0] < 394)
+            for file in os.listdir(join(self.main_resource_path, "texts")):
+                pack.write(join(self.main_resource_path, f"texts/{file}"),
+                           arcname=f"texts/{file}")
