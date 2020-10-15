@@ -170,9 +170,8 @@ class pack_builder(object):
                             path = join(root, file)
                             arcpath = path[path.find(
                                 base_folder) + len(base_folder) + 1:]
-                            testpath = arcpath.replace(os.sep, "/")
                             # prevent duplicates
-                            if testpath not in pack.namelist():
+                            if (testpath := arcpath.replace(os.sep, "/")) not in pack.namelist():
                                 pack.write(join(root, file), arcname=arcpath)
                             else:
                                 self.__raise_warning(
