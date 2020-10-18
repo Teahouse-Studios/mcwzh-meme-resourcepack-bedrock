@@ -1,6 +1,6 @@
 from os.path import join, dirname
 
-if __name__ == 'mcwzh-meme-resourcepack-bedrock.build':
+if __name__ == 'meme-pack-bedrock.build':
     from .packaging.pack_builder import pack_builder
     from .packaging.module_checker import module_checker
 else:
