@@ -69,7 +69,7 @@
 
 #### 先决条件
 
-请确保已经安装了Python 3.6+和Git。如果没有，请到[Python官网](https://www.python.org)和[Git官网](https://www.git-scm.com)下载。
+请确保已经安装了Python 3.9+和Git。如果没有，请到[Python官网](https://www.python.org)和[Git官网](https://www.git-scm.com)下载。
 
 #### 步骤
 
