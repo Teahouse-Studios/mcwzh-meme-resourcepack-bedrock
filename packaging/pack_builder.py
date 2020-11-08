@@ -62,6 +62,10 @@ class pack_builder(object):
         if status:
             # get resource modules
             res_supp = self.__parse_includes('resource')
+            # get module collections
+            module_collection = self.__parse_includes('collection')
+            # merge collection into resource list
+            self.__handle_modules(res_supp, module_collection)
             # process pack name
             digest = sha256(dumps(args).encode('utf8')).hexdigest()
             pack_name = args['hash'] and f"meme-resourcepack.{digest[:7]}.{args['type']}" or f"meme-resourcepack.{args['type']}"
@@ -143,6 +147,15 @@ class pack_builder(object):
                     self.__raise_warning(
                         f'Module "{item}" does not exist, skipping')
             return include_list
+
+    def __handle_modules(self, resource_list: list, collection_list: list):
+        collection_info = {
+            k.pop('name'): k for k in self.module_info['modules']['collection']}
+        for collection in collection_list:
+            for module_type, module_list in (('resource', resource_list),):
+                if module_type in collection_info[collection]['contains']:
+                    module_list.extend(
+                        collection_info[collection]['contains'][module_type])
 
     def __merge_json(self, modules: list, type: str) -> dict:
         name = type == "item" and "item_texture.json" or "terrain_texture.json"

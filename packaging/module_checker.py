@@ -39,7 +39,8 @@ class module_checker(object):
         module_info = {
             'path': self.module_path,
             'modules': {
-                'resource': []
+                'resource': [],
+                'collection': []
             }
         }
         for module in listdir(self.module_path):
@@ -61,7 +62,15 @@ class module_checker(object):
             for key in ('name', 'type', 'description'):
                 if key not in data:
                     return False, f'In path "{dir_name}": Incomplete module_manifest.json, missing "{key}" field', None
-            if data['type'] != 'resource':
+            if data['type'] == 'resource':
+                pass
+            elif data['type'] == 'collection':
+                if 'contains' not in data:
+                    return False, f'In path "{dir_name}": Expected a module collection, but "contains" key is missing in manifest.json'
+                else:
+                    if 'collection' in data['contains']:
+                        return False, f'In path "{dir_name}": Try to contain another collection in a collection'
+            else:
                 return False, f'In path "{dir_name}": Unknown module type "{data["type"]}"', None
             data['dirname'] = dir_name
             return True, None, data

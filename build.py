@@ -43,6 +43,8 @@ if __name__ == '__main__':
                             help="Make the pack compatible to other addons. This will generate only one language file 'zh_CN.lang'.")
         parser.add_argument('-r', '--resource', nargs='*', default='all',
                             help="(Experimental) Include resource modules. Should be module names, 'all' or 'none'. Defaults to 'all'. Pseudoly accepts a path, but only module paths in 'modules' work.")
+        parser.add_argument('-t', '--collection', nargs='*',
+                            default='none', help="Include module collections.")
         parser.add_argument('-o', '--output', nargs='?', default='builds',
                             help="Specify the location to output packs. Default location is 'builds/' folder.")
         parser.add_argument('--hash', action='store_true',
@@ -50,7 +52,7 @@ if __name__ == '__main__':
         return parser
 
     def handle_args(args: dict):
-        module_types = ('resource', )
+        module_types = ('resource', 'collection')
         args['modules'] = {key: args.pop(key) for key in module_types}
         return args
 
