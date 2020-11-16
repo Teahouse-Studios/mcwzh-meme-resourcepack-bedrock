@@ -1,6 +1,6 @@
-from os.path import join, dirname, split
+from os.path import join, dirname, basename
 
-if __name__ == f'{split(dirname(__file__))[1]}.build':
+if __name__ == f'{basename(dirname(__file__))}.build':
     from .packaging.pack_builder import pack_builder
     from .packaging.module_checker import module_checker
 else:
@@ -8,24 +8,15 @@ else:
     from packaging.module_checker import module_checker
 
 
-def check_module(module_path=None):
-    module_path = module_path or join(dirname(__file__), "modules")
-    checker = module_checker(module_path)
-    checker.check_module()
-    return checker.module_info, checker.check_info_list
-
-
 def build(args: dict):
-    build_info = []
     current_dir = dirname(__file__)
-    module_info, module_check_info = check_module()
-    build_info.extend(module_check_info)
+    checker = module_checker(join(current_dir, "modules"))
+    checker.check_module()
     builder = pack_builder(
-        join(current_dir, "meme_resourcepack"), module_info)
+        join(current_dir, "meme_resourcepack"), checker.module_info)
     builder.args = args
     builder.build()
-    build_info.extend(builder.log_list)
-    return builder.filename, builder.warning_count, builder.error, build_info
+    return builder.filename, builder.warning_count, builder.error
 
 
 if __name__ == '__main__':
@@ -52,7 +43,7 @@ if __name__ == '__main__':
         return parser
 
     def handle_args(args: dict):
-        module_types = ('resource', 'collection')
+        module_types = 'resource', 'collection'
         args['modules'] = {key: args.pop(key) for key in module_types}
         return args
 
