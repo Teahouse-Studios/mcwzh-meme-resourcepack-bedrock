@@ -207,14 +207,14 @@ class pack_builder(object):
             for file in os.listdir(join(self.main_resource_path, "texts")):
                 if basename(file) != 'zh_ME.lang':
                     pack.write(join(self.main_resource_path, f"texts/{file}"),
-                           arcname=f"texts/{file}")
+                               arcname=f"texts/{file}")
             pack.writestr("text/zh_ME.lang", lang_data)
 
     def __merge_language(self, lang_supp: list) -> dict:
         # load basic strings
         with open(join(self.main_resource_path, "texts/zh_ME.lang"), 'r', encoding='utf8') as f:
             lang_data = dict(line[:line.find('#') - 1].strip().split("=", 1)
-                       for line in f if line.strip() != '' and not line.startswith('#'))
+                             for line in f if line.strip() != '' and not line.startswith('#'))
         module_path = self.module_info['path']
         for item in lang_supp:
             add_file = join(module_path, item, "add.json")
