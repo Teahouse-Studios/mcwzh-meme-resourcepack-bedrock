@@ -39,7 +39,9 @@ class module_checker(object):
         module_info = {
             'path': self.module_path,
             'modules': {
+                'language': [],
                 'resource': [],
+                'mixed': [],
                 'collection': []
             }
         }
@@ -62,7 +64,10 @@ class module_checker(object):
             for key in ('name', 'type', 'description'):
                 if key not in data:
                     return False, f'In path "{dir_name}": Incomplete module_manifest.json, missing "{key}" field', None
-            if data['type'] == 'resource':
+            if data['type'] in ('language', 'mixed'):
+                if not (exists(join(path, "add.json")) or exists(join(path, "remove.json"))):
+                    return False, f'In path "{dir_name}": Expected a language/mixed module, but couldn\'t find "add.json" or "remove.json"', None
+            elif data['type'] == 'resource':
                 pass
             elif data['type'] == 'collection':
                 if 'contains' not in data:

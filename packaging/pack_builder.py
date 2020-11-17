@@ -1,7 +1,7 @@
 import os
 from hashlib import sha256
 from json import load, dumps
-from os.path import join
+from os.path import basename, join, exists
 from sys import stderr
 from zipfile import ZipFile, ZIP_DEFLATED
 
@@ -60,12 +60,17 @@ class pack_builder(object):
         # args validation
         status, info = self.__check_args()
         if status:
+            # get language modules
+            lang_supp = self.__parse_includes('language')
             # get resource modules
             res_supp = self.__parse_includes('resource')
+            # get mixed modules
+            mixed_supp = self.__parse_includes('mixed')
             # get module collections
             module_collection = self.__parse_includes('collection')
             # merge collection into resource list
-            self.__handle_modules(res_supp, module_collection)
+            self.__handle_modules(res_supp, lang_supp,
+                                  mixed_supp, module_collection)
             # process pack name
             digest = sha256(dumps(args).encode('utf8')).hexdigest()
             pack_name = args['hash'] and f"meme-resourcepack.{digest[:7]}.{args['type']}" or f"meme-resourcepack.{args['type']}"
@@ -90,7 +95,7 @@ class pack_builder(object):
                        arcname="pack_icon.png")
             pack.write(join(self.main_resource_path, "manifest.json"),
                        arcname="manifest.json")
-            self.__dump_language_file(pack)
+            self.__dump_language_file(pack, lang_supp)
             pack.write(join(self.main_resource_path, "textures/map/map_background.png"),
                        arcname="textures/map/map_background.png")
             # dump resources
@@ -127,7 +132,7 @@ class pack_builder(object):
     def __check_args(self):
         for item in ('type', 'compatible', 'modules', 'output', 'hash'):
             if item not in self.args:
-                return False, f'Missing argument "{item}"'
+                return False, f'Missing required argument "{item}"'
         return True, None
 
     def __parse_includes(self, type: str) -> list:
@@ -148,14 +153,17 @@ class pack_builder(object):
                         f'Module "{item}" does not exist, skipping')
             return include_list
 
-    def __handle_modules(self, resource_list: list, collection_list: list):
+    def __handle_modules(self, resource_list: list, language_list: list, mixed_list: list, collection_list: list):
         collection_info = {
             k.pop('name'): k for k in self.module_info['modules']['collection']}
         for collection in collection_list:
-            for module_type, module_list in (('resource', resource_list),):
+            for module_type, module_list in (('language', language_list), ('resource', resource_list), ('mixed', mixed_list)):
                 if module_type in collection_info[collection]['contains']:
                     module_list.extend(
                         collection_info[collection]['contains'][module_type])
+        # mixed_modules go to resource and language, respectively
+        resource_list.extend(mixed_list)
+        language_list.extend(mixed_list)
 
     def __merge_json(self, modules: list, type: str) -> dict:
         name = type == "item" and "item_texture.json" or "terrain_texture.json"
@@ -191,11 +199,33 @@ class pack_builder(object):
                                     f"Duplicated '{testpath}', skipping.")
         return item_texture, terrain_texture
 
-    def __dump_language_file(self, pack: ZipFile):
+    def __dump_language_file(self, pack: ZipFile, lang_supp: list):
+        lang_data = self.__merge_language(lang_supp)
         if self.args['compatible']:
-            pack.write(join(self.main_resource_path, "texts/zh_ME.lang"),
-                       arcname="texts/zh_CN.lang")
+            pack.writestr("texts/zh_CN.lang", lang_data)
         else:
             for file in os.listdir(join(self.main_resource_path, "texts")):
-                pack.write(join(self.main_resource_path, f"texts/{file}"),
+                if basename(file) != 'zh_ME.lang':
+                    pack.write(join(self.main_resource_path, f"texts/{file}"),
                            arcname=f"texts/{file}")
+            pack.writestr("text/zh_ME.lang", lang_data)
+
+    def __merge_language(self, lang_supp: list) -> dict:
+        # load basic strings
+        with open(join(self.main_resource_path, "texts/zh_ME.lang"), 'r', encoding='utf8') as f:
+            lang_data = dict(line[:line.find('#') - 1].strip().split("=", 1)
+                       for line in f if line.strip() != '' and not line.startswith('#'))
+        module_path = self.module_info['path']
+        for item in lang_supp:
+            add_file = join(module_path, item, "add.json")
+            remove_file = join(module_path, item, "remove.json")
+            if exists(add_file):
+                lang_data |= load(open(add_file, 'r', encoding='utf8'))
+            if exists(remove_file):
+                for key in load(open(remove_file, 'r', encoding='utf8')):
+                    if key in lang_data:
+                        lang_data.pop(key)
+                    else:
+                        self.__raise_warning(
+                            f'Key "{key}" does not exist, skipping')
+        return ''.join(f'{k}={v}\t#\n' for k, v in lang_data.items())

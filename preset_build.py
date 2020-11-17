@@ -19,20 +19,20 @@ if __name__ == '__main__':
 
     if check_version_consistency():
         preset_args = [
-            {'type': 'mcpack', 'compatible': False, 'modules': {
-                'resource': ['all'], 'collection': []}, 'hash': False, 'output': 'builds'},
-            {'type': 'mcpack', 'compatible': False, 'modules': {
-                'resource': ['blue_ui'], 'collection': []}, 'hash': False, 'output': 'builds'},
-            {'type': 'mcpack', 'compatible': False, 'modules': {
-                'resource': [], 'collection': ['no_blue_ui']}, 'hash': False, 'output': 'builds'},
-            {'type': 'mcpack', 'compatible': False, 'modules': {
-                'resource': [], 'collection': []}, 'hash': False, 'output': 'builds'},
-            {'type': 'mcpack', 'compatible': True, 'modules': {
-                'resource': [], 'collection': []}, 'hash': False, 'output': 'builds'},
-            {'type': 'zip', 'compatible': False, 'modules': {
-                'resource': ['all'], 'collection': []}, 'hash': False, 'output': 'builds'},
-            {'type': 'zip', 'compatible': True, 'modules': {
-                'resource': [], 'collection': []}, 'hash': False, 'output': 'builds'},
+            {'type': 'mcpack', 'compatible': False, 'modules': {'language': [], 'resource': [
+                'all'], 'mixed': [], 'collection': []}, 'hash': False, 'output': 'builds'},
+            {'type': 'mcpack', 'compatible': False, 'modules': {'language': [], 'resource': [
+                'blue_ui'], 'mixed': [], 'collection': []}, 'hash': False, 'output': 'builds'},
+            {'type': 'mcpack', 'compatible': False, 'modules': {'language': [], 'resource': [
+            ], 'mixed': [], 'collection': ['no_blue_ui']}, 'hash': False, 'output': 'builds'},
+            {'type': 'mcpack', 'compatible': False, 'modules': {'language': [], 'resource': [
+            ], 'mixed':[], 'collection': []}, 'hash': False, 'output': 'builds'},
+            {'type': 'mcpack', 'compatible': True, 'modules': {'language': [], 'resource': [
+            ], 'mixed': [], 'collection': []}, 'hash': False, 'output': 'builds'},
+            {'type': 'zip', 'compatible': False, 'modules': {'language': [], 'resource': [
+                'all'], 'mixed':[], 'collection': []}, 'hash': False, 'output': 'builds'},
+            {'type': 'zip', 'compatible': True, 'modules': {'language': [], 'resource': [
+            ], 'mixed':[], 'collection': []}, 'hash': False, 'output': 'builds'},
         ]
         preset_name = [
             f"meme-resourcepack_v{pack_version}.mcpack",

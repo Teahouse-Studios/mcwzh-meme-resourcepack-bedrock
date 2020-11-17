@@ -34,6 +34,10 @@ if __name__ == '__main__':
                             help="Make the pack compatible to other addons. This will generate only one language file 'zh_CN.lang'.")
         parser.add_argument('-r', '--resource', nargs='*', default='all',
                             help="(Experimental) Include resource modules. Should be module names, 'all' or 'none'. Defaults to 'all'. Pseudoly accepts a path, but only module paths in 'modules' work.")
+        parser.add_argument('-l', '--language', nargs='*', default='none',
+                            help="(Experimental) Include language modules. Should be module names, 'all' or 'none'. Defaults to 'none'.")
+        parser.add_argument('-x', '--mixed', nargs='*', default='none',
+                            help="(Experimental) Include mixed modules. Should be module names, 'all' or 'none'. Defaults to 'none'.")
         parser.add_argument('-t', '--collection', nargs='*',
                             default='none', help="Include module collections.")
         parser.add_argument('-o', '--output', nargs='?', default='builds',
@@ -43,7 +47,7 @@ if __name__ == '__main__':
         return parser
 
     def handle_args(args: dict):
-        module_types = 'resource', 'collection'
+        module_types = 'resource', 'language', 'mixed', 'collection'
         args['modules'] = {key: args.pop(key) for key in module_types}
         return args
 
