@@ -11,10 +11,10 @@ if __name__ == '__main__':
     def check_version_consistency():
         manifest = load(
             open("meme_resourcepack/manifest.json", 'r', encoding='utf8'))
-        header_version = '.'.join(
-            map(lambda i: str(i), manifest['header']['version']))
-        modules_version = '.'.join(
-            map(lambda i: str(i), manifest['modules'][0]['version']))
+        header_version = '.'.join(str(i)
+                                  for i in manifest['header']['version'])
+        modules_version = '.'.join(str(i)
+                                   for i in manifest['modules'][0]['version'])
         return pack_version == header_version and pack_version == modules_version
 
     if check_version_consistency():
@@ -26,7 +26,7 @@ if __name__ == '__main__':
             {'type': 'mcpack', 'compatible': False, 'modules': {'language': [], 'resource': [
             ], 'mixed': [], 'collection': ['no_blue_ui']}, 'hash': False, 'output': 'builds'},
             {'type': 'mcpack', 'compatible': False, 'modules': {'language': [], 'resource': [
-            ], 'mixed':[], 'collection': []}, 'hash': False, 'output': 'builds'},
+            ], 'mixed': [], 'collection': []}, 'hash': False, 'output': 'builds'},
             {'type': 'mcpack', 'compatible': True, 'modules': {'language': [], 'resource': [
             ], 'mixed': [], 'collection': []}, 'hash': False, 'output': 'builds'},
             {'type': 'zip', 'compatible': False, 'modules': {'language': [], 'resource': [
