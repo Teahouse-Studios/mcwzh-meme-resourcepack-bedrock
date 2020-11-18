@@ -1,14 +1,6 @@
 {
     "name": "reAL_GrAsS",
     "type": "resource",
-<<<<<<< HEAD:modules/reAL_GrAsS/module_manifest.json
-    "description": "大草（与grass_enchanted不兼容）",
-    "author": "Zh9c418",
-    "incompatible_with": [
-        "grass_enchanted"
-    ]
-=======
     "description": "大草",
     "author": "Zh9c418"
->>>>>>> parent of 28accc7... 不兼容:modules/reAL_GrAsS/manifest.json
 }

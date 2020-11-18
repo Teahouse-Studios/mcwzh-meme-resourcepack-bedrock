@@ -1,14 +1,6 @@
 {
     "name": "grass_enchanted",
     "type": "resource",
-<<<<<<< HEAD
-    "description": "草（附魔）（与reAL_GrAsS不兼容）",
-    "author": "MiemieMethod",
-    "incompatible_with": [
-        "reAL_GrAsS"
-    ]
-=======
     "description": "草（附魔）",
     "author": "MiemieMethod"
->>>>>>> parent of 28accc7... 不兼容
 }
