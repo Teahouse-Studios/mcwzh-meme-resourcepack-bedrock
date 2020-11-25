@@ -1,12 +1,11 @@
 {
     "name": "no_blue_ui",
     "type": "collection",
-    "description": "BLUE UI YES!",
+    "description": "不要蓝色UI，谢谢",
     "contains": {
         "resource": [
             "a_letter",
             "bagify",
-            "blue_ui",
             "observer_think",
             "trident_model"
         ]
