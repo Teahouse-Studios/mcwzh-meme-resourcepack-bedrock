@@ -208,7 +208,7 @@ class pack_builder(object):
                 if basename(file) != 'zh_ME.lang':
                     pack.write(join(self.main_resource_path, f"texts/{file}"),
                                arcname=f"texts/{file}")
-            pack.writestr("text/zh_ME.lang", lang_data)
+            pack.writestr("texts/zh_ME.lang", lang_data)
 
     def __merge_language(self, lang_supp: list) -> dict:
         # load basic strings
