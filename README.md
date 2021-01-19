@@ -124,7 +124,7 @@ python -m memepack_builder ...
   * 这意味着，你可在署名的情况下自由修改本资源包，但是你再创作的作品必须以本协议发布。
   * 这不是法律建议。
 * 本项目未经梗体中文修改过的部分，按照 ***原作品的协议*** 发布。
-  * 根据[此Issue](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock/issues/11)，本资源包中附带的对简体中文的修正修正文件不按原协议发布，仍按 ***CC BY-SA 4.0*** 协议授权。
+  * 根据[此Issue](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock/issues/11)，本资源包中附带的简体中文语言修正文件不按原协议发布，仍按 ***CC BY-SA 4.0*** 协议授权。
 * 本项目 `tools` 目录下的脚本和根目录下的 `preset_build.py` 文件，可选择 ***CC BY-SA 4.0*** 或 ***Apache License 2.0*** 协议之一授权。
 
 ![GitHub forks](https://img.shields.io/github/forks/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock?style=social)    ![GitHub stars](https://img.shields.io/github/stars/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock?style=social)    ![GitHub watchers](https://img.shields.io/github/watchers/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock?style=social)
