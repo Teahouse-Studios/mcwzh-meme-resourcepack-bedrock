@@ -2,3 +2,7 @@ builds*
 __pycache__
 *.zip
 *.mcpack
+Include/
+Lib/
+Scripts/
+pyvenv.cfg

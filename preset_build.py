@@ -1,9 +1,9 @@
 if __name__ == '__main__':
-    import build
     from json import load
     from os import listdir, mkdir, remove, rename
     from os.path import exists, isdir, join
     from sys import exit
+    from memepack_builder.wrapper import main
 
     pack_version = '1.1.1'
     build_unsuccessful = 0
@@ -19,19 +19,19 @@ if __name__ == '__main__':
 
     if check_version_consistency():
         preset_args = [
-            {'type': 'mcpack', 'compatible': False, 'modules': {'language': [], 'resource': [
+            {'platform': 'be', 'type': 'mcpack', 'compatible': False, 'modules': {'language': [], 'resource': [
                 'all'], 'mixed': [], 'collection': []}, 'hash': False, 'output': 'builds'},
-            {'type': 'mcpack', 'compatible': False, 'modules': {'language': [], 'resource': [
+            {'platform': 'be', 'type': 'mcpack', 'compatible': False, 'modules': {'language': [], 'resource': [
                 'blue_ui'], 'mixed': [], 'collection': []}, 'hash': False, 'output': 'builds'},
-            {'type': 'mcpack', 'compatible': False, 'modules': {'language': [], 'resource': [
+            {'platform': 'be', 'type': 'mcpack', 'compatible': False, 'modules': {'language': [], 'resource': [
             ], 'mixed': [], 'collection': ['no_blue_ui']}, 'hash': False, 'output': 'builds'},
-            {'type': 'mcpack', 'compatible': False, 'modules': {'language': [], 'resource': [
+            {'platform': 'be', 'type': 'mcpack', 'compatible': False, 'modules': {'language': [], 'resource': [
             ], 'mixed': [], 'collection': []}, 'hash': False, 'output': 'builds'},
-            {'type': 'mcpack', 'compatible': True, 'modules': {'language': [], 'resource': [
+            {'platform': 'be', 'type': 'mcpack', 'compatible': True, 'modules': {'language': [], 'resource': [
             ], 'mixed': [], 'collection': []}, 'hash': False, 'output': 'builds'},
-            {'type': 'zip', 'compatible': False, 'modules': {'language': [], 'resource': [
+            {'platform': 'be', 'type': 'zip', 'compatible': False, 'modules': {'language': [], 'resource': [
                 'all'], 'mixed':[], 'collection': []}, 'hash': False, 'output': 'builds'},
-            {'type': 'zip', 'compatible': True, 'modules': {'language': [], 'resource': [
+            {'platform': 'be', 'type': 'zip', 'compatible': True, 'modules': {'language': [], 'resource': [
             ], 'mixed':[], 'collection': []}, 'hash': False, 'output': 'builds'},
         ]
         preset_name = [
@@ -53,13 +53,13 @@ if __name__ == '__main__':
         for file in listdir(base_folder):
             remove(join(base_folder, file))
         for args, name in zip(preset_args, preset_name):
-            pack_name, warning_count, error = build.build(args)
-            if not error:
+            result = main(args, True)
+            if result['error_code'] == 0:
                 pack_counter += 1
-                if warning_count == 0:
+                if result['warning_count'] == 0:
                     perfect_pack_counter += 1
                 if name != "meme-resourcepack.zip" and name != "meme-resourcepack.mcpack":
-                    rename(join(base_folder, pack_name),
+                    rename(join(base_folder, result['file_name']),
                            join(base_folder, name))
                     print(f"Renamed pack to {name}.")
             else:
