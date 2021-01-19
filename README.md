@@ -1,6 +1,6 @@
 # 中文Minecraft Wiki梗体中文资源附加包-基岩版 · Unofficial
 
-[![GitHub issues](https://img.shields.io/github/issues/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock?logo=github&style=flat-square)](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock/issues)    [![GitHub pull requests](https://img.shields.io/github/issues-pr/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock?logo=github&style=flat-square)](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock/pulls)    [![License](https://img.shields.io/static/v1?label=License&message=CC%20BY-SA%204.0&color=db2331&style=flat-square&logo=creative%20commons)](https://creativecommons.org/licenses/by-sa/4.0/)    [![License](https://img.shields.io/static/v1?label=License+for+script&message=Apache-2.0&color=db2331&style=flat-square&logo=apache)](http://www.apache.org/licenses/LICENSE-2.0)    [![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock?label=latest%20version&style=flat-square)](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock/releases)    [![Minecraft ver](https://img.shields.io/static/v1?label=Minecraft%20version&message=1.13.0%2B&color=db2331&style=flat-square&logo=)](https://minecraft.net)
+[![GitHub issues](https://img.shields.io/github/issues/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock?logo=github&style=flat-square)](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock/issues)    [![GitHub pull requests](https://img.shields.io/github/issues-pr/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock?logo=github&style=flat-square)](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock/pulls)    [![License](https://img.shields.io/static/v1?label=License&message=CC%20BY-SA%204.0&color=db2331&style=flat-square&logo=creative%20commons)](https://creativecommons.org/licenses/by-sa/4.0/)    [![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock?label=latest%20version&style=flat-square)](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock/releases)    [![Minecraft ver](https://img.shields.io/static/v1?label=Minecraft%20version&message=1.13.0%2B&color=db2331&style=flat-square&logo=)](https://minecraft.net)
 
 [![Banner](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack/blob/master/materials/zh_meme_banner.png?raw=true)](https://www.mcbbs.net/thread-1005191-1-1.html)
 
@@ -33,7 +33,7 @@
 
 ### 加载附加包时
 
-当加载了其他新增了内容（如新的方块、物品等）的附加包时，普通版本的资源包**无法**覆盖附加包新增的字符串，会导致附加包新增的内容**全部变为本地化键名**（对，比Java版还惨）。为此，请下载`compatible`版本以保证体验。安装流程几乎相同，但选择的语言应该是普通的**简体中文（中国）**。
+当加载了其他新增了内容（如新的方块、物品等）的附加包时，普通版本的资源包**无法**覆盖附加包新增的字符串，会导致附加包新增的内容**全部变为本地化键名**（对，比Java版还惨）。为此，请下载 `compatible` 版本以保证体验。安装流程几乎相同，但选择的语言应该是普通的**简体中文（中国）**。
 
 ### 唱片替换
 
@@ -85,7 +85,13 @@ git clone https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock.gi
 cd mcwzh-meme-resourcepack-bedrock
 ```
 
-3. 运行Python命令：
+3. 安装相关pip依赖：
+
+``` bash
+pip install memepack-builder
+```
+
+4. 运行Python命令：
 
 ``` bash
 python preset_build.py
@@ -93,29 +99,17 @@ python preset_build.py
 
 在文件夹中会出现 `meme-resourcepack.zip` 、 `meme-resourcepack_noresource.zip` 、 `meme-resourcepack.mcpack` 和 `meme-resourcepack_noresource.mcpack` 等资源包，名称和作用如上所述。
 
-如果只需要zip格式的资源包，运行：
+如果需要预设以外的资源包，可输入需要的参数：
 
 ``` bash
-python build.py zip
+python -m memepack_builder ...
 ```
 
-如果只需要mcpack格式的资源包，运行：
-
-``` bash
-python build.py mcpack
-```
-
-如果不需要自定义材质，添加 `-r none` 选项。
-
-更详细的用法请运行以下命令来获取：
-
-``` bash
-python build.py -h
-```
+具体用法可见[此处](https://github.com/Teahouse-Studios/memepack-builder/blob/main/doc/CLI_Manual.zh-hans.md)。
 
 ## 贡献
 
-我们欢迎你为这个资源包贡献自己的想法。请参阅[`CONTRIBUTING.md`](/CONTRIBUTING.md)以获取一些建议。
+我们欢迎你为这个资源包贡献自己的想法。请参阅[`CONTRIBUTING.md`](./CONTRIBUTING.md)以获取一些建议。
 
 ## 声明
 
@@ -126,9 +120,11 @@ python build.py -h
   * 同理，Java版的内容也可能缺少基岩版的内容。
 * 本资源包与Mojang、Minecraft Wiki和Gamepedia无关，原中文翻译版权为Mojang和翻译者所有。
   * 关于正确的译名，请参见[中文Minecraft Wiki的译名标准化](https://minecraft-zh.gamepedia.com/MCW:译名标准化)。
-* 本资源包以 ***CC BY-SA 4.0*** 协议授权。
+* 本项目文件除另有声明外，均以 ***CC BY-SA 4.0*** 协议授权。
   * 这意味着，你可在署名的情况下自由修改本资源包，但是你再创作的作品必须以本协议发布。
   * 这不是法律建议。
-* 本项目的自动构建脚本以 ***Apache 2.0*** 协议发布。
+* 本项目未经梗体中文修改过的部分，按照 ***原作品的协议*** 发布。
+  * 根据[此Issue](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock/issues/11)，本资源包中附带的对简体中文的修正修正文件不按原协议发布，仍按 ***CC BY-SA 4.0*** 协议授权。
+* 本项目 `tools` 目录下的脚本和根目录下的 `preset_build.py` 文件，可选择 ***CC BY-SA 4.0*** 或 ***Apache License 2.0*** 协议之一授权。
 
 ![GitHub forks](https://img.shields.io/github/forks/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock?style=social)    ![GitHub stars](https://img.shields.io/github/stars/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock?style=social)    ![GitHub watchers](https://img.shields.io/github/watchers/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock?style=social)
