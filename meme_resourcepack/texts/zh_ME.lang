@@ -3280,7 +3280,7 @@ howtoplay.fishing.text.3=等待直至你留意到饵钩处出现泡泡的痕迹�
 howtoplay.fishing.text.4.notTouch=当泡泡碰到饵钩时，饵钩会上下摆动。按下 :_input_key.use: 可收回饵钩。小心不要让鱼跑掉！	#
 howtoplay.fishing.text.4.touch=当泡泡碰到饵钩时，饵钩会上下摆动。再次点击“钓鱼”抱枕可收回饵钩。小心不要让鱼跑掉！	#
 
-howtoplay.furnace=	#
+howtoplay.furnace=熔炉	#
 howtoplay.furnace.title=游戏指南：熔炉	#
 howtoplay.furnace.text.1=你可以使用熔炉烹饪或烧炼物品。例如，可以将铁矿石烧炼为老铁。	#
 howtoplay.furnace.text.2.notTouch=将熔炉置于世界中，按下 :_input_key.use: 即可使用它。	#
