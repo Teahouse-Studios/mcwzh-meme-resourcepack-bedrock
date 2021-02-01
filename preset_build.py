@@ -5,7 +5,7 @@ if __name__ == '__main__':
     from sys import exit
     from memepack_builder.wrapper import main
 
-    pack_version = '1.1.1'
+    pack_version = '1.2.0'
     build_unsuccessful = 0
 
     def check_version_consistency():
@@ -20,17 +20,19 @@ if __name__ == '__main__':
     if check_version_consistency():
         preset_args = [
             {'platform': 'be', 'type': 'mcpack', 'compatible': False, 'modules': {'language': [], 'resource': [
-                'all'], 'mixed': [], 'collection': []}, 'hash': False, 'output': 'builds'},
+                'all'], 'mixed': ['all'], 'collection': []}, 'hash': False, 'output': 'builds'},
             {'platform': 'be', 'type': 'mcpack', 'compatible': False, 'modules': {'language': [], 'resource': [
                 'blue_ui'], 'mixed': [], 'collection': []}, 'hash': False, 'output': 'builds'},
             {'platform': 'be', 'type': 'mcpack', 'compatible': False, 'modules': {'language': [], 'resource': [
-            ], 'mixed': [], 'collection': ['no_blue_ui']}, 'hash': False, 'output': 'builds'},
+            ], 'mixed': ['all'], 'collection': ['no_blue_ui']}, 'hash': False, 'output': 'builds'},
             {'platform': 'be', 'type': 'mcpack', 'compatible': False, 'modules': {'language': [], 'resource': [
             ], 'mixed': [], 'collection': []}, 'hash': False, 'output': 'builds'},
             {'platform': 'be', 'type': 'mcpack', 'compatible': True, 'modules': {'language': [], 'resource': [
+                'all'], 'mixed': ['all'], 'collection': []}, 'hash': False, 'output': 'builds'},
+            {'platform': 'be', 'type': 'mcpack', 'compatible': True, 'modules': {'language': [], 'resource': [
             ], 'mixed': [], 'collection': []}, 'hash': False, 'output': 'builds'},
             {'platform': 'be', 'type': 'zip', 'compatible': False, 'modules': {'language': [], 'resource': [
-                'all'], 'mixed':[], 'collection': []}, 'hash': False, 'output': 'builds'},
+                'all'], 'mixed':['all'], 'collection': []}, 'hash': False, 'output': 'builds'},
             {'platform': 'be', 'type': 'zip', 'compatible': True, 'modules': {'language': [], 'resource': [
             ], 'mixed':[], 'collection': []}, 'hash': False, 'output': 'builds'},
         ]
@@ -39,6 +41,7 @@ if __name__ == '__main__':
             f"meme-resourcepack_noresource_v{pack_version}.mcpack",
             f"meme-resourcepack_noblueui_v{pack_version}.mcpack",
             f"meme-resourcepack_noresource_noblueui_v{pack_version}.mcpack",
+            f"meme-resourcepack_compatible_v{pack_version}.mcpack",
             f"meme-resourcepack_compatible_noresource_noblueui_v{pack_version}.mcpack",
             f"meme-resourcepack_v{pack_version}.zip",
             f"meme-resourcepack_compatible_noresource_noblueui_v{pack_version}.zip",
