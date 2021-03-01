@@ -1,54 +1,56 @@
-if __name__ == '__main__':
-    from json import load
-    from os import listdir, mkdir, remove, rename
-    from os.path import exists, isdir, join
-    from sys import exit
-    from memepack_builder.wrapper import main
+from json import load
+from os import listdir, mkdir, remove, rename
+from os.path import exists, isdir, join
+from sys import exit
+from memepack_builder.wrapper import main as _main
 
-    pack_version = '1.2.0'
-    build_unsuccessful = 0
+PACK_VERSION = '1.2.0'
 
-    def check_version_consistency():
-        manifest = load(
-            open("meme_resourcepack/manifest.json", 'r', encoding='utf8'))
-        header_version = '.'.join(str(i)
-                                  for i in manifest['header']['version'])
-        modules_version = '.'.join(str(i)
-                                   for i in manifest['modules'][0]['version'])
-        return pack_version == header_version and pack_version == modules_version
 
+def check_version_consistency():
+    manifest = load(
+        open("meme_resourcepack/manifest.json", 'r', encoding='utf8'))
+    header_version = '.'.join(str(i)
+                              for i in manifest['header']['version'])
+    modules_version = '.'.join(str(i)
+                               for i in manifest['modules'][0]['version'])
+    return PACK_VERSION == header_version and PACK_VERSION == modules_version
+
+
+def main():
     if check_version_consistency():
         preset_args = [
-            {'platform': 'be', 'type': 'mcpack', 'compatible': False, 'modules': {'language': [], 'resource': [
-                'all'], 'mixed': ['all'], 'collection': []}, 'hash': False, 'output': 'builds'},
-            {'platform': 'be', 'type': 'mcpack', 'compatible': False, 'modules': {'language': [], 'resource': [
-                'blue_ui'], 'mixed': [], 'collection': []}, 'hash': False, 'output': 'builds'},
-            {'platform': 'be', 'type': 'mcpack', 'compatible': False, 'modules': {'language': [], 'resource': [
-            ], 'mixed': ['all'], 'collection': ['no_blue_ui']}, 'hash': False, 'output': 'builds'},
-            {'platform': 'be', 'type': 'mcpack', 'compatible': False, 'modules': {'language': [], 'resource': [
-            ], 'mixed': [], 'collection': []}, 'hash': False, 'output': 'builds'},
-            {'platform': 'be', 'type': 'mcpack', 'compatible': True, 'modules': {'language': [], 'resource': [
-                'all'], 'mixed': ['all'], 'collection': []}, 'hash': False, 'output': 'builds'},
-            {'platform': 'be', 'type': 'mcpack', 'compatible': True, 'modules': {'language': [], 'resource': [
-            ], 'mixed': [], 'collection': []}, 'hash': False, 'output': 'builds'},
-            {'platform': 'be', 'type': 'zip', 'compatible': False, 'modules': {'language': [], 'resource': [
-                'all'], 'mixed':['all'], 'collection': []}, 'hash': False, 'output': 'builds'},
-            {'platform': 'be', 'type': 'zip', 'compatible': True, 'modules': {'language': [], 'resource': [
-            ], 'mixed':[], 'collection': []}, 'hash': False, 'output': 'builds'},
+            {'platform': 'be', 'type': 'mcpack', 'compatible': False, 'modules': {
+                'resource': ['all'], 'collection': []}, 'hash': False, 'output': 'builds'},
+            {'platform': 'be', 'type': 'mcpack', 'compatible': False, 'modules': {
+                'resource': ['blue_ui'], 'collection': []}, 'hash': False, 'output': 'builds'},
+            {'platform': 'be', 'type': 'mcpack', 'compatible': False, 'modules': {'resource': [
+                'minecart_helmet', 'spicy_strips'], 'collection': ['no_blue_ui']}, 'hash': False, 'output': 'builds'},
+            {'platform': 'be', 'type': 'mcpack', 'compatible': False, 'modules': {
+                'resource': [], 'collection': []}, 'hash': False, 'output': 'builds'},
+            {'platform': 'be', 'type': 'mcpack', 'compatible': True, 'modules': {
+                'resource': ['all'], 'collection': []}, 'hash': False, 'output': 'builds'},
+            {'platform': 'be', 'type': 'mcpack', 'compatible': True, 'modules': {
+                'resource': [], 'collection': []}, 'hash': False, 'output': 'builds'},
+            {'platform': 'be', 'type': 'zip', 'compatible': False, 'modules': {
+                'resource': ['all'], 'collection': []}, 'hash': False, 'output': 'builds'},
+            {'platform': 'be', 'type': 'zip', 'compatible': True, 'modules': {
+                'resource': [], 'collection': []}, 'hash': False, 'output': 'builds'},
         ]
         preset_name = [
-            f"meme-resourcepack_v{pack_version}.mcpack",
-            f"meme-resourcepack_noresource_v{pack_version}.mcpack",
-            f"meme-resourcepack_noblueui_v{pack_version}.mcpack",
-            f"meme-resourcepack_noresource_noblueui_v{pack_version}.mcpack",
-            f"meme-resourcepack_compatible_v{pack_version}.mcpack",
-            f"meme-resourcepack_compatible_noresource_noblueui_v{pack_version}.mcpack",
-            f"meme-resourcepack_v{pack_version}.zip",
-            f"meme-resourcepack_compatible_noresource_noblueui_v{pack_version}.zip",
+            f"meme-resourcepack_v{PACK_VERSION}.mcpack",
+            f"meme-resourcepack_noresource_v{PACK_VERSION}.mcpack",
+            f"meme-resourcepack_noblueui_v{PACK_VERSION}.mcpack",
+            f"meme-resourcepack_noresource_noblueui_v{PACK_VERSION}.mcpack",
+            f"meme-resourcepack_compatible_v{PACK_VERSION}.mcpack",
+            f"meme-resourcepack_compatible_noresource_noblueui_v{PACK_VERSION}.mcpack",
+            f"meme-resourcepack_v{PACK_VERSION}.zip",
+            f"meme-resourcepack_compatible_noresource_noblueui_v{PACK_VERSION}.zip",
         ]
         pack_counter = 0
         perfect_pack_counter = 0
         base_folder = "builds"
+        build_unsuccessful = 0
         if exists(base_folder) and not isdir(base_folder):
             remove(base_folder)
         if not exists(base_folder):
@@ -56,7 +58,7 @@ if __name__ == '__main__':
         for file in listdir(base_folder):
             remove(join(base_folder, file))
         for args, name in zip(preset_args, preset_name):
-            result = main(args, True)
+            result = _main(args, True)
             if result['error_code'] == 0:
                 pack_counter += 1
                 if result['warning_count'] == 0:
@@ -73,4 +75,8 @@ if __name__ == '__main__':
         exit(build_unsuccessful)
     else:
         exit(
-            f'\033[1;31mError: Pack version "{pack_version}" does not match number in manifest.json.\033[0m')
+            f'\033[1;31mError: Pack version "{PACK_VERSION}" does not match number in manifest.json.\033[0m')
+
+
+if __name__ == '__main__':
+    main()
