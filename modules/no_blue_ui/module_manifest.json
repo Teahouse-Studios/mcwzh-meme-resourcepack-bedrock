@@ -2,15 +2,13 @@
     "name": "no_blue_ui",
     "type": "collection",
     "description": "不要蓝色UI，谢谢",
-    "contains": {
-        "resource": [
-            "a_letter",
-            "bagify",
-            "bee_pickaxe",
-            "grass_enchanted",
-            "minecart_helmet",
-            "observer_think",
-            "trident_model"
-        ]
-    }
+    "contains": [
+        "a_letter",
+        "bagify",
+        "bee_pickaxe",
+        "grass_enchanted",
+        "minecart_helmet",
+        "observer_think",
+        "trident_model"
+    ]
 }
