@@ -65,7 +65,9 @@
 
 ### 体验最新内容
 
-想要**抢先体验**最前沿~~整活~~版本，请按以下方法操作，或者不会命令行可以前往[网页打包](https://dl.meme.teahou.se/)：
+想要**抢先体验**最前沿~~整活~~版本，我们强烈建议您前往[网页打包](https://dl.meme.teahou.se/)，那里可以更直观地选择您需要的内容。
+
+若您仍想自己尝试从命令行打包（并不推荐，比较繁琐），可按以下步骤进行：
 
 #### 先决条件
 
@@ -73,27 +75,15 @@
 
 #### 步骤
 
-1. 下载源码：
+1. 下载源码；
+2. 进入文件夹；
+3. 安装相关pip依赖；
+4. 运行预设打包命令。
 
-``` bash
+``` sh
 git clone https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock.git
-```
-
-2. 进入文件夹：
-
-``` bash
 cd mcwzh-meme-resourcepack-bedrock
-```
-
-3. 安装相关pip依赖：
-
-``` bash
-pip install memepack-builder
-```
-
-4. 运行Python命令：
-
-``` bash
+pip install -r requirements.txt
 python preset_build.py
 ```
 
