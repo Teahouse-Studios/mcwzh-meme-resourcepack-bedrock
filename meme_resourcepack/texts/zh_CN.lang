@@ -44,7 +44,7 @@ accessibility.checkbox.tts.title=复选框	#
 accessibility.checkbox.tts.status=状态%s			### Status will be checked or unchecked
 accessibility.dropdown.tts.title=下拉	#
 accessibility.slider.tts.title=滑块	#
-accessibility.tab.tts.title=标签	#
+accessibility.tab.tts.title=选项卡	#
 accessibility.textbox.tts.title=文本框	#
 accessibility.toggle.tts.title=开关	#
 
@@ -115,7 +115,7 @@ accessibility.start.new=新	#
 accessibility.start.profile=选择个人资料	#
 accessibility.start.skinPicker=选择皮肤	#
 
-accessibility.store.tag=标签	#
+accessibility.store.tag=选项卡	#
 
 accessibility.textbox.editing=正在编辑	#
 
@@ -360,7 +360,7 @@ apple.iCloudDisabled.message=你的存档没有保存妥当。当你下次玩Min
 apple.iCloudDisabled.button.turnOnICloud=开启iCloud	#
 apple.iCloudNoSpace.message=你的iCloud可用空间不足，无法妥当保存存档。当你下次玩Minecraft时，可能就找不到它了。请释放iCloud账户上的空间，确保所有存档保存完好。	#
 apple.iCloudNoSpace.button.manageICloud=管理iCloud	#
-apple.iCloudNoInternet.message=你需要互联网连接才能妥当保存存档。当你下次玩Minecraft时，可能就找不到它了。请重新连接到互联网，确保所有存档保存完好。	#
+apple.iCloudNoInternet.message=你需要网络连接才能妥当保存存档。当你下次玩Minecraft时，可能就找不到它了。请重新连接到互联网，确保所有存档保存完好。	#
 apple.iCloudSignInRequired.title=登录	#
 apple.iCloudSignInRequired.message=你必须登录iCloud才能玩Minecraft。请转到Apple TV设置并打开iCloud。	#
 apple.iCloudUserChanged.message=你已经登录新的iCloud账户。你将需要重新启动Minecraft才能进入游戏。	#
@@ -408,7 +408,7 @@ authentication.trialEndedTitle=试用版已到期	#
 authentication.clickToPurchaseMessage=请你的教育负责人在此为你购买许可：	#
 authentication.clickToPurchaseStudent=http://aka.ms/meestore	#
 authentication.clickToPurchaseTeacher=购买许可	#
-authentication.adalException=我们无法连接到你当前所需的服务。请检查你的互联网连接，然后再试一次。	#
+authentication.adalException=我们无法连接到你当前所需的服务。请检查你的网络连接，然后再试一次。	#
 authentication.buyMinecraft=前往App Store	#
 authentication.edu.leaveGame.title=您已被注销	#
 authentication.edu.leaveGame.body=另一个设备已使用您的账户登录。	#
@@ -525,7 +525,7 @@ codeScreen.editor.description.tynker=使用Tynker建造自己的世界！使用�
 codeScreen.memoryWarning=此设备的内存不符合推荐要求。编辑器可能无法正常工作。	#
 codeScreen.memoryError=编辑器进程出错，请检查你的设备是否有足够的内存。	#
 codeScreen.needCheats=必须开启当前存档中的作弊选项才能写代码！	#
-codeScreen.networkError=无法连接网络。请检查你的互联网设置。	#
+codeScreen.networkError=无法连接网络。请检查你的网络设置。	#
 codeScreen.resetWarning=你确定要重置Code Builder吗？所有未保存的工作将会丢失…	#
 codeScreen.title=Code Builder	#
 codeScreen.buttonTTS.splitLeft=向左移动	#
@@ -1084,9 +1084,9 @@ commands.scoreboard.teams.list.player.entry=- %2$s:%1$s(%3$s)																			
 commands.scoreboard.teams.option.noValue=选项%1$s的有效数值有：%2$s															###1: Option Name ##2: List of Option Values
 commands.scoreboard.teams.option.success=将队伍%2$s的选项%1$s设置为%3$s															###1: Option Name ##2: Team Name ##3: Option Value
 commands.scoreboard.teams.remove.success=已移除队伍%1$s																				###1: Team Name
-commands.screenshake.description=对玩家视野施以一定强度和时间的视角摇晃。	#
-commands.screenshake.success=已向以下玩家发送视角摇晃请求：%s	#
-commands.screenshake.successStop=已停止以下玩家的视角摇晃：%s	#
+commands.screenshake.description=对玩家视野施以一定强度和时间的视角震动。	#
+commands.screenshake.success=已向以下玩家发送视角震动请求：%s	#
+commands.screenshake.successStop=已停止以下玩家的视角震动：%s	#
 commands.seed.success=种子：%1$s	#
 commands.setblock.description=将一个方块更改为另一种方块。	#
 commands.setblock.failed=无法放置方块	#
@@ -1390,7 +1390,7 @@ controller.buttonTip.select=选择	#
 controller.buttonTip.selectRecipe=选择配方	#
 controller.buttonTip.deselectRecipe=取消选择配方	#
 controller.buttonTip.clearRecipe=清除配方	#
-controller.buttonTip.tab=标签	#
+controller.buttonTip.tab=选项卡	#
 controller.buttonTip.take.half=拿取一半	#
 controller.buttonTip.take.one=拿取一个	#
 controller.buttonTip.take=拿取	#
@@ -1422,7 +1422,7 @@ course.edu.byLessonsEndOrdered=第%d节课结束时，你将学习到以下内�
 course.edu.collaborativeLesson=协作课程	#
 course.edu.collaborativeLessonAndQuiz=协作课程与测验	#
 course.edu.connectionFailed=糟糕！你似乎已经断开了网络连接。请检查你的网络连接并重试！	#
-course.edu.connectionProblem.courseList=连接到课程列表时出现问题。请检查你的互联网连接并再试一次。	#
+course.edu.connectionProblem.courseList=连接到课程列表时出现问题。请检查你的网络连接并再试一次。	#
 course.edu.connectionProblem.quiz=连接到测验时出现问题。请重试。	#
 course.edu.continueButton=继续	#
 course.edu.courses=课程	#
@@ -1731,7 +1731,7 @@ realmsInvitationScreen.shareByCode=分享邀请代码	#
 realmsInvitationScreen.shareLinkToRealm=分享指向Realm的链接	#
 realmsInvitationScreen.shareCodeToRealm=分享指向Realm的邀请代码	#
 realmsInvitationScreen.shareInfoMessage=具有该链接的任何人都可以加入你的Realm。转到“游戏”>“下载世界”即可下载你的世界的备份。	#
-realmsInvitationScreen.shareInfoMessageCode=具有该分享代码的任何人都可以加入你的Realm。转到“游戏”>“下载世界”即可下载你的世界的备份。	#
+realmsInvitationScreen.shareInfoMessageCode=具有该邀请代码的任何人都可以加入你的Realm。转到“游戏”>“下载世界”即可下载你的世界的备份。	#
 realmsInvitationScreen.refreshLinkInfoMessage=这会停用旧链接并创建一个新链接。是否要继续？	#
 realmsInvitationScreen.refreshCodeInfoMessage=这会停用旧的邀请代码并创建一个新的邀请代码。是否要继续？	#
 realmsInvitationScreen.kick=删除	#
@@ -1795,16 +1795,16 @@ realmsCreateScreen.errorRealmNameAndTOS=你的Realm名称不能为空，而且�
 realmsCreateScreen.errorTOS=必须接受条款和条件才能创建Realm。	#
 realmsCreateScreen.goBack=返回	#
 realmsCreateScreen.createFailed.title=出错了	#
-realmsCreateScreen.purchaseFailed=抱歉，无法完成Realm购买。请检查互联网连接？	#
+realmsCreateScreen.purchaseFailed=抱歉，无法完成Realm购买。请检查网络连接？	#
 realmsCreateScreen.createFailed.content=购买成功，但现在无法创建你的Realm。我们会尽快创建你的Realm。请稍后在此设备上查看。	#
 realmsCreateScreen.createFailed.profanity=不允许的Realm名称%s。	#
 realmsCreateScreen.createFailed.generic=无法验证俱乐部名称。请稍后重试。	#
 realmsCreateScreen.maxRealms.title=订阅数已达到最大	#
 realmsCreateScreen.maxRealms.content=你在该平台上已达到最大活跃订阅数，现在无法创建新的订阅。	#
 realmsCreateScreen.offerNotFound.title=商店连接已丢失	#
-realmsCreateScreen.offerNotFound.content=你的设备失去了与商店的连接，我们无法确认此价格是否仍可用。请检查你的互联网连接或者稍后再试。	#
+realmsCreateScreen.offerNotFound.content=你的设备失去了与商店的连接，我们无法确认此价格是否仍可用。请检查你的网络连接或者稍后再试。	#
 realmsCreateScreen.offerNotAvailable.title=商店连接已丢失	#
-realmsCreateScreen.offerNotAvailable.content=你的设备失去了与商店的连接，我们无法确认此价格是否仍可用。请检查你的互联网连接或者稍后再试。	#
+realmsCreateScreen.offerNotAvailable.content=你的设备失去了与商店的连接，我们无法确认此价格是否仍可用。请检查你的网络连接或者稍后再试。	#
 realmsCreateScreen.maxRealms.content=你已拥有最大有效Realm数量，现在无法创建新Realm。	#
 realmsCreateScreen.usersTwo=2位玩家	#
 realmsCreateScreen.usersTen=10位玩家	#
@@ -1904,7 +1904,7 @@ networkWorld.servers_label=服务器	#
 networkWorld.friends_label=好友	#
 networkWorld.joinable_friends_label=可加入的好友	#
 networkWorld.no_joinable_friends_label=你的好友现在没在玩Minecraft。	#
-networkWorld.check_internet_connection=哎呀！要不检查一下你的互联网连接？我们找不到你朋友的世界。	#
+networkWorld.check_internet_connection=哎呀！要不检查一下你的网络连接？我们找不到你朋友的世界。	#
 networkWorld.connect_to_xbl=用微软账户登录，与好友畅玩。	#
 networkWorld.memberOfTooManyRealms=你的Realm成员已经到达了上限。	#
 networkWorld.multiplayerPrivilegesBlocked=由于你微软账户的设置问题，你无法进行在线多人游戏。请在aka.ms/MCMultiplayerHelp查看说明以检查并更改你的隐私设置。	#
@@ -2213,7 +2213,7 @@ death.fell.killer=%1$s注定要摔死	#
 deathScreen.deleteWorld=删除世界	#
 deathScreen.hardcoreInfo=你不可在极限模式中重生！	#
 deathScreen.leaveServer=退出服务器	#
-deathScreen.message=你失败了！	#
+deathScreen.message=你死了！	#
 deathScreen.quit=主菜单	#
 deathScreen.quit.confirm=你确定要退出吗？	#
 deathScreen.quit.confirmToMainMenuWarning=是否确定要退出游戏进入主菜单？	#
@@ -2223,7 +2223,7 @@ deathScreen.quit.secondaryClient.confirmLeaveWarning=是否确实要保存并退
 deathScreen.quit.secondaryClient.confirmLeaveTitleWarning=保存并退出	#
 deathScreen.respawn=重生	#
 deathScreen.score=分数	#
-deathScreen.title=你失败了！	#
+deathScreen.title=你死了！	#
 deathScreen.title.hardcore=游戏结束！	#
 deathScreen.titleScreen=标题画面	#
 
@@ -2307,7 +2307,7 @@ disconnectionScreen.multiplayerLockedSkin=你配备的皮肤来自多人游戏�
 disconnectionScreen.loggedinOtherLocation=已从其他地点登录	#
 disconnectionScreen.multiplayerDisabled=世界已设置为单人游戏模式。	#
 disconnectionScreen.noReason=你已断开连接	#
-disconnectionScreen.noInternet=请检查你的互联网连接并重试。	#
+disconnectionScreen.noInternet=请检查你的网络连接并重试。	#
 disconnectionScreen.notAllowed=你并未获邀在此服务器上进行游戏。	#
 disconnectionScreen.notAuthenticated=你必须通过Microsoft服务身份验证。	#
 disconnectionScreen.outdatedClient=无法连接：过期的客户端！	#
@@ -2798,7 +2798,7 @@ gui.resourcepacks=资源包…	#
 gui.submit=提交	#
 gui.playOffline=离线游戏	#
 gui.signIn=登录	#
-gui.genericNetworkError=出错了。尝试检查你的互联网连接。	#
+gui.genericNetworkError=出错了。尝试检查你的网络连接。	#
 
 gui.edu.exitGameWarningCaption=Minecraft教育版		### Use Minecraft 教育版 in zh_CN translation
 gui.edu.exitGameWarningMessage=离开Minecraft教育版？		### Use 离开 Minecraft 教育版? in zh_CN translation
@@ -3427,7 +3427,7 @@ howtoplay.multiplayer.header.3=加入在线游戏	#
 howtoplay.multiplayer.text.4=要加入多人游戏，请转到“好友”选项卡。所有可加入的Realm、好友和局域网游戏都将在此处显示。选择某个游戏并选中它来加入。	#
 howtoplay.multiplayer.text.4.norealms=要加入多人游戏，请转到“好友”选项卡。所有可加入的Realm、好友和局域网游戏都将在此处显示。选择某个游戏并选中它来加入。	#
 howtoplay.multiplayer.text.5=当你开始或加入在线游戏时，游戏将在你的“好友”选项卡中对大家可见。如果你的好友已加入，游戏将立即对这些好友的好友可见。	#
-howtoplay.multiplayer.text.6=注意：你必须具有互联网连接并且必须登录微软账户才能玩多人游戏。	#
+howtoplay.multiplayer.text.6=注意：你必须具有网络连接并且登录微软账户才能进行多人游戏。	#
 howtoplay.multiplayer.header.4=玩家权限	#
 howtoplay.multiplayer.text.7=如果你想要管理各个玩家的权限，玩家权限使其变得非常容易。打开暂停菜单，你会在右侧看到当前在世界中的玩家列表。选择其权限图标可调整该玩家的权限。	#
 
@@ -5423,10 +5423,8 @@ options.dev_newCuller=使用新的culler	#
 options.dev_showBuildInfo=显示版本信息	#
 options.dev_showDevConsoleButton=显示开发控制台按钮	#
 options.dev_realmsPermissionsEnabledButton=显示Realm许可证	#
-options.dev_show_tcui_replacement=显示TCUI替换	#
 options.dev_enableProfiler=启用分析器	#
 options.dev_newParticleSystem=启用新颗粒效果系统	#
-options.dev_toggle_default_font_overrides=启用默认字体覆盖	#
 options.dev_enableDebugHudOverlay=启用调试HUD	#
 options.dev_enableDebugHudOverlay.off=关闭	#
 options.dev_enableDebugHudOverlay.basic=基本	#
@@ -5553,6 +5551,9 @@ options.dev_sunset_overrides=启用落后淘汰	#
 options.dev_sunset_status=将设备视为完全淘汰	#
 options.dev_sunsetting_tier=淘汰等级	#
 options.dev_sunsetting_tier.one=等级1	#
+options.dev_sunsetting_tier.two=等级2 - KitKat	#
+options.dev_sunsetting_tier.three=等级3 - FireTV	#
+options.dev_sunsetting_tier.four=等级4 - 待定	#
 options.dev_sunsetting_tier.not_pending=非待定	#
 options.difficulty=难度	#
 options.difficulty.easy=简单	#
@@ -5750,7 +5751,7 @@ options.sounds=音频	#
 options.sounds.title=音频设置	#
 options.accessibility=无障碍	#
 options.accessibility.title=无障碍设置	#
-options.screenShake=视角摇晃	#
+options.screenShake=接受视角震动	#
 options.splitscreen=分屏	#
 options.splitscreen.horizontal=水平分屏	#
 options.splitscreen.vertical=竖直分屏	#
@@ -5909,13 +5910,13 @@ options.unlink_msa.progress.body=正在取消关联您的账户…	#
 options.unlink_msa.success.title=取消关联成功	#
 options.unlink_msa.success.body=您的账户已取消关联。	#
 options.unlink_msa.failure.title=出错了	#
-options.unlink_msa.failure.body=您的账户无法取消关联。请检查您的互联网连接？	#
+options.unlink_msa.failure.body=您的账户无法取消关联。请检查您的网络连接？	#
 
 patchNotes.loading=正在加载补丁说明	#
 patchNotes.continue=继续	#
 patchNotes.unlock=解锁	#
 patchNotes.error.noInternet.title=已从互联网断开连接	#
-patchNotes.error.noInternet.msg=槽糕！出错了。是否检查你的互联网连接？	#
+patchNotes.error.noInternet.msg=槽糕！出错了。是否检查你的网络连接？	#
 patchNotes.error.notFound.title=补丁说明%1	#
 patchNotes.error.notFound.msg=我们在本次发布中修复了几个漏洞。当我们有更多的信息需要告知你的时候，我们会向你发送新的补丁说明。	#
 
@@ -5927,9 +5928,9 @@ sunsetting.popup.moreInfo.gearVR=了解更多信息，请在任意浏览器中�
 
 sunsetting.popup.pendingSunset.ios_android=我们即将结束对该设备的支持。在我们（预计于2021年7月）发布下一个重大更新前，您还会继续收到更新，届时您将会收到此设备的最终更新。对于由此带来的不便，我们深表歉意。%s收到最终更新后，您仍然可以在自己的世界上游玩，或者在商城进行购买（包括Minecoin）。此设备管理的Realm可以继续使用，除非Realm所有者在其他设备上更新。您将无法收到最新更新、无法与继续接收更新的设备或Realm进行多人游戏、并且无法连接到某些服务器。%s点击按钮可获取更多信息，包括将世界移动到新设备的方法。	#
 sunsetting.popup.sunset.ios_android=此设备不再受到支持。您已收到此设备的最终更新。从现在开始，您可以继续在自己的世界建造，而且您购买的商城内容（包括Minecoin）仍然可用。你的Realm可以继续使用，除非Realm所有者在其他设备上更新。您将无法收到最新更新、无法与继续接收更新的设备或Realm进行多人游戏、并且无法连接到某些服务器。%s点击按钮可获取更多信息，包括将世界移动到新设备的方法。我们知道这给您带来了不便——非常感谢您对本游戏的的支持，希望以后能在更新的设备上再次见到您。	#
-sunsetting.popup.pendingSunset.gearvr_win10=我们即将结束对该设备的支持。直至秋季，您还会继续收到更新，届时您将会收到此设备的最终更新。对于由此带来的不便，我们深表歉意。%s收到最终更新后，您仍然可以在自己的世界上游玩，或者在商城进行购买（包括Minecoin）。然而，您将无法通过此设备访问多人游戏或Realm。您将无法收到最新更新、无法与继续接收更新的设备或Realm进行多人游戏、并且无法连接到某些服务器。%s点击按钮可获取更多信息，包括将世界移动到新设备的方法。	#
+sunsetting.popup.pendingSunset.gearvr_win10=我们即将结束对该设备的支持。在我们发布下一个重大更新前，您还会继续收到更新，届时您将会收到此设备的最终更新。对于由此带来的不便，我们深表歉意。%s收到最终更新后，您仍然可以在自己的世界上游玩，或者在商城进行购买（包括Minecoin）。然而，您将无法通过此设备访问多人游戏或Realm。您将无法收到最新更新、无法与继续接收更新的设备或Realm进行多人游戏、并且无法连接到某些服务器。%s点击按钮可获取更多信息，包括将世界移动到新设备的方法。	#
 sunsetting.popup.sunset.gearvr_win10=此设备不再受到支持。您已收到此设备的最终更新。从现在开始，您可以继续在自己的世界建造，而且您购买的商城内容（包括Minecoin）仍然可用。然而，您将无法通过此设备访问多人游戏或Realm。您将无法收到最新更新、无法与继续接收更新的设备或Realm进行多人游戏、并且无法连接到某些服务器。	#
-sunsetting.popup.pendingSunset.dx10=我们即将结束对该设备的支持。直至秋季，您还会继续收到更新，届时您将会收到此设备的最终更新。对于由此带来的不便，我们深表歉意。%s收到最终更新后，您仍然可以在自己的世界上游玩，或者在商城进行购买（包括Minecoin）。此设备管理的Realm可以继续使用，除非Realm所有者在其他设备上更新。您将无法收到最新更新、无法与继续接收更新的设备或Realm进行多人游戏、并且无法连接到某些服务器。%s点击按钮可获取更多信息，包括将世界移动到新设备的方法。	#
+sunsetting.popup.pendingSunset.dx10=我们即将结束对该设备的支持。在我们发布下一个重大更新前，您还会继续收到更新，届时您将会收到此设备的最终更新。对于由此带来的不便，我们深表歉意。%s收到最终更新后，您仍然可以在自己的世界上游玩，或者在商城进行购买（包括Minecoin）。此设备管理的Realm可以继续使用，除非Realm所有者在其他设备上更新。您将无法收到最新更新、无法与继续接收更新的设备或Realm进行多人游戏、并且无法连接到某些服务器。%s点击按钮可获取更多信息，包括将世界移动到新设备的方法。	#
 sunsetting.popup.sunset.dx10=此显示设备不再受到支持。您已收到此设备的最终更新。从现在开始，您可以继续在自己的世界建造，而且您购买的商城内容（包括Minecoin）仍然可用。你的Realm可以继续使用，除非Realm所有者在其他设备上更新。您将无法收到最新更新、无法与继续接收更新的设备或Realm进行多人游戏、并且无法连接到某些服务器。%s点击按钮可获取更多信息，包括将世界移动到新设备的方法。我们知道这给您带来了不便，非常感谢您对本游戏的的游玩与支持。	#
 
 sunsetting.banner.play.worldTab.pending=你的版本可能即将无法进行多人游戏	#
@@ -6244,7 +6245,7 @@ profileScreen.manage_button_create_text=创建角色	#
 profileScreen.delete_button=删除角色	#
 profileScreen.settings_button=游戏设置	#
 
-progressScreen.cantConnect=无法连接到世界。请检查你的互联网连接并重试。	#
+progressScreen.cantConnect=无法连接到世界。请检查你的网络连接并重试。	#
 progressScreen.generating=生成世界中	#
 progressScreen.saving=正在保存世界	#
 progressScreen.loading=加载中…	#
@@ -6682,7 +6683,7 @@ skinpack.Education=教育版皮肤	#
 skins.browse=浏览	#
 skins.buy.buyButton=购买	#
 skins.buy.cancelButton=取消	#
-skins.buy.noConnection=无法连接至商城。请检查你的互联网连接？	#
+skins.buy.noConnection=无法连接至商城。请检查你的网络连接？	#
 skins.information.ingame=抱歉，你不能在游戏内更改皮肤。请从主菜单中访问选项。	#
 skins.information.invalidCustomSkin=选择的图像不能作为Minecraft的皮肤	#
 skins.information.upsellWithoutStore=你必须购买皮肤包才能使用此皮肤，但我们无法连接到商城。	#
@@ -6934,7 +6935,7 @@ store.popup.download.unOwned.title=是否购买资源包？	#
 store.popup.download.unOwned.msg=是否要购买这个世界所用的资源包？	#
 store.popup.download.unOwnedTemplate.title=是否购买世界模板？	#
 store.popup.download.unOwnedTemplate.msg=这个世界使用你未解锁的模板所创建。你必须购买模板才能解锁该世界。是否要购买这个世界所用的模板？	#
-store.popup.downloadWorldTemplate.noInternet.title=需要互联网连接才能获得模板	#
+store.popup.downloadWorldTemplate.noInternet.title=需要网络连接才能获得模板	#
 store.popup.downloadWorldTemplate.noInternet.msg=我们无法连接商城以下载用于创建这个世界的模板。该模板包含你用来继续玩此世界所必须的加载项。重新联网并下载此模板以继续。	#
 store.popup.downloadWorldTemplate.noSpace.msg=我们没有足够的空间来下载用于创建这个世界的模板。该模板包含你用来继续玩此世界所必须的加载项。请清理设备空间，然后继续。	#
 store.popup.downloadWorldTemplate.title.KB=下载缺失的模板？- %s KB	#
@@ -7102,7 +7103,7 @@ store.3pserverItem.alreadyPurchased=已拥有	#
 store.restore.description=正在恢复你的购买！	#
 store.restore.failed=抱歉，无法恢复你的购买。请检查你的网络连接？	#
 store.connection.failed.title=出错了	#
-store.connection.failed.body=我们无法连接至商城。请检查你的互联网连接？	#
+store.connection.failed.body=我们无法连接至商城。请检查你的网络连接？	#
 store.featured.createdBy=作者：%s	#
 store.downloading=正在下载…	#
 store.downloading.title=正在下载：%s	#
@@ -8512,7 +8513,7 @@ eduTemplateWorld.blocksOfGrass.name=草方块	#
 worldConversion.feedback.done.title=世界已提交	#
 worldConversion.feedback.failed.title=世界提交失败	#
 worldConversion.feedback.done.msg=非常感谢你向我们发送你的世界的副本，这将帮助我们找到错误！我们正致力于修复一些内容，因此未能及时就此特定世界给予回复。下面是你的回执，以确认我们已收到它：%s	#
-worldConversion.feedback.failed.msg=糟糕！我们未能收到你的世界。请尝试检查你的互联网连接，或者稍后重新发送它。	#
+worldConversion.feedback.failed.msg=糟糕！我们未能收到你的世界。请尝试检查你的网络连接，或者稍后重新发送它。	#
 worldConversion.feedback.prompt.title=提交世界	#
 worldConversion.feedback.prompt.msg=你的旧世界未按预期方式显示或运行？向我们发送你的世界，这将帮助我们找到错误！	#
 
@@ -8740,7 +8741,7 @@ hbui.TabBar.notSelected=未选择	#
 hbui.TabBar.open=开启	#
 hbui.TabBar.selected=已选择	#
 hbui.TabBar.selectedTab=%1$s/%2$s	#
-hbui.TabBar.tab=标签	#
+hbui.TabBar.tab=选项卡	#
 hbui.TextField.deselect=取消选择	#
 hbui.TextField.select=选择	#
 hbui.Toggle.count=第%1$s个，共%2$s个	#
@@ -9017,7 +9018,6 @@ dynamicPackage.download.android.timeRemainingNotification=剩余%1$s	#				## %1$
 dynamicPackage.download.android.notificationChannelName=更新状态	#
 dynamicPackage.download.android.NotificationChannelDescription=显示更新状态和进度	#
 
-##
 ## Experimental Caves and Cliffs
 entity.goat.name=山羊	#
 item.goat_horn.name=山羊角	#
@@ -9062,9 +9062,8 @@ hudScreen.tooltip.wax=涂蜡	#
 item.glow_ink_sac.name=荧光墨囊	#
 item.glow_frame.name=荧光物品展示框	#
 item.spawn_egg.entity.glow_squid.name=发光鱿鱼刷怪蛋	#
+entity.glow_squid.name=发光鱿鱼	#
 
-
-##
 ## Chemistry Strings
 ## comment on the same line, use TABs.
 ## Comments can be added anywhere on a valid line by starting with '##'
@@ -9364,229 +9363,6 @@ tile.materialreducer.name=材料分解器	#
 tile.underwater_tnt.name=水下TNT	#
 tile.underwater_torch.name=水下火把	#
 
-##
-## Education Strings
-commands.codebuilder.description=为一个玩家设置Code Builder。	#
-commands.codebuilder.invalidurl=此URL已失效或是指向一个不支持的网站。	#
-commands.takepicture.description=拍摄用户的照片或从用户的角度拍照片。	#
-commands.takepicture.cameranotfound=无法找到摄像机。	#
-commands.takepicture.cameranotspawned=无法生成摄像机。	#
-
-library.connection.failed.body=我们无法连接到图书馆。这可能是由于您的计算机处于脱机状态或者其无法访问图书馆目录。	#
-library.connection.failed.help=获取帮助	#
-library.connection.noWorldFound.title=未找到世界	#
-library.connection.noWorldFound.body=似乎这个类别中没有世界。	#
-library.findMoreWorlds=发现更多的世界	#
-library.leaveFeedback=留下反馈	#
-library.title=图书馆	#
-library.item.createdBy=作者：%s	#
-library.item.age=年龄：%1	#
-
-## Example for how the duration section will be used:
-## Duration: 10 Minutes (this is a combination of library.item.duration, library.item.duration.multipleMinutes, and the number 10)
-## Duration: 1 Hour (this is a combination of library.item.duration, library.item.duration.hour, and the number 1)
-library.item.duration=持续时间：%1	#
-library.item.duration.minute=%1分钟	#
-library.item.duration.multipleMinutes=%1分钟	#
-library.item.duration.hour=%1小时	#
-library.item.duration.multipleHours=%1小时	#
-
-library.item.difficulty=难度：%1	#
-library.item.difficulty.beginner=初级	#
-library.item.difficulty.intermediate=中级	#
-library.item.difficulty.advanced=高级	#
-
-library.item.tags=标签：	#
-library.item.button.create=创建世界	#
-library.item.button.share=分享链接	#
-library.item.button.plan=课程计划	#
-library.item.button.resources=资源	#
-library.item.progress.body=准备进入新世界，这可能需要几分钟时间。	#
-library.item.description=说明	#
-library.item.overview=概览	#
-library.item.expandable.readLess=收起	#
-library.item.expandable.readMore=阅读更多	#
-
-library.item.section.languages=支持的语言	#
-library.item.section.languages.tip=如果此课程不能以您的首选语言提供，则沉浸式阅读器可用于翻译课程内文本，包括书籍、告示牌、黑板和NPC对话。	#
-library.item.section.questions=基本问题	#
-library.item.section.generic_objectives=目标	#
-library.item.section.objectives=探索目标	#
-library.item.section.prep=教师准备和笔记	#
-library.item.section.activities=用户活动	#
-library.item.section.assessment=评估	#
-library.item.section.extensions=延伸	#
-
-library.category.label.biomes=生物群系和世界	#
-library.category.title.biomes=生物群系和世界	#
-library.category.description.biomes=使用这个世界和生物群系的集合，以帮助在Minecraft教育版中开始创建课程。	#
-
-library.category.label.biomes.biome=生物群系	#
-library.category.title.biomes.biome=生物群系	#
-library.category.description.biomes.biome=在Minecraft中，生物群系是以独特的地貌、植物和动物为特征的区域。	#
-
-library.category.label.biomes.featured=精选世界	#
-library.category.title.biomes.featured=精选世界	#
-
-library.category.label.buildChallenges=每月建造挑战	#
-library.category.title.buildChallenges=每月建造挑战	#
-library.category.description.buildChallenges=通过这些易于实施的课堂活动，激发用户的创造力，加强21世纪技能。	#
-
-library.category.label.howToPlay=游戏指南	#
-library.category.description.howToPlay=这些世界和活动都是作为入门级探索而创建的，旨在帮助您探索如何在课堂上使用Minecraft教育版。	#
-
-library.category.label.howToPlay.startHere=从这里开始	#
-library.category.title.howToPlay.startHere=从这里开始	#
-library.category.description.howToPlay.startHere=每个教程世界都旨在帮助您探索不同的技能，以支持在您的课堂中使用Minecraft教育版。	#
-
-library.category.label.howToPlay.additional=附加教程	#
-library.category.title.howToPlay.additional=附加教程	#
-
-library.category.label.lessons=课程	#
-library.category.title.lessons=课程	#
-
-library.category.label.lessons.genericAdditional=附加课程	#
-library.category.title.lessons.genericAdditional=附加课程	#
-
-library.category.label.languageArts=语言艺术学科	#
-library.category.title.languageArts=语言艺术学科	#
-
-library.category.label.languageArts.litStudies=文学研究	#
-library.category.title.languageArts.litStudies=文学研究	#
-
-library.category.label.languageArts.litStudies.treasureIsland=金银岛	#
-library.category.title.languageArts.litStudies.treasureIsland=金银岛	#
-library.category.description.languageArts.litStudies.treasureIsland=这一系列课程旨在通过对罗伯特·路易斯·史蒂文森的《金银岛》的研究，帮助教授英语语言艺术概念。	#
-
-library.category.label.languageArts.litStudies.kensukesKingdom=岛王	#
-library.category.title.languageArts.litStudies.kensukesKingdom=岛王	#
-library.category.description.languageArts.litStudies.kensukesKingdom=这一系列课程旨在通过对迈克尔·莫普尔戈的《岛王》的研究，帮助教授英语语言艺术概念。	#
-
-library.category.label.languageArts.litStudies.swissFamily=海角乐园	#
-library.category.title.languageArts.litStudies.swissFamily=海角乐园	#
-library.category.description.languageArts.litStudies.swissFamily=这一系列课程旨在通过对《鲁宾逊漂流记》和《海角乐园》的研究，帮助教授英语语言艺术概念。	#
-
-library.category.label.science=科学	#
-library.category.title.science=科学	#
-
-library.category.label.science.chemistry=化学	#
-library.category.title.science.chemistry=化学	#
-
-library.category.label.science.biology=生物学	#
-library.category.title.science.biology=生物学	#
-
-library.category.label.science.rangers=我们是多面手	#
-library.category.title.science.rangers=我们是多面手	#
-library.category.description.science.rangers=这五个课程和独特的Minecraft的世界跨越了多个主题领域和年龄段。通过所提供的课程，用户们可以穿越非洲平原进行冒险、调查运转的港口、犀牛孤儿院和护林员站，并一路上解决问题和探索技能。	#
-
-library.category.label.science.extinction=生物多样性灭绝危机	#
-library.category.title.science.extinction=生物多样性灭绝危机	#
-library.category.description.science.extinction=我们与世界野生动物基金会合作开发了这个内容包，其中包含一个沉浸式的Minecraft的世界和多个基于标准的课程。探索这些资源，对生态系统、保护和生物多样性进行实践探索。	#
-
-library.category.label.history=历史与文化	#
-library.category.title.history=历史与文化	#
-
-library.category.label.history.oregonTrail=俄勒冈小道	#
-library.category.title.history.oregonTrail=俄勒冈小道	#
-library.category.description.history.oregonTrail=通过与哈考特出版社合作，Minecraft教育版为您带来了俄勒冈小道探索。使用这些贯穿了您整个课程的俄勒冈小道探索活动，开始一场伟大的冒险——在穿越了北美崎岖地形的俄勒冈小道上旅行。	#
-
-library.category.label.computerScience=计算机科学	#
-library.category.title.computerScience=计算机科学	#
-
-library.category.label.computerScience.hourOfCode=编程一小时	#
-library.category.title.computerScience.hourOfCode=编程一小时	#
-library.category.description.computerScience.hourOfCode=本课程是为期一小时的计算机科学介绍，旨在揭开AI的神秘面纱，在Minecraft中引入编码，以及扩大对计算机科学领域的参与。	#
-
-library.category.label.computerScience.codeSTEM=探索STEM的代码	#
-library.category.title.computerScience.codeSTEM=探索STEM的代码	#
-library.category.description.computerScience.codeSTEM=使用这些符合标准的数学、科学和工程学课程和世界，将计算机科学融入校园生活的方方面面。	#
-
-library.category.label.computerScience.courseOne=编码课程1	#
-library.category.title.computerScience.courseOne=编码课程1	#
-library.category.description.computerScience.courseOne=使用这些基于CSTA标准的计算机科学课程建造您自己的城市。探索基本的计算机科学概念，包括循环、算法、条件、调试、迭代等等。	#
-
-library.category.label.computerScience.courseTwo=编码课程2	#
-library.category.title.computerScience.courseTwo=编码课程2	#
-library.category.description.computerScience.courseTwo=通过这些基于CSTA标准的计算机科学课程探索条件、函数、坐标、AI等等。	#
-
-library.category.label.math=数学	#
-library.category.title.math=数学	#
-
-library.category.label.math.fractions=分数	#
-library.category.title.math.fractions=分数	#
-library.category.description.math.fractions=尝试探索这些课程资源来帮助用户探索分数。	#
-library.category.label.art=艺术设计	#
-library.category.title.art=艺术设计	#
-
-library.category.label.commonCore=共同核心，%1级	#
-library.category.title.commonCore=共同核心，%1级	#
-library.category.description.commonCoreMath=这些引人入胜的活动旨在为数学教育提供支持，并且符合每一项共同核心数学标准。	#
-
-signin.acceptTerms=接受条款	#
-signin.leftPanel.header=探索Minecraft教育版 	#
-signin.leftPanel.body=用您的学校账户登录以访问Minecraft教育版的完整版本。	#
-signin.rightPanel.header=尝试探索演示课程	#
-signin.rightPanel.body=在Minecraft教育版中使用这个对所有用户可用的演示课程探索编程。	#
-
-joincode.invalid.title=加入代码不正确	#
-joincode.invalid.body=您输入的%1个加入代码不正确。请与房主确认，以确保您拥有正确的代码，或者您也可以尝试通过IP地址加入。 	#
-joincode.invalid.button.tryagain=再试一次	#
-joincode.invalid.button.enterip=输入IP地址	#
-
-joincode.invalid.abuse.body=您输入的%1个加入代码不正确。请尝试使用IP地址加入世界	#
-
-##
-## Education demo Strings
-deathScreen.quit.secondaryClient.confirmLeaveWarning=感谢您的探索！这是一个演示课程，因此您的进度不会被保存。	#
-
-edu_demo.tip.1=雨林是地球上一半以上的陆生动物的家园。	#
-edu_demo.tip.2=超过25%的世界人口以森林为生。	#
-edu_demo.tip.3=保持火的燃烧需要三样东西：燃料、氧气和热源。	#
-edu_demo.tip.4=火灾，尤其是泥炭地和茂密森林的火灾，会释放出大量的碳排放。	#
-edu_demo.tip.5=类似于用户，计算机只有通过被教授，才能学到东西！	#
-edu_demo.tip.6=AI将被用于收集和分析森林数据，这比手动统计树木要快！	#
-
-menu.quit.edu=退出课程	#
-menu.quit.edu.title=退出演示课程	#
-
-start_screen.start_demo=开始课程	#
-
-upsell.tab.1.title=Minecraft的校园版本！	#
-upsell.tab.1.body=通过免费课程和教程、评估工具、课堂用户课程、安全登录和技术支持，让用户跨主题参与。立即探索Minecraft教育版的免费试用版！	#
-upsell.tab.1.button=了解更多	#
-
-upsell.tab.2.title=用Minecraft教授编程	#
-upsell.tab.2.body=使用Minecraft中的沉浸式课程和超过50小时的免费课程教用户编程。用户可以编写基于方块的代码和JavaScript，并看到他们的代码在课程中被赋予生命！	#
-upsell.tab.2.button=探索编程	#
-
-upsell.tab.3.title=海量的免费课程	#
-upsell.tab.3.body=探索从历史和化学到计算机科学和数学主题的数以百计的Minecraft的世界和课程。使用这些课程作为起点，或者创建您自己的课程！	#
-upsell.tab.3.button=前往课程	#
-
-upsell.tab.4.title=构建社会情感技能	#
-upsell.tab.4.body=用户们正在探索如何与他人协作、解决问题，并相互理解进行沟通。Minecraft教育版包含了诸如沉浸式阅读器这样的功能，能够帮助老师接触到每一种类型的探索者。	#
-upsell.tab.4.button=了解更多	#
-
-upsell.tab.5.title=加入社区	#
-upsell.tab.5.body=参加教师培训，在社交媒体上建立联系，并加入我们的全球社区，请教其他教育者。超过115个国家的教育者正在他们的课堂上使用Minecraft，您可以成为下一个！	#
-upsell.tab.5.button=链接	#
-
-lesson.finished=我完成了	#
-
-lesson.end.dialog.title=课程完成！	#
-lesson.end.dialog.body.title=恭喜	#
-lesson.end.dialog.body.wimages=您获得了结业证书。查看本课程中的照片并保存副本。	#
-lesson.end.dialog.body.checkport=查看本课程中的照片并保存副本。	#
-lesson.end.dialog.body.noimages=您获得了结业证书。	#
-lesson.end.dialog.button.morecoding=更多编程	#
-lesson.end.dialog.button.getcert=获取证书	#
-lesson.end.dialog.button.exit=退出课程	#
-lesson.end.dialog.button.export=保存	#
-
-lesson.end.access.imagespreview=课程照片 第%1/%2张	#
-lesson.end.access.export=导出课程照片	#
-
-##
 ## VR strings
 xblLogin.LoginMessageGearVR=请将手机从头盔上取下，登录至Xbox Live。	#
 xblLogin.AddFriendMessageGearVR=请将手机从头盔上取下，添加Xbox Live好友。	#
@@ -9600,70 +9376,131 @@ vr.controls.HandControllerTracked=已获取Oculus Touch跟踪	#
 vr.controls.HandControllerTrackingLost=已丢失Oculus Touch跟踪	#
 
 FileBrowser.Rift.Skin=请取下头盔，选择自定义皮肤。	#
+FileBrowser.Rift.TemplateResource=请取下头盔，选择模板资源。	#
 FileBrowser.Rift.Export=请取下头盔，导出你的世界。	#
 FileBrowser.Rift.Import=请取下头盔，导入你的世界。	#
 FileBrowser.Rift.ExportBook=请取下头盔，导出你的书。	#
 FileBrowser.Rift.ExportPortfolio=请取下头盔，导出你的公文包。	#
 FileBrowser.Rift.FileChooser=选择文件	#
+FileBrowser.Rift.FolderChooser=选择文件夹	#
 FileBrowser.Rift.ExportWorld=导出世界	#
 FileBrowser.Rift.ExportResourcesPrompt=请取下耳机，导出这些资源。	#
 FileBrowser.Rift.ExportResources=导出资源	#
 FileBrowser.Rift.SkinChooser=选择皮肤	#
 
+howtoplay.vr=VR	#
+howtoplay.vr.title=游戏指南：VR	#
+howtoplay.vr.header.1=起居室模式	#
+howtoplay.vr.text.1=进入游戏后，您会处于一个静态环境中。您的视角仍然是VR状态，您也可以环顾房间，但游戏会固定显示在您面前的虚拟屏幕上。	#
+howtoplay.vr.text.2.keyboard=您可以完全在此模式下玩游戏，所有功能都可开启。您也可通过按下:_input_key.togglePerspective:键切换全屏模式。	#
+howtoplay.vr.text.2.gamepad=您可以完全在此模式下玩游戏，所有功能都可开启。您也可通过按下:_input_key.togglePerspective:切换全屏模式。	#
+howtoplay.vr.text.2.rift_controller=您可以完全在此模式下玩游戏，所有功能都可开启。您也可通过按下:_input_key.togglePerspective:切换全屏模式。	#
+howtoplay.vr.text.2.windowsmr_controller=您可以完全在此模式下玩游戏，所有功能都可开启。您也可通过按下:_input_key.togglePerspective:切换全屏模式。	#
+howtoplay.vr.header.2=全屏模式	#
+howtoplay.vr.text.3.keyboard=在全屏模式中，您将采取游戏内玩家的视角，仿佛自己置身于世界中。您也可以随时按下:_input_key.togglePerspective:键再次返回起居室。	#
+howtoplay.vr.text.3.gamepad=在全屏模式中，您将采取游戏内玩家的视角，仿佛自己置身于世界中。您也可以随时按下:_input_key.togglePerspective:再次返回起居室。	#
+howtoplay.vr.text.3.rift_controller=在全屏模式中，您将采取游戏内玩家的视角，仿佛自己置身于世界中。您也可以随时按下:_input_key.togglePerspective:再次返回起居室。	#
+howtoplay.vr.text.3.windowsmr_controller=在全屏模式中，您将采取游戏内玩家的视角，仿佛自己置身于世界中。您也可以随时按下:_input_key.togglePerspective:再次返回起居室。	#
+howtoplay.vr.text.4=全屏模式中有许多选项可帮助您减缓眩晕的不适感。	#
+howtoplay.vr.header.centerCursor=居中光标	#
+howtoplay.vr.text.centerCursor.1=启用后，光标将始终位于起居室屏幕的中心。	#
+howtoplay.vr.header.3=摄像机移动	#
+howtoplay.vr.text.5=-拍摄：允许您以定期的步骤转动。对于 VR 新手玩家，建议开启此选项。	#
+howtoplay.vr.text.6=-经典：允许您自由移动摄像机。	#
+howtoplay.vr.text.7.keyboard=-转轮：通过旋转:_gamepad_stick_right:来进行转向。	#
+howtoplay.vr.text.7.gamepad=-转轮：通过旋转:_gamepad_stick_right:来进行转向。	#
+howtoplay.vr.text.7.rift_controller=-转轮：通过旋转:rift_right_stick:来进行转向。	#
+howtoplay.vr.text.7.windowsmr_controller=-转轮：通过旋转:windowsmr_right_stick:来进行转向。	#
+howtoplay.vr.text.snapWheel.keyboard=-拍摄转轮：可通过旋转:_gamepad_stick_right:来进行定期步骤的转向。	#
+howtoplay.vr.text.snapWheel.gamepad=-拍摄转轮：可通过旋转:_gamepad_stick_right:来进行定期步骤的转向。	#
+howtoplay.vr.text.snapWheel.rift_controller=-拍摄转轮：可通过旋转:rift_right_stick:来进行定期步骤的转向。	#
+howtoplay.vr.text.snapWheel.windowsmr_controller=-拍摄转轮：可通过旋转:windowsmr_right_stick:来进行定期步骤的转向。	#
+howtoplay.vr.header.4=拍摄角度	#
+howtoplay.vr.text.8=选中“摄像机拍摄移动”选项后，此滑块控制摄像机移动的幅度大小。	#
+howtoplay.vr.header.5=可变拍摄角度	#
+howtoplay.vr.text.9.keyboard=选中“摄像机拍摄移动”选项后，此开关控制摄像机的移动幅度是否应根据您推:_gamepad_stick_right:的幅度而变化。	#
+howtoplay.vr.text.9.gamepad=选中“摄像机拍摄移动”选项后，此开关控制摄像机的移动幅度是否应根据您推:_gamepad_stick_right:的幅度而变化。	#
+howtoplay.vr.text.9.rift_controller=选中“摄像机拍摄移动”选项后，此开关控制摄像机的移动幅度是否应根据您推:rift_right_stick:的幅度而变化。	#
+howtoplay.vr.text.9.windowsmr_controller=选中“摄像机拍摄移动”选项后，此开关控制摄像机的移动幅度是否应根据您推:windowsmr_right_stick:的幅度而变化。	#
+howtoplay.vr.header.6=拍摄声音	#
+howtoplay.vr.text.10=选中“摄像机拍摄移动”选项后，此开关控制更改摄像机方向时是否应播放声音。	#
+howtoplay.vr.header.7=移动	#
+howtoplay.vr.text.11=-线性：开启后，您的速度保持不变，并禁用所有加速/减速效果。	#
+howtoplay.vr.text.12=-经典：玩家可正常加速/减速。	#
+howtoplay.vr.header.8=跳跃	#
+howtoplay.vr.text.13=-线性：跳跃去除所有加速/减速效果。跳跃高度也会降低至与方块相齐平，而非略高于方块。	#
+howtoplay.vr.text.14=-经典：玩家可正常跳跃。	#
+howtoplay.vr.header.9=全屏模式自动跳跃	#
+howtoplay.vr.text.15=启用后，仅在全屏模式下启用自动跳跃。此选项不会影响到起居室模式。	#
+howtoplay.vr.header.10=头部转向	#
+howtoplay.vr.text.16=-视角跟随：玩家的运动方向与您的视角相同。	#
+howtoplay.vr.text.17=-玩家角度跟随：运动方向独立于您的视角。	#
+howtoplay.vr.header.11=粘性开采	#
+howtoplay.vr.text.18=-锁定：采矿时锁定特定方块。	#
+howtoplay.vr.text.19=-仅限手控器：只有在您瞄准时，采矿才会锁定特定方块。	#
+howtoplay.vr.text.20=-禁用:当您在采矿时移动视线,光标会在环境中自由移动。如果您的目光离开当前方块,采矿就会中断。	#
+howtoplay.vr.header.12=HUD位置	#
+howtoplay.vr.text.21=-漂浮：为方便游戏，HUD可“浮动”。	#
+howtoplay.vr.text.22=-固定：HUD固定在屏幕上。	#
+howtoplay.vr.text.23=-快捷槽位：HUD显示在快捷槽位上方。	#
+howtoplay.vr.header.hudDistance=HUD距离	#
+howtoplay.vr.text.hudDistance.1=在全屏模式下，此滑块控制HUD显示的位置离视觉中心的距离。	#
+howtoplay.vr.header.14=手控器控制项	#
+howtoplay.vr.text.25=启用后，手持的物品将显示在您的手控器的位置。	#
 
-options.group.vr=VR	#
-options.group.vrTitle=VR设置	#
+options.vr.subheaderLivingRoom=起居室模式	#
+options.vr.subheaderImmersive=全屏模式	#
+options.vr.cameraMovement=摄像机移动	#
+options.vr.cameraMovement.snap=拍摄	#
+options.vr.cameraMovement.classic=经典	#
+options.vr.cameraMovement.wheel=转轮	#
+options.vr.cameraMovement.snapWheel=拍摄转轮	#
+options.vr.snapAngle=拍摄角度	#
+options.vr.variableSnapAngle=可变拍摄角度	#
+options.vr.snapSound=拍摄声音	#
+options.vr.movement=移动	#
+options.vr.movement.linear=线性	#
+options.vr.movement.classic=经典	#
+options.vr.jump=跳跃	#
+options.vr.jump.linear=线性	#
+options.vr.jump.classic=经典	#
+options.vr.headSteering=头部转向	#
+options.vr.headSteering.followGaze=视角跟随	#
+options.vr.headSteering.followPlayer=跟随玩家视角	#
+options.vr.stickyMining=黏性开采	#
+options.vr.stickyMining.lockOn=锁定	#
+options.vr.stickyMining.handControllerOnly=仅限手控器	#
+options.vr.stickyMining.disabled=已禁用	#
+options.vr.hudPosition=HUD位置	#
+options.vr.hudPosition.drift=漂浮	#
+options.vr.hudPosition.fixed=固定	#
+options.vr.hudPosition.offhand=快捷槽位	#
+options.vr.hudDistance=HUD距离	#
+
 options.vrHideHud=隐藏HUD	#
 options.vrHideHand=隐藏手	#
-options.comfortControls=VR舒适度控制	#
 options.vrHideGUI=在VR中隐藏GUI	#
 options.vrGamma=VR亮度	#
 options.vrMsaa=VR抗锯齿	#
 options.vrRenderDistance=VR能见度	#
-options.vrParticleRenderDistance=VR粒子能见度距离	#
 options.vrResetPlayerAlignment=重置VR校准	#
 options.vrHMDdisplacement=使用HMD位移进行移动	#
-options.vrHeadSteering=VR头部转向	#
-options.vrTurningOptions=转头选项	#
-options.StutterTurn=VR转头	#
-options.StutterTurnSound=VR转头声音	#
-options.StutterConstantAngleOrTime=VR转头定时模式	#
 options.3DRendering=3D渲染	#
 options.vrHudAtTop=HUD置顶	#
 options.vrAutojump=VR自动跳跃	#
-options.vrLinearJump=VR线性跳跃	#
-options.vrLinearMotion=VR线性动作	#
-options.stickyMining=黏性开采	#
-options.stickyMiningHand=VR手柄黏性开采	#
 options.vrMovingBackwardsHardStop=逆向硬停	#
-options.ShowComfortSelectScreen=显示控制选择屏幕	#
-options.vrHudDrifts=HUD漂浮	#
-options.vrLivingRoomCursorCentered=开启VR起居室光标居中	#
+options.vrLivingRoomCursorCentered=居中光标	#
 options.vrTapTurn=触摸转头	#
 options.vrTapTurnSensitivity=触摸转头灵敏度	#
-options.vrRollTurning=滚轮转头	#
 options.vrRollTurnSensitivity=滚轮转头灵敏度	#
-options.vrHandControlsItem=VR手柄控制项	#
-options.vrHandControlsHUD=VR手柄控制HUD	#
-options.vrHandPointer=显示VR手柄指针	#
-options.vrHandsVisible=显示手	#
+options.vrHandControlsItem=手柄控制项	#
+options.vrHandControlsHUD=手柄控制HUD	#
+options.vrHandPointer=手柄指针可见	#
+options.vrHandsVisible=手柄指针可见	#
 options.vr180Turning=反转180	#
-options.vrMirrorTexture=启用VR镜子纹理	#
+options.vrMirrorTexture=启用镜子纹理	#
 options.vrSensitivity=VR灵敏度	#
 options.vrUIMouseSensitivity=VR UI灵敏度	#
-
-## VR control Scheme Strings
-vr.controls.title=VR控制	#
-
-vr.controls.title.classic=经典控制 - 不适	#
-vr.controls.title.experimental=VR控制 - 舒适	#
-vr.controls.classicDescription=经典跳跃和转头，未经过VR调整。对于大多数人舒适程度较低。	#
-vr.controls.experimentalDescription=转头分段进行。光标和跳跃已经过VR调整，可提高大多数人在移动中的舒适程度（开发测试中）。	#
-vr.controls.sharedDescription=控制选项也可在游戏中通过选项菜单更改。	#
-vr.moreOptions=更多选项…	#
-vr.moreInformation=更多信息…	#
-vr.detailedInformation=为提供更加舒适的VR体验，已调整数项游戏功能。例如：VR转头是一项将转头动作分成数段的功能，能避免迷失方向。	#
-vr.detailedInformationLink=如需更多有关VR控制和幕后外观的信息，请前往minecraft.net/vr	#
 
 vr.pausescreen.recenterDevice=重定位设备	#
 vr.pausescreen.recenterDeviceKeyboard=按下“N”可重新置中设备	#
@@ -9671,31 +9508,28 @@ vr.warning.controllerRequired=需要游戏手柄	#
 vr.warning.controllerRecommended=建议使用游戏手柄配合VR	#
 vr.warning.controllerOrMouseRecommended=建议使用游戏手柄或鼠标配合VR	#
 vr.warning.exitGameWarning=是否要退出Minecraft？	#
-vr.alignscreen.pressButtonX=请按下手柄上的“X”键以继续	#
-vr.alignscreen.pressButtonXOrMouse=请点击或在手柄上按任意键以继续	#
-vr.alignscreen.pressButtonAOrSelectTrigger=请按下手柄上的“A”键，或者选择Windows Mixed Reality手柄上的触发键以继续	#
-vr.alignscreen.pressAnyButton=将您的头对准中间位置，然后按任意键	#
-vr.alignscreen.info=注意：这是开发中的功能。VR可能对某些人引起不适。切记根据需要经常休息，或点击触控板使用客厅模式，以降低激烈视感冲击。	#
-vr.alignscreen.info_viewbutton=注意：这是开发中的功能。VR可能对某些人造成不适。切记根据需要经常休息，或按向上键使用客厅模式，以降低激烈视感冲击。	#
+vr.alignscreen.title=欢迎来到VR！	#
+vr.alignscreen.pressButtonX=将您的头部对准中间位置，并按下:_gamepad_face_button_left:以继续。	#
+vr.alignscreen.pressButtonX.tts=将您的头部对准中间位置，并按下%s以继续。	#
+vr.alignscreen.pressButtonXOrMouse=将您的头部对准中间位置，并点击或按下控制器上的任意按钮以继续。	#
+vr.alignscreen.pressButtonAOrSelectTrigger=将您的头部对准中间位置，按下游戏手柄上的A按钮，或者Windows Mixed Reality手柄上的触发键以继续。	#
+vr.alignscreen.pressAnyButton=将您的头部对准中间位置，并按下任意按钮以继续。	#
+vr.alignscreen.pressButtonX.noAlign=按下:_gamepad_face_button_left:继续。	#
+vr.alignscreen.pressButtonX.noAlign.tts=按下%s继续。	#
+vr.alignscreen.info=VR可能会使某些人感到不适。请根据需要进行休息，或使用起居室模式，降低视感冲击。	#
+vr.alignscreen.recalibration=您可以随时按住:_gamepad_start:重新校准头部位置。	#
+vr.alignscreen.recalibration.tts=您可以随时按住%s重新校准头部位置。	#
 
 ## Oculus Rift Installer
 ori.confirm.exit=你确定要退出游戏吗？	#
-ori.confirm.update=更新Minecraft？	#
-ori.pending=正在等待Windows更新完成。	#
-ori.installing=正在安装…	#
-ori.updating=正在更新…	#
 ori.launching=正在启动！	#
-ori.check_for_update=正在检查更新…	#
-ori.error.unavailable=Minecraft不可用。请确保你已连接到互联网并登录商店。	#
 ori.error.unknown=发生未知错误。请稍后重试。	#
-ori.error.not_supported=此系统上不支持Minecraft。	#
+ori.error.not_supported=此系统不支持Minecraft。	#
 ori.error.launch_failure=启动Minecraft失败。	#
-ori.error.version=你的Minecraft版本已过期。请更新后再开始游戏。	#
-ori.error.win10=需要Windows 10 1607或更高版本。	#
+ori.error.win10=需要Windows 10 1809或更高版本。	#
 ori.error.install_error=我们遇到一个错误。错误代码：0x	#
 ori.error.low_storage=无法安装。可用存储空间不足。	#
-ori.error.no_internet=无法连接。请检查您的互联网连接。	#
-ori.error.winUpdateDisabled=必须启用Windows更新。	#
+ori.error.no_internet=无法连接。请检查您的网络连接。	#
 ori.confirm.controls.controller.confirm=确认	#
 ori.confirm.controls.controller.cancel=取消	#
 ori.confirm.controls.keyboard.confirm=确认：[Enter]	#
@@ -9703,6 +9537,11 @@ ori.confirm.controls.keyboard.cancel=取消：[Esc]	#
 ori.exit.controls.controller=退出	#
 ori.exit.controls.keyboard=退出：[Enter]	#
 ori.cancelling=正在取消…	#
+
+ori.welcome.state=欢迎来到Minecraft Oculus启动器！ 	#
+ori.winstore.state=(1) 更新至Windows 10 1809，并从Windows 10商店获取Minecraft或其试用版。	#
+ori.oculus.state=(2) 在Oculus 应用程序中设定设置 -> 通用 -> 未知源切换至 [开启]	#
+ori.warning.state=按下 [确认] 游玩VR版Minecraft，或按下 [取消] 退出。	#
 
 ## Custom strings
 tips.game.63=本译名修正包由ff98sha制作。	#
