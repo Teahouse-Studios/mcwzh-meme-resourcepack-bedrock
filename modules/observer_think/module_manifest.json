@@ -2,7 +2,10 @@
     "name": "observer_think",
     "type": "resource",
     "description": "思辩者.png",
-    "author": "ZCYF、Lakejason0",
+    "author": [
+        "Lakejason0",
+        "ZCYF"
+    ],
     "classifier": [
         "modified_resource"
     ]

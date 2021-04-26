@@ -2,6 +2,9 @@
     "name": "no_blue_ui",
     "type": "collection",
     "description": "不要蓝色UI，谢谢",
+    "author": [
+        "梗体中文内容组"
+    ],
     "contains": [
         "a_letter",
         "bagify",
