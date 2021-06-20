@@ -8908,7 +8908,7 @@ hbui.CreateNewWorld.advanced.respawnRadiusPlaceholder=5	#
 hbui.CreateNewWorld.advanced.showCoordinatesDescription=显示你的当前坐标	#
 hbui.CreateNewWorld.advanced.showCoordinatesTitle=显示坐标	#
 hbui.CreateNewWorld.advanced.simulationDistanceDescription=游戏在96×96方块范围内加载并应用更改	#
-%2$s chunks
+
 hbui.CreateNewWorld.advanced.simulationDistanceTitel=模拟距离	#
 hbui.CreateNewWorld.advanced.startWithMapDescription=生成一张空白地图来探索你的世界	#
 hbui.CreateNewWorld.advanced.startWithMapTitle=初始地图	#
