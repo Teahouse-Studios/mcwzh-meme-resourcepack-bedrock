@@ -2,44 +2,44 @@
 ## 梗体中文-基岩版，Teahouse-Studios/mcwzh-meme-resourcepack-bedrock
 ## Note, trailing spaces will NOT be trimmed. If you want room between the end of the string and the start of a
 ## comment on the same line, use TABs.
-accessibility.disableTTS=复读机已禁用	#
-accessibility.enableTTS=复读机已启用	#
+accessibility.disableTTS=文本转语音已禁用	#
+accessibility.enableTTS=文本转语音已启用	#
 
 ## Translator note:
 ## This section of phrases will be given audibly to the user using text to speech
 
 accessibility.chat.tts.gamepad.back=按%s返回	#
-accessibility.chat.tts.gamepad.exitChat=按%s，不唠嗑了	#
-accessibility.chat.tts.gamepad.sendMessage=按%sbiu~消息	#
+accessibility.chat.tts.gamepad.exitChat=按%s退出聊天	#
+accessibility.chat.tts.gamepad.sendMessage=按%s发送消息	#
 accessibility.chat.tts.says=%s说%s	#
-accessibility.chat.tts.hideChat=隐藏唠嗑界面	#
+accessibility.chat.tts.hideChat=隐藏聊天界面	#
 accessibility.chat.tts.keyboard=键盘	#
-accessibility.chat.tts.muteChatToggle=全员禁言（单边）	#
-accessibility.chat.tts.sendChatMessage=biu~	#
-accessibility.chat.tts.textboxTitle=唠嗑	#
+accessibility.chat.tts.muteChatToggle=全部静音	#
+accessibility.chat.tts.sendChatMessage=发送	#
+accessibility.chat.tts.textboxTitle=聊天	#
 
 accessibility.game.playerView=玩家视角	#
 
-accessibility.loading.done=你好了	#
-accessibility.saving.done=你好了	#
+accessibility.loading.done=完成	#
+accessibility.saving.done=完成	#
 accessibility.downloading.start=下载已开始	#
 accessibility.downloading.Progress=已下载百分之%s	#
-accessibility.downloading.canceled=下了个寂寞	#
+accessibility.downloading.canceled=下载已取消	#
 accessibility.downloading.complete=下载完成	#
 accessibility.importing.start=已开始导入	#
 accessibility.importing.Progress=已导入百分之%s	#
-accessibility.importing.canceled=导入了个寂寞	#
+accessibility.importing.canceled=已取消导入	#
 accessibility.importing.complete=导入完成	#
-accessibility.signin.xbl=正在登录至Xbox	#
+accessibility.signin.xbl=正在登录至Xbox Live	#
 accessibility.chat.howtoopen=按%s打开聊天	#
-accessibility.key.mouseButton=鼠标抱枕%s	#
+accessibility.key.mouseButton=鼠标按钮%s	#
 accessibility.key.gamepad=手柄%s	#
 accessibility.list.or.two=%s或%s	#
 accessibility.list.or.three_or_more.first=%s	#
 accessibility.list.or.three_or_more.inner=、%s	#
 accessibility.list.or.three_or_more.last=和%s	#
 
-accessibility.button.tts.title=抱枕	#
+accessibility.button.tts.title=按钮	#
 accessibility.checkbox.tts.title=复选框	#
 accessibility.checkbox.tts.status=状态%s			### Status will be checked or unchecked
 accessibility.dropdown.tts.title=下拉	#
@@ -50,7 +50,7 @@ accessibility.toggle.tts.title=开关	#
 
 accessibility.button.close=关闭	#
 accessibility.button.back=返回	#
-accessibility.button.exit=拜拜了您嘞	#
+accessibility.button.exit=退出	#
 
 accessibility.dropdown.listItem=列表项	#
 
@@ -79,7 +79,7 @@ accessibility.play.tabLeft=按%s向左切换选项卡	#
 accessibility.play.tabRight=按%s向右切换选项卡	#
 accessibility.play.legacyWorldsDelete=删除旧的世界	#
 
-accessibility.pause.permissions=滥权等级	#
+accessibility.pause.permissions=权限	#
 accessibility.pause.profile=选择个人资料	#
 
 accessibility.start.buttonHelper=%s：%s	## Used for on-screen gamepad helpers (eg. "Y Button : Change User")
@@ -94,9 +94,9 @@ accessibility.screenName.editWorldSettings=编辑世界设置界面	#
 accessibility.screenName.error=错误界面	#
 accessibility.screenName.howToPlay=游戏指南界面	#
 accessibility.screenName.inviteToGame=邀请游戏界面	#
-accessibility.screenName.modalDialog=吐司界面	#
+accessibility.screenName.modalDialog=弹窗	#
 accessibility.screenName.patchNotes=补丁说明界面	#
-accessibility.screenName.pause=砸 瓦 鲁 多	#
+accessibility.screenName.pause=暂停界面	#
 accessibility.screenName.permissions=权限界面	#
 accessibility.screenName.play=游戏界面	#
 accessibility.screenName.profile=个人资料界面	#
@@ -107,10 +107,10 @@ accessibility.screenName.start=主菜单	#
 accessibility.screenName.vrAlignment=VR校准界面 	#
 accessibility.screenName.emoteWheel=表情界面	#
 
-accessibility.settings.reset=再来一遍	#
+accessibility.settings.reset=重置	#
 accessibility.settings.chooseSeed=选择种子	#
 
-accessibility.start.feedback=提交特性	#
+accessibility.start.feedback=提交反馈	#
 accessibility.start.new=新	#
 accessibility.start.profile=选择个人资料	#
 accessibility.start.skinPicker=选择皮肤	#
@@ -159,20 +159,20 @@ accessibility.text.unsupported=未识别字符	#
 
 accessibility.toast=通知		### This is the name of the popup that appears when a player gets a notification for a game invite or achievement unlocked
 
-accessibility.worldTemplates.help=救命	#
+accessibility.worldTemplates.help=帮助	#
 
-accessibility.popup.title=关掉屏幕阅读器？	#
+accessibility.popup.title=关闭屏幕阅读器？	#
 accessibility.popup.message.line1=欢迎来到Minecraft！	#
-accessibility.popup.message.default=你的设备上居然默认启用了屏幕阅读器支持。	#
-accessibility.popup.message.platform=我们居然发现你的系统启用了一个屏幕阅读器，于是自动启用了Minecraft的屏幕阅读器。	#
-accessibility.popup.message.touch=触摸和拖动来在屏幕上找到控件，双击控件以进行选择。若要在屏幕上滚动，上下滑动时双击并按住就好啦！	#
-accessibility.popup.message.xbl=我们居然发现你的账户已经启用了“让游戏读给我听”，于是自动启用了Minecraft的屏幕阅读器。	#
-accessibility.popup.message.line3=你想关掉它吗？	#
+accessibility.popup.message.default=你的设备上默认启用了屏幕阅读器支持。	#
+accessibility.popup.message.platform=我们发现你的系统启用了一个屏幕阅读器，于是自动启用了Minecraft的屏幕阅读器。	#
+accessibility.popup.message.touch=触摸和拖动来在屏幕上找到控件，双击控件以进行选择。若要在屏幕上滚动，上下滑动时双击并按住即可。	#
+accessibility.popup.message.xbl=我们发现你的账户已经启用了“让游戏读给我听”，于是自动启用了Minecraft的屏幕阅读器。	#
+accessibility.popup.message.line3=你想关闭它吗？	#
 accessibility.popup.left_button_text=关闭	#
-accessibility.popup.right_button_text=不要停下来啊啊啊	#
+accessibility.popup.right_button_text=保持开启	#
 
 accessibility.controllerLayoutScreen.buttonRemapped=%s已被绑定至%s	#
-accessibility.controllerLayoutScreen.buttonBoundTo=%s抱枕：%s	#
+accessibility.controllerLayoutScreen.buttonBoundTo=%s按钮：%s	#
 accessibility.controllerLayoutScreen.buttonRemapping=为%s选择要绑定的输入	#
 
 accessibility.gamepad.faceButton.down=A键	#
