@@ -52,12 +52,12 @@
 
 #### 手动导入
 
-1. 下载文件后缀为 `.zip` 格的资源包；
-2. 将资源包文件移至Minecraft的数据路径下存放资源包处，路径见下：
-  * Windows 10： `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\resource_pack` ；
-  * Android： `/storage/sdcard/games/com.mojang/resource_pack` ；
-  * iOS/iPadOS： `Apps/com.mojang.minecraftpe/Documents/games/com.mojang/resource_pack` ；
-3. 解压资源包文件（可选，不解压游戏亦能读取）。
+* 下载文件后缀为 `.zip` 格的资源包。
+* 将资源包文件移至Minecraft的数据路径下存放资源包处，路径见下：
+  * Windows 10： `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\resource_pack`
+  * Android： `/storage/sdcard/games/com.mojang/resource_pack` 
+  * iOS/iPadOS： `Apps/com.mojang.minecraftpe/Documents/games/com.mojang/resource_pack`
+* 解压资源包文件（可选，不解压游戏亦能读取）。
 
 ### 使用
 
