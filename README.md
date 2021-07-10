@@ -15,7 +15,7 @@
 ## 注意
 
 * 本资源包**仅供娱乐**，请勿将其可能存在的误导性内容当真。
-  * 若发现自身可能存在该资源包上头的情况，**请立刻~~食用~~阅读[译名标准化](https://minecraft.fandom.com/zh/wiki/MCW:译名标准化)**。 
+  * 若发现自身可能存在该资源包上头的情况，**请立刻~~食用~~阅读[译名标准化](https://minecraft.fandom.com/zh/wiki/MCW:译名标准化)**。
   * 在使用本资源包的过程中，若难以理解被修改后的内容，**请及时在设置中将语言改回简体中文**。
 * 本资源包的内容大部分参照于其[Java版的版本](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack)，另外加入了一些适配于基岩版的内容。
 * 若无特殊说明，下文中“Minecraft”皆指**Minecraft基岩版**，“资源包”皆指附加包中的类型之一。
@@ -36,7 +36,9 @@
 
 #### 加载其他附加包时
 
-常规版本的资源包加入了新的语言“梗体中文（天朝）”，存储于文件 `zh_ME.lang` 中；而当加载了其他新增自定义内容（如新的方块、物品等）的附加包时，由于其新增的字符串储存于简体中文语言文件 `zh_CN.lang` 中，梗体中文**无法**覆盖这些字符串。这会导致附加包新增的内容**全部变为本地化键名**，像是`item.netherite_ingot.name`一类的东西（对，比Java版还惨），同时市场（Marketplace）等中的内容会全部变为英语~~（虽然本来基翻也很烂）~~。为此，请下载 `compatible` 版本以保证体验。资源包的安装流程完全相同，但在设置中选择的语言应该是普通的**简体中文**。
+常规版本的资源包加入了新的语言“梗体中文（天朝）”，存储于文件 `zh_ME.lang` 中；而当加载了其他新增自定义内容（如新的方块、物品等）的附加包时，由于其新增的字符串储存于简体中文语言文件 `zh_CN.lang` 中，梗体中文**无法**覆盖这些字符串。
+
+这会导致附加包新增的内容**全部变为本地化键名**，像是 `item.netherite_ingot.name` 一类的东西（对，比Java版还惨），同时市场（Marketplace）等中的内容会全部变为英语，~~虽然本来基翻也很烂~~。为此，请下载 `compatible` 版本以保证体验。资源包的安装流程完全相同，但在设置中选择的语言应该是普通的**简体中文**。
 
 如果选择 `compatible` 版本的梗体中文后，在游戏中依旧显示本地化键名，很有可能是您加载的其他附加包制作时仅有英语或其他语言，本身就没有简体中文的语言文件。这与梗体中文没有关系，请您联系该附加包作者或自行进行汉化。
 
@@ -55,7 +57,7 @@
 * 下载文件后缀为 `.zip` 格的资源包。
 * 将资源包文件移至Minecraft的数据路径下存放资源包处，路径见下：
   * Windows 10： `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\resource_pack`
-  * Android： `/storage/sdcard/games/com.mojang/resource_pack` 
+  * Android： `/storage/sdcard/games/com.mojang/resource_pack`
   * iOS/iPadOS： `Apps/com.mojang.minecraftpe/Documents/games/com.mojang/resource_pack`
 * 解压资源包文件（可选，不解压游戏亦能读取）。
 
