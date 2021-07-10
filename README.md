@@ -12,60 +12,66 @@
   * 关于Minecraft基岩版的繁体中文修正，参见小俊AUA制作的[此资源附加包](https://forum.gamer.com.tw/C.php?bsn=18673&snA=183269)。
   * 关于Minecraft基岩版的全语言修正，参见俄语Crowdin校对员fromgate制作的[Translations for Minecraft (Bedrock)](https://www.curseforge.com/minecraft/mc-addons/translations-for-minecraft)。
 
-**若发现自身可能存在该资源包上头的情况，请立刻~~食用~~阅读[译名标准化](https://minecraft.fandom.com/zh/wiki/MCW:译名标准化)。**
-
 ## 注意
 
-* 该资源包的内容完全参照于其[Java版的版本](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack)，另外加入了一些适配于基岩版的内容。
-* 以下若无特殊说明，“Minecraft”皆指Minecraft基岩版，“资源包”皆指资源附加包。
+* 本资源包**仅供娱乐**，请勿将其可能存在的误导性内容当真。
+** 若发现自身可能存在该资源包上头的情况，**请立刻~~食用~~阅读[译名标准化](https://minecraft.fandom.com/zh/wiki/MCW:译名标准化)**。
+** 在使用本资源包的过程中，若难以理解被修改后的内容，**请及时在设置中将语言改回简体中文**。
+* 本资源包的内容大部分参照于其[Java版的版本](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack)，另外加入了一些适配于基岩版的内容。
+* 若无特殊说明，下文中“Minecraft”皆指**Minecraft基岩版**，“资源包”皆指附加包中的类型之一。
 
 ## 作用
 
 * 将一部分译名或其他游戏内字符串替换成了一些知名/不知名的梗或笑话，或将其用诙谐的语言重写了一遍。
-* 同时使用了Ff98sha制作的[基岩版译名修正](https://github.com/ff98sha/mclangcn)中的内容，以保证未被替换的字符串的翻译正确。
-  * 也使用此资源包的内容修正了简体中文的翻译。
+* 使用了Ff98sha制作的[基岩版译名修正](https://github.com/ff98sha/mclangcn)，以保证梗体中文中未被替换的字符串的翻译正确。
+  * 同时也使用此资源包的内容修正了简体中文的翻译，即安装本资源包后不需要再次安装译名修正。
 
 ## 用法
 
-### 常规
+### 获取
 
-在[Releases](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock/releases)中下载此资源包，或在[网页构建](https://dl.meme.teahou.se/)中选择自定义选项下载。
+可以在[Releases](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock/releases)中选择默认选项下载，亦可于[在线构建](https://dl.meme.teahou.se/)中选择自定义选项下载。
 
-### 加载附加包时
+若想要抢先体验最前沿的~~整活~~版本，请参见“鹦鹉通道”段落。
 
-当加载了其他新增了内容（如新的方块、物品等）的附加包时，普通版本的资源包**无法**覆盖附加包新增的字符串，会导致附加包新增的内容**全部变为本地化键名**（对，比Java版还惨）。为此，请下载 `compatible` 版本以保证体验。安装流程几乎相同，但选择的语言应该是普通的**简体中文（中国）**。
+#### 加载其他附加包时
 
-### 唱片替换
+常规版本的资源包加入了新的语言“梗体中文（天朝）”，存储于文件 `zh_ME.lang` 中；而当加载了其他新增自定义内容（如新的方块、物品等）的附加包时，由于其新增的字符串储存于简体中文语言文件 `zh_CN.lang` 中，梗体中文**无法**覆盖这些字符串。这会导致附加包新增的内容**全部变为本地化键名**，像是`item.netherite_ingot.name`一类的东西（对，比Java版还惨），同时市场（Marketplace）等中的内容会全部变为英语~~（虽然本来基翻也很烂）~~。为此，请下载 `compatible` 版本以保证体验。资源包的安装流程完全相同，但在设置中选择的语言应该是普通的**简体中文**。
 
-该资源包将唱片信息修改成了非Minecraft歌曲。由于版权原因，这里有一份不受支持的预制版唱片替换包（不允许二次分发），可在[此处](https://files.lakejason0.ml/images/0/02/Meme_resourcepack_records.mcpack)或[此处](https://dianliang-oss-1301161188.cos.ap-shanghai.myqcloud.com/zh-meme-respack/Meme_resourcepack_records.mcpack)获取。
+如果选择 `compatible` 版本的梗体中文后，在游戏中依旧显示本地化键名，很有可能是您加载的其他附加包制作时仅有英语或其他语言，本身就没有简体中文的语言文件。这与梗体中文没有关系，请您联系该附加包作者或自行进行汉化。
+
+#### 唱片替换
+
+本资源包将唱片信息修改成了非Minecraft歌曲。由于版权原因，这里有一份不受支持的预制版唱片替换包（不允许二次分发），可在[此处](https://files.lakejason0.ml/images/0/02/Meme_resourcepack_records.mcpack)或[此处](https://dianliang-oss-1301161188.cos.ap-shanghai.myqcloud.com/zh-meme-respack/Meme_resourcepack_records.mcpack)获取。
 
 ### 导入
 
 #### 自动导入
 
-* 下载 `meme-resourcepack.mcpack` ，使用Minecraft打开即可。
-* 唱片替换资源包的导入方法同理。
+* 下载文件后缀为 `.mcpack` 的资源包，在打开方式中选择使用Minecraft打开即可。
 
 #### 手动导入
 
-* 下载 `meme-resourcepack.zip` 并解压。
-* 将解压后得到的文件中的 `meme-resourcepack` 文件夹移至Minecraft的 `resource_pack` 文件夹中，路径见下：
-  * Windows 10及Windows 10 Mobile： `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\resource_pack`
-  * Android及Fire OS： `sdcard/games/com.mojang/resource_pack`
-  * iOS： `Apps/com.mojang.minecraftpe/Documents/games/com.mojang/resource_pack`
-* 唱片替换资源包的导入方法同理。
+1. 下载文件后缀为 `.zip` 格的资源包；
+2. 将资源包文件移至Minecraft的数据路径下存放资源包处，路径见下：
+  * Windows 10： `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\resource_pack` ；
+  * Android： `/storage/sdcard/games/com.mojang/resource_pack` ；
+  * iOS/iPadOS： `Apps/com.mojang.minecraftpe/Documents/games/com.mojang/resource_pack` ；
+3. 解压资源包文件（可选，不解压游戏亦能读取）。
 
 ### 使用
 
-* 打开Minecraft，转到设置-全局资源，启用该资源包并置顶。
-* 转到设置-语言，选择“梗体中文（天朝）”。
-* 开始游戏。
+1. 打开Minecraft，转到设置-全局资源，启用该资源包并置顶；
+2. 转到设置-语言，选择“梗体中文（天朝）”；
+3. 开始游戏。
 
 ## 鹦鹉通道
 
-### 体验最新内容
+### 在线构建
 
-想要**抢先体验**最前沿~~整活~~版本，我们强烈建议您前往[网页打包](https://dl.meme.teahou.se/)，那里可以更直观地选择您需要的内容。
+梗体中文处于不断更新中，欢迎常回来看看。鉴于本资源包采用模块化，我们强烈建议您前往[在线构建](https://dl.meme.teahou.se/)获取最新的自定义版本，那里可以更直观地选择您需要的内容。
+
+### 命令行操作
 
 若您仍想自己尝试从命令行打包（并不推荐，比较繁琐），可按以下步骤进行：
 
@@ -103,10 +109,9 @@ python -m memepack_builder ...
 
 ## 声明
 
-* 本资源包**仅供娱乐**，请勿将其可能存在的误导性内容当真。
-* 本资源包基于Ff98sha的[基岩版译名修正](https://github.com/ff98sha/mclangcn)和其[Java版的版本](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack)。
+* 本资源包基于Ff98sha的[基岩版译名修正](https://github.com/ff98sha/mclangcn)和其[Java版的版本](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack)制作。
 * 本资源包与其[Java版的版本](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack)相比可能更新较慢并且缺少一些内容。
-  * 缺少的内容可能是由于基岩版本身就缺少这些字符串，也可能是移植时的疏忽造成的。
+  * 缺少的内容可能是由于基岩版本身就缺少这些字符串，也可能是移植时的疏忽造成的，如果遇到这些情况请您积极提交Issue反馈。
   * 同理，Java版的内容也可能缺少基岩版的内容。
 * 本资源包与Mojang、Minecraft Wiki、Gamepedia和Fandom无关，原中文翻译版权为Mojang和翻译者所有。
   * 关于正确的译名，请参见[中文Minecraft Wiki的译名标准化](https://minecraft-zh.gamepedia.com/MCW:译名标准化)。
