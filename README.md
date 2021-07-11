@@ -107,21 +107,21 @@ python -m memepack_builder ...
 
 ## 贡献
 
-我们欢迎你为这个资源包贡献自己的想法。请参阅[`CONTRIBUTING.md`](./CONTRIBUTING.md)以获取一些建议。
+我们欢迎您为这个资源包贡献自己的想法。请参阅[`CONTRIBUTING.md`](./CONTRIBUTING.md)以获取一些建议。
 
 ## 声明
 
 * 本资源包基于Ff98sha的[基岩版译名修正](https://github.com/ff98sha/mclangcn)和其[Java版的版本](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack)制作。
 * 本资源包与其[Java版的版本](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack)相比可能更新较慢并且缺少一些内容。
-  * 缺少的内容可能是由于基岩版本身就缺少这些字符串，也可能是移植时的疏忽造成的，如果遇到这些情况请您积极提交Issue反馈。
+  * 缺少的内容可能是由于基岩版本身就缺少这些字符串，也可能是移植时的疏忽造成的，如果遇到这些情况请您积极提交议题反馈。
   * 同理，Java版的内容也可能缺少基岩版的内容。
 * 本资源包与Mojang、Minecraft Wiki、Gamepedia和Fandom无关，原中文翻译版权为Mojang和翻译者所有。
   * 关于正确的译名，请参见[中文Minecraft Wiki的译名标准化](https://minecraft-zh.gamepedia.com/MCW:译名标准化)。
 * 本项目文件除另有声明外，均以 ***CC BY-SA 4.0*** 协议授权。
-  * 这意味着，你可在署名的情况下自由修改本资源包，但是你再创作的作品必须以本协议发布。
+  * 这意味着，您可在署名的情况下自由修改本资源包，但是您再创作的作品必须以本协议发布。
   * 这不是法律建议。
 * 本项目未经梗体中文修改过的部分，按照 ***原作品的协议*** 发布。
-  * 根据[此Issue](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock/issues/11)，本资源包中附带的简体中文语言修正文件不按原协议发布，仍按 ***CC BY-SA 4.0*** 协议授权。
+  * 根据[此议题](https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock/issues/11)，本资源包中附带的简体中文语言修正文件不按原协议发布，仍按 ***CC BY-SA 4.0*** 协议授权。
 * 本项目 `tools` 目录下的脚本和根目录下的 `preset_build.py` 文件，可选择 ***CC BY-SA 4.0*** 或 ***Apache License 2.0*** 协议之一授权。
 
 ![GitHub forks](https://img.shields.io/github/forks/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock?style=social)    ![GitHub stars](https://img.shields.io/github/stars/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock?style=social)    ![GitHub watchers](https://img.shields.io/github/watchers/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock?style=social)
