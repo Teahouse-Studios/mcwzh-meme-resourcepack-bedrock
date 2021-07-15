@@ -1,0 +1,15 @@
+{
+    "name": "choice_modules_netease",
+    "type": "collection",
+    "description": "中国版的预设打包。",
+    "author": [
+        "电量量"
+    ],
+    "contains": [
+        "questioning_totem",
+        "mopemope",
+        "trident_model",
+        "bee_pickaxe",
+        "dorowolf_texture"
+    ]
+}
