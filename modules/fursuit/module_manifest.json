@@ -1,0 +1,12 @@
+{
+    "name": "fursuit",
+    "type": "resource",
+    "description": "奇怪的南瓜？",
+    "author": [
+        "ZH9c418"
+    ],
+    "classifier": [
+        "modified_resource",
+        "modified_language"
+    ]
+}
