@@ -54,7 +54,7 @@
 
 #### 唱片替换
 
-本资源包将唱片信息修改成了非Minecraft歌曲。由于版权原因，这里有一份不受支持的预制版唱片替换包（不允许二次分发），可在[此处](https://files.lakejason0.ml/images/0/02/Meme_resourcepack_records.mcpack)或[此处](https://dianliang-oss-1301161188.cos.ap-shanghai.myqcloud.com/zh-meme-respack/Meme_resourcepack_records.mcpack)获取。
+本资源包将唱片信息修改成了非Minecraft歌曲。由于版权原因，这里有一份不受支持的预制版唱片替换包（不允许二次分发），可在[此处](https://lakeus.xyz/images/0/02/Meme_resourcepack_records.mcpack)或[此处](https://wdf.ink/record-bedrock)获取。
 
 ### 导入
 
