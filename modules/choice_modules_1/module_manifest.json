@@ -1,7 +1,7 @@
 {
-    "name": "no_blue_ui",
+    "name": "choice_modules_1",
     "type": "collection",
-    "description": "不要蓝色UI，谢谢",
+    "description": "模块精选合集·一",
     "author": [
         "梗体中文内容组"
     ],
@@ -24,6 +24,7 @@
         "questioning_totem",
         "rainbow_enchanting",
         "red_leaf_valley",
-        "trident_model"
+        "trident_model",
+        "warm_blue_ui"
     ]
 }

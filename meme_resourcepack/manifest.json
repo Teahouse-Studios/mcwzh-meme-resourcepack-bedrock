@@ -1,7 +1,7 @@
 {
     "format_version": 2,
     "header": {
-        "description": "§bAn adddd-on that inccludd meme transllashhon in Chiniise. .\n需要基岩版1.0.4+",
+        "description": "§bAn adddd-on that inccludd meme transllashhon in Chiniise.\n需要基岩版1.13.0+",
         "name": "§e梗体中文附加包-§l基岩版",
         "uuid": "69236b67-0176-4afe-8f68-28fc433d2f77",
         "version": [
