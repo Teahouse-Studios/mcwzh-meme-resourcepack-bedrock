@@ -1,3 +1,7 @@
 {
-  "$boss_health_bar_color": [ 0.333, 0.333, 1.0 ]
+  "$boss_health_bar_color": [
+    0.082,
+    0.435,
+    0.901
+  ]
 }
