@@ -6,10 +6,10 @@
         "DoroWolf"
     ],
     "contains": [
-	"baguette",
-	"ekac",
+        "baguette",
+        "ekac",
         "jinkela",
         "latiao",
-	"minecart_helmets"
+        "minecart_helmet"
     ]
 }
