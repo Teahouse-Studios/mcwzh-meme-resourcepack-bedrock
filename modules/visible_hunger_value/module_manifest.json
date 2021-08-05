@@ -1,0 +1,11 @@
+{
+    "name": "visible_hunger_value",
+    "type": "resource",
+    "description": "修改了物品名以显示可恢复的饥饿值。",
+    "author": [
+        "SkyEye_FAST"
+    ],
+    "classifier": [
+        "modified_language"
+    ]
+}
