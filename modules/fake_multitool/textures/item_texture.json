@@ -1,0 +1,49 @@
+{
+	"texture_data": {
+		"axe": {
+			"textures": [
+				"textures/items/wood_multitool",
+				"textures/items/stone_multitool",
+				"textures/items/iron_multitool",
+				"textures/items/gold_multitool",
+				"textures/items/diamond_multitool"
+			]
+		},
+		"hoe": {
+			"textures": [
+				"textures/items/wood_multitool",
+				"textures/items/stone_multitool",
+				"textures/items/iron_multitool",
+				"textures/items/gold_multitool",
+				"textures/items/diamond_multitool"
+			]
+		},
+		"pickaxe": {
+			"textures": [
+				"textures/items/wood_multitool",
+				"textures/items/stone_multitool",
+				"textures/items/iron_multitool",
+				"textures/items/gold_multitool",
+				"textures/items/diamond_multitool"
+			]
+		},
+		"shovel": {
+			"textures": [
+				"textures/items/wood_multitool",
+				"textures/items/stone_multitool",
+				"textures/items/iron_multitool",
+				"textures/items/gold_multitool",
+				"textures/items/diamond_multitool"
+			]
+		},
+		"sword": {
+			"textures": [
+				"textures/items/wood_multitool",
+				"textures/items/stone_multitool",
+				"textures/items/iron_multitool",
+				"textures/items/gold_multitool",
+				"textures/items/diamond_multitool"
+			]
+		}
+	}
+}
