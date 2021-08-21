@@ -1,7 +1,8 @@
 {
-"tile.carved_pumpkin.name": "光锋蓝瓜",
-"tile.pumpkin.name": "没脸的光锋",
-"tile.pumpkin_stem.name": "蓝瓜茎",
-"item.pumpkin_pie.name": "蓝瓜π",
-"item.pumpkin_seeds.name": "蓝瓜.torrent"
+	"item.pumpkin_pie.name": "蓝瓜π",
+	"item.pumpkin_seeds.name": "蓝瓜.torrent",
+	"tile.carved_pumpkin.name": "光锋蓝瓜",
+	"tile.lit_pumpkin.name": "真·“光”锋",
+	"tile.pumpkin.name": "没脸的光锋",
+	"tile.pumpkin_stem.name": "蓝瓜茎"
 }
