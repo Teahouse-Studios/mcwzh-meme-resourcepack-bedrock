@@ -2616,7 +2616,7 @@ entity.unknown.name=咱也不知道，咱也不敢说，咱也不敢问	#
 entity.vex.name=猥傀	#
 entity.villager.name=奸商	#
 entity.villager.armor=盔甲商	#
-entity.villager.butcher=屠夫	#
+entity.villager.butcher=催逝员	#
 entity.villager.cartographer=制图机器人	#
 entity.villager.cleric=神职人员	#
 entity.villager.farmer=龙鸣	#
@@ -9724,7 +9724,7 @@ script.success.debuggerClosed=调试器已关闭	#
 ## Vanilla Experiments
 tile.sculk_sensor.name=分贝仪	#
 item.goat_horn.name=山羊角	#
-tile.sculk.name=潜声传感器	#
+tile.sculk.name=Sculk	#
 tile.sculk_vein.name=Sculk Vein	#
 tile.sculk_catalyst.name=Sculk Catalyst	#
 tile.sculk_shrieker.name=Sculk Shrieker	#
