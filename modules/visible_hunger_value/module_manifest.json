@@ -5,6 +5,14 @@
     "author": [
         "SkyEye_FAST"
     ],
+    "incompatible_with": [
+        "baguette",
+        "chicken_soup",
+        "ekac",
+        "latiao",
+        "LocusAzzurro",
+        "mooncake"
+    ],
     "classifier": [
         "modified_language"
     ]

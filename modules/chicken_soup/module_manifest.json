@@ -1,0 +1,11 @@
+{
+    "name": "chicken_soup",
+    "type": "resource",
+    "description": "喝！为什么不喝？",
+    "author": [
+        "Zh9c418"
+    ],
+    "classifier": [
+        "modified_resource"
+    ]
+}

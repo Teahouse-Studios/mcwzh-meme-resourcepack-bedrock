@@ -6,6 +6,9 @@
         "IcyPhantom",
         "电量量"
     ],
+    "incompatible_with": [
+        "ekac"
+    ],
     "classifier": [
         "modified_resource",
         "modified_language"

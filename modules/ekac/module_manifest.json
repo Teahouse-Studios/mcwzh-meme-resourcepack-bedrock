@@ -5,6 +5,9 @@
     "author": [
         "DoroWolf"
     ],
+    "incompatible_with": [
+        "mooncake"
+    ],
     "classifier": [
         "modified_resource"
     ]
