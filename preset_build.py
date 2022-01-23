@@ -23,10 +23,6 @@ def main():
             {'platform': 'be', 'type': 'mcpack', 'compatible': False, 'modules': {
                 'resource': ['all'], 'collection': []}, 'hash': False, 'output': 'builds'},
             {'platform': 'be', 'type': 'mcpack', 'compatible': False, 'modules': {
-                'resource': ['blue_ui'], 'collection': []}, 'hash': False, 'output': 'builds'},
-            {'platform': 'be', 'type': 'mcpack', 'compatible': False, 'modules': {'resource': [
-                'minecart_helmet', 'spicy_strips'], 'collection': ['no_blue_ui']}, 'hash': False, 'output': 'builds'},
-            {'platform': 'be', 'type': 'mcpack', 'compatible': False, 'modules': {
                 'resource': [], 'collection': []}, 'hash': False, 'output': 'builds'},
             {'platform': 'be', 'type': 'mcpack', 'compatible': True, 'modules': {
                 'resource': ['all'], 'collection': []}, 'hash': False, 'output': 'builds'},
@@ -40,12 +36,10 @@ def main():
         preset_name = [
             f"meme-resourcepack_v{PACK_VERSION}.mcpack",
             f"meme-resourcepack_noresource_v{PACK_VERSION}.mcpack",
-            f"meme-resourcepack_noblueui_v{PACK_VERSION}.mcpack",
-            f"meme-resourcepack_noresource_noblueui_v{PACK_VERSION}.mcpack",
             f"meme-resourcepack_compatible_v{PACK_VERSION}.mcpack",
-            f"meme-resourcepack_compatible_noresource_noblueui_v{PACK_VERSION}.mcpack",
+            f"meme-resourcepack_compatible_noresource_v{PACK_VERSION}.mcpack",
             f"meme-resourcepack_v{PACK_VERSION}.zip",
-            f"meme-resourcepack_compatible_noresource_noblueui_v{PACK_VERSION}.zip",
+            f"meme-resourcepack_compatible_noresource_v{PACK_VERSION}.zip",
         ]
         pack_counter = 0
         perfect_pack_counter = 0
