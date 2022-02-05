@@ -9932,7 +9932,7 @@ osk.truncation_warning.title=警告	#
 osk.truncation_warning.body=无法编辑文本。文本超出限制且可能导致截断或数据丢失。	#
 
 ## Vanilla Experiments
-item.goat_horn.name=山羊角	#
+item.goat_horn.name=妙脆角	#
 
 ## Wild Update
 tile.sculk_sensor.name=分贝仪	#
@@ -9942,15 +9942,15 @@ tile.sculk_catalyst.name=Sculk Catalyst	#
 tile.sculk_shrieker.name=Sculk Shrieker	#
 itemGroup.name.sculk=Sculk	#
 effect.darkness=Darkness	#
-entity.frog.name=青蛙	#
+entity.frog.name=蛙蛙	#
 entity.tadpole.name=蝌蚪	#
-item.bucketTadpole.name=蝌蚪桶	#
-item.spawn_egg.entity.frog.name=青蛙刷怪蛋	#
-item.spawn_egg.entity.tadpole.name=蝌蚪刷怪蛋	#
-tile.frog_egg.name=青蛙卵	#
-tile.pearlescent_froglight.name=Pearlescent Froglight	#
-tile.verdant_froglight.name=Verdant Froglight	#
-tile.ochre_froglight.name=Ochre Froglight	#
+item.bucketTadpole.name=蝌蚪铁桶	#
+item.spawn_egg.entity.frog.name=蛙蛙幼体	#
+item.spawn_egg.entity.tadpole.name=蝌蚪幼体	#
+tile.frog_egg.name=蛙蛙的蛋蛋	#
+tile.pearlescent_froglight.name=会发光的珠光宝气排泄物	#
+tile.verdant_froglight.name=会发光的郁郁葱葱排泄物	#
+tile.ochre_froglight.name=会发光的黄土高原排泄物	#
 
 
 ## Chemistry Strings
