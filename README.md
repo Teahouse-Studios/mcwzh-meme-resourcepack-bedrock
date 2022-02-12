@@ -67,9 +67,10 @@
 * 下载文件后缀为 `.zip` 的资源包。
 * 将资源包文件移至Minecraft的数据路径下存放资源包处，路径见下：
   * Windows 10： `%LOCALAPPDATA%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\resource_pack`
-  * Android/Fire OS： `/sdcard/games/com.mojang/resource_pack`
+    * 预览版（Preview）： `%LOCALAPPDATA%\Packages\Microsoft.MinecraftWindowsBeta_8wekyb3d8bbwe\LocalState\games\com.mojang\resource_pack`
+  * Android/Fire OS： `/sdcard/Android/data/com.mojang.minecraftpe/files/games/com.mojang/resource_packs`
+    * 1.18.0.21前（见[此处](https://help.minecraft.net/hc/en-us/articles/4414144725389-Minecraft-External-Storage-Update-on-Android): `/sdcard/games/com.mojang/resource_pack`
   * iOS/iPadOS： `Apps/com.mojang.minecraftpe/Documents/games/com.mojang/resource_pack`
-  * 更多信息请见[此处](https://help.minecraft.net/hc/en-us/articles/360035131551-Where-are-Minecraft-files-stored-)。
 * 解压资源包文件（可选，不解压游戏亦能读取）。
 
 ### 使用
