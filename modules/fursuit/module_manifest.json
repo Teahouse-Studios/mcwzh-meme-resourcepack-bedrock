@@ -5,6 +5,9 @@
     "author": [
         "ZH9c418"
     ],
+    "incompatible_with": [
+        "bagify"
+    ],
     "classifier": [
         "modified_resource",
         "modified_language"
