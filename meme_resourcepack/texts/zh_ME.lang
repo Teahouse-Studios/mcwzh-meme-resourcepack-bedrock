@@ -4728,7 +4728,7 @@ item.iron_hoe.name=老铁锄	#
 item.stone_hoe.name=石锄	#
 item.wooden_hoe.name=圈地工具	#
 item.honey_bottle.name=甜蜜蜜瓶子	#
-item.honeycomb.name=蜜脾	#
+item.honeycomb.name=蜂房 #
 item.horsearmordiamond.name=祖安石马甲	#
 item.horsearmorgold.name=黄油马甲	#
 item.horsearmoriron.name=老铁马甲	#
@@ -4911,7 +4911,7 @@ item.jungle_sign.name=丛林木搞事牌	#
 item.acacia_sign.name=相思木搞事牌	#
 item.darkoak_sign.name=巧克力搞事牌	#
 item.crimson_sign.name=绯红木搞事牌	#
-item.rped_sign.name=幽蓝木搞事牌	#
+item.warped_sign.name=幽蓝木搞事牌	#
 item.skull.char.name=头颅	#
 item.skull.creeper.name=爪巴者的头	#
 item.skull.dragon.name=昆图库塔卡提考特苏瓦西拉松头	#
@@ -9103,7 +9103,7 @@ tips.game.54=别杀怪物，你这个海豚！	#
 tips.game.55=你知道吗？白 金 之 星是不会被爆炸摧毁的。	#
 tips.game.56=当你竖直向上挖的时候，在你的脚边放一个火把，破坏任何可能掉到你身上的沙子子或石砾。	#
 tips.game.57=你可以和猪崽子们以物易物。	#
-tips.game.58=剪我蜂了和蜂人院可以获得蜜脾，用瓶子可以获得蜂蜜，顺便被扎成憨憨。	#
+tips.game.58=剪蜂人院可以获得蜂房，用瓶子可以获得蜂蜜，顺便被扎成憨憨。	#
 tips.game.59=将篝火放在我蜂了或蜂人院下可以平和地收获蜂蜜（蜂子：我TM谢谢你）	#
 tips.game.60=在尼德兰中死去活来需要一个充能的锚台。	#
 tips.game.61=你必须用发光石给锚台充能，并且不能在主世界。	#
@@ -9949,7 +9949,7 @@ item.spawn_egg.entity.frog.name=蛙幼体	#
 item.spawn_egg.entity.tadpole.name=老大哥在看着你	#
 tile.frog_egg.name=生成蛙	#
 tile.pearlescent_froglight.name=珠光蛙の明灯	#
-tile.verdant_froglight.name青翠蛙の明灯	#
+tile.verdant_froglight.name=青翠蛙の明灯	#
 tile.ochre_froglight.name=赭黄蛙の明灯	#
 
 
