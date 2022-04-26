@@ -2700,7 +2700,7 @@ feature.buriedtreasure=埋藏的宝藏	#
 feature.ruins=海底废墟	#
 feature.pillageroutpost=掠夺者前哨站	#
 feature.bastionremnant=堡垒遗迹	#
-feature.ruinedportal=废弃传送门	#
+feature.ruinedportal=废弃门户	#
 
 feed.like=好活	#
 feed.manage_feed=管理信息摘要	#
@@ -3562,11 +3562,11 @@ howtoplay.navigation.text.9=太阳也能指示你的朝向。记住：太阳东�
 howtoplay.navigation.header.3=探险映射	#
 howtoplay.navigation.text.10=有许多地方可供你探索。找到奸商聚集地并寻找制图机器人。他会和你交♂易探险家映射，这些映射将带你前往非常遥远的陌生地域。	#
 
-howtoplay.netherPortals=尼德兰传送门	#
-howtoplay.netherPortals.title=游戏指北：尼德兰传送门	#
-howtoplay.netherPortals.text.1=尼德兰传送门使你能够进入不同的维度。	#
-howtoplay.netherPortals.text.2=如果摆放正确，尼德兰传送门就能够被点燃和激活。	#
-howtoplay.netherPortals.text.3=这里显示了传送门构造示例：	#
+howtoplay.netherPortals=尼德兰门户	#
+howtoplay.netherPortals.title=游戏指北：尼德兰门户	#
+howtoplay.netherPortals.text.1=尼德兰门户使你能够进入不同的维度。	#
+howtoplay.netherPortals.text.2=如果摆放正确，尼德兰门户就能够被点燃和激活。	#
+howtoplay.netherPortals.text.3=这里显示了门户构造示例：	#
 
 howtoplay.nightfall=黄昏	#
 howtoplay.nightfall.title=游戏指北：黄昏	#
@@ -3680,14 +3680,14 @@ howtoplay.shulkerBoxes=傻瓜盒子	#
 howtoplay.shulkerBoxes.title=游戏指北：傻瓜盒子	#
 howtoplay.shulkerBoxes.text.1=将两个潜影壳与胸部结合来制作傻瓜盒子。潜影壳是蒙达鲁克硫斯伯古比奇巴勒城中的潜影贝的掉落物。与其他容器不同，傻瓜盒子被损坏后会保留其中的物品。被↓↑推动的傻瓜盒子会损坏并且会作为物品掉落，可以使用启动器（消歧义）来放置傻瓜盒子。	#
 
-howtoplay.theEnd=终点	#
-howtoplay.theEnd.title=游戏指北：终点	#
-howtoplay.theEnd.text.1=终点是可通过激活的终端门户进入的另外一个维度。终端门户可在要塞之中找到，要塞位于主世界的地底深处。	#
+howtoplay.theEnd=终端	#
+howtoplay.theEnd.title=游戏指北：终端	#
+howtoplay.theEnd.text.1=终端是可通过激活的终端门户进入的另外一个维度。终端门户可在要塞之中找到，要塞位于主世界的地底深处。	#
 howtoplay.theEnd.text.2=每个终端门户框架方块都缺少一些神秘之物来诱发其内部的力量。	#
 howtoplay.theEnd.header.1=另一边	#
-howtoplay.theEnd.text.3=传送门被激活后，跳入其中即可前往终点。	#
-howtoplay.theEnd.text.4=终点是可怕的昆图库塔卡提考特苏瓦西拉松的家园。她是既凶残又强大的敌人，似乎能从奇异水晶中汲取力量。她的龙痰和火球攻击可以在整个战地留下滞留性酸物。带上一些好♂基♂友以确保取得胜利！	#
-howtoplay.theEnd.text.5=一次不够的话，可以将四颗末影水晶添加到返回传送门的各个角落来反复鞭尸昆图库塔卡提考特苏瓦西拉松。	#
+howtoplay.theEnd.text.3=门户被激活后，跳入其中即可前往终端。	#
+howtoplay.theEnd.text.4=终端是可怕的昆图库塔卡提考特苏瓦西拉松的家园。她是既凶残又强大的敌人，似乎能从奇异水晶中汲取力量。她的龙痰和火球攻击可以在整个战地留下滞留性酸物。带上一些好♂基♂友以确保取得胜利！	#
+howtoplay.theEnd.text.5=一次不够的话，可以将四颗末影水晶添加到返回门户的各个角落来反复鞭尸昆图库塔卡提考特苏瓦西拉松。	#
 
 howtoplay.theStore=商城	#
 howtoplay.theStore.title=游戏指北：商城	#
@@ -7986,7 +7986,7 @@ tile.oreRuby.name=红宝石矿石	#
 tile.observer.name=思辩者.jpg	#
 tile.piston.name=↓↑	#
 tile.sticky_piston.name=黏糊糊的↓↑	#
-tile.portal.name=传送门	#
+tile.portal.name=门户	#
 tile.potatoes.name=育碧服务器	#
 tile.stone_pressure_plate.name=石质阿姨压一压板	#
 tile.wooden_pressure_plate.name=阿姨压一压板	#
