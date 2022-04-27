@@ -1,4 +1,5 @@
 {
+
     "achievement.portal": "下地狱吧",
     "container.enchant.level.many": "+ %s级经验",
     "container.enchant.level.one": "+ 1级经验",
@@ -36,7 +37,7 @@
     "tile.deepslate_tile_wall.name": "深砖石瓦墙",
     "tile.deepslate_tiles.name": "深砖石瓦",
     "tile.ender_chest.name": "私人箱",
-    "tile.frog_egg.name": "蛙生成",
+    "tile.frog_spawn.name": "蛙生成",
     "tile.infested_deepslate.name": "被虫蚀的裂开来的深石",
     "tile.ladder.name": "七个林昆",
     "tile.polished_deepslate_slab.name": "使用了打磨工艺进行加工的深石半砖",
