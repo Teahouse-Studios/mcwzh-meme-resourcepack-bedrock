@@ -326,7 +326,7 @@ action.interact.milk=挤奶	#
 action.interact.mooshear=退化成牛	#
 action.interact.moostew=盛汤	#
 action.interact.repair=修修补补	#
-action.interact.ride.boat=上明日方舟》	#
+action.interact.ride.boat=上《明日方舟》	#
 action.interact.ride.minecart=上《我的世界》	#
 action.interact.ride.horse=上你马	#
 action.interact.ride.strider=上炫迈兽	#
@@ -3739,7 +3739,7 @@ howtoplay.transportation.header.2=《明日方舟》	#
 howtoplay.transportation.text.4=《明日方舟》让你可以在水面上旅行，将一艘《明日方舟》放在水方块上，即可出发。	#
 howtoplay.transportation.text.5.keyboard=在看向《明日方舟》时按 :_input_key.use: 可上《明日方舟》。按 :_input_key.left: 或 :_input_key.right: 可向左或向右转。按 :_input_key.forward: 可向前移动。按 :_input_key.jump: 或 :_input_key.sneak: 可下《明日方舟》。	#
 howtoplay.transportation.text.5.gamepad=在看向《明日方舟》时按 :_input_key.use: 可上《明日方舟》。按 :_gamepad_stick_left: 左键或右键可调整方向。按 :_gamepad_stick_left: 前键可向前移动。按 :_input_key.jump: 或 :_input_key.sneak: 可下《明日方舟》。	#
-howtoplay.transportation.text.5.touch=在接近《明日方舟》时点击“上方舟”抱枕来上《明日方舟》。按 :_input_key.left: 或 :_input_key.right: 可向左或向右转。同时方舟按住这两个键可向前移动。点击“下方舟”抱枕可下《明日方舟》。	#
+howtoplay.transportation.text.5.touch=在接近《明日方舟》时点击“上《明日方舟》”抱枕来上《明日方舟》。按 :_input_key.left: 或 :_input_key.right: 可向左或向右转。同时方舟按住这两个键可向前移动。点击“下方舟”抱枕可下《明日方舟》。	#
 
 howtoplay.weapons=武器	#
 howtoplay.weapons.title=游戏指北：武器	#
