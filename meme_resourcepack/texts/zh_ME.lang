@@ -9933,6 +9933,54 @@ osk.truncation_warning.body=无法编辑文本。文本超出限制且可能导�
 
 ## Vanilla Experiments
 item.goat_horn.name=妙脆角	#
+item.copper_horn.name=铜妙脆角	#
+
+itemGroup.name.goatHorn=妙脆角	#
+itemGroup.name.copperHorn=铜妙脆角	#
+
+item.minecraft.copper_horn.harmony.0=很好	#
+item.minecraft.copper_horn.harmony.1=旧的	#
+item.minecraft.copper_horn.harmony.2=纯	#
+item.minecraft.copper_horn.harmony.3=卑微	#
+item.minecraft.copper_horn.harmony.4=干燥	#
+item.minecraft.copper_horn.harmony.5=清澈	#
+item.minecraft.copper_horn.harmony.6=新鲜	#
+item.minecraft.copper_horn.harmony.7=秘密	#
+item.minecraft.copper_horn.harmony.8=无畏	#
+item.minecraft.copper_horn.harmony.9=甜	#
+
+item.minecraft.copper_horn.melody.0=天空	#
+item.minecraft.copper_horn.melody.1=赞美诗	#
+item.minecraft.copper_horn.melody.2=水	#
+item.minecraft.copper_horn.melody.3=火	#
+item.minecraft.copper_horn.melody.4=催	#
+item.minecraft.copper_horn.melody.5=脾气	#
+item.minecraft.copper_horn.melody.6=巢	#
+item.minecraft.copper_horn.melody.7=湖泊	#
+item.minecraft.copper_horn.melody.8=河流	#
+item.minecraft.copper_horn.melody.9=月亮	#
+
+item.minecraft.copper_horn.bass.0=下降	#
+item.minecraft.copper_horn.bass.1=休息	#
+item.minecraft.copper_horn.bass.2=欲望	#
+item.minecraft.copper_horn.bass.3=记忆	#
+item.minecraft.copper_horn.bass.4=愤怒	#
+item.minecraft.copper_horn.bass.5=旅程	#
+item.minecraft.copper_horn.bass.6=思想	#
+item.minecraft.copper_horn.bass.7=泪水	#
+item.minecraft.copper_horn.bass.8=礼物	#
+item.minecraft.copper_horn.bass.9=爱	#
+
+item.minecraft.goat_horn.sound.0=沉思	#
+item.minecraft.goat_horn.sound.1=歌颂	#
+item.minecraft.goat_horn.sound.2=寻觅	#
+item.minecraft.goat_horn.sound.3=感受	#
+item.minecraft.goat_horn.sound.4=仰慕	#
+item.minecraft.goat_horn.sound.5=呼唤	#
+item.minecraft.goat_horn.sound.6=憧憬	#
+item.minecraft.goat_horn.sound.7=抵抗	#
+item.minecraft.goat_horn.sound.8=飞翔	#
+item.minecraft.goat_horn.sound.9=想象	#
 
 ## Wild Update
 tile.sculk_sensor.name=幽（yóu）匿分贝仪	#
