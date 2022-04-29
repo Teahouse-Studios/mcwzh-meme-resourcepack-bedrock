@@ -10041,6 +10041,9 @@ tile.stripped_mangrove_wood.name=去皮红树树皮	#
 item.boat.mangrove.name=红树方舟	#
 item.echo_shard.name=echo 碎片	#
 item.recovery_compass.name=死去活来指南针	#
+item.disc_fragment.name=金 曲 残 片	#
+item.disc_fragment_5.desc=？？？？ - ?? ????????	#
+item.record_5.desc=Samuel Åberg - 5	#
 
 action.hint.exit.chest_boat=点击“跳跃”离开《明日方舟》	#
 action.hint.exit.console.chest_boat=按下 :_input_key.jump: 离开《明日方舟》	#
