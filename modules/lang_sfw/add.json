@@ -19,6 +19,8 @@
     "lanServer.start": "创造一个局域网世界",
     "lanServer.title": "局域网世界",
     "menu.shareToLan": "对局域网开放",
+    "networkWorld.lan_label": "局域网游戏",
+    "options.servervisible": "对局域网开放",
     "splitscreen.joyconError.toastMessage": "你要加入的游戏在本地局域网模式已连接太多手柄。",
     "tile.bed.occupied": "友好相处，你不可以抢走人家的床！",
     "tile.bedrock.name": "砍手岩",
