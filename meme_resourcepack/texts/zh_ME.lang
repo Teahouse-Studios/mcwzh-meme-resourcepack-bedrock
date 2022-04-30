@@ -1728,7 +1728,7 @@ createWorldScreen.experimentalCreatorFeaturesDescription=包括演员属性和�
 createWorldScreen.experimentalmoddingDescription=要做很多重复的事情？这可能有助于创建你的附加包	#
 createWorldScreen.cavesandcliffs=洞穴与山崖	#
 createWorldScreen.cavesandcliffsDescription=探索新的多样化洞穴生成	#
-createWorldScreen.vanillaExperiments=原版实验性玩法	#
+createWorldScreen.vanillaExperiments=原版还没做完的玩法	#
 createWorldScreen.vanillaExperimentsDescription=体验正在开发的全新原版功能	#
 createWorldScreen.wildUpdate=荒野更新	#
 createWorldScreen.wildUpdateDescription=体验即将到来的荒野更新功能	#
@@ -1739,7 +1739,7 @@ createWorldScreen.experimentalholidayDescription=添加数据驱动的方块和�
 createWorldScreen.experimentalGameTest=GameTest框架	#
 createWorldScreen.experimentalGameTestDescription=用于构建和测试任何新内容的工具集	#
 createWorldScreen.experimentalMolangFeatures=Molang功能	#
-createWorldScreen.experimentalMolangFeaturesDescription=Molang实验性查询和语言功能	#
+createWorldScreen.experimentalMolangFeaturesDescription=Molang还没做完的查询和语言功能	#
 createWorldScreen.worldPreferences=世界首选项	#
 createWorldScreen.startWithMap=初始映射	#
 createWorldScreen.defaultName=新的世界，新的开始	#
@@ -5719,7 +5719,7 @@ options.dev_xboxEnvironment=凶盒沙盒环境（需要重启）	#
 options.dev_xbox_environment.retail=零售版	#
 options.dev_xbox_environment.dev=开发版	#
 options.dev_xbox_environment.dev_achievement=开发版成果	#
-options.dev_experimentalTreatment=实验性处理	#
+options.dev_experimentalTreatment=还没做完的处理	#
 options.dev_sandboxRetail=Xforge沙盒：稳定版	#
 options.dev_sandboxDev=Xforge沙盒：开发版	#
 options.dev_sandboxDevAchievement=Xforge沙盒：开发版成果	#
@@ -5952,7 +5952,7 @@ options.renderDistance.warning=提高渲染距离可能导致帧率降低、崩�
 options.raytracing.renderdistance.warning=此设置可能会在游玩时产生性能问题。	#
 options.resetSettings=重置为默认值	#
 options.resetSettings.popUp=是否确实要重置设置？	#
-options.maxFramerate=最大帧率（实验性）	#
+options.maxFramerate=最大帧率（还没做完的）	#
 options.maxFramerateFormat=%s FPS	#
 options.perf_turtle=性能图表	#
 options.msaa=抗锯齿	#
@@ -7502,7 +7502,7 @@ store.coins.fixAppReceipt.title=出错了	#
 store.coins.fixAppReceipt.body=获取收款信息出现了问题，请登录以继续。	#
 store.coins.fixAppReceipt.button=登录到商店	#
 
-store.purchase.toast.generic=您刚购买%s！	#
+store.purchase.toast.generic=你刚购买%s！	#
 
 store.featured.realms.title=免费白嫖Realm	#
 store.featured.realms.desc=和你的好♂基♂友一起体验游玩Minecraft的最佳方式。	#
@@ -7667,7 +7667,7 @@ store.applyToRealm=在Realm上使用	#
 store.inRealmsPlus=在Realms+中	#
 store.uploadWorldTitle=要替换世界吗？	#
 store.uploadPackTitle=要替换亮目害眼包吗？	#
-store.uploadWorldMessage=本操作将从你的Realm中移除当前的世界，并允许你将其替换为一个新的世界。你的Realm成员将有机会访问您的新世界。选择“取消”以下载当前世界的副本，以防止数据丢失，或者选择“确认”以继续并替换您的世界。		#
+store.uploadWorldMessage=本操作将从你的Realm中移除当前的世界，并允许你将其替换为一个新的世界。你的Realm成员将有机会访问你的新世界。选择“取消”以下载当前世界的副本，以防止数据丢失，或者选择“确认”以继续并替换你的世界。		#
 store.uploadPackMessage=这将从你的Realm中移除所有当前应用的亮目害眼包，并将其替换为所选的包。想要继续吗?	#
 
 stream.confirm_start=你确定要开始直播吗？	#
@@ -9206,7 +9206,7 @@ tips.game.19=在你开采祖安石、雷石东或黄油之前，请确保你用�
 tips.game.20=需要煤做火把或者燃料？试着在炉子里烧炼木头来制作木炭吧（还不如挖）！	#
 tips.game.21=黄油遍地的地方是平顶山！	#
 tips.game.22=鞘翅可以用来飞啦飞啦，它们会出现在蒙达鲁克硫斯伯古比奇巴勒城的蒙达鲁克硫斯伯古比奇巴勒舟中（也可以偷别人的）！	#
-tips.game.23=你可以打开实验性玩法来测试一些新的bug（划掉）特性！	#
+tips.game.23=你可以打开还没做完的玩法来测试一些新的bug（划掉）特性！	#
 tips.game.24=鱼叉由水猴子掉落，可以拿着或扔掉。	#
 tips.game.25=你可以用绯红菌繁殖疣猪兽，但绯红菌和你都很危险！	#
 tips.game.26=你可以用一个紫菜块作为燃料，在炉子里烧炼20个物品。	#
@@ -9289,7 +9289,7 @@ hbui.AchievementDetailsRoute.reward=奖励	#
 hbui.AchievementDetailsRoute.title=成果详情	#
 hbui.AchievementDetailsRoute.titleNarration=成果详情界面	#
 hbui.AchievementDetailsRoute.viewReward=查看奖励	#
-hbui.AchievementDisabledModal.achievementsDisabledNotificationBeta=关闭实验性游戏内容	#
+hbui.AchievementDisabledModal.achievementsDisabledNotificationBeta=关闭还没做完的游戏内容	#
 hbui.AchievementDisabledModal.achievementsDisabledNotificationCheatsEnabled=关闭滥权	#
 hbui.AchievementDisabledModal.achievementsDisabledNotificationCreativeMode=将游戏模式设置为生存	#
 hbui.AchievementDisabledModal.achievementsDisabledNotificationFlatWorld=关闭平 淡 的世界	#
@@ -9297,9 +9297,9 @@ hbui.AchievementDisabledModal.achievementsDisabledNotificationOperator=将用户
 hbui.AchievementDisabledModal.achievementsDisabledNotificationTemplate=删除模板	#
 hbui.AchievementDisabledModal.closeInputLegend=关闭	#
 hbui.AchievementDisabledModal.goBackButtonText=返回	#
-hbui.AchievementDisabledModal.multipleSettingsMessage=使用当前设置，您将无法在这个世界中获得成果。如果您想获得成果，请在创建世界之前更改以下设置：	#
-hbui.AchievementDisabledModal.oneSettingMessage=使用当前设置，您将无法在这个世界中获得成果。如果您想获得成果，请在创建世界之前更改以下设置：	#
-hbui.AchievementDisabledModal.title=您无法获得成果	#
+hbui.AchievementDisabledModal.multipleSettingsMessage=使用当前设置，你将无法在这个世界中获得成果。如果你想获得成果，请在创建世界之前更改以下设置：	#
+hbui.AchievementDisabledModal.oneSettingMessage=使用当前设置，你将无法在这个世界中获得成果。如果你想获得成果，请在创建世界之前更改以下设置：	#
+hbui.AchievementDisabledModal.title=你无法获得成果	#
 hbui.AchievementListItem.completed=已完成	#
 hbui.AchievementListItem.gamerscoreNarration=玩家分数：%1$s	#
 hbui.AchievementListItem.groupNarration=第%1$s个，共%2$s个组	#
@@ -9350,9 +9350,9 @@ hbui.AchievementsSummary.time=游戏时长	#
 hbui.AnnouncementModalRoute.continue=继续	#
 hbui.AnnouncementModalRoute.unlock=解锁	#
 hbui.AnnouncementModalRoute.confirmInputLegend=确认	#
-hbui.AnnouncementModalRoute.errorInvalidTemplate=消息的模板无效，无法显示	#
 hbui.AnnouncementModalRoute.errorNoMessage=未找到消息	#
 hbui.AnnouncementModalRoute.errorTitle=通知错误	#
+hbui.AnnouncementModalRoute.errorInvalidTemplate=消息的模板无效，无法显示	#
 hbui.AnnouncementModalRoute.errorUnsupportedTemplate=模板未执行	#
 hbui.BackButton.back=返回	#
 hbui.BackButton.narration.backButton=返回抱枕	#
@@ -9405,14 +9405,14 @@ hbui.CreateNewWorld.advanced.worldSeedButton=模板	#
 hbui.CreateNewWorld.advanced.worldSeedDescription=决定你的世界是什么样子，从哪里开始你的冒险	#
 hbui.CreateNewWorld.advanced.worldSeedLabel=种子	#
 hbui.CreateNewWorld.advanced.worldSeedPlaceholder=3257840388504953787	#
-hbui.CreateNewWorld.behaviorPacks.activatedAllPacksMessageDescription=您拥有的所有包都已激活。在线获取更多包！	#
-hbui.CreateNewWorld.behaviorPacks.activatedAllPacksMessageTitle=您已激活所有包	#
+hbui.CreateNewWorld.behaviorPacks.activatedAllPacksMessageDescription=你拥有的所有包都已激活。在线获取更多包！	#
+hbui.CreateNewWorld.behaviorPacks.activatedAllPacksMessageTitle=你已激活所有包	#
 hbui.CreateNewWorld.behaviorPacks.changesDisabledMessage=世界设置被锁定时无法更改	#
-hbui.CreateNewWorld.behaviorPacks.emptyLocalActivePacksMessageDescription=改变世界中的物品和生物的行为方式。在"可用"下开始使用	#
+hbui.CreateNewWorld.behaviorPacks.emptyLocalActivePacksMessageDescription=改变世界中的物品和暴徒的行为方式。在"可用"下开始使用	#
 hbui.CreateNewWorld.behaviorPacks.emptyLocalActivePacksMessageTitle=无有效行为包	#
 hbui.CreateNewWorld.behaviorPacks.inactivePacksEmptyBody=前往市场或线上，寻找能通过不同的方式玩自己的世界的包！	#
-hbui.CreateNewWorld.behaviorPacks.inactivePacksEmptyTitle=您还没有任何包	#
-hbui.CreateNewWorld.behaviorPacks.noPacksAvailableBody=行为包更改物品和生物的行为	#
+hbui.CreateNewWorld.behaviorPacks.inactivePacksEmptyTitle=你还没有任何包	#
+hbui.CreateNewWorld.behaviorPacks.noPacksAvailableBody=行为包更改物品和暴徒的行为	#
 hbui.CreateNewWorld.behaviorPacks.noPacksAvailableTitle=无可用包	#
 hbui.CreateNewWorld.behaviorPacks.packPriorityInfoMessage=如果多个包对同一个资产进行了修改，那么等级最高的包所做的修改将会被应用。	
 hbui.CreateNewWorld.behaviorPacks.underConstructionMessage=行为包艺术在做了！	#
@@ -9420,26 +9420,26 @@ hbui.CreateNewWorld.betaFeatures.activateBetaConfirmationCancel=保留原始设�
 hbui.CreateNewWorld.betaFeatures.activateBetaConfirmationCancelInputLegend=取消	#
 hbui.CreateNewWorld.betaFeatures.activateBetaConfirmationConfirm=开启抢跑版功能	#
 hbui.CreateNewWorld.betaFeatures.activateBetaConfirmationConfirmInputLegend=确认	#
-hbui.CreateNewWorld.betaFeatures.activateBetaConfirmationDescription=请注意！你正在开启还没做完的功能，你的世界可能崩溃、损坏或者在未来的更新后无法使用。	#
+hbui.CreateNewWorld.betaFeatures.activateBetaConfirmationDescriptionPart1=使用还没做完的游戏内容时要小心，因为你的世界可能崩溃、损坏或者在未来的更新后无法使用。创建世界后，您无法关闭还没做完的游戏内容。	#
+hbui.CreateNewWorld.betaFeatures.activateBetaConfirmationDescriptionPart2=不要在打开还没做完的游戏内容的世界中构建任何重要的东西，因为您可能会失去自己不可思议的创造物。	#
 hbui.CreateNewWorld.betaFeatures.activateBetaConfirmationTitle=你确定吗？	#
 hbui.CreateNewWorld.betaFeatures.addOnCreatorsDescription=为你这样的附加包或商城包创作者提供便利	#
 hbui.CreateNewWorld.betaFeatures.addOnCreatorsTitle=附加包创建器	#
-hbui.CreateNewWorld.betaFeatures.badge=抢跑	#
-hbui.CreateNewWorld.betaFeatures.betaLabel=抢跑	#
-hbui.CreateNewWorld.betaFeatures.gameplayDescription=这些功能会影响游戏内的事物。试着找找看！	#
 hbui.CreateNewWorld.betaFeatures.gameplayTitle=游戏内容	#
 hbui.CreateNewWorld.betaFeatures.informationMessage=抢跑版功能可能会损坏你的世界，且一旦创建世界将无法关闭。	#
 hbui.CreateNewWorld.betaFeatures.internalTestsDescription=仅供开发者使用，不会在零售版中显示。	#
 hbui.CreateNewWorld.betaFeatures.internalTestsTitle=没做完	#
 hbui.CreateNewWorld.cheats.commandBlocksDescription=启用滥权方块的功能	#
 hbui.CreateNewWorld.cheats.commandBlocksTitle=启用滥权方块	#
-hbui.CreateNewWorld.cheats.daylightCycleAlwaysNoonDescription=已将游戏内时间锁定为中午	#
-hbui.CreateNewWorld.cheats.daylightCycleAlwaysNoonLabel=身处日不落帝国	#
-hbui.CreateNewWorld.cheats.daylightCycleNormalDescription=游戏内时间正常流逝，从白天到晚上	#
-hbui.CreateNewWorld.cheats.daylightCycleNormalLabel=正常	#
-hbui.CreateNewWorld.cheats.daylightCycleTitle=光阴似箭，日月如梭	#
+hbui.CreateNewWorld.cheats.commandsDescription=在唠嗑中滥权以激活特定功能	#
+hbui.CreateNewWorld.cheats.commandsTitle=控制台滥权	#
+hbui.CreateNewWorld.cheats.daylightCycleAlwaysDayDescription=游戏内时间锁定为中午	#
+hbui.CreateNewWorld.cheats.daylightCycleAlwaysDayLabel=身处日不落帝国	#
+hbui.CreateNewWorld.cheats.daylightCycleNormalDescription=游戏内时间从早到晚正常流逝	#
+hbui.CreateNewWorld.cheats.daylightCycleNormalLabel=光阴似箭，日月如梭	#
+hbui.CreateNewWorld.cheats.daylightCycleTitle=光阴似箭，日月如梭，或者身处日不落帝国	#
 hbui.CreateNewWorld.cheats.description=使用滥权设置自定义游戏	#
-hbui.CreateNewWorld.cheats.educationDescription=针对具有合适RAM的桌面设备进行优化	#
+hbui.CreateNewWorld.cheats.educationDescription=为桌面设备进行优化	#
 hbui.CreateNewWorld.cheats.educationTitle=教育版	#
 hbui.CreateNewWorld.cheats.entitiesDropLootDescription=暴徒和其他部分实体在被击杀时掉落物品	#
 hbui.CreateNewWorld.cheats.entitiesDropLootTitle=掉落暴徒战利品	#
@@ -9450,7 +9450,7 @@ hbui.CreateNewWorld.cheats.mobGriefingTitle=允许暴徒破坏	#
 hbui.CreateNewWorld.cheats.mobSpawningDescription=暴徒可以自然产卵	#
 hbui.CreateNewWorld.cheats.mobSpawningTitle=暴徒产卵	#
 hbui.CreateNewWorld.cheats.settingsTitle=滥权设置	#
-hbui.CreateNewWorld.cheats.tickSpeedDescription=影响某些方块的行为，如植物生长和衰亡的速度。	#
+hbui.CreateNewWorld.cheats.tickSpeedDescription=影响某些方块的行为，如植物生长和衰亡的速度。（最大4096）	#
 hbui.CreateNewWorld.cheats.tickSpeedLabel=随机游戏刻速度	#
 hbui.CreateNewWorld.cheats.tickSpeedReset=重置	#
 hbui.CreateNewWorld.cheats.title=滥权	#
@@ -9488,14 +9488,14 @@ hbui.CreateNewWorld.general.internalBetaNotificationOptOutButton=回到旧设计
 hbui.CreateNewWorld.general.internalBetaNotificationTitle=欢迎来到设计预览！	#
 hbui.CreateNewWorld.general.optOutOfBetaModal.closeInputLegend=关闭	#
 hbui.CreateNewWorld.general.optOutOfBetaModal.goBackToOldDesignButton=返回旧设计，不保存	#
-hbui.CreateNewWorld.general.optOutOfBetaModal.message=如果返回旧设计，那么您将重新开始。确定要继续？	#
+hbui.CreateNewWorld.general.optOutOfBetaModal.message=如果返回旧设计，那么你将重新开始。确定要继续？	#
 hbui.CreateNewWorld.general.optOutOfBetaModal.stayInNewDesignButton=留在新设计	#
 hbui.CreateNewWorld.general.optOutOfBetaModal.title=设置不会保存	#
 hbui.CreateNewWorld.general.worldNamePlaceholder=新的世界，新的开始	#
 hbui.CreateNewWorld.general.worldNameTitle=世界名称	#
 hbui.CreateNewWorld.general.worldTypeTitle=世界类型	#
 hbui.CreateNewWorld.multiplayer.microsoftPlayerAccessTitle=Microsoft玩家访问	#
-hbui.CreateNewWorld.multiplayer.multiplayerGameDescription=其他玩家可以加入您的世界	#
+hbui.CreateNewWorld.multiplayer.multiplayerGameDescription=其他玩家可以加入你的世界	#
 hbui.CreateNewWorld.multiplayer.multiplayerGameTitle=多人游戏	#
 hbui.CreateNewWorld.multiplayer.nintendoPlayerAccessFriendsDescription=任何你已添加的Nintendo好友都可以加入	#
 hbui.CreateNewWorld.multiplayer.nintendoPlayerAccessFriendsOfFriendsDescription=你的Nintendo好友的好友可以加入	#
@@ -9520,7 +9520,7 @@ hbui.CreateNewWorld.multiplayer.playstationPlayerAccessFriendsOfFriendsDescripti
 hbui.CreateNewWorld.multiplayer.playstationPlayerAccessInvitedDescription=你发送直接邀请的人都可以加入	#
 hbui.CreateNewWorld.multiplayer.playstationPlayerAccessTitle=PlayStation Network玩家访问	#
 hbui.CreateNewWorld.multiplayer.settingsTitle=设置	#
-hbui.CreateNewWorld.multiplayer.visibleToLanPlayersDescription=本地网络上的玩家可以加入您的世界	#
+hbui.CreateNewWorld.multiplayer.visibleToLanPlayersDescription=本地网络上的玩家可以加入你的世界	#
 hbui.CreateNewWorld.multiplayer.visibleToLanPlayersTitle=对菊域网玩家可见	#
 hbui.CreateNewWorld.packDownloadModal.confirmationBody=“%1$s”需要下载才能启用。	#
 hbui.CreateNewWorld.packDownloadModal.confirmationCancelButton=取消	#
@@ -9548,7 +9548,7 @@ hbui.CreateNewWorld.resourcePacks.globalPacksInfoMessage=全局包在你的所�
 hbui.CreateNewWorld.resourcePacks.globalPacksListHeader=全局	#
 hbui.CreateNewWorld.resourcePacks.inactivePacksAccordionHeader=已拥有	#
 hbui.CreateNewWorld.resourcePacks.inactivePacksEmptyBody=前往市场或线上，寻找能通过不同的方式玩自己的世界的包！	#
-hbui.CreateNewWorld.resourcePacks.inactivePacksEmptyTitle=您还没有任何包	#
+hbui.CreateNewWorld.resourcePacks.inactivePacksEmptyTitle=你还没有任何包	#
 hbui.CreateNewWorld.resourcePacks.localPacksListHeader=本地	#
 hbui.CreateNewWorld.resourcePacks.packPriorityInfoMessage=如果多个包对同一个资源进行了修改，那么只会应用等级最高的包所做的修改。	#
 hbui.CreateNewWorld.resourcePacks.realmsPlusPacksAccordionHeader=Realms Plus	#
@@ -9601,16 +9601,16 @@ hbui.MobileDataBlockedModalRoute.title=移动数据被阻止	#
 hbui.Modal.back=返回	#
 hbui.Modal.close=关掉	#
 hbui.Notifications.achievementsDisabled=你无法获得成果。	#
-hbui.Notifications.betaWarning.informationMessage=实验性游戏内容是潜在的新功能。可能会发生错误，请小心。	#
+hbui.Notifications.betaWarning.informationMessage=还没做完的游戏内容是潜在的新功能。可能会发生错误，请小心。	#
 hbui.CreateNewWorld.multiplayer.warning.checkInternetConnection=你未连接到互联网。你的好友将无法加入你的多人游戏世界。登录至你的微软账户与你的好友一起游戏。	#
 hbui.CreateNewWorld.multiplayer.warning.multiplayerPrivilegesBlocked=由于你微软账户的设置问题，你无法进行在线多人游戏。请确认你的在线安全设置已允许多人游戏。请前往aka.ms/MCMultiplayerHelp查看如何更改这些设置。	#
 hbui.CreateNewWorld.multiplayer.warning.multiplayerPrivilegesBlockedOnConsole=由于你微软账户的设置问题，你无法进行在线多人游戏。请确认你的在线安全设置已允许多人游戏和俱乐部，且当前你已拥有Xbox Live金会员订阅。请前往aka.ms/MCMultiplayerHelp查看如何更改这些设置。	#
 hbui.CreateNewWorld.multiplayer.warning.nintendoDisconnectedThirdPartyWithSubscription=你没有连接到Nintendo Switch Online服务。你的Nintendo好友将无法加入你的多人游戏世界。登录至Nintendo Switch Online与好友一起游戏。	#
-hbui.Notifications.multiplayerWarnings.nintendoLocalMultiplayerPrivilegesBlockedThirdParty=由于视听者限制，您无法进行本地多人课程。使用视听者中的“与他人交流”查看并管理多人课程设置。	#
-hbui.Notifications.multiplayerWarnings.nintendoMultiplayerPrivilegesBlockedThirdParty=由于视听者限制，您无法进行本地多人课程。使用视听者中的“与他人交流”查看并管理多人课程设置。	#
+hbui.Notifications.multiplayerWarnings.nintendoLocalMultiplayerPrivilegesBlockedThirdParty=由于视听者限制，你无法进行本地多人课程。使用视听者中的“与他人交流”查看并管理多人课程设置。	#
+hbui.Notifications.multiplayerWarnings.nintendoMultiplayerPrivilegesBlockedThirdParty=由于视听者限制，你无法进行本地多人课程。使用视听者中的“与他人交流”查看并管理多人课程设置。	#
 hbui.Notifications.multiplayerWarnings.playstationCrossPlatformDisabled=在设置菜单的文件部分启用跨平台游戏以与其他平台上的朋友一起游戏。	#
-hbui.Notifications.multiplayerWarnings.playstationDisconnectedThirdPartyWithSubscription=您未连接到 “PlayStation Network”。您的 “PlayStation Network” 朋友无法加入您的多人世界。登陆 “PlayStation Network”，与朋友一起探索。	#### CertRequirement: [PlayStation Network]
-hbui.Notifications.multiplayerWarnings.playstationMultiplayerPrivilegesBlockedThirdParty=由于视听者限制，您无法进行本地多人课程。使用视听者中的“与他人交流”查看并管理多人课程设置。	#
+hbui.Notifications.multiplayerWarnings.playstationDisconnectedThirdPartyWithSubscription=你未连接到 “PlayStation Network”。你的 “PlayStation Network” 朋友无法加入你的多人世界。登陆 “PlayStation Network”，与朋友一起探索。	#### CertRequirement: [PlayStation Network]
+hbui.Notifications.multiplayerWarnings.playstationMultiplayerPrivilegesBlockedThirdParty=由于视听者限制，你无法进行本地多人课程。使用视听者中的“与他人交流”查看并管理多人课程设置。	#
 hbui.Notifications.readMoreLink=阅读更多	#
 hbui.CreateNewWorldTabContainer.unlockSettingsLink=解锁设置	#
 hbui.CreateNewWorldTabContainer.unlockSettingsMessage=部分设置由模板创作者锁定。	#
@@ -9622,8 +9622,8 @@ hbui.PackListItem.dragInputLegendText=拖动	#
 hbui.PackListItem.dropInputLegendText=放下	#
 hbui.PackListItem.expandDescriptionInputLegend=展开	#
 hbui.PackListItem.removeButtonText=移除	#
-hbui.CreateNewWorld.resourcePacks.activeTabButtonLabel=已启用	#
-hbui.CreateNewWorld.resourcePacks.availableTabButtonLabel=可用	#
+hbui.PackTabs.activeTabButtonLabel=已启用	#
+hbui.PackTabs.availableTabButtonLabel=可用	#
 hbui.PackTabs.narration.tab=%1$s，标签%2$s，共%3$s	#
 hbui.RenderDistanceWarningRoute.body1=通过为你的设备优化渲染距离设置，你可以获得更好的性能。	#
 hbui.RenderDistanceWarningRoute.body2=使用这些推荐的设置可通过缩短你在游戏中可看到的距离使游戏体验更流畅。	#
@@ -10168,7 +10168,7 @@ gathering.info.button.readMore=阅读更多…	#
 gathering.info.button.voteNow=立即投票	#
 gathering.info.title.liveIsComing=Minecraft Live即将开始！	#
 gathering.info.header.minecraftLive=Minecraft Live	#
-gathering.info.body.liveIsComing=是时候为Minecraft添加新生物了，选择权在你的手中。	#
+gathering.info.body.liveIsComing=是时候为Minecraft添加新暴徒了，选择权在你的手中。	#
 
 ## Vanilla Experiments
 item.copper_horn.name=铜妙脆角	#
@@ -10216,47 +10216,6 @@ item.minecraft.goat_horn.sound.9=想象	#
 item.disc_fragment.name=金 曲 残 片	#
 item.disc_fragment_5.desc=？？？？ - ?? ????????	#
 item.record_5.desc=Samuel Åberg - 5	#
-
-##legacy
-controller.buttonTip.place.in.bundle=放入套娃用的袋子	#
-controller.buttonTip.place.from.bundle=从套娃用的袋子取出	#
-controller.buttonTip.take.from.bundle=从套娃用的袋子拿取	#
-
-createWorldScreen.experimentalmodding=开放额外修改	#
-createWorldScreen.cavesandcliffsinternal=洞穴与山崖（内部）	#
-
-disconnectionScreen.scriptNotSupported=你正试图进入的世界需要你的设备运行脚本。你的设备目前不支持脚本，因此你无法从该设备进入。	#
-
-options.dev_raytracing_mode=光线追踪模式	#
-options.dev_raytracing_mode.compatibility=兼容	#
-options.dev_raytracing_mode.full=完整	#
-options.dev_realms_sku.oneday=一天	#
-
-progressScreen.dialog.message.scriptConfirm=你即将进入的世界包含了在你的设备上运行的脚本。你想加入这个世界吗？	#
-
-potion.absorption.postfix=伤害吸收溶液	#
-potion.blindness.postfix=失明溶液	#
-potion.confusion.postfix=反胃溶液	#
-potion.digSlowDown.postfix=缓掘溶液	#
-potion.digSpeed.postfix=速掘溶液	#
-potion.healthBoost.postfix=再生溶液	#
-potion.hunger.postfix=饥饿溶液	#
-potion.levitation.postfix=升天溶液	#
-potion.resistance.postfix=抗性提升溶液	#
-potion.saturation.postfix=饱和溶液	#
-
-hbui.CreateNewWorld.multiplayer.warning.nintendoLocalMultiplayerPrivilegesBlockedThirdParty=由于家长控制限制，你无法进行本地多人游戏。请在家长控制中查看并管理多人游戏设置的“与他人交流”。	#
-hbui.CreateNewWorld.multiplayer.warning.nintendoMultiplayerPrivilegesBlockedThirdParty=由于家长控制限制，你无法进行本地多人游戏。请在家长控制中查看并管理多人游戏设置的“与他人交流”。	#
-hbui.CreateNewWorld.multiplayer.warning.playstationCrossPlatformDisabled=在设置菜单的文件部分启用跨平台游戏与其他平台上的朋友一起游戏。	#
-hbui.CreateNewWorld.multiplayer.warning.playstationDisconnectedThirdPartyWithSubscription=你未连接到PlayStation Network。你的PlayStation Network朋友无法加入你的多人世界。登陆PlayStation Network，与朋友一起游戏。	### CertRequirement: [PlayStation Network]
-hbui.CreateNewWorld.multiplayer.warning.playstationMultiplayerPrivilegesBlockedThirdParty=由于家长控制限制，你无法进行本地多人游戏。请在家长控制中查看并管理多人游戏设置的“与他人交流”。	#
-
-hbui.CreateNewWorld.resourcePacks.emptyInactivePacksMessageDescription=前往商城或线上寻找包以使用不同的方式游玩自己的世界！	#
-hbui.CreateNewWorld.resourcePacks.narration.tab=%1$s，第%2$s个，共%3$s个选项卡	#
-
-hbui.CreateNewWorldSideMenu.achievementsDisabledNotification=由于你使用了模板，所以无法获得成果	#
-hbui.CreateNewWorldSideMenu.closeTooltipInputLegend=隐藏提示信息	#
-
 
 ## Chemistry Strings
 ## comment on the same line, use TABs.
@@ -10564,3 +10523,49 @@ tips.game.75=Java版梗体中文发布于https://www.mcbbs.net/thread-1004643-1-
 tips.game.76=在Github搜索Teahouse-Studios/mcwzh-meme-resourcepack-bedrock可查看基岩版梗体中文项目。	#
 tips.game.77=在Github搜索Teahouse-Studios/mcwzh-meme-resourcepack可查看Java版梗体中文项目。	#
 tips.game.78=中文Minecraft Wiki提醒你：译名千万条，准确第一条。翻译不规范，玩家两行泪。	#
+
+## Legacy
+controller.buttonTip.place.in.bundle=放入套娃用的袋子	#
+controller.buttonTip.place.from.bundle=从套娃用的袋子取出	#
+controller.buttonTip.take.from.bundle=从套娃用的袋子拿取	#
+
+createWorldScreen.experimentalmodding=开放额外修改	#
+createWorldScreen.cavesandcliffsinternal=洞穴与山崖（内部）	#
+
+disconnectionScreen.scriptNotSupported=你正试图进入的世界需要你的设备运行脚本。你的设备目前不支持脚本，因此你无法从该设备进入。	#
+
+options.dev_raytracing_mode=光线追踪模式	#
+options.dev_raytracing_mode.compatibility=兼容	#
+options.dev_raytracing_mode.full=完整	#
+options.dev_realms_sku.oneday=一天	#
+
+progressScreen.dialog.message.scriptConfirm=你即将进入的世界包含了在你的设备上运行的脚本。你想加入这个世界吗？	#
+
+potion.absorption.postfix=伤害吸收溶液	#
+potion.blindness.postfix=失明溶液	#
+potion.confusion.postfix=反胃溶液	#
+potion.digSlowDown.postfix=缓掘溶液	#
+potion.digSpeed.postfix=速掘溶液	#
+potion.healthBoost.postfix=再生溶液	#
+potion.hunger.postfix=饥饿溶液	#
+potion.levitation.postfix=升天溶液	#
+potion.resistance.postfix=抗性提升溶液	#
+potion.saturation.postfix=饱和溶液	#
+
+hbui.CreateNewWorld.betaFeatures.badge=抢跑	#
+hbui.CreateNewWorld.betaFeatures.betaLabel=抢跑	#
+hbui.CreateNewWorld.betaFeatures.gameplayDescription=这些功能会影响游戏内的事物。试着找找看！	#
+
+hbui.CreateNewWorld.multiplayer.warning.nintendoLocalMultiplayerPrivilegesBlockedThirdParty=由于家长控制限制，你无法进行本地多人游戏。请在家长控制中查看并管理多人游戏设置的“与他人交流”。	#
+hbui.CreateNewWorld.multiplayer.warning.nintendoMultiplayerPrivilegesBlockedThirdParty=由于家长控制限制，你无法进行本地多人游戏。请在家长控制中查看并管理多人游戏设置的“与他人交流”。	#
+hbui.CreateNewWorld.multiplayer.warning.playstationCrossPlatformDisabled=在设置菜单的文件部分启用跨平台游戏与其他平台上的朋友一起游戏。	#
+hbui.CreateNewWorld.multiplayer.warning.playstationDisconnectedThirdPartyWithSubscription=你未连接到PlayStation Network。你的PlayStation Network朋友无法加入你的多人世界。登陆PlayStation Network，与朋友一起游戏。	### CertRequirement: [PlayStation Network]
+hbui.CreateNewWorld.multiplayer.warning.playstationMultiplayerPrivilegesBlockedThirdParty=由于家长控制限制，你无法进行本地多人游戏。请在家长控制中查看并管理多人游戏设置的“与他人交流”。	#
+
+hbui.CreateNewWorld.resourcePacks.emptyInactivePacksMessageDescription=前往商城或线上寻找包以使用不同的方式游玩自己的世界！	#
+hbui.CreateNewWorld.resourcePacks.narration.tab=%1$s，第%2$s个，共%3$s个选项卡	#
+
+hbui.CreateNewWorldSideMenu.achievementsDisabledNotification=由于你使用了模板，所以无法获得成果	#
+hbui.CreateNewWorldSideMenu.closeTooltipInputLegend=隐藏提示信息	#
+
+
