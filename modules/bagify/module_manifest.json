@@ -5,6 +5,9 @@
     "author": [
         "SkyEye_FAST"
     ],
+    "incompatible_with": [
+        "fursuit"
+    ],
     "classifier": [
         "modified_resource"
     ]
