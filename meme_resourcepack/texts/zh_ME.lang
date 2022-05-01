@@ -8329,7 +8329,7 @@ tile.coral_fan_dead.yellow_fan.name=死鹿鹿角珊瑚粉丝	#
 tile.glass_pane.name=玻璃板	#
 tile.tnt.name=大伊万	#
 tile.snow_layer.name=思诺	#
-tile.torch.name=火炬	#
+tile.torch.name=火把	#
 tile.trapdoor.name=橡木陷阱门	#
 tile.acacia_trapdoor.name=相思木陷阱门	#
 tile.birch_trapdoor.name=白桦木陷阱门	#
@@ -10541,6 +10541,9 @@ options.dev_realms_sku.oneday=一天	#
 
 progressScreen.dialog.message.scriptConfirm=你即将进入的世界包含了在你的设备上运行的脚本。你想加入这个世界吗？	#
 
+item.potion.name=溶液	#
+item.emptyPotion.name=氧烷	#
+
 potion.prefix.acrid=辛辣的	#
 potion.prefix.artless=拙劣的	#
 potion.prefix.awkward=粗制的	#
@@ -10585,6 +10588,7 @@ potion.digSpeed.postfix=速掘溶液	#
 potion.healthBoost.postfix=再生溶液	#
 potion.hunger.postfix=饥饿溶液	#
 potion.levitation.postfix=升天溶液	#
+potion.regeneration.postfix=再生溶液	#
 potion.resistance.postfix=抗性提升溶液	#
 potion.saturation.postfix=饱和溶液	#
 
