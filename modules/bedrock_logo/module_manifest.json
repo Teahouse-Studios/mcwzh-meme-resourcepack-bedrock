@@ -1,0 +1,11 @@
+{
+    "name": "bedrock_logo",
+    "type": "resource",
+    "description": "基岩版就是基岩版，还我副标题来",
+    "author": [
+        "SkyEye_FAST"
+    ],
+    "classifier": [
+        "modified_resource"
+    ]
+}
