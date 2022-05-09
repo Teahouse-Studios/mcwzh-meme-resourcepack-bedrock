@@ -1,6 +1,6 @@
 {
     "item.apple.name": "苹果（）",
-    "item.appleEnchanted.name": "刘海苹果§r（，伤害吸收IV 120秒、生命恢复V 20秒、防火I 300秒、抗性提升I 300秒）",
+    "item.appleEnchanted.name": "Notch苹果§r（，伤害吸收IV 120秒、生命恢复V 20秒、防火I 300秒、抗性提升I 300秒）",
     "item.baked_potato.name": "烤熟的育碧服务器（2.5）",
     "item.beef.name": "生牛肉（1.5）",
     "item.beetroot.name": "甜菜根（0.5）",
@@ -19,7 +19,7 @@
     "item.cooked_salmon.name": "沸腾鲑鱼（）",
     "item.cookie.name": "死扛（）",
     "item.dried_kelp.name": "海苔（0.5）",
-    "item.fish.name": "《使 命 召 唤》（）",
+    "item.fish.name": "《使命召唤》（）",
     "item.glow_berries.name": "荧光莓（）",
     "item.golden_apple.name": "黄油苹果§r（，伤害吸收I 120秒、生命恢复II 5秒）",
     "item.golden_carrot.name": "黄油胡罗北（）",
