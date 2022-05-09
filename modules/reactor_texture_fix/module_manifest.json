@@ -2,6 +2,9 @@
     "name": "reactor_texture_fix",
     "type": "resource",
     "description": "下界反应核纹理修复",
+    "author": [
+        "梗体中文内容组"
+    ],
     "classifier": [
         "modified_resource"
     ]
