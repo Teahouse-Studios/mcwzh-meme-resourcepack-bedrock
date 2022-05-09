@@ -1,0 +1,8 @@
+{
+    "name": "rainbow_enchanting",
+    "type": "resource",
+    "description": "下界反应核纹理修复",
+    "classifier": [
+        "modified_resource"
+    ]
+}
