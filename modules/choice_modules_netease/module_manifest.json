@@ -6,18 +6,21 @@
         "电量量"
     ],
     "contains": [
-        "questioning_totem",
-        "mopemope",
-        "trident_model",
-        "bee_pickaxe",
-        "dorowolf_texture",
-        "open_close_sound",
-        "bell_sound",
-        "ekac",
+        "a_piece_of_seriousness",
         "baguette",
+        "bee_pickaxe",
+        "bell_sound",
+        "dorowolf_texture",
+        "ekac",
+        "firework_sound",
         "LocusAzzurro",
-        "a_letter",
         "minecart_helmet",
-        "observer_think"
+        "mopemope",
+        "observer_think",
+        "open_close_sound",
+        "questioning_totem",
+        "trident_model",
+        "sculk_sound",
+        "vulpes_ferrilata"
     ]
 }
