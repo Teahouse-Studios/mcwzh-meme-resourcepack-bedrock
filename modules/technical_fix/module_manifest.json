@@ -1,7 +1,7 @@
 {
-    "name": "reactor_texture_fix",
+    "name": "technical_fix",
     "type": "resource",
-    "description": "下界反应核纹理修复",
+    "description": "技术型方块相关修复",
     "author": [
         "梗体中文内容组"
     ],
