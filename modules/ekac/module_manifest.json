@@ -8,7 +8,10 @@
     "incompatible_with": [
         "mooncake"
     ],
-    "classifier": [
-        "modified_resource"
+    "languageModification": [
+        {
+            "file": "texts/zh_ME.lang",
+            "add": "add.json"
+        }
     ]
 }
