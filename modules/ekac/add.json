@@ -1,6 +1,22 @@
 {
+	"tile.black_candle_cake": "插上黑色鞭炮的糕蛋",
+    "tile.blue_candle_cake": "插上蓝色鞭炮的糕蛋",
+    "tile.brown_candle_cake": "插上棕色鞭炮的糕蛋",
+    "tile.cyan_candle_cake": "插上青色鞭炮的糕蛋",
+    "tile.gray_candle_cake": "插上灰色鞭炮的糕蛋",
+    "tile.green_candle_cake": "插上原谅色鞭炮的糕蛋",
+    "tile.light_blue_candle_cake": "插上亮蓝色鞭炮的糕蛋",
+    "tile.light_gray_candle_cake": "插上亮灰色鞭炮的糕蛋",
+    "tile.lime_candle_cake": "插上黄绿色鞭炮的糕蛋",
+    "tile.magenta_candle_cake": "插上品红色鞭炮的糕蛋",
+    "tile.orange_candle_cake": "插上橙色鞭炮的糕蛋",
+    "tile.pink_candle_cake": "插上粉红色鞭炮的糕蛋",
+    "tile.purple_candle_cake": "插上紫色鞭炮的糕蛋",
+    "tile.red_candle_cake": "插上红色鞭炮的糕蛋",
+    "tile.white_candle_cake": "插上白色鞭炮的糕蛋",
+    "tile.yellow_candle_cake": "插上黄色鞭炮的糕蛋",
 	"achievement.bakeCake": "糕蛋是个谎言",
 	"item.cake.name": "糕蛋",
-	"stat.cakeSlicesEaten": "吃过的糕蛋",
+	"stat.cakeSlicesEaten": "吃过的糕蛋片数",
 	"tile.cake.name": "糕蛋"
 }
