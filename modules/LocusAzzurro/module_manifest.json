@@ -10,8 +10,10 @@
     "incompatible_with": [
         "fake_multitool"
     ],
-    "classifier": [
-        "modified_language",
-        "modified_resource"
+    "languageModification": [
+        {
+            "file": "texts/zh_ME.lang",
+            "add": "add.json"
+        }
     ]
 }

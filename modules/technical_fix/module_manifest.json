@@ -5,7 +5,10 @@
     "author": [
         "梗体中文内容组"
     ],
-    "classifier": [
-        "modified_resource"
+    "languageModification": [
+        {
+            "file": "texts/zh_ME.lang",
+            "add": "add.json"
+        }
     ]
 }
