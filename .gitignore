@@ -6,3 +6,4 @@ Include/
 Lib/
 Scripts/
 pyvenv.cfg
+node_modules

@@ -91,31 +91,23 @@
 
 #### 先决条件
 
-请确保已经安装了Python 3.9+和Git。如果没有，请到[Python官网](https://www.python.org)和[Git官网](https://www.git-scm.com)下载。
+请确保已经安装了NodeJS主流版本和Git。如果没有，请到[NodeJS官网](https://nodejs.org/zh-cn/)和[Git官网](https://www.git-scm.com)下载。
 
 #### 步骤
 
 1. 下载源码；
 2. 进入文件夹；
-3. 安装相关pip依赖；
+3. 安装相关依赖；
 4. 运行预设打包命令。
 
 ``` sh
-git clone https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock.git
-cd mcwzh-meme-resourcepack-bedrock
-pip install -r requirements.txt
-python preset_build.py
+git clone https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack.git
+cd mcwzh-meme-resourcepack
+npm install
+node preset_build.js
 ```
 
 在文件夹中会出现 `meme-resourcepack.zip` 、 `meme-resourcepack_noresource.zip` 、 `meme-resourcepack.mcpack` 和 `meme-resourcepack_noresource.mcpack` 等资源包，名称和作用如上所述。
-
-如果需要预设以外的资源包，可输入需要的参数：
-
-``` bash
-python -m memepack_builder ...
-```
-
-具体用法可见[此处](https://github.com/Teahouse-Studios/memepack-builder/blob/main/doc/CLI_Manual.zh-hans.md)。
 
 ## 贡献
 
