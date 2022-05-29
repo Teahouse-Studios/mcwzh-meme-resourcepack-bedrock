@@ -8,10 +8,10 @@
     "incompatible_with": [
         "baguette",
         "chicken_soup",
-        "ekac",
         "latiao",
         "locusazzurro",
-        "mooncake"
+        "mooncake",
+        "reverse_cake"
     ],
     "languageModification": [
         {
