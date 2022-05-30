@@ -6,7 +6,7 @@
         "ZH9c418"
     ],
     "incompatible_with": [
-        "bagify"
+        "bagify_incompatible"
     ],
     "languageModification": [
         {
