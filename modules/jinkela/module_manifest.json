@@ -5,6 +5,7 @@
     "author": [
         "DoroWolf"
     ],
+    "incompatible_with": ["bagify_bone_meal"]
     "languageModification": [
         {
             "file": "texts/zh_ME.lang",
