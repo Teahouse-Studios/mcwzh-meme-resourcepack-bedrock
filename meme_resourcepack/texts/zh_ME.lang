@@ -4664,7 +4664,7 @@ item.clock.name=时间都去哪儿了	#
 item.coal.name=无定形碳	#
 item.comparator.name=全 桥 整 流	#
 item.compass.name=不指南的指南针	#
-item.lodestonecompass.name=罗德（岛）NullPointerException	#
+item.lodestonecompass.name=罗德（岛）石NullPointerException	#
 item.cookie.name=死扛	#
 item.crossbow.name=诸葛连弩	#
 item.diamond.name=祖安石	#
@@ -6814,7 +6814,7 @@ tile.mangrove_wood.name=红树树皮	#
 tile.stripped_mangrove_wood.name=去皮红树树皮	#
 item.boat.mangrove.name=红树方舟	#
 item.echo_shard.name=echo 碎片	#
-item.recovery_compass.name=死去活来指南针	#
+item.recovery_compass.name=死去活来NullPointerException	#
 
 action.hint.exit.chest_boat=点击“跳跃”离开《明日方舟》	#
 action.hint.exit.console.chest_boat=按下 :_input_key.jump: 离开《明日方舟》	#
