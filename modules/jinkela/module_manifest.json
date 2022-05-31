@@ -5,7 +5,7 @@
     "author": [
         "DoroWolf"
     ],
-    "incompatible_with": ["bagify_incompatible"]
+    "incompatible_with": ["bagify_incompatible"],
     "languageModification": [
         {
             "file": "texts/zh_ME.lang",
