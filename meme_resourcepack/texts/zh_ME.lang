@@ -9040,10 +9040,10 @@ authserver.authfailed=太糟糕了。该服务器未能通过我们的验证测�
 platform.model.unknown=未知	#
 
 ## Misc Compliance copy
-compliance.playtime.greaterThan24Hours=你已游玩超过24小时	#
-compliance.playtime.message=过度游戏可能会影响日常生活	#
-compliance.playtime.multipleHours=你已游玩%d小时	#
-compliance.playtime.oneHour=你已游玩1小时	#
+compliance.playtime.greaterThan24Hours=你都玩了超过24小时了	#
+compliance.playtime.message=MC虽好，可不要贪玩哦	#
+compliance.playtime.multipleHours=你都玩了%d小时了	#
+compliance.playtime.oneHour=你都玩了1小时了	#
 
 ## resource pack validation errors
 packdiscoveryerror.manifest_pack_error=无法打开亮目害眼包。	#
