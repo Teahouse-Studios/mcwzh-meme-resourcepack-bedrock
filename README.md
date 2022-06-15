@@ -12,6 +12,13 @@
   * 关于Minecraft基岩版的繁体中文修正，参见小俊AUA制作的[此资源附加包](https://forum.gamer.com.tw/C.php?bsn=18673&snA=183269)。
   * 关于Minecraft基岩版的全语言修正，参见俄语Crowdin校对员fromgate制作的[Translations for Minecraft (Bedrock)](https://www.curseforge.com/minecraft/mc-addons/translations-for-minecraft)。
 
+## 赞助者
+<p align="center">
+  <a href="https://afdian.net/@teahouse">
+    <img src='https://fe.wd-ljt.com/m3me/sP0ns0r5/sP0ns0r5.svg'>
+  </a>
+</p>
+
 ## 注意
 
 * 本资源包**仅供娱乐**，请勿将其可能存在的误导性内容当真。
