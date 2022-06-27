@@ -9017,7 +9017,7 @@ xbox.report.profanity=垃圾话	#
 xbox.report.childSexualExploitationGrooming=炼铜	#
 xbox.report.controversial=有争议的话题	#
 xbox.report.notoriousFigure=臭名昭著的形象	#
-xbox.report.cheating=开G	#
+xbox.report.cheating=开挂	#
 xbox.report.defamation=诽谤、冒充和虚假信息	#
 xbox.report.drugs=毒品	#
 xbox.report.fraud=欺诈	#
@@ -9026,7 +9026,7 @@ xbox.report.selfHarm=自残或自杀	#
 xbox.report.nudity=裸体或色情	#
 xbox.report.sexuallyInappropriate=GHS	#
 xbox.report.extremeViolence=极端暴力或恐怖	#
-xbox.report.quittingEarly=	#
+xbox.report.quittingEarly=提前退出	#
 xbox.report.unsportingBehavior=没有体育道德的行为	#
 xbox.report.voiceCommunication=麦克风交流	#
 
