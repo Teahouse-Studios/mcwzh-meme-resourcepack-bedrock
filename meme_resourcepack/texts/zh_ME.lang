@@ -9184,19 +9184,19 @@ survey.line1=载入时间过长	#
 survey.line2=被错误消息卡住	#
 survey.line3=询问太多问题	#
 survey.line4=我不知道是免费	#
-survey.line5=我以为需要凶盒主机	#
+survey.line5=我以为需要凶盒主机	###disable_3rd_party_console_resource_pack_check
 survey.line6=不感兴趣	#
 survey.title=反馈：你为什么没有注册？	#
 ## end of 15.* release branch strings
 
-tips.edu.1=你可以在按住Shit的同时用照相机拍摄近景图片。	#
+tips.edu.1=你可以在按住Shift的同时用照相机拍摄近景图片。	#
 tips.edu.2=与搞事牌不一样，你可以反复地编辑石板、海报和黑板。	#
 tips.edu.3=使用 Ctrl+B 打开文本转语音功能，来进行游戏内唠嗑。	#
 tips.edu.4=你可以导出Minecraft的世界与他人共享。	#
 tips.edu.5=要让同伴连接到你的世界，请暂停并分享你的加入代码。	#
 tips.edu.6=请记住，要使用斜杠滥权，你需要在你的世界中启用滥权。	#
 tips.edu.7=已完成你的创作？让别人作为访客游览你的世界以便保护你的作品。	#
-tips.edu.8=要使用Code Builder，请按下键盘上的C键或触摸屏幕顶部的智能体图标！	#
+tips.edu.8=要在Minecraft中编程，请按下键盘上的“C”键或点击屏幕顶部的智能体图标。	#
 tips.edu.9=用图书馆来寻找可供创建的新的游戏世界。	#
 tips.edu.10=正在寻找特定的生物群系？试试图书馆吧。	#
 tips.edu.11=NPC代表非玩家角色。	#
@@ -9848,7 +9848,7 @@ client.version.1.1=探索更新（%s）	#
 client.version.1.2=独乐不如众乐更新（%s）	#
 client.version.1.4=水域更新（%s）	#
 client.version.1.5=水域更新（%s）	#
-client.version.1.11=村庄与掠夺更新（%s）	#
+client.version.1.11=村庄和掠夺更新（%s）	#
 
 cloud_upload.title=Bugjump游戏客服	#
 cloud_upload.prompt.description=根据你最新的支持工单，Bugjump游戏客服已授予你上传世界的权限。你可以从世界选择界面或世界设置内上传相关的世界。	#
@@ -10275,52 +10275,6 @@ gathering.info.modal.title.connectFail=连接失败	#
 gathering.info.modal.body.connectFail=很不幸无法连接。请稍后再试。	#
 gathering.connect.title=正在连接…	#
 
-## Vanilla Experiments
-item.copper_horn.name=铜妙脆角	#
-
-itemGroup.name.copperHorn=铜妙脆角	#
-
-item.minecraft.copper_horn.harmony.0=很好	#
-item.minecraft.copper_horn.harmony.1=旧的	#
-item.minecraft.copper_horn.harmony.2=纯	#
-item.minecraft.copper_horn.harmony.3=卑微	#
-item.minecraft.copper_horn.harmony.4=干燥	#
-item.minecraft.copper_horn.harmony.5=清澈	#
-item.minecraft.copper_horn.harmony.6=新鲜	#
-item.minecraft.copper_horn.harmony.7=秘密	#
-item.minecraft.copper_horn.harmony.8=无畏	#
-item.minecraft.copper_horn.harmony.9=甜	#
-
-item.minecraft.copper_horn.melody.0=天空	#
-item.minecraft.copper_horn.melody.1=赞美诗	#
-item.minecraft.copper_horn.melody.2=水	#
-item.minecraft.copper_horn.melody.3=火	#
-item.minecraft.copper_horn.melody.4=催	#
-item.minecraft.copper_horn.melody.5=脾气	#
-item.minecraft.copper_horn.melody.6=巢	#
-item.minecraft.copper_horn.melody.7=湖泊	#
-item.minecraft.copper_horn.melody.8=河流	#
-item.minecraft.copper_horn.melody.9=月亮	#
-
-item.minecraft.copper_horn.bass.0=下降	#
-item.minecraft.copper_horn.bass.1=休息	#
-item.minecraft.copper_horn.bass.2=欲望	#
-item.minecraft.copper_horn.bass.3=记忆	#
-item.minecraft.copper_horn.bass.4=愤怒	#
-item.minecraft.copper_horn.bass.5=旅程	#
-item.minecraft.copper_horn.bass.6=思想	#
-item.minecraft.copper_horn.bass.7=泪水	#
-item.minecraft.copper_horn.bass.8=礼物	#
-item.minecraft.copper_horn.bass.9=爱	#
-
-item.minecraft.goat_horn.sound.8=飞翔	#
-item.minecraft.goat_horn.sound.9=想象	#
-
-## Wild Update
-item.disc_fragment.name=金 曲 残 片	#
-item.disc_fragment_5.desc=？？？？ - ?? ????????	#
-item.record_5.desc=Samuel Åberg - 5	#
-
 ## Chemistry Strings
 ## comment on the same line, use TABs.
 ## Comments can be added anywhere on a valid line by starting with '##'
@@ -10628,7 +10582,6 @@ tips.game.76=在Github搜索Teahouse-Studios/mcwzh-meme-resourcepack-bedrock可�
 tips.game.77=在Github搜索Teahouse-Studios/mcwzh-meme-resourcepack可查看Java版梗体中文项目。	#
 tips.game.78=中文Minecraft Wiki提醒你：译名千万条，准确第一条。翻译不规范，玩家两行泪。	#
 
-## Legacy
 ##legacy
 hbui.PackTabs.narration.tab=%1$s，选项卡%2$s/%3$s	#
 hbui.TabBar.tab=选项卡	#
@@ -10684,21 +10637,4 @@ potion.levitation.postfix=升天溶液	#
 potion.regeneration.postfix=再生溶液	#
 potion.resistance.postfix=抗性提升溶液	#
 potion.saturation.postfix=饱和溶液	#
-
-hbui.CreateNewWorld.betaFeatures.badge=抢跑	#
-hbui.CreateNewWorld.betaFeatures.betaLabel=抢跑	#
-hbui.CreateNewWorld.betaFeatures.gameplayDescription=这些功能会影响游戏内的事物。试着找找看！	#
-
-hbui.CreateNewWorld.multiplayer.warning.nintendoLocalMultiplayerPrivilegesBlockedThirdParty=由于家长控制限制，你无法进行本地多人游戏。请在家长控制中查看并管理多人游戏设置的“与他人交流”。	#
-hbui.CreateNewWorld.multiplayer.warning.nintendoMultiplayerPrivilegesBlockedThirdParty=由于家长控制限制，你无法进行本地多人游戏。请在家长控制中查看并管理多人游戏设置的“与他人交流”。	#
-hbui.CreateNewWorld.multiplayer.warning.playstationCrossPlatformDisabled=在设置菜单的文件部分启用跨平台游戏与其他平台上的朋友一起游戏。	#
-hbui.CreateNewWorld.multiplayer.warning.playstationDisconnectedThirdPartyWithSubscription=你未连接到PlayStation Network。你的PlayStation Network朋友无法加入你的多人世界。登陆PlayStation Network，与朋友一起游戏。	### CertRequirement: [PlayStation Network]
-hbui.CreateNewWorld.multiplayer.warning.playstationMultiplayerPrivilegesBlockedThirdParty=由于家长控制限制，你无法进行本地多人游戏。请在家长控制中查看并管理多人游戏设置的“与他人交流”。	#
-
-hbui.CreateNewWorld.resourcePacks.emptyInactivePacksMessageDescription=前往市场或线上寻找包以使用不同的方式游玩自己的世界！	#
-hbui.CreateNewWorld.resourcePacks.narration.tab=%1$s，第%2$s个，共%3$s个选项卡	#
-
-hbui.CreateNewWorldSideMenu.achievementsDisabledNotification=由于你使用了模板，所以无法获得成果	#
-hbui.CreateNewWorldSideMenu.closeTooltipInputLegend=隐藏提示信息	#
-
 
