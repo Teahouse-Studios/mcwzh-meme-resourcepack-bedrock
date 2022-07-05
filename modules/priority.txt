@@ -1,0 +1,40 @@
+a_letter  # hard conflict with a_piece_of_seriousness
+a_piece_of_seriousness  # hard conflict with a_letter
+grass_enchanted  # hard conflict with real_grass
+real_grass  # hard conflict with grass_enchanted
+reverse_cake  # hard conflict with mooncake
+mooncake  # hard conflict with reverse_cake
+bagify  # soft conflict with fursuit, jinkela
+fursuit  # soft conflict with bagify, jinkela
+bee_pickaxe  # soft conflict with bee_pickaxe, fake_multitool
+locusazzurro  # soft conflict with fake_multitool, locusazzurro
+fake_multitool  # soft conflict with bee_pickaxe, locusazzurro
+baguette
+bedrock_logo
+chicken_soup
+disco_ball
+dorowolf_texture
+map_override
+miku_bucket
+minecart_helmet
+mopemope
+observer_think
+questioning_totem
+rainbow_enchanting
+red_leaf_valley
+strange_meme_background
+trident_model
+vulpes_ferrilata
+warm_blue_ui
+bell_sound
+firework_sound
+goat_horn_sound
+open_close_sound
+sculk_sound
+mcbbs
+meme_splashes
+technical_fix
+lang_sfw
+lang_sfc
+latiao
+jinkela  # soft conflict with bagify, fursuit
