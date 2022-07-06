@@ -6,10 +6,12 @@
         "ZH9c418"
     ],
     "incompatible_with": [
-        "bagify"
+        "bagify_incompatible"
     ],
-    "classifier": [
-        "modified_resource",
-        "modified_language"
+    "languageModification": [
+        {
+            "file": "texts/zh_ME.lang",
+            "add": "add.json"
+        }
     ]
 }

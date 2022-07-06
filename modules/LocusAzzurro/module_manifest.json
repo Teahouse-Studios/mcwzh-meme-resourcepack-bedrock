@@ -4,11 +4,16 @@
     "description": "鸡，蓝色，聪明，会建筑",
     "author": [
         "Dianliang233",
-        "LocusAzzurro",
+        "locusazzurro",
         "Light Beacon"
     ],
-    "classifier": [
-        "modified_language",
-        "modified_resource"
+    "incompatible_with": [
+        "fake_multitool"
+    ],
+    "languageModification": [
+        {
+            "file": "texts/zh_ME.lang",
+            "add": "add.json"
+        }
     ]
 }

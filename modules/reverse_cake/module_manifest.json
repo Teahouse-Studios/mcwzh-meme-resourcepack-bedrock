@@ -1,0 +1,17 @@
+{
+    "name": "reverse_cake",
+    "type": "resource",
+    "description": "上面放三个小麦，下面放三个牛奶...",
+    "author": [
+        "DoroWolf"
+    ],
+    "incompatible_with": [
+        "mooncake"
+    ],
+    "languageModification": [
+        {
+            "file": "texts/zh_ME.lang",
+            "add": "add.json"
+        }
+    ]
+}

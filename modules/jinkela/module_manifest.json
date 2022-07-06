@@ -5,8 +5,11 @@
     "author": [
         "DoroWolf"
     ],
-    "classifier": [
-        "modified_language",
-        "modified_resource"
+    "incompatible_with": ["bagify_incompatible"],
+    "languageModification": [
+        {
+            "file": "texts/zh_ME.lang",
+            "add": "add.json"
+        }
     ]
 }

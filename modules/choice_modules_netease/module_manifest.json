@@ -3,21 +3,30 @@
     "type": "collection",
     "description": "中国版的预设打包。",
     "author": [
-        "电量量"
+        "电量量",
+	"ff98sha"
     ],
     "contains": [
-        "questioning_totem",
-        "mopemope",
-        "trident_model",
-        "bee_pickaxe",
-        "dorowolf_texture",
-        "open_close_sound",
-        "bell_sound",
-        "ekac",
+        "a_piece_of_seriousness",
         "baguette",
-        "LocusAzzurro",
-        "a_letter",
+        "bee_pickaxe",
+        "bell_sound",
+	"chicken_soup",
+        "disco_ball",
+        "dorowolf_texture",
+        "firework_sound",
+        "goat_horn_sound",
+        "locusazzurro",
+        "map_override",
         "minecart_helmet",
-        "observer_think"
+        "mopemope",
+        "observer_think",
+        "open_close_sound",
+        "questioning_totem",
+	"red_leaf_valley",
+        "reverse_cake",
+        "sculk_sound",
+        "trident_model",
+        "vulpes_ferrilata"
     ]
 }

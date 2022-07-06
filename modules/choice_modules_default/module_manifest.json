@@ -1,7 +1,7 @@
 {
-    "name": "choice_modules_1",
+    "name": "choice_modules_default",
     "type": "collection",
-    "description": "模块精选合集·一",
+    "description": "模块精选合集",
     "author": [
         "梗体中文内容组"
     ],
@@ -11,15 +11,16 @@
         "bedrock_logo",
         "bee_pickaxe",
         "dorowolf_texture",
+        "goat_horn_sound",
         "grass_enchanted",
-        "LocusAzzurro",
+        "locusazzurro",
         "map_override",
         "meme_splashes",
         "mopemope",
         "observer_think",
         "questioning_totem",
         "rainbow_enchanting",
-        "trident_model",
-        "warm_blue_ui"
+        "technical_fix",
+        "trident_model"
     ]
 }

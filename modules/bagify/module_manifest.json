@@ -7,8 +7,5 @@
     ],
     "incompatible_with": [
         "fursuit"
-    ],
-    "classifier": [
-        "modified_resource"
     ]
 }

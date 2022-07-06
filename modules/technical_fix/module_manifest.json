@@ -1,0 +1,14 @@
+{
+    "name": "technical_fix",
+    "type": "resource",
+    "description": "技术性方块相关的修复",
+    "author": [
+        "DoroWolf"
+    ],
+    "languageModification": [
+        {
+            "file": "texts/zh_ME.lang",
+            "add": "add.json"
+        }
+    ]
+}

@@ -6,11 +6,13 @@
         "siiftun1857"
     ],
     "incompatible_with": [
-        "lang_sfc",
-        "bee_pickaxe"
+        "bee_pickaxe",
+        "locusazzurro"
     ],
-    "classifier": [
-        "modified_language",
-        "modified_resource"
+    "languageModification": [
+        {
+            "file": "texts/zh_ME.lang",
+            "add": "add.json"
+        }
     ]
 }
