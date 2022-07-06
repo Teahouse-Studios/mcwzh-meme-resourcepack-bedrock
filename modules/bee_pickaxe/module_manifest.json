@@ -4,8 +4,5 @@
     "description": "镐蜂了！",
     "author": [
         "SkyEye_FAST"
-    ],
-    "incompatible_with": [
-        "fake_multitool"
     ]
 }

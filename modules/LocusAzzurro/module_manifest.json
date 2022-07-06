@@ -7,9 +7,6 @@
         "locusazzurro",
         "Light Beacon"
     ],
-    "incompatible_with": [
-        "fake_multitool"
-    ],
     "languageModification": [
         {
             "file": "texts/zh_ME.lang",

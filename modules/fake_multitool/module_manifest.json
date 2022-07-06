@@ -5,10 +5,6 @@
     "author": [
         "siiftun1857"
     ],
-    "incompatible_with": [
-        "bee_pickaxe",
-        "locusazzurro"
-    ],
     "languageModification": [
         {
             "file": "texts/zh_ME.lang",

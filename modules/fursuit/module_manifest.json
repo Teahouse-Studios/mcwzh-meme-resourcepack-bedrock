@@ -5,9 +5,6 @@
     "author": [
         "ZH9c418"
     ],
-    "incompatible_with": [
-        "bagify_incompatible"
-    ],
     "languageModification": [
         {
             "file": "texts/zh_ME.lang",
