@@ -5,17 +5,18 @@
 # The list applies from top to bottom.
 # Modules not specified in this list will be applied last.
 
-a_letter  # hard conflict with a_piece_of_seriousness
-a_piece_of_seriousness  # hard conflict with a_letter
-grass_enchanted  # hard conflict with real_grass
-real_grass  # hard conflict with grass_enchanted
-reverse_cake  # hard conflict with mooncake
-mooncake  # hard conflict with reverse_cake
-bagify  # soft conflict with fursuit, jinkela
-fursuit  # soft conflict with bagify, jinkela
-bee_pickaxe  # soft conflict with bee_pickaxe, fake_multitool
-locusazzurro  # soft conflict with fake_multitool, locusazzurro
-fake_multitool  # soft conflict with bee_pickaxe, locusazzurro
+a_letter  # conflict with a_piece_of_seriousness
+a_piece_of_seriousness  # conflict with a_letter
+grass_enchanted  # conflict with real_grass
+real_grass  # conflict with grass_enchanted
+reverse_cake  # conflict with mooncake
+mooncake  # conflict with reverse_cake
+bagify  # incompatible with fursuit, jinkela
+fursuit  # incompatible with bagify, jinkela
+bee_pickaxe  # incompatible with bee_pickaxe, fake_multitool
+locusazzurro  # incompatible with fake_multitool, locusazzurro
+fake_multitool  # incompatible with bee_pickaxe, locusazzurro
+
 baguette
 bedrock_logo
 chicken_soup
@@ -33,15 +34,19 @@ strange_meme_background
 trident_model
 vulpes_ferrilata
 warm_blue_ui
+
 bell_sound
 firework_sound
 goat_horn_sound
 open_close_sound
 sculk_sound
+
 mcbbs
 meme_splashes
 technical_fix
+
 lang_sfw
 lang_sfc
+
+jinkela  # incompatible with bagify, fursuit
 latiao
-jinkela  # soft conflict with bagify, fursuit
