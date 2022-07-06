@@ -9298,7 +9298,7 @@ splitscreen.unavailable.toastHeader=分屏不可用	#
 splitscreen.unavailable.toastMessage=第二名玩家当前无法加入。	#
 splitscreen.unavailable.toastBodyInfo=点击查看更多信息。	#
 splitscreen.joyconError.toastHeader=无法连接Joy-Con！	#
-splitscreen.joyconError.toastMessage=你要加入的游戏在本地菊域网模式已连接太多手柄。	#
+splitscreen.joyconError.toastMessage=你要加入的游戏在本地菊域网模式连接的手柄太多了。	#
 
 usermanagement.changeUser=更改用户	#
 
