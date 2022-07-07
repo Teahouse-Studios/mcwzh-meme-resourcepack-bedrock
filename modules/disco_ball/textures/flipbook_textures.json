@@ -1,7 +1,7 @@
 [
-  {
-    "flipbook_texture": "textures/blocks/redstone_lamp_on",
-    "atlas_tile": "redstone_lamp_on",
-    "ticks_per_frame": 2
-  }
+    {
+        "flipbook_texture": "textures/blocks/redstone_lamp_on",
+        "atlas_tile": "redstone_lamp_on",
+        "ticks_per_frame": 2
+    }
 ]
