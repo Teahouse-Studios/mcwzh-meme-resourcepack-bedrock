@@ -1,12 +1,4 @@
 {
-  "$nested_transparent_green_label_color": [
-    0.082,
-    0.435,
-    0.901
-  ],
-  "$nested_transparent_green_label_pressed_color": [
-    0.082,
-    0.435,
-    0.901
-  ]
+    "$nested_transparent_green_label_color": [0.082, 0.435, 0.901],
+    "$nested_transparent_green_label_pressed_color": [0.082, 0.435, 0.901]
 }

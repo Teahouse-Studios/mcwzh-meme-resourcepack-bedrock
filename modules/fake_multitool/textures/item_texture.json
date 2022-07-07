@@ -1,54 +1,54 @@
 {
-	"texture_data": {
-		"axe": {
-			"textures": [
-				"textures/items/wooden_multitool",
-				"textures/items/stone_multitool",
-				"textures/items/iron_multitool",
-				"textures/items/golden_multitool",
-				"textures/items/diamond_multitool",
-				"textures/items/netherite_multitool"
-			]
-		},
-		"hoe": {
-			"textures": [
-				"textures/items/wooden_multitool",
-				"textures/items/stone_multitool",
-				"textures/items/iron_multitool",
-				"textures/items/golden_multitool",
-				"textures/items/diamond_multitool",
-				"textures/items/netherite_multitool"
-			]
-		},
-		"pickaxe": {
-			"textures": [
-				"textures/items/wooden_multitool",
-				"textures/items/stone_multitool",
-				"textures/items/iron_multitool",
-				"textures/items/golden_multitool",
-				"textures/items/diamond_multitool",
-				"textures/items/netherite_multitool"
-			]
-		},
-		"shovel": {
-			"textures": [
-				"textures/items/wooden_multitool",
-				"textures/items/stone_multitool",
-				"textures/items/iron_multitool",
-				"textures/items/golden_multitool",
-				"textures/items/diamond_multitool",
-				"textures/items/netherite_multitool"
-			]
-		},
-		"sword": {
-			"textures": [
-				"textures/items/wooden_multitool",
-				"textures/items/stone_multitool",
-				"textures/items/iron_multitool",
-				"textures/items/golden_multitool",
-				"textures/items/diamond_multitool",
-				"textures/items/netherite_multitool"
-			]
-		}
-	}
+    "texture_data": {
+        "axe": {
+            "textures": [
+                "textures/items/wooden_multitool",
+                "textures/items/stone_multitool",
+                "textures/items/iron_multitool",
+                "textures/items/golden_multitool",
+                "textures/items/diamond_multitool",
+                "textures/items/netherite_multitool"
+            ]
+        },
+        "hoe": {
+            "textures": [
+                "textures/items/wooden_multitool",
+                "textures/items/stone_multitool",
+                "textures/items/iron_multitool",
+                "textures/items/golden_multitool",
+                "textures/items/diamond_multitool",
+                "textures/items/netherite_multitool"
+            ]
+        },
+        "pickaxe": {
+            "textures": [
+                "textures/items/wooden_multitool",
+                "textures/items/stone_multitool",
+                "textures/items/iron_multitool",
+                "textures/items/golden_multitool",
+                "textures/items/diamond_multitool",
+                "textures/items/netherite_multitool"
+            ]
+        },
+        "shovel": {
+            "textures": [
+                "textures/items/wooden_multitool",
+                "textures/items/stone_multitool",
+                "textures/items/iron_multitool",
+                "textures/items/golden_multitool",
+                "textures/items/diamond_multitool",
+                "textures/items/netherite_multitool"
+            ]
+        },
+        "sword": {
+            "textures": [
+                "textures/items/wooden_multitool",
+                "textures/items/stone_multitool",
+                "textures/items/iron_multitool",
+                "textures/items/golden_multitool",
+                "textures/items/diamond_multitool",
+                "textures/items/netherite_multitool"
+            ]
+        }
+    }
 }

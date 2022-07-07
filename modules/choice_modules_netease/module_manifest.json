@@ -2,16 +2,13 @@
     "name": "choice_modules_netease",
     "type": "collection",
     "description": "中国版的预设打包。",
-    "author": [
-        "电量量",
-	"ff98sha"
-    ],
+    "author": ["电量量", "ff98sha"],
     "contains": [
         "a_piece_of_seriousness",
         "baguette",
         "bee_pickaxe",
         "bell_sound",
-	"chicken_soup",
+        "chicken_soup",
         "disco_ball",
         "dorowolf_texture",
         "firework_sound",
@@ -23,7 +20,7 @@
         "observer_think",
         "open_close_sound",
         "questioning_totem",
-	"red_leaf_valley",
+        "red_leaf_valley",
         "reverse_cake",
         "sculk_sound",
         "trident_model",
