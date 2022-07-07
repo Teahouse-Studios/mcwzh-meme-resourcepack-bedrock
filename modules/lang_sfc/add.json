@@ -556,7 +556,7 @@
     "selectWorld.tab.friends": "好朋友",
     "soundCategory.hostile": "敌对生物",
     "soundCategory.neutral": "友好生物",
-    "splitscreen.joyconError.toastMessage": "你要加入的游戏在本地局域网模式已连接太多手柄。",
+    "splitscreen.joyconError.toastMessage": "你要加入的游戏在本地局域网模式连接的手柄太多了。",
     "stat.boatOneCm": "坐方舟移动距离",
     "stat.cauldronFilled": "填满坩锅次数",
     "stat.cauldronUsed": "从坩锅取水次数",
