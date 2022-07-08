@@ -5,7 +5,7 @@
     "author": ["DoroWolf"],
     "languageModification": [
         {
-            "file": "assets/minecraft/lang/zh_meme.json",
+            "file": "texts/zh_ME.lang",
             "add": "add.json"
         }
     ]
