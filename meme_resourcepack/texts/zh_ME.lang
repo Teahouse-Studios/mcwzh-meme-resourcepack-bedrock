@@ -12,7 +12,7 @@ accessibility.chat.tts.gamepad.back=按%s返回	#
 accessibility.chat.tts.gamepad.exitChat=按%s退出聊天	#
 accessibility.chat.tts.gamepad.sendMessage=按%s发送消息	#
 accessibility.chat.tts.says=%s说%s	#
-accessibility.chat.tts.hideChat=隐藏聊天界面	#
+accessibility.chat.tts.hideChat=隐藏聊天	#
 accessibility.chat.tts.keyboard=键盘	#
 accessibility.chat.tts.muteChatToggle=全部静音	#
 accessibility.chat.tts.sendChatMessage=发送	#
@@ -33,36 +33,36 @@ accessibility.importing.complete=导入完成	#
 accessibility.signin.xbl=正在登录至Xbox Live	#
 accessibility.chat.howtoopen=按%s打开聊天	#
 accessibility.chat.howtoemote=点按或长按%s发表情	#
-accessibility.key.mouseButton=鼠标抱枕%s	#
+accessibility.key.mouseButton=鼠标按钮%s	#
 accessibility.key.gamepad=手柄%s	#
 accessibility.list.or.two=%s或%s	#
 accessibility.list.or.three_or_more.first=%s	#
 accessibility.list.or.three_or_more.inner=、%s	#
 accessibility.list.or.three_or_more.last=和%s	#
 
-accessibility.button.tts.title=抱枕	#
+accessibility.button.tts.title=按钮	#
 accessibility.checkbox.tts.title=复选框	#
 accessibility.checkbox.tts.status=状态%s			### Status will be checked or unchecked
 accessibility.dropdown.tts.title=下拉	#
-accessibility.screen.tts.title=%s界面	### %s will be replaced with the title of the screen (Example: Library Screen)
+accessibility.screen.tts.title=%s屏幕	### %s will be replaced with the title of the screen (Example: Library Screen)
 accessibility.slider.tts.title=滑块	#
 accessibility.tab.tts.title=选项卡	#
 accessibility.textbox.tts.title=文本框	#
 accessibility.toggle.tts.title=开关	#
 
-accessibility.button.close=关掉	#
+accessibility.button.close=关闭	#
 accessibility.button.back=返回	#
 accessibility.button.exit=退出	#
 
 accessibility.dropdown.listItem=列表项	#
 
-accessibility.minecoin=我币	#
-accessibility.minecoins=我币	#
+accessibility.minecoin=Minecoin	#
+accessibility.minecoins=Minecoin	#
 
 accessibility.sectionName=第%s部分：	#
 
 accessibility.state.on=：已打开	#
-accessibility.state.off=：已关掉	#
+accessibility.state.off=：已关闭	#
 
 accessibility.state.checked=：已选中	#
 accessibility.state.unchecked=：未选中	#
@@ -71,7 +71,7 @@ accessibility.state.selected=：已选择	#
 accessibility.state.unselected=：未选择	#
 
 accessibility.store.offerDescription.share=分享	#
-accessibility.store.wishlist.button=愿望单	#
+accessibility.store.wishlist.button=愿望清单	#
 
 accessibility.index=第%s个，共%s个		### This is numbering, which number out of the total number of objects is available for interaction. Example: 1 of 3
 
@@ -87,44 +87,43 @@ accessibility.play.tabLeft=按%s向左切换选项卡	#
 accessibility.play.tabRight=按%s向右切换选项卡	#
 accessibility.play.legacyWorldsDelete=删除旧世界	#
 accessibility.play.uploadWorld=上传世界	#
-
 accessibility.pause.permissions=权限	#
 accessibility.pause.profile=选择个人资料	#
 
 accessibility.start.buttonHelper=%s：%s	### Used for on-screen gamepad helpers (eg. "Y Button : Change User")
 
-accessibility.screenName.achievements=成果界面	#
-accessibility.screenName.chat=聊天界面	#
-accessibility.screenName.chatSettings=聊天设置界面	#
-accessibility.screenName.createNew=创建新存档界面	#
-accessibility.screenName.createWorld=创建世界设置界面	#
+accessibility.screenName.achievements=成就屏幕	#
+accessibility.screenName.chat=聊天屏幕	#
+accessibility.screenName.chatSettings=聊天设置屏幕	#
+accessibility.screenName.createNew=创建新存档屏幕	#
+accessibility.screenName.createWorld=创建世界设置屏幕	#
 accessibility.screenName.editCharacter=角色编辑器	#
-accessibility.screenName.editWorldSettings=编辑世界设置界面	#
-accessibility.screenName.error=错误界面	#
-accessibility.screenName.howToPlay=游戏指南界面	#
-accessibility.screenName.inviteToGame=邀请游戏界面	#
+accessibility.screenName.editWorldSettings=编辑世界设置屏幕	#
+accessibility.screenName.error=错误屏幕	#
+accessibility.screenName.howToPlay=游戏指南屏幕	#
+accessibility.screenName.inviteToGame=邀请游戏屏幕	#
 accessibility.screenName.joinByIP=通过IP加入的窗口	#
 accessibility.screenName.joinCode=加入代码窗口	#
-accessibility.screenName.library=库界面	#
+accessibility.screenName.library=库屏幕	#
 accessibility.screenName.modalDialog=弹窗	#
-accessibility.screenName.myTemplates=我的模板界面	#
-accessibility.screenName.myWorlds=我的世界界面	#
-accessibility.screenName.patchNotes=补丁说明界面	#
-accessibility.screenName.pause=暂停界面	#
-accessibility.screenName.permissions=权限界面	#
-accessibility.screenName.play=游戏界面	#
-accessibility.screenName.profile=个人资料界面	#
-accessibility.screenName.realmSettings=Realm设置界面	#
-accessibility.screenName.settings=游戏设置界面	#
-accessibility.screenName.skinPicker=选择皮肤界面	#
+accessibility.screenName.myTemplates=我的模板屏幕	#
+accessibility.screenName.myWorlds=我的世界屏幕	#
+accessibility.screenName.patchNotes=补丁说明屏幕	#
+accessibility.screenName.pause=暂停屏幕	#
+accessibility.screenName.permissions=权限屏幕	#
+accessibility.screenName.play=游戏屏幕	#
+accessibility.screenName.profile=个人资料屏幕	#
+accessibility.screenName.realmSettings=Realm设置屏幕	#
+accessibility.screenName.settings=游戏设置屏幕	#
+accessibility.screenName.skinPicker=选择皮肤屏幕	#
 accessibility.screenName.start=主菜单	#
-accessibility.screenName.vrAlignment=VR校准界面 	#
-accessibility.screenName.emoteWheel=表情界面	#
+accessibility.screenName.vrAlignment=VR校准屏幕 	#
+accessibility.screenName.emoteWheel=表情屏幕	#
 
 accessibility.settings.reset=重置	#
 accessibility.settings.chooseSeed=选择种子	#
 
-accessibility.start.feedback=提交反馈	#
+accessibility.start.feedback=提交反馈网站链接	#
 accessibility.start.new=新	#
 accessibility.start.profile=选择个人资料	#
 accessibility.start.skinPicker=选择皮肤	#
@@ -175,18 +174,18 @@ accessibility.toast=通知		### This is the name of the popup that appears when 
 
 accessibility.worldTemplates.help=帮助	#
 
-accessibility.popup.title=关掉屏幕阅读器？	#
+accessibility.popup.title=关闭屏幕阅读器？	#
 accessibility.popup.message.line1=欢迎来到Minecraft！	#
 accessibility.popup.message.default=你的设备上默认启用了屏幕阅读器支持。	#
 accessibility.popup.message.platform=我们发现你的系统启用了一个屏幕阅读器，于是自动启用了Minecraft的屏幕阅读器。	#
 accessibility.popup.message.touch=触摸和拖动来在屏幕上找到控件，双击控件以进行选择。若要在屏幕上滚动，上下滑动时双击并按住即可。	#
 accessibility.popup.message.xbl=我们发现你的账户已经启用了“让游戏读给我听”，于是自动启用了Minecraft的屏幕阅读器。	#
-accessibility.popup.message.line3=你想关掉它吗？	#
-accessibility.popup.left_button_text=关掉	#
-accessibility.popup.right_button_text=保持打开	#
+accessibility.popup.message.line3=你想关闭它吗？	#
+accessibility.popup.left_button_text=关闭	#
+accessibility.popup.right_button_text=保持开启	#
 
 accessibility.controllerLayoutScreen.buttonRemapped=%s已被绑定至%s	#
-accessibility.controllerLayoutScreen.buttonBoundTo=%s抱枕：%s	#
+accessibility.controllerLayoutScreen.buttonBoundTo=%s按钮：%s	#
 accessibility.controllerLayoutScreen.buttonRemapping=为%s选择要绑定的输入	#
 
 accessibility.gamepad.faceButton.down=A键	#
@@ -209,15 +208,15 @@ accessibility.gamepad.bumper.left=左肩键	#
 accessibility.keyboard.leftBracket=左方括号键			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=右方括号键		### right square bracket means ']' on the english keyboard
 
-accessibility.emotes.hovered=%s，表情抱枕%d，第%d个，共%d个	#
+accessibility.emotes.hovered=%s，表情按钮%d，第%d个，共%d个	#
 accessibility.emotes.assigned=%s表情已指定	#
 accessibility.emotes.unassigned=未指定	#
 accessibility.emotes.playSuccess=播放表情	#
-accessibility.emotes.playFailed=此抱枕未指定表情，点击%s更改表情菜单	#
+accessibility.emotes.playFailed=此按钮未指定表情，点击%s更改表情菜单	#
 accessibility.emotes.changeEmotesInstruction.button=%s进入	#
 accessibility.emotes.keyboard.arrow=箭头	#
+accessibility.emotes.instruction.keyboard=按下右或左循环显示表情按钮。按下箭头进入更改表情按钮。	#
 
-accessibility.emotes.instruction.keyboard=按下右或左循环显示表情抱枕。按下箭头进入更改表情抱枕。	#
 
 ## End of audible phrases section
 
