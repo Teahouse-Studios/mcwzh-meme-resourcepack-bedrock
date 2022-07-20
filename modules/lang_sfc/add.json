@@ -164,6 +164,7 @@
     "hbui.CreateNewWorld.advanced.immediateRespawnTitle": "立即失败去活来",
     "hbui.CreateNewWorld.advanced.mobLootDescription": "生物被失败时掉落物品",
     "hbui.CreateNewWorld.advanced.mobLootTitle": "掉落生物战利品",
+    "hbui.CreateNewWorld.advanced.respawnBlocksExplodeDescription": "MCPE-28723",
     "hbui.CreateNewWorld.advanced.respawnRadiusDescription": "当你失败并且未设置自定义失败去活来点时，会在此方块半径内失败去活来（最大128）。",
     "hbui.CreateNewWorld.advanced.respawnRadiusLabel": "失败去活来半径",
     "hbui.CreateNewWorld.behaviorPacks.emptyLocalActivePacksMessageDescription": "改变世界中的物品和生物的行为方式。在“可用”下开始使用",
@@ -849,6 +850,5 @@
     "xbox.signin.useDifferentAccount": "使用其他微软账户登录",
     "xbox.signingin": "正在使用微软账户登录…",
     "xbox.signOutLong": "从你的微软账户注销",
-    "xbox.thirdpartysignin.line2": "你需要用微软账户登录才能进行连接！",
-    "xhbui.CreateNewWorld.advanced.respawnBlocksExplodeDescription": "MCPE-28723"
+    "xbox.thirdpartysignin.line2": "你需要用微软账户登录才能进行连接！"
 }
