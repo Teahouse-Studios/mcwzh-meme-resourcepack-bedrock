@@ -839,8 +839,10 @@
     "xbox.profile.friend": "好朋友",
     "xbox.profile.realName": "在X盒应用程序中管理用于共享你的实际姓名的隐私设置。",
     "xbox.profile.removeFriend": "解除好朋友关系",
+    "xbox.report.fraud": "欺诈",
     "xbox.report.imminentHarm": "威胁伤害他人",
     "xbox.report.selfHarm": "自伤或自失败",
+    "xbox.report.sexualReference": "性与暴力内容",
     "xbox.signin.beta.blocked": "目前无法在抢跑版中使用微软帐户登录。",
     "xbox.signin.error.pocket.line3": "在此测试中，每个人都必须登录到微软账户，以便将邀请发送给你并添加到Realm中。",
     "xbox.signin.error": "请登录至微软账户，与好朋友畅玩，获取玩家点数和成果。",
@@ -851,4 +853,5 @@
     "xbox.signingin": "正在使用微软账户登录…",
     "xbox.signOutLong": "从你的微软账户注销",
     "xbox.thirdpartysignin.line2": "你需要用微软账户登录才能进行连接！"
+
 }

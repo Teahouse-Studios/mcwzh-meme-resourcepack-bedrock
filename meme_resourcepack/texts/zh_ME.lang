@@ -8996,7 +8996,7 @@ xbox.report.cyberbullying=网络霸凌	#
 xbox.report.falseReporting=滥用菊♂爆	#
 xbox.report.exploits=利用漏洞或开挂	#
 xbox.report.harassingComments=骚扰或诽谤性评论	#
-xbox.report.hateSpeech=政治不正确	#
+xbox.report.hateSpeech=仇恨言论	#
 xbox.report.illegalDrugs=毒品	#
 xbox.report.impersonatingStaff=冒充员工、玩家支持人员或社区代表	#
 xbox.report.inGameTrolling=游戏内引战和滥发消息	#
@@ -9026,8 +9026,8 @@ xbox.report.selfHarm=自残或自杀	#
 xbox.report.nudity=裸体或色情	#
 xbox.report.sexuallyInappropriate=GHS	#
 xbox.report.extremeViolence=极端暴力或恐怖	#
-xbox.report.quittingEarly=提前退出	#
-xbox.report.unsportingBehavior=没有体育道德的行为	#
+xbox.report.quittingEarly=秒退	#
+xbox.report.unsportingBehavior=违反体育道德的行为	#
 xbox.report.voiceCommunication=麦克风交流	#
 
 ## Player safety toast messages
