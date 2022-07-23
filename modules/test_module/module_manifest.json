@@ -1,0 +1,5 @@
+{
+    "name": "test_module",
+    "type": "resource",
+    "description": "测试用模块"
+}
