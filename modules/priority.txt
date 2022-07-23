@@ -12,7 +12,6 @@ real_grass  # conflict with grass_enchanted
 reverse_cake  # conflict with mooncake
 mooncake  # conflict with reverse_cake
 bagify  # incompatible with fursuit, jinkela
-fursuit  # incompatible with bagify, jinkela
 bee_pickaxe  # incompatible with bee_pickaxe, fake_multitool
 locusazzurro  # incompatible with fake_multitool, locusazzurro
 fake_multitool  # incompatible with bee_pickaxe, locusazzurro
@@ -48,5 +47,6 @@ technical_fix
 lang_sfw
 lang_sfc
 
+fursuit  # incompatible with bagify, jinkela
 jinkela  # incompatible with bagify, fursuit
 latiao
