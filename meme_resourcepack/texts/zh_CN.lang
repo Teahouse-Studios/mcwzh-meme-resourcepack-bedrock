@@ -1,5 +1,5 @@
 ## Comments can be added anywhere on a valid line by starting with '##'
-## Minecraft译名修正
+## Minecraft译名修正，来自ff98sha/mclangcn
 ## Note, trailing spaces will NOT be trimmed. If you want room between the end of the string and the start of a
 ## comment on the same line, use TABs.
 accessibility.disableTTS=文本转语音已禁用	#
@@ -10877,6 +10877,11 @@ tile.labtable.name=实验台	#
 tile.materialreducer.name=材料分解器	#
 tile.underwater_tnt.name=水下TNT	#
 tile.underwater_torch.name=水下火把	#
+
+##legacy
+hbui.PackTabs.narration.tab=%1$s，选项卡%2$s/%3$s	#
+hbui.TabBar.tab=选项卡	#
+gameTest.error.simulatedPlayerOutOfBounds=模拟玩家“%s”偏离其游戏测试结构太远。	#
 
 ## Custom strings
 tips.game.73=本译名修正包由ff98sha制作。	#
