@@ -2,7 +2,7 @@
     "achievement.diamondsToYou.desc": "给你的一名好基友扔祖安石",
     "achievement.portal": "下地狱吧",
     "apple.LocalNetworkPermission.message": "Minecraft想要康康你的局域网正不正常，给的话你就可以和线下的好基友用局域网玩了。不给康也不会影响在线功能或游戏，但你的好基友就要走（延迟巨高的）服务器才可以和你玩。",
-    "container.enchant.level.many": "+ %s级经验",
+    "container.enchant.level.many": "+ %d级经验",
     "container.enchant.level.one": "+ 1级经验",
     "createWorldScreen.check_internet_connection": "你断网了。你的好基友没法来到你的世界多人游戏。找个网登录你的巨硬账户，跟你的好基友一起玩。",
     "createWorldScreen.disconnectedXboxLive": "你未连接到巨硬服务。你的好基友没法带着玩家标签来到你的世界多人游戏。登录你的巨硬账户，跟你的好基友一起玩。",
