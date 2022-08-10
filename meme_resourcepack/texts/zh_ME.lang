@@ -2,21 +2,21 @@
 ## 基岩版梗体中文，Teahouse-Studios/mcwzh-meme-resourcepack-bedrock
 ## Note, trailing spaces will NOT be trimmed. If you want room between the end of the string and the start of a
 ## comment on the same line, use TABs.
-accessibility.disableTTS=文本转语音已禁用	#
-accessibility.enableTTS=文本转语音已启用	#
+accessibility.disableTTS=文本转语音已关掉	#
+accessibility.enableTTS=文本转语音已打开	#
 
 ## Translator note: 可访问性字符串不应梗化
 ## This section of phrases will be given audibly to the user using text to speech
 
 accessibility.chat.tts.gamepad.back=按%s返回	#
-accessibility.chat.tts.gamepad.exitChat=按%s退出聊天	#
+accessibility.chat.tts.gamepad.exitChat=按%s退出唠嗑	#
 accessibility.chat.tts.gamepad.sendMessage=按%s发送消息	#
 accessibility.chat.tts.says=%s说%s	#
-accessibility.chat.tts.hideChat=隐藏聊天	#
+accessibility.chat.tts.hideChat=隐藏唠嗑界面	#
 accessibility.chat.tts.keyboard=键盘	#
 accessibility.chat.tts.muteChatToggle=全部静音	#
 accessibility.chat.tts.sendChatMessage=发送	#
-accessibility.chat.tts.textboxTitle=聊天	#
+accessibility.chat.tts.textboxTitle=唠嗑	#
 
 accessibility.game.playerView=玩家视角	#
 
@@ -31,7 +31,7 @@ accessibility.importing.Progress=已导入百分之%s	#
 accessibility.importing.canceled=已取消导入	#
 accessibility.importing.complete=导入完成	#
 accessibility.signin.xbl=正在登录至Xbox Live	#
-accessibility.chat.howtoopen=按%s打开聊天	#
+accessibility.chat.howtoopen=按%s打开唠嗑	#
 accessibility.chat.howtoemote=点按或长按%s发表情	#
 accessibility.key.mouseButton=鼠标按钮%s	#
 accessibility.key.gamepad=手柄%s	#
@@ -44,28 +44,28 @@ accessibility.button.tts.title=按钮	#
 accessibility.checkbox.tts.title=复选框	#
 accessibility.checkbox.tts.status=状态%s			### Status will be checked or unchecked
 accessibility.dropdown.tts.title=下拉	#
-accessibility.screen.tts.title=%s屏幕	### %s will be replaced with the title of the screen (Example: Library Screen)
+accessibility.screen.tts.title=%s界面	### %s will be replaced with the title of the screen (Example: Library Screen)
 accessibility.slider.tts.title=滑块	#
 accessibility.tab.tts.title=选项卡	#
 accessibility.textbox.tts.title=文本框	#
 accessibility.toggle.tts.title=开关	#
 
-accessibility.button.close=关闭	#
+accessibility.button.close=关掉	#
 accessibility.button.back=返回	#
 accessibility.button.exit=退出	#
 
 accessibility.dropdown.listItem=列表项	#
 
-accessibility.minecoin=Minecoin	#
-accessibility.minecoins=Minecoin	#
-accessibility.fullprice=原价：%s Minecoin	#
-accessibility.discount.price=折扣价：%s Minecoin	#
+accessibility.minecoin=我币	#
+accessibility.minecoins=我币	#
+accessibility.fullprice=原价：%s 我币	#
+accessibility.discount.price=折扣价：%s 我币	#
 accessibility.discount.percent=%s%折扣	#
 
 accessibility.sectionName=第%s部分：	#
 
 accessibility.state.on=：已打开	#
-accessibility.state.off=：已关闭	#
+accessibility.state.off=：已关掉	#
 
 accessibility.state.checked=：已选中	#
 accessibility.state.unchecked=：未选中	#
@@ -74,7 +74,7 @@ accessibility.state.selected=：已选择	#
 accessibility.state.unselected=：未选择	#
 
 accessibility.store.offerDescription.share=分享	#
-accessibility.store.wishlist.button=愿望清单	#
+accessibility.store.wishlist.button=愿望单	#
 
 accessibility.index=第%s个，共%s个		### This is numbering, which number out of the total number of objects is available for interaction. Example: 1 of 3
 
@@ -96,38 +96,38 @@ accessibility.pause.profile=选择个人资料	#
 
 accessibility.start.buttonHelper=%s：%s	### Used for on-screen gamepad helpers (eg. "Y Button : Change User")
 
-accessibility.screenName.achievements=成就屏幕	#
-accessibility.screenName.chat=聊天屏幕	#
-accessibility.screenName.chatSettings=聊天设置屏幕	#
-accessibility.screenName.createNew=创建新存档屏幕	#
-accessibility.screenName.createWorld=创建世界设置屏幕	#
+accessibility.screenName.achievements=成果界面	#
+accessibility.screenName.chat=唠嗑界面	#
+accessibility.screenName.chatSettings=唠嗑设置界面	#
+accessibility.screenName.createNew=创建新存档界面	#
+accessibility.screenName.createWorld=创建世界设置界面	#
 accessibility.screenName.editCharacter=角色编辑器	#
-accessibility.screenName.editWorldSettings=编辑世界设置屏幕	#
-accessibility.screenName.error=错误屏幕	#
-accessibility.screenName.howToPlay=游戏指南屏幕	#
-accessibility.screenName.inviteToGame=邀请游戏屏幕	#
+accessibility.screenName.editWorldSettings=编辑世界设置界面	#
+accessibility.screenName.error=错误界面	#
+accessibility.screenName.howToPlay=游戏指南界面	#
+accessibility.screenName.inviteToGame=邀请游戏界面	#
 accessibility.screenName.joinByIP=通过IP加入的窗口	#
 accessibility.screenName.joinCode=加入代码窗口	#
-accessibility.screenName.library=库屏幕	#
+accessibility.screenName.library=库界面	#
 accessibility.screenName.modalDialog=弹窗	#
-accessibility.screenName.myTemplates=我的模板屏幕	#
-accessibility.screenName.myWorlds=我的世界屏幕	#
-accessibility.screenName.patchNotes=补丁说明屏幕	#
-accessibility.screenName.pause=暂停屏幕	#
-accessibility.screenName.permissions=权限屏幕	#
-accessibility.screenName.play=游戏屏幕	#
-accessibility.screenName.profile=个人资料屏幕	#
-accessibility.screenName.realmSettings=Realm设置屏幕	#
-accessibility.screenName.settings=游戏设置屏幕	#
-accessibility.screenName.skinPicker=选择皮肤屏幕	#
+accessibility.screenName.myTemplates=我的模板界面	#
+accessibility.screenName.myWorlds=我的世界界面	#
+accessibility.screenName.patchNotes=补丁说明界面	#
+accessibility.screenName.pause=暂停界面	#
+accessibility.screenName.permissions=权限界面	#
+accessibility.screenName.play=游戏界面	#
+accessibility.screenName.profile=个人资料界面	#
+accessibility.screenName.realmSettings=Realm设置界面	#
+accessibility.screenName.settings=游戏设置界面	#
+accessibility.screenName.skinPicker=选择皮肤界面	#
 accessibility.screenName.start=主菜单	#
-accessibility.screenName.vrAlignment=VR校准屏幕 	#
-accessibility.screenName.emoteWheel=表情屏幕	#
+accessibility.screenName.vrAlignment=VR校准界面 	#
+accessibility.screenName.emoteWheel=表情界面	#
 
 accessibility.settings.reset=重置	#
 accessibility.settings.chooseSeed=选择种子	#
 
-accessibility.start.feedback=提交反馈网站链接	#
+accessibility.start.feedback=提交反馈	#
 accessibility.start.new=新	#
 accessibility.start.profile=选择个人资料	#
 accessibility.start.skinPicker=选择皮肤	#
@@ -178,15 +178,15 @@ accessibility.toast=通知		### This is the name of the popup that appears when 
 
 accessibility.worldTemplates.help=帮助	#
 
-accessibility.popup.title=关闭屏幕阅读器？	#
+accessibility.popup.title=关掉屏幕阅读器？	#
 accessibility.popup.message.line1=欢迎来到Minecraft！	#
-accessibility.popup.message.default=你的设备上默认启用了屏幕阅读器支持。	#
-accessibility.popup.message.platform=我们发现你的系统启用了一个屏幕阅读器，于是自动启用了Minecraft的屏幕阅读器。	#
+accessibility.popup.message.default=你的设备上默认打开了屏幕阅读器支持。	#
+accessibility.popup.message.platform=我们发现你的系统打开了一个屏幕阅读器，于是自动打开了Minecraft的屏幕阅读器。	#
 accessibility.popup.message.touch=触摸和拖动来在屏幕上找到控件，双击控件以进行选择。若要在屏幕上滚动，上下滑动时双击并按住即可。	#
-accessibility.popup.message.xbl=我们发现你的账户已经启用了“让游戏读给我听”，于是自动启用了Minecraft的屏幕阅读器。	#
-accessibility.popup.message.line3=你想关闭它吗？	#
-accessibility.popup.left_button_text=关闭	#
-accessibility.popup.right_button_text=保持开启	#
+accessibility.popup.message.xbl=我们发现你的账户已经打开了“让游戏读给我听”，于是自动打开了Minecraft的屏幕阅读器。	#
+accessibility.popup.message.line3=你想关掉它吗？	#
+accessibility.popup.left_button_text=关掉	#
+accessibility.popup.right_button_text=保持打开	#
 
 accessibility.controllerLayoutScreen.buttonRemapped=%s已被绑定至%s	#
 accessibility.controllerLayoutScreen.buttonBoundTo=%s按钮：%s	#
@@ -6832,7 +6832,7 @@ tile.sculk.name=幽（yóu）匿块	#
 tile.sculk_vein.name=幽（yóu）匿脉络	#
 tile.sculk_catalyst.name=幽（yóu）匿催化剂	#
 tile.sculk_shrieker.name=幽（yóu）匿尖叫体	#
-tile.reinforced_deepslate.name=强化深♂石	#
+tile.reinforced_deepslate.name=强化深♂石	# 
 itemGroup.name.sculk=幽（yóu）匿	#
 effect.darkness=Dark♂	#
 entity.frog.name=蛙	#
@@ -9041,7 +9041,7 @@ xbox.report.whereReportDescription=请告知我们事件发生的位置。便于
 xbox.report.whyReport=你为什么菊♂爆%s？	#
 
 ## Player safety report areas where abuse took place
-xbox.report.area.chat=唠嗑关掉信息	#
+xbox.report.area.chat=唠嗑信息	#
 xbox.report.area.skin=游戏皮肤	#
 xbox.report.area.gameplay=游戏过程	#
 xbox.report.area.ingame=游戏内建筑	#
@@ -10029,7 +10029,7 @@ hbui.CreateNewWorld.behaviorPacks.inactivePacksEmptyBody=前往市场或线上�
 hbui.CreateNewWorld.behaviorPacks.inactivePacksEmptyTitle=你还没有任何包	#
 hbui.CreateNewWorld.behaviorPacks.noPacksAvailableBody=行为艺术包更改物品和暴徒的行为	#
 hbui.CreateNewWorld.behaviorPacks.noPacksAvailableTitle=无可用包	#
-hbui.CreateNewWorld.behaviorPacks.packPriorityInfoMessage=如果多个包对同一个资产进行了修改，那么等级最高的包所做的修改将会被应用。
+hbui.CreateNewWorld.behaviorPacks.packPriorityInfoMessage=如果多个包对同一个资产进行了修改，那么等级最高的包所做的修改将会被应用。	
 hbui.CreateNewWorld.behaviorPacks.underConstructionMessage=行为艺术包艺术在做了！	#
 hbui.CreateNewWorld.betaFeatures.activateBetaConfirmationCancel=保留原始设置	#
 hbui.CreateNewWorld.betaFeatures.activateBetaConfirmationCancelInputLegend=呐呐呐！	#
@@ -10878,15 +10878,19 @@ tile.materialreducer.name=材料分解器	#
 tile.underwater_tnt.name=水下大伊万  #
 tile.underwater_torch.name=水下火把  #
 
-##legacy
-hbui.PackTabs.narration.tab=%1$s，选项卡%2$s/%3$s	#
-hbui.TabBar.tab=选项卡	#
-gameTest.error.simulatedPlayerOutOfBounds=模拟玩家“%s”偏离其游戏测试结构太远。	#
-
 ## Custom strings
-tips.game.73=本资源包由Teahouse Studios制作。	#
+tips.game.73=本译名修正包由Teahouse Studios制作。	#
 tips.game.74=基岩版梗体中文发布于https://www.mcbbs.net/thread-1005191-1-1.html！	#
 tips.game.75=Java版梗体中文发布于https://www.mcbbs.net/thread-1004643-1-1.html！	#
 tips.game.76=在Github搜索Teahouse-Studios/mcwzh-meme-resourcepack-bedrock可查看基岩版梗体中文项目。	#
 tips.game.77=在Github搜索Teahouse-Studios/mcwzh-meme-resourcepack可查看Java版梗体中文项目。	#
 tips.game.78=中文Minecraft Wiki提醒你：译名千万条，准确第一条。翻译不规范，玩家两行泪。	#
+
+##potions
+item.potion.name=溶液	#
+potion.prefix.awkward=粗制的	#
+potion.prefix.grenade=喷溅型	#
+potion.prefix.linger=滞留型	#
+potion.prefix.mundane=平凡的	#
+potion.prefix.mundane.extended=长久平凡的	#
+potion.prefix.thick=浓稠的	#
