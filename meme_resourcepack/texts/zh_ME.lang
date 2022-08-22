@@ -10878,15 +10878,7 @@ tile.materialreducer.name=材料分解器	#
 tile.underwater_tnt.name=水下大伊万  #
 tile.underwater_torch.name=水下火把  #
 
-## Custom strings
-tips.game.73=本译名修正包由Teahouse Studios制作。	#
-tips.game.74=基岩版梗体中文发布于https://www.mcbbs.net/thread-1005191-1-1.html！	#
-tips.game.75=Java版梗体中文发布于https://www.mcbbs.net/thread-1004643-1-1.html！	#
-tips.game.76=在Github搜索Teahouse-Studios/mcwzh-meme-resourcepack-bedrock可查看基岩版梗体中文项目。	#
-tips.game.77=在Github搜索Teahouse-Studios/mcwzh-meme-resourcepack可查看Java版梗体中文项目。	#
-tips.game.78=中文Minecraft Wiki提醒你：译名千万条，准确第一条。翻译不规范，玩家两行泪。	#
-
-##potions
+##potion
 item.potion.name=溶液	#
 potion.prefix.awkward=粗制的	#
 potion.prefix.grenade=喷溅型	#
@@ -10894,3 +10886,11 @@ potion.prefix.linger=滞留型	#
 potion.prefix.mundane=平凡的	#
 potion.prefix.mundane.extended=长久平凡的	#
 potion.prefix.thick=浓稠的	#
+
+## Custom strings
+tips.game.73=本资源包由Teahouse Studios制作。	#
+tips.game.74=基岩版梗体中文发布于https://www.mcbbs.net/thread-1005191-1-1.html	#
+tips.game.75=Java版梗体中文发布于https://www.mcbbs.net/thread-1004643-1-1.html	#
+tips.game.76=在Github搜索Teahouse-Studios/mcwzh-meme-resourcepack-bedrock可查看基岩版梗体中文项目。	#
+tips.game.77=在Github搜索Teahouse-Studios/mcwzh-meme-resourcepack可查看Java版梗体中文项目。	#
+tips.game.78=中文Minecraft Wiki提醒你：译名千万条，准确第一条。翻译不规范，玩家两行泪。	#
