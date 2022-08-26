@@ -2615,7 +2615,7 @@ enchantment.tridentImpaling=水生杀手	#
 
 entity.area_effect_cloud.name=区域buff云	#
 entity.armor_stand.name=真·工具人	#
-entity.arrow.name=指针	#
+entity.arrow.name=箭	#
 entity.bat.name=蝙蝠	#
 entity.bee.name=蜂子	#
 entity.blaze.name=棒子人	#
