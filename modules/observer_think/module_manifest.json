@@ -2,5 +2,12 @@
     "name": "observer_think",
     "type": "resource",
     "description": "思辩者.png",
-    "author": ["Lakejason0", "ZCYF"]
+    "author": ["Lakejason0", "ZCYF"],
+    "languageModification": [
+        {
+            "file": "texts/zh_ME.lang",
+            "add": "add.json"
+        }
+    ]
+
 }
