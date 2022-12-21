@@ -4,7 +4,7 @@
         "description": "§bAn add-on that include meme translation in Chinese.\n需要基岩版1.13.0+",
         "name": "§e梗体中文附加包-§l基岩版",
         "uuid": "dac97c8e-a024-42fe-afc7-ea1e55b80164",
-        "version": [1, 8, 1],
+        "version": [1, 8, 0],
         "min_engine_version": [1, 13, 0]
     },
     "modules": [
@@ -12,7 +12,7 @@
             "description": "An add-on that include meme translation in Chinese. ",
             "type": "resources",
             "uuid": "310f9eec-7e19-43c1-a9eb-1d6af7acebf0",
-            "version": [1, 8, 1]
+            "version": [1, 8, 0]
         }
     ],
     "capabilities": ["experimental_custom_ui", "chemistry"],
