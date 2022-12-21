@@ -32,6 +32,7 @@ trident_model
 vulpes_ferrilata
 warm_blue_ui
 
+beautiful_chicken
 bell_sound
 firework_sound
 goat_horn_sound
