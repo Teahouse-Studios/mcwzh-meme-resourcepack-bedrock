@@ -11010,9 +11010,9 @@ tile.bamboo_trapdoor.name=竹活板门	#
 item.boat.bamboo.name=竹筏	#
 item.chest_boat.bamboo.name=运输竹筏	#
 entity.chest_raft.name=运输竹筏	#
-	
+
 tile.chiseled_bookshelf.name=雕纹书架	#
-	
+
 action.hint.exit.raft=点击“跳跃”离开竹筏	#
 action.hint.exit.console.raft=按下:_input_key.jump:离开竹筏	#
 action.interact.exit.raft=离开竹筏	#

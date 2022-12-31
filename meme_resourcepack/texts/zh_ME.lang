@@ -11010,12 +11010,13 @@ tile.bamboo_trapdoor.name=た↓け↑陷阱门	#
 item.boat.bamboo.name=た↓け↑《木筏求生》	#
 item.chest_boat.bamboo.name=带胸部的た↓け↑《木筏求生》	#
 entity.chest_raft.name=带胸部的《木筏求生》	#
-	
+
 tile.chiseled_bookshelf.name=使用了大师级雕刻技艺的书山	#
-	
+
 action.hint.exit.raft=点击“跳跃”离开《木筏求生》	#
 action.hint.exit.console.raft=按下:_input_key.jump:离开《木筏求生》	#
 action.interact.exit.raft=离开《木筏求生》	#
+
 
 ## Chemistry Strings
 ## comment on the same line, use TABs.
@@ -11315,15 +11316,6 @@ tile.labtable.name=实验台	#
 tile.materialreducer.name=材料分解器	#
 tile.underwater_tnt.name=水下大伊万  #
 tile.underwater_torch.name=水下火把  #
-
-##potion
-item.potion.name=溶液	#
-potion.prefix.awkward=粗制的	#
-potion.prefix.grenade=喷溅型	#
-potion.prefix.linger=滞留型	#
-potion.prefix.mundane=平凡的	#
-potion.prefix.mundane.extended=长久平凡的	#
-potion.prefix.thick=浓稠的	#
 
 ## Custom strings
 tips.game.72=本资源包由Teahouse Studios制作。	#
