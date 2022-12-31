@@ -4,6 +4,7 @@
 # Spaces are trimmed from the start and end of the line.
 # The list applies from top to bottom.
 # Modules not specified in this list will be applied last.
+meme_resourcepack
 
 grass_enchanted  # conflict with real_grass
 real_grass  # conflict with grass_enchanted
