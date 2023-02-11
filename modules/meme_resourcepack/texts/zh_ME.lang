@@ -9010,8 +9010,8 @@ trial.upsell.continueTrial=继续白嫖	#
 
 ## Specific for the Chromebook Trial	
 trial.upsell.cb.unlock=常见问题	#
-trial.upsell.cb.description.worldsDontTransferToFullGame.line1=探索、合成、建造的同时享受游戏！在这个试玩版世界中，你有90分钟的游戏时间。发现错误？请在bugs.mojang.com报告！其他问题？请查看我们的常见问题解答。	#
-trial.upsell.cb.description.worldsDontTransferToFullGame.line2=（试玩版世界不会转移到完整版游戏中。）	#
+trial.upsell.cb.description.worldsDontTransferToFullGame.line1=探索、合成、建造的同时享受游戏！在这个白嫖版世界中，你有90分钟的游戏时间。发现错误？请在bugs.mojang.com报告！其他问题？请查看我们的常见问题解答。	#
+trial.upsell.cb.description.worldsDontTransferToFullGame.line2=（白嫖版世界不会转移到完整版游戏中。）	#
 
 ratingPopUp.title=喜欢Minecraft吗？	#
 feedbackPopup.title=你有任何反馈要告诉我们吗？	#
@@ -9029,7 +9029,7 @@ trial.upsell.expiredTitle=时间到！	#
 trial.upsell.expiredViewWorld=查看世界	#
 
 ## Specific for the Chromebook Trial	
-trial.upsell.cb.expiredNewDescription.worldsDontTransferToFullGame.line1=想要继续探索、合成和建造吗？开启一个新的试玩版世界继续游戏吧！	#
+trial.upsell.cb.expiredNewDescription.worldsDontTransferToFullGame.line1=想要继续探索、合成和建造吗？开启一个新的白嫖版世界继续游戏吧！	#
 trial.upsell.cb.startNew=开启新世界	#
 
 ## tabbedUpsell content
@@ -9059,8 +9059,8 @@ trial.tabbed_upsell.seeds.description=解锁完整的Minecraft游戏体验，获
 ## Specific for the Chromebook Trial	
 trial.thanks_for_testing.title=感谢测试	#
 trial.thanks_for_testing.button=查看常见问题解答！	#
-trial.thanks_for_testing.minecraft.title=Minecraft试玩版	#
-trial.thanks_for_testing.minecraft.description=感谢你下载适用于Chromebook的Minecraft试玩版！你的游戏测试将为错误修复和技术故障排除提供宝贵的数据。发现错误？请访问bugs.mojang.com进行报告！其他问题？请查看我们的常见问题解答。	#
+trial.thanks_for_testing.minecraft.title=Minecraft白嫖版	#
+trial.thanks_for_testing.minecraft.description=感谢你下载适用于Chromebook的Minecraft白嫖版！你的游戏测试将为错误修复和技术故障排除提供宝贵的数据。发现错误？请访问bugs.mojang.com进行报告！其他问题？请查看我们的常见问题解答。	#
 trial.thanks_for_testing.xbl.title=Microsoft账户	#
 trial.thanks_for_testing.xbl.description=获取完整的Minecraft游戏体验后，你可以使用上帝模式、成果等功能，此外，通过巨硬账户你还可以在Minecraft社区中结识其他玩家！你可以加入你好♂基♂友的世界，可以在服务器上交到新的朋友，还可以将你在市场中的已购物品同步到任何你能体验Minecraft的地方。	#
 trial.thanks_for_testing.xbl.description.line2=*（在带有市场的版本中）	#
@@ -10920,7 +10920,7 @@ hbui.PlayerBannedModalRoute.xbox.report.area.gameplay=游戏内容	#
 hbui.PlayerBannedModalRoute.xbox.report.area.ingame=游戏内建筑	#
 hbui.PlayerBannedModalRoute.xbox.report.area.other=其他	#
 hbui.PlayerBannedModalRoute.xbox.report.cyberbullying=网络霸凌	#
-hbui.PlayerBannedModalRoute.xbox.report.falseReporting=过多的虚假/不准确菊爆	#
+hbui.PlayerBannedModalRoute.xbox.report.falseReporting=过多的虚假/不准确菊♂爆	#
 hbui.PlayerBannedModalRoute.xbox.report.exploits=利用漏洞或第三方辅助软件	#
 hbui.PlayerBannedModalRoute.xbox.report.harassingComments=骚扰或诽谤性评论	#
 hbui.PlayerBannedModalRoute.xbox.report.hateSpeech=仇恨言论	#
@@ -10954,14 +10954,14 @@ hbui.PlayerBannedModalRoute.xbox.report.nudity=裸体或色情	#
 hbui.PlayerBannedModalRoute.xbox.report.sexuallyInappropriate=不恰当性内容	#
 hbui.PlayerBannedModalRoute.xbox.report.extremeViolence=极端暴力或恐怖	#
 hbui.PlayerBannedModalRoute.xbox.report.unsportingBehavior=韩国行为	#
-hbui.ReportPlayerRoute.title=菊爆%s	#
+hbui.ReportPlayerRoute.title=菊♂爆%s	#
 hbui.ReportPlayerRoute.next=继续	#
-hbui.ReportPlayerRoute.report=菊爆	#
+hbui.ReportPlayerRoute.report=菊♂爆	#
 hbui.ReportPlayerRoute.unknownGamertag=未知	#
 hbui.ReportPlayerRoute.optionalText=在此处输入文本（可选）	#
 hbui.ReportPlayerRoute.whereReport=你在哪里发现了不当的行为？	#
 hbui.ReportPlayerRoute.whereReportDescription=请告知我们事件发生的位置。便于帮助我们研究你的案例。	#
-hbui.ReportPlayerRoute.whyReport=你为什么菊爆%s？	#
+hbui.ReportPlayerRoute.whyReport=你为什么菊♂爆%s？	#
 hbui.ReportPlayerRoute.area.chat=聊天信息	#
 hbui.ReportPlayerRoute.area.skin=游戏皮肤	#
 hbui.ReportPlayerRoute.area.gameplay=游戏内容	#
