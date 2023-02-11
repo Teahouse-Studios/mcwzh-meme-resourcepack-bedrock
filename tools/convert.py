@@ -14,7 +14,7 @@ def lang_to_json(source, dest):
 
 if __name__ == '__main__':
     from argparse import ArgumentParser, FileType
-    from sys import stdout
+    import sys
 
     def generate_parser():
         parser = ArgumentParser(
@@ -23,7 +23,7 @@ if __name__ == '__main__':
             "type", help="Specify conversion destination file type. Must be 'lang' or 'json'.", choices=['lang', 'json'])
         parser.add_argument("input", type=FileType(
             mode='r', encoding='utf8'), help="Path to source file.")
-        parser.add_argument("-o", "--output", nargs='?', default=stdout,
+        parser.add_argument("-o", "--output", nargs='?', default=sys.stdout,
                             type=FileType(mode='w', encoding='utf8'), help="Path to destination file. If omitted, will write to stdout.")
         return parser
     args = generate_parser().parse_args()

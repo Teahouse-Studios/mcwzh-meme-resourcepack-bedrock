@@ -1,4 +1,4 @@
-const { ModuleParser, Logger, BedrockPackBuilder } = require('memepack-builder')
+const { ModuleParser, BedrockPackBuilder } = require('memepack-builder')
 const { writeFileSync, existsSync, mkdirSync } = require('fs')
 const { resolve } = require('path')
 const glob = require('glob')
@@ -10,16 +10,7 @@ const preset_args = [
     type: 'mcpack',
     compatible: false,
     modules: {
-      resource: ['all'],
-      collection: [],
-    },
-  },
-  {
-    platform: 'bedrock',
-    type: 'mcpack',
-    compatible: false,
-    modules: {
-      resource: [],
+      resource: ['meme_resourcepack'],
       collection: [],
     },
   },
@@ -28,16 +19,7 @@ const preset_args = [
     type: 'mcpack',
     compatible: true,
     modules: {
-      resource: ['all'],
-      collection: [],
-    },
-  },
-  {
-    platform: 'bedrock',
-    type: 'mcpack',
-    compatible: true,
-    modules: {
-      resource: [],
+      resource: ['meme_resourcepack'],
       collection: [],
     },
   },
@@ -46,7 +28,7 @@ const preset_args = [
     type: 'zip',
     compatible: false,
     modules: {
-      resource: ['all'],
+      resource: ['meme_resourcepack'],
       collection: [],
     },
   },
@@ -55,28 +37,24 @@ const preset_args = [
     type: 'zip',
     compatible: true,
     modules: {
-      resource: [],
+      resource: ['meme_resourcepack'],
       collection: [],
     },
   },
 ]
 const preset_name = [
   `meme-resourcepack_v${PACK_VERSION}.mcpack`,
-  `meme-resourcepack_noresource_v${PACK_VERSION}.mcpack`,
   `meme-resourcepack_compatible_v${PACK_VERSION}.mcpack`,
-  `meme-resourcepack_compatible_noresource_v${PACK_VERSION}.mcpack`,
   `meme-resourcepack_v${PACK_VERSION}.zip`,
-  `meme-resourcepack_compatible_noresource_v${PACK_VERSION}.zip`,
+  `meme-resourcepack_compatible_v${PACK_VERSION}.zip`,
 ]
 
 async function start() {
-  const beModules = new ModuleParser(resolve(__dirname, './modules'))
+  const beModules = new ModuleParser()
+  beModules.addSearchPaths(resolve(__dirname, './modules'))
   const be = new BedrockPackBuilder(
-    await beModules.moduleInfo(),
-    resolve(__dirname, './meme_resourcepack'),
-    {
-      modFiles: glob.sync('./mods/*.json'),
-    },
+    await beModules.searchModules(),
+    resolve(__dirname, './modules/prioroty.txt'),
   )
 
   if (!existsSync('./builds')) {
@@ -87,10 +65,9 @@ async function start() {
     try {
       let r = await be.build(arg)
       console.log(arg, preset_name[i])
-      writeFileSync(resolve(__dirname, `./builds/${preset_name[i]}`), r.content)
+      writeFileSync(resolve(__dirname, `./builds/${preset_name[i]}`), r)
     } catch (e) {
-      console.error(Logger.log, e)
-      Logger.clearLog()
+      console.error(e)
       process.exit(1)
     }
   }
