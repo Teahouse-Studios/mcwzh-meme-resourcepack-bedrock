@@ -1,0 +1,15 @@
+{
+    "format_version": [
+        1,
+        1,
+        0
+    ],
+    "bamboo_block": {
+        "textures": {
+            "up": "bamboo_block_top",
+            "down": "bamboo_block_tnt_bottom",
+            "side": "bamboo_block_tnt_side"
+        },
+        "sound": "bamboo_wood"
+    }
+}
