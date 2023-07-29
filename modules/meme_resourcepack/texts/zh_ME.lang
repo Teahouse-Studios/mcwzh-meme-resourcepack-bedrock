@@ -288,7 +288,7 @@ achievement.flyPig.desc=骑着猪从悬崖上飞下	#
 achievement.fullBeacon=最亮的培根方块	#
 achievement.fullBeacon.desc=让一个培根方块发挥最大功效	#
 achievement.get=成果get☆daze！	#
-achievement.ghast=鬼？鬼！	#
+achievement.ghast=鬼？he鬼！	#
 achievement.ghast.desc=用一团火球弄死一只地狱轰炸机	#
 achievement.killCow=斗牛士	#
 achievement.killCow.desc=获得一些皮	#
@@ -325,6 +325,7 @@ achievement.theEnd2=结束了。	#
 achievement.theEnd2.desc=随生命值一起消散吧，昆图库塔卡提考特苏瓦西拉松！	#
 achievement.unknown=???	#
 achievement.uninitScore=--	#
+
 
 action.hint.exit.boat=点击“跳跃”离开《明日方舟》	#
 action.hint.exit.minecart=点击“跳跃”离开《我的世界》	#
