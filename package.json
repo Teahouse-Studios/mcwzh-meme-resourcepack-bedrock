@@ -5,10 +5,10 @@
         "test-build": "node preset_build.js"
     },
     "dependencies": {
-        "glob": "^8.0.3",
-        "memepack-builder": "^0.4.0"
+        "glob": "^11.0.1",
+        "memepack-builder": "^0.5.0"
     },
     "devDependencies": {
-        "prettier": "^2.8.0"
+        "prettier": "^3.5.3"
     }
 }
