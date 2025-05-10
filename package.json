@@ -10,5 +10,6 @@
     },
     "devDependencies": {
         "prettier": "^3.5.3"
-    }
+    },
+    "packageManager": "pnpm@10.10.0"
 }
